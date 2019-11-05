@@ -5,7 +5,7 @@ Created on Tue Mar  5 18:54:29 2019
 
 @author: suvodeepmajumder
 """
-from main.git_log import git2repo
+from git_log import git2repo
 import os
 import re
 import shlex
@@ -19,7 +19,7 @@ from pdb import set_trace
 import sys
 from collections import defaultdict
 import os
-from main.utils.utils import utils
+from utils.utils import utils
 import platform
 from os.path import dirname as up
 #from main.utils.utils.utils import printProgressBar
@@ -41,18 +41,17 @@ class MetricsGetter(object):
     def __init__(self,repo_url,repo_name,repo_lang):
         self.repo_url = repo_url
         self.repo_name = repo_name
-        print(self.repo_name)
         self.repo_lang = repo_lang
         self.repo_obj = git2repo.git2repo(self.repo_url,self.repo_name)
         self.repo = self.repo_obj.clone_repo()
         if platform.system() == 'Darwin' or platform.system() == 'Linux':
             self.repo_path = up(os.getcwd()) + '/temp_repo/' + self.repo_name
-            self.file_path = up(os.getcwd()) + '/data/' + self.repo_name + '_commit.pkl'
-            self.committed_file = up(os.getcwd()) + '/data/' + self.repo_name + '_committed_file.pkl'
+            self.file_path = up(os.getcwd()) + '/data/commit/' + self.repo_name + '_commit.pkl'
+            self.committed_file = up(os.getcwd()) + '/data/committed_files/' + self.repo_name + '_committed_file.pkl'
         else:
             self.repo_path = up(os.getcwd()) + '\\temp_repo\\' + self.repo_name
-            self.file_path = up(os.getcwd()) + '\\data\\' + self.repo_name + '_commit.pkl'
-            self.committed_file = up(os.getcwd()) + '\\data\\' + self.repo_name + '_committed_file.pkl'
+            self.file_path = up(os.getcwd()) + '\\data\\commit\\' + self.repo_name + '_commit.pkl'
+            self.committed_file = up(os.getcwd()) + '\\data\\committed_files\\' + self.repo_name + '_committed_file.pkl'
         self.buggy_clean_pairs = self.read_commits()
         self.repo_path = self.repo_obj.repo_path
         # Reference current directory, so we can go back after we are done.
@@ -205,20 +204,14 @@ class MetricsGetter(object):
         """
 
         self.metrics_dataframe = pd.DataFrame()
-
-        #printProgressBar(0, len(self.buggy_clean_pairs), prefix='Progress:',
-        #                 suffix='Complete', length=50)
-
-        # 1. For each clean-buggy commit pairs
         print(len(self.buggy_clean_pairs))
         for i in range(len(self.buggy_clean_pairs)):
             buggy_hash = self.buggy_clean_pairs[i][0]
             clean_hash = self.buggy_clean_pairs[i][1]
             files_changed = self.buggy_clean_pairs[i][2]
-            print(i,(buggy_hash, clean_hash))
+            print(i,(buggy_hash.id.hex, clean_hash.id.hex))
             # Go the the cloned project path
             os.chdir(self.repo_path)
-            #print(self.repo_path)
             # Checkout the master branch first, we'll need this
             # to find what files have changed.
             self._os_cmd("git reset --hard master", verbose=False)
@@ -237,19 +230,23 @@ class MetricsGetter(object):
             self._create_und_files("buggy")
             #print(self.buggy_und_file)
             db_buggy = und.open(str(self.buggy_und_file))
-            for file in db_buggy.ents("class"):
+            #print("Files",set(files_changed))
+            for file in db_buggy.ents("Class"):
                 # print directory name
-                if str(file) in files_changed:
-                    print(str(file))
+                #print(file,file.longname(), file.kind())
+                r = re.compile(str(file.longname()))
+                newlist = list(filter(r.search, list(set(files_changed))))
+                #print(newlist)
+                if len(newlist) > 0:
                     metrics = file.metric(file.metrics())
-                    metrics["Name"] = file.name()
+                    metrics["Name"] = file.longname()
                     metrics["Bugs"] = 1
                     self.metrics_dataframe = self.metrics_dataframe.append(
                         pd.Series(metrics), ignore_index=True)
             # Purge und file
             db_buggy.close()
+            #break
             self._os_cmd("rm {}".format(str(self.buggy_und_file)))
-
             # ------------------------------------------------------------------
             # ---------------------- CLEAN FILES METRICS -----------------------
             # ------------------------------------------------------------------
@@ -259,13 +256,15 @@ class MetricsGetter(object):
 
             # Create a understand file for this hash
             self._create_und_files("clean")
-            print(files_changed)
             db_clean = und.open(str(self.clean_und_file))
             for file in db_clean.ents("class"):
                 # print directory name
-                if str(file) in files_changed:
-                    print(str(file))
+                r = re.compile(str(file.longname()))
+                newlist = list(filter(r.search, files_changed))
+                #if str(file) in files_changed:
+                if len(newlist) > 0:
                     metrics = file.metric(file.metrics())
+                    #print(metrics)
                     metrics["Name"] = file.name()
                     metrics["Bugs"] = 0
                     self.metrics_dataframe = self.metrics_dataframe.append(
@@ -273,6 +272,7 @@ class MetricsGetter(object):
             db_clean.close()
             # Purge und file
             self._os_cmd("rm {}".format(str(self.clean_und_file)))
+            #print(self.metrics_dataframe)
 
             #printProgressBar(i, len(self.buggy_clean_pairs),
             #                 prefix='Progress:', suffix='Complete', length=50)

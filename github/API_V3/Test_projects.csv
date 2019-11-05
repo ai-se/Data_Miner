@@ -1,2 +1,2 @@
 repo_name,repo_owner,git_url,api_base_url,source_type,access_token,lang
-github-plugin,jenkinsci,git://github.com/jenkinsci/github-plugin.git,http://api.github.com,github_repo,3b254401b257ff098a21750faff7065c7d390bd3,Java
+requests,psf,https://github.com/psf/requests.git,http://api.github.com,github_repo,57b854031d4433381cf37d8f965e2d384c094977,python
