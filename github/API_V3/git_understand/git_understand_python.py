@@ -120,10 +120,11 @@ class MetricsGetter(object):
                 print(df_commits.iloc[i, 0])
                 continue
             for index, row in df_committed_file[df_committed_file['commit_id'] == df_commits.iloc[i, 0]].iterrows():
-                if len(row['file_path'].split('src/')) == 1:
-                    print("3")
-                    continue
-                committed_files.append(row['file_path'].split('src/')[1].replace('/', '.').rsplit('.', 1)[0])
+                a = row['file_path']
+#                if len(row['file_path'].split('/')) == 1:
+#                    print("3")
+#                    continue
+                committed_files.append(row['file_path'].replace('/', '.').rsplit('.', 1)[0])
             commits.append([bug_existing_commit, bug_fixing_commit, committed_files])
         return commits
 
@@ -251,6 +252,7 @@ class MetricsGetter(object):
             if len(files_changed) == 0:
                 continue
             print(i, (buggy_hash.id.hex, clean_hash.id.hex))
+            print("---------FILES CHANGED---------", files_changed)
             # Go the the cloned project path
             os.chdir(self.repo_path)
             # print(self.repo_path)
@@ -272,25 +274,27 @@ class MetricsGetter(object):
             self._create_und_files("buggy")
             # print(self.buggy_und_file)
             db_buggy = und.open(str(self.buggy_und_file))
+            print(len(db_buggy.ents("Class")))
+            temp = db_buggy.ents("File")
             for file in db_buggy.ents("Class"):
                 # print directory name
-                r = re.compile(str(file.longname()))
+                if file.library() == "Standard":
+                    continue
+                t3 = file.longname()
+                t7 = file.refs()
+                t8 = file.ref()
+                #print("-------Here is the library : ",file.library())
+                #r = re.compile(str(file.longname()))
+                temp_str = file.longname().split(".")[-2]
+                r = re.compile(str(temp_str))
                 newlist = list(filter(r.search, list(set(files_changed))))
                 if len(newlist) > 0:
+                    #print("Files changed, newList, r ",files_changed, newlist, r)
                     metrics = file.metric(file.metrics())
                     metrics["Name"] = file.longname()
                     metrics["Bugs"] = 1
                     self.metrics_dataframe = self.metrics_dataframe.append(
                         pd.Series(metrics), ignore_index=True)
-                '''
-                if str(file) in files_changed:
-                    print(str(file))
-                    metrics = file.metric(file.metrics())
-                    metrics["Name"] = file.name()
-                    metrics["Bugs"] = 1
-                    self.metrics_dataframe = self.metrics_dataframe.append(
-                        pd.Series(metrics), ignore_index=True)
-                '''
             # Purge und file
             db_buggy.close()
             # self._os_cmd("rm {}".format(str(self.buggy_und_file)))
@@ -305,11 +309,14 @@ class MetricsGetter(object):
 
             # Create a understand file for this hash
             self._create_und_files("clean")
-            print(files_changed)
             db_clean = und.open(str(self.clean_und_file))
-            for file in db_clean.ents("class"):
+            for file in db_clean.ents("Class"):
                 # print directory name
-                r = re.compile(str(file.longname()))
+                #r = re.compile(str(file.longname()))
+                if file.library() == "Standard":
+                    continue
+                temp_str = file.longname().split(".")[-2]
+                r = re.compile(str(temp_str))
                 newlist = list(filter(r.search, files_changed))
                 if len(newlist) > 0:
                     metrics = file.metric(file.metrics())
@@ -318,15 +325,6 @@ class MetricsGetter(object):
                     metrics["Bugs"] = 0
                     self.metrics_dataframe = self.metrics_dataframe.append(
                         pd.Series(metrics), ignore_index=True)
-                '''
-                if str(file) in files_changed:
-                    print(str(file))
-                    metrics = file.metric(file.metrics())
-                    metrics["Name"] = file.name()
-                    metrics["Bugs"] = 0
-                    self.metrics_dataframe = self.metrics_dataframe.append(
-                        pd.Series(metrics), ignore_index=True)
-                '''
             db_clean.close()
             # Purge und file
             # self._os_cmd("rm {}".format(str(self.clean_und_file)))
@@ -377,13 +375,7 @@ class MetricsGetter(object):
         # Optional -- remove the clone repo to save some space.
         # self._os_cmd("rm -rf {}".format(self.source_path))
 
-
-# obj = MetricsGetter("https://github.com/shiffman/Most-Pixels-Ever-Processing","Most-Pixels-Ever-Processing", "java")
-# obj = MetricsGetter("https://github.com/jenkinsci/subversion-plugin", "subversion-plugin", "java")
-# obj = MetricsGetter("https://github.com/spring-projects/spring-retry","spring-retry", "java")
-# obj = MetricsGetter("https://github.com/asterisk-java/asterisk-java","asterisk-java", "java")
-# obj = MetricsGetter("https://github.com/taksan/skype-java-api","skype-java-api", "java")
-obj = MetricsGetter("https://github.com/onelogin/java-saml", "java-saml", "java")
+obj = MetricsGetter("https://github.com/trentm/python-markdown2", "python-markdown2", "python")
 ans = obj.get_all_metrics()
 print("Done with metrics")
 
