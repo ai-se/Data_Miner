@@ -176,7 +176,7 @@ class MetricsGetter(object):
             cmd = "und create -languages python add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         elif self.repo_lang == "C":
-            cmd = "und create -languages C++ add {} analyze {}".format(
+            cmd = "und create -languages C add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         elif self.repo_lang == "java":
             cmd = "und create -languages Java add {} analyze {}".format(
@@ -277,17 +277,19 @@ class MetricsGetter(object):
             db_buggy = und.open(str(self.buggy_und_file))
             print(len(db_buggy.ents("Class")))
             temp = db_buggy.ents("File")
-            for file in db_buggy.ents("Class"):
+            for file in db_buggy.ents("File"):
                 # print directory name
                 if file.library() == "Standard":
                     continue
                 t3 = file.longname()
                 t7 = file.refs()
                 t8 = file.ref()
+                comp = str(file).split(".")[0]
+                print(comp)
                 #print("-------Here is the library : ",file.library())
                 #r = re.compile(str(file.longname()))
-                temp_str = file.longname().split(".")[-2]
-                r = re.compile(str(temp_str))
+                #temp_str = file.longname().split(".")[-2]
+                r = re.compile(comp)
                 newlist = list(filter(r.search, list(set(files_changed))))
                 if len(newlist) > 0:
                     #print("Files changed, newList, r ",files_changed, newlist, r)
@@ -311,13 +313,14 @@ class MetricsGetter(object):
             # Create a understand file for this hash
             self._create_und_files("clean")
             db_clean = und.open(str(self.clean_und_file))
-            for file in db_clean.ents("Class"):
+            for file in db_clean.ents("File"):
                 # print directory name
                 #r = re.compile(str(file.longname()))
                 if file.library() == "Standard":
                     continue
                 temp_str = file.longname().split(".")[-2]
-                r = re.compile(str(temp_str))
+                comp = str(file).split(".")[0]
+                r = re.compile(comp)
                 newlist = list(filter(r.search, files_changed))
                 if len(newlist) > 0:
                     metrics = file.metric(file.metrics())
@@ -376,7 +379,14 @@ class MetricsGetter(object):
         # Optional -- remove the clone repo to save some space.
         # self._os_cmd("rm -rf {}".format(self.source_path))
 
-obj = MetricsGetter("https://github.com/xmrig/xmrig", "xmrig", "C")
+#obj = MetricsGetter("https://github.com/xmrig/xmrig", "xmrig", "C")
+#obj = MetricsGetter("https://github.com/yandex/odyssey", "odyssey", "C")
+#obj = MetricsGetter("https://github.com/modern-fortran/neural-fortran", "neural-fortran", "fortran")
+#obj = MetricsGetter("https://github.com/wavebitscientific/functional-fortran", "functional-fortran", "fortran")
+#obj = MetricsGetter("https://github.com/CVMix/CVMix-src", "CVMix-src", "fortran")
+#obj = MetricsGetter("https://github.com/vmagnin/gtk-fortran", "gtk-fortran", "fortran")
+#obj = MetricsGetter("https://github.com/SHTOOLS/SHTOOLS", "SHTOOLS", "fortran")
+obj = MetricsGetter("https://github.com/SHTOOLS/SHTOOLS", "SHTOOLS", "fortran")
 ans = obj.get_all_metrics()
 print("Done with metrics")
 
