@@ -48,7 +48,6 @@ class git2data(object):
         #print("Inside get_commit_data in git2data")
         self.git_committed_files = self.git_repo.get_committed_files()
         return self.git_committed_files
-    
         
     def create_link(self):
         issue_df = pd.DataFrame(self.git_issues, columns = ['Issue_number','user_logon','author_type','Desc','title','lables'])

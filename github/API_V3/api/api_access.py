@@ -83,7 +83,8 @@ class git_api_access(object):
                 author_logon = x[i]['author']['login']
                 tag_name = x[i]['tag_name']
                 created_at = x[i]['created_at']
-                release_details.append([release_id,author_logon,tag_name,created_at])
+                description = x[i]['body']
+                release_details.append([release_id,author_logon,tag_name,created_at,description])
         return release_details
     
     

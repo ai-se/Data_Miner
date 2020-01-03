@@ -19,6 +19,7 @@ import re
 import networkx as nx
 import platform
 from os.path import dirname as up
+import datetime
 
 class git2data(object):
     
@@ -47,6 +48,18 @@ class git2data(object):
     def get_committed_files(self):
         self.git_committed_files = self.git_repo.get_committed_files()
         return self.git_committed_files
+
+    def release_to_commit(self,commit_df,release_df): # need to update to connect
+        commit_df.sort_values(by = [commit_time],inplace= True,ascending=True)
+        release_dates = release_df.created_at.values.tolist()
+        i = len(release_dates) - 1
+        current_release_date = release_dates[i]
+        previous_release_date = release_dates[i-1]
+        commit_df['release'] = pd.Series([None]*commit_df.shape[0])
+        for i in range(commit_df.shape[0]):
+            commit_time = datetime.datetime.fromtimestamp(df.iloc[i,5]).strftime('%Y-%m-%d')
+            
+
     
         
     def create_link(self):
@@ -97,7 +110,7 @@ class git2data(object):
                 continue
             commit_df.at[j[0],'issues'] = issues.values
         issue_comments_df = pd.DataFrame(self.git_issue_comments, columns = ['Issue_id','user_logon','commenter_type','body','created_at'])
-        release_df = pd.DataFrame(self.git_releases, columns = ['Release_id','author_logon','tag','created_at'])
+        release_df = pd.DataFrame(self.git_releases, columns = ['Release_id','author_logon','tag','created_at','description'])
         committed_files_df = pd.DataFrame(self.git_committed_files, columns = ['commit_id','file_id','file_mode','file_path'])
         user_df = pd.DataFrame(self.user_map, columns = ['user_name','user_logon'])
         return issue_df,commit_df,committed_files_df,issue_comments_df,user_df,release_df

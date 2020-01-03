@@ -72,8 +72,9 @@ class MetricsGetter(object):
     def read_commits(self):
         df = pd.read_pickle(self.file_path)
         df_committed_file = pd.read_pickle(self.committed_file)
-        df = df[df['buggy'] == 1]
+        #df = df[df['buggy'] == 1]
         df_commits = df.drop(labels = ['message','buggy'], axis = 1)
+        self.commits = []
         commits = []
         for i in range(df_commits.shape[0]):
             committed_files = []
@@ -81,6 +82,7 @@ class MetricsGetter(object):
                 continue
             bug_fixing_commit = self.repo.get(df_commits.iloc[i,0])
             bug_existing_commit = self.repo.get(df_commits.iloc[i,1])
+            self.commits.append(bug_fixing_commit)
             if bug_fixing_commit == None:
                 print(df_commits.iloc[i,0])
                 continue
@@ -204,11 +206,123 @@ class MetricsGetter(object):
         """
 
         self.metrics_dataframe = pd.DataFrame()
+        print(len(self.commits))
+        for i in range(len(self.commits)):
+            buggy_hash = self.commits[i]
+            print(i,(buggy_hash.id.hex))
+            # Go the the cloned project path
+            os.chdir(self.repo_path)
+            # Checkout the master branch first, we'll need this
+            # to find what files have changed.
+            self._os_cmd("git reset --hard master", verbose=False)
+
+            # Get a list of files changed between the two hashes
+            #files_changed = self._files_changed_in_git_diff(
+            #    buggy_hash, clean_hash)
+            # ------------------------------------------------------------------
+            # ---------------------- BUGGY FILES METRICS -----------------------
+            # ------------------------------------------------------------------
+            # Checkout the buggy commit hash
+            self._os_cmd(
+                "git reset --hard {}".format(buggy_hash.id.hex), verbose=False)
+
+            # Create a understand file for this hash
+            self._create_und_files("buggy")
+            #print(self.buggy_und_file)
+            db_buggy = und.open(str(self.buggy_und_file))
+            for file in db_buggy.ents("Class"):
+                metrics = file.metric(file.metrics())
+                metrics["Name"] = file.longname()
+                metrics["commit"] = buggy_hash.id.hex
+                self.metrics_dataframe = self.metrics_dataframe.append(
+                        pd.Series(metrics), ignore_index=True)
+            # Purge und file
+            db_buggy.close()
+            #break
+            self._os_cmd("rm {}".format(str(self.buggy_und_file)))
+            #print(self.metrics_dataframe)
+
+            #printProgressBar(i, len(self.buggy_clean_pairs),
+            #                 prefix='Progress:', suffix='Complete', length=50)
+        return self.metrics_dataframe
+
+    def get_release_metrics(self):
+        """
+        Use the understand tool's API to generate metrics
+
+        Notes
+        -----
+        + For every clean and buggy pairs of hashed, do the following:
+            1. Get the diff of the files changes
+            2. Checkout the snapshot at the buggy commit
+            3. Compute the metrics of the files in that commit.
+            4. Next, checkout the snapshot at the clean commit.
+            5. Compute the metrics of the files in that commit.
+        """
+
+        self.metrics_dataframe = pd.DataFrame()
+        print(len(self.commits))
+        for i in range(len(self.commits)):
+            buggy_hash = self.commits[i]
+            print(i,(buggy_hash.id.hex))
+            # Go the the cloned project path
+            os.chdir(self.repo_path)
+            # Checkout the master branch first, we'll need this
+            # to find what files have changed.
+            self._os_cmd("git reset --hard master", verbose=False)
+
+            # Get a list of files changed between the two hashes
+            #files_changed = self._files_changed_in_git_diff(
+            #    buggy_hash, clean_hash)
+            # ------------------------------------------------------------------
+            # ---------------------- BUGGY FILES METRICS -----------------------
+            # ------------------------------------------------------------------
+            # Checkout the buggy commit hash
+            self._os_cmd(
+                "git reset --hard {}".format(buggy_hash.id.hex), verbose=False)
+
+            # Create a understand file for this hash
+            self._create_und_files("buggy")
+            #print(self.buggy_und_file)
+            db_buggy = und.open(str(self.buggy_und_file))
+            for file in db_buggy.ents("Class"):
+                metrics = file.metric(file.metrics())
+                metrics["Name"] = file.longname()
+                metrics["commit"] = buggy_hash.id.hex
+                self.metrics_dataframe = self.metrics_dataframe.append(
+                        pd.Series(metrics), ignore_index=True)
+            # Purge und file
+            db_buggy.close()
+            #break
+            self._os_cmd("rm {}".format(str(self.buggy_und_file)))
+            #print(self.metrics_dataframe)
+
+            #printProgressBar(i, len(self.buggy_clean_pairs),
+            #                 prefix='Progress:', suffix='Complete', length=50)
+        return self.metrics_dataframe
+
+    def get_defective_pair_metrics(self):
+        """
+        Use the understand tool's API to generate metrics
+
+        Notes
+        -----
+        + For every clean and buggy pairs of hashed, do the following:
+            1. Get the diff of the files changes
+            2. Checkout the snapshot at the buggy commit
+            3. Compute the metrics of the files in that commit.
+            4. Next, checkout the snapshot at the clean commit.
+            5. Compute the metrics of the files in that commit.
+        """
+
+        self.metrics_dataframe = pd.DataFrame()
         print(len(self.buggy_clean_pairs))
         for i in range(len(self.buggy_clean_pairs)):
             buggy_hash = self.buggy_clean_pairs[i][0]
             clean_hash = self.buggy_clean_pairs[i][1]
             files_changed = self.buggy_clean_pairs[i][2]
+            if len((files_changed)) == 0:
+                continue
             print(i,(buggy_hash.id.hex, clean_hash.id.hex))
             # Go the the cloned project path
             os.chdir(self.repo_path)
@@ -272,7 +386,7 @@ class MetricsGetter(object):
             db_clean.close()
             # Purge und file
             self._os_cmd("rm {}".format(str(self.clean_und_file)))
-            #print(self.metrics_dataframe)
+            print(self.metrics_dataframe)
 
             #printProgressBar(i, len(self.buggy_clean_pairs),
             #                 prefix='Progress:', suffix='Complete', length=50)
