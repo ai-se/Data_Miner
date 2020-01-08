@@ -104,7 +104,7 @@ venv.bak/
 .mypy_cache/
 
 #.csv
-*.csv
+#*.csv
 /*.csv
 /*.pkl
 /*.udb
@@ -112,3 +112,4 @@ venv.bak/
 *.udb
 
 github/data/
+github/API_V3/commit_guru/Data/
