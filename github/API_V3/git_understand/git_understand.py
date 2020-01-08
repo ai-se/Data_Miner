@@ -22,7 +22,25 @@ import os
 from utils.utils import utils
 import platform
 from os.path import dirname as up
+from multiprocessing import Pool, cpu_count
+import threading
+from multiprocessing import Queue
+from threading import Thread
 #from main.utils.utils.utils import printProgressBar
+
+class ThreadWithReturnValue(Thread):
+    def __init__(self, group=None, target=None, name=None,
+                 args=(), kwargs={}, Verbose=None):
+        Thread.__init__(self, group, target, name, args, kwargs)
+        self._return = None
+    def run(self):
+        #print(type(self._target))
+        if self._target is not None:
+            self._return = self._target(*self._args,
+                                                **self._kwargs)
+    def join(self, *args):
+        Thread.join(self, *args)
+        return self._return
 
 
 class MetricsGetter(object):
@@ -44,18 +62,22 @@ class MetricsGetter(object):
         self.repo_lang = repo_lang
         self.repo_obj = git2repo.git2repo(self.repo_url,self.repo_name)
         self.repo = self.repo_obj.clone_repo()
+        self.root_dir = os.getcwd()
         if platform.system() == 'Darwin' or platform.system() == 'Linux':
             self.repo_path = up(os.getcwd()) + '/temp_repo/' + self.repo_name
             self.file_path = up(os.getcwd()) + '/data/commit/' + self.repo_name + '_commit.pkl'
             self.committed_file = up(os.getcwd()) + '/data/committed_files/' + self.repo_name + '_committed_file.pkl'
+            self.und_file = up(os.getcwd()) + '/data/understand_files/' + self.repo_name + '_understand.csv'
         else:
             self.repo_path = up(os.getcwd()) + '\\temp_repo\\' + self.repo_name
             self.file_path = up(os.getcwd()) + '\\data\\commit\\' + self.repo_name + '_commit.pkl'
             self.committed_file = up(os.getcwd()) + '\\data\\committed_files\\' + self.repo_name + '_committed_file.pkl'
         self.buggy_clean_pairs = self.read_commits()
+        self.buggy_clean_pairs = self.buggy_clean_pairs[0:10]
         self.repo_path = self.repo_obj.repo_path
         # Reference current directory, so we can go back after we are done.
         self.cwd = Path(os.getcwd())
+        self.cores = cpu_count()
 
         # Generate path to store udb files
         self.udb_path = self.cwd.joinpath(".temp", "udb")
@@ -72,7 +94,7 @@ class MetricsGetter(object):
     def read_commits(self):
         df = pd.read_pickle(self.file_path)
         df_committed_file = pd.read_pickle(self.committed_file)
-        #df = df[df['buggy'] == 1]
+        df = df[df['buggy'] == True]
         df_commits = df.drop(labels = ['message','buggy'], axis = 1)
         self.commits = []
         commits = []
@@ -315,8 +337,8 @@ class MetricsGetter(object):
             5. Compute the metrics of the files in that commit.
         """
 
-        self.metrics_dataframe = pd.DataFrame()
-        print(len(self.buggy_clean_pairs))
+        metrics_dataframe = pd.DataFrame()
+        # print(len(commit_pairs))
         for i in range(len(self.buggy_clean_pairs)):
             buggy_hash = self.buggy_clean_pairs[i][0]
             clean_hash = self.buggy_clean_pairs[i][1]
@@ -349,13 +371,22 @@ class MetricsGetter(object):
                 # print directory name
                 #print(file,file.longname(), file.kind())
                 r = re.compile(str(file.longname()))
+                # print(file.longname())
                 newlist = list(filter(r.search, list(set(files_changed))))
                 #print(newlist)
                 if len(newlist) > 0:
                     metrics = file.metric(file.metrics())
+                    metrics["commit_hash"] = buggy_hash.id.hex
                     metrics["Name"] = file.longname()
                     metrics["Bugs"] = 1
-                    self.metrics_dataframe = self.metrics_dataframe.append(
+                    metrics_dataframe = metrics_dataframe.append(
+                        pd.Series(metrics), ignore_index=True)
+                else:
+                    metrics = file.metric(file.metrics())
+                    metrics["commit_hash"] = buggy_hash.id.hex
+                    metrics["Name"] = file.longname()
+                    metrics["Bugs"] = 0
+                    metrics_dataframe = metrics_dataframe.append(
                         pd.Series(metrics), ignore_index=True)
             # Purge und file
             db_buggy.close()
@@ -379,18 +410,30 @@ class MetricsGetter(object):
                 if len(newlist) > 0:
                     metrics = file.metric(file.metrics())
                     #print(metrics)
+                    metrics["commit_hash"] = clean_hash.id.hex
                     metrics["Name"] = file.name()
                     metrics["Bugs"] = 0
-                    self.metrics_dataframe = self.metrics_dataframe.append(
+                    metrics_dataframe = metrics_dataframe.append(
+                        pd.Series(metrics), ignore_index=True)
+                else:
+                    metrics = file.metric(file.metrics())
+                    #print(metrics)
+                    metrics["commit_hash"] = clean_hash.id.hex
+                    metrics["Name"] = file.name()
+                    metrics["Bugs"] = 0
+                    metrics_dataframe = metrics_dataframe.append(
                         pd.Series(metrics), ignore_index=True)
             db_clean.close()
             # Purge und file
             self._os_cmd("rm {}".format(str(self.clean_und_file)))
-            print(self.metrics_dataframe)
+            # print(self.metrics_dataframe)
 
             #printProgressBar(i, len(self.buggy_clean_pairs),
             #                 prefix='Progress:', suffix='Complete', length=50)
-        return self.metrics_dataframe
+        os.chdir(self.root_dir)
+        metrics_dataframe.to_csv(self.und_file,index=False)
+        return metrics_dataframe
+
 
     def clean_rows(self):
         """

@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "script.py", line 7, in <module>
+    from cas_manager import *
+  File "/Users/suvodeepmajumder/Documents/AI4SE/Commit_guru/CAS_CodeRepoAnalyzer/cas_manager.py", line 9, in <module>
+    from analyzer.analyzer import *
+  File "/Users/suvodeepmajumder/Documents/AI4SE/Commit_guru/CAS_CodeRepoAnalyzer/analyzer/analyzer.py", line 10, in <module>
+    from orm.repository import *
+  File "/Users/suvodeepmajumder/Documents/AI4SE/Commit_guru/CAS_CodeRepoAnalyzer/orm/repository.py", line 8, in <module>
+    from db import *
+  File "/Users/suvodeepmajumder/Documents/AI4SE/Commit_guru/CAS_CodeRepoAnalyzer/db.py", line 20, in <module>
+    config['db']['database'], pool_size=100, max_overflow=0) # the value of pool_size has to be less than the max_connections to postgres.
+  File "/Users/suvodeepmajumder/Conda/anaconda3/lib/python3.7/site-packages/sqlalchemy/engine/__init__.py", line 423, in create_engine
+    return strategy.create(*args, **kwargs)
+  File "/Users/suvodeepmajumder/Conda/anaconda3/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 87, in create
+    dbapi = dialect_cls.dbapi(**dbapi_args)
+  File "/Users/suvodeepmajumder/Conda/anaconda3/lib/python3.7/site-packages/sqlalchemy/dialects/postgresql/pypostgresql.py", line 64, in dbapi
+    from postgresql.driver import dbapi20
+ModuleNotFoundError: No module named 'postgresql'

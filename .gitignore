@@ -106,3 +106,9 @@ venv.bak/
 #.csv
 *.csv
 /*.csv
+/*.pkl
+/*.udb
+*.pkl
+*.udb
+
+github/data/

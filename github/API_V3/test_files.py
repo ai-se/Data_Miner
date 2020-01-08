@@ -32,12 +32,11 @@ if __name__ == "__main__":
             git_url = project_list.loc[i, 'git_url']
             api_base_url = project_list.loc[i, 'api_base_url']
             repo_name = project_list.loc[i, 'repo_name']
-            # git_data = git2data.git2data(access_token,repo_owner,source_type,git_url,api_base_url,repo_name)
-            git_data = git_commit_info.git2data(access_token, repo_owner, source_type, git_url, api_base_url, repo_name)
-            print(git_data, type(git_data))
+            git_data = git2data.git2data(access_token,repo_owner,source_type,git_url,api_base_url,repo_name)
+            #git_data = git_commit_info.git2data(access_token, repo_owner, source_type, git_url, api_base_url, repo_name)
             git_data.create_data()
         except ValueError as e:
             print("Exception occured for ", project_list.loc[i, 'git_url'])
             print(e)
-    df = pd.read_pickle('C:/Users/prana/Desktop/AI-SE_RA_Repo/Data_Miner/github/data/release/github-plugin_release.pkl')
-    print(df)
+    # df = pd.read_pickle('C:/Users/prana/Desktop/AI-SE_RA_Repo/Data_Miner/github/data/release/github-plugin_release.pkl')
+    # print(df)
