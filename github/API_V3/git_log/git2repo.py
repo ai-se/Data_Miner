@@ -124,14 +124,15 @@ class git2repo(object):
         else:
             deldir = self.repo_path + '\\.git\\objects\\pack'
         delFiles = [f for f in listdir(deldir) if isfile(join(deldir, f))]
-        for i in delFiles:
-            if platform.system() == 'Darwin' or platform.system() == 'Linux':
-                file_name = deldir + '/' + i
-            else:
-                file_name = deldir + '\\' + i
-            os.chmod(file_name, 0o777)
-        if os.path.exists(self.repo_path):
-            shutil.rmtree(self.repo_path,ignore_errors=True)
+        if len(delFiles) > 0:   
+            for i in delFiles:
+                if platform.system() == 'Darwin' or platform.system() == 'Linux':
+                    file_name = deldir + '/' + i
+                else:
+                    file_name = deldir + '\\' + i
+                os.chmod(file_name, 0o777)
+            if os.path.exists(self.repo_path):
+                shutil.rmtree(self.repo_path,ignore_errors=True)
             
     def branch_remove(self,repo,path):
         repo.free()

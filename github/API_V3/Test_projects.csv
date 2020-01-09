@@ -1,2 +1,2 @@
 repo_name,repo_owner,git_url,api_base_url,source_type,access_token,lang
-thingsboard,thingsboard,https://github.com/thingsboard/thingsboard.git,http://api.github.com,github_repo,,java
+thingsboard,thingsboard,https://github.com/thingsboard/thingsboard.git,http://api.github.com,github_repo,f7dc44be44bfc67c0ff1476518580182887eda22,java
