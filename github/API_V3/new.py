@@ -46,6 +46,8 @@ if __name__ == "__main__":
       understand_source.append([1,repo_name,git_url,last_analyzed])
       understand_source_df = pd.DataFrame(understand_source,columns = ['id','name','url','last_analyzed'])
       git_data = git2data.git2data(access_token,repo_owner,source_type,git_url,api_base_url,repo_name)
+      cas_manager = CAS_Manager(understand_source_df)
+      cas_manager.start()
       git_data.create_data()
       print(understand_source_df)
       df_commit = pd.read_pickle(up(code_path) + '/data/commit/' + repo_name + '_commit.pkl')
