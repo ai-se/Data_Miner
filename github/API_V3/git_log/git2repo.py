@@ -190,7 +190,7 @@ class git2repo(object):
                 commit_parent = commit.parent_ids[0].hex
             commit_objs.append(commit)
             commits.append([commit_id,commit_message,commit_parent,commits_buggy,branch,commit.commit_time])
-        #print(commit_objs)
+        print(commit_objs)
         self.repos.append([repo,path]) 
         return commits,commit_objs
 
