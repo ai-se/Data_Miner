@@ -1,2 +1,2 @@
 repo_name,repo_owner,git_url,api_base_url,source_type,access_token,lang
-apollo-android,apollographql,https://github.com/apollographql/apollo-android.git,http://api.github.com,github_repo,eb2dd66e1997325bf907aa10b60d5e39abfc8113,java
+apollo-android,apollographql,https://github.com/apollographql/apollo-android.git,http://api.github.com,github_repo,,java

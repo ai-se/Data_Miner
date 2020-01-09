@@ -26,10 +26,10 @@ class CAS_Manager(threading.Thread):
 
 	def __init__(self,source_df):
 		"""Constructor"""
-		threading.Thread.__init__(self)
-		numOfWorkers = 4
-		self.workQueue = ThreadPool(numOfWorkers)
-		self.modelQueue = Queue()
+		# threading.Thread.__init__(self)
+		# numOfWorkers = 4
+		# self.workQueue = ThreadPool(numOfWorkers)
+		# self.modelQueue = Queue()
 		# self.repos = pd.read_csv('repos.csv')
 		self.repos = source_df
 		self.repos = self.repos.replace({pd.np.nan: None})
@@ -41,7 +41,8 @@ class CAS_Manager(threading.Thread):
 		for i in range(self.repos.shape[0]):
 			repo = self.repos.iloc[i]
 			logging.info("Adding repo " + repo['name'] + " to work queue for ingesting")
-			self.workQueue.add_task(ingest,repo)
+			#self.workQueue.add_task(ingest,repo)
+			ingest(repo)
 
 		#session.close()
 
@@ -55,16 +56,17 @@ class CAS_Manager(threading.Thread):
 			if repo['last_analyzed'] is not None and repo['last_analyzed'] < refresh_date:
 				continue
 			logging.info("Adding repo " + repo['name']+ " to work queue for analyzing.")
-			self.workQueue.add_task(analyze, repo)
+			#self.workQueue.add_task(analyze, repo)
+			analyze(repo)
 			self.repos.loc[i,'last_analyzed'] = datetime.datetime.now()
 
 	def run(self):
 
 		self.checkIngestion()
-		self.workQueue.wait_completion()
+		# self.workQueue.wait_completion()
 		self.checkAnalyzation()
-		self.workQueue.wait_completion()
-		self.repos.to_csv('repos.csv',index=False)
+		# self.workQueue.wait_completion()
+		# self.repos.to_csv('repos.csv',index=False)
 		# while(True):
 		# 	### --- Check repository table if there is any work to be done ---  ###
 		# 	self.checkIngestion()
@@ -73,37 +75,3 @@ class CAS_Manager(threading.Thread):
 		# 	# self.checkModel()
 		# 	# self.checkBuildModel()
 		# 	time.sleep(10)
-
-class Worker(threading.Thread):
-	"""Thread executing tasks from a given tasks queue"""
-	def __init__(self, tasks):
-		threading.Thread.__init__(self)
-		self.tasks = tasks
-		self.daemon = True
-		self.start()
-	
-	def run(self):
-
-		while True:
-
-			func, args, kargs = self.tasks.get()
-			try:
-				func(*args, **kargs)
-			except Exception as e:
-				print(e)
-
-			self.tasks.task_done()
-
-class ThreadPool:
-	"""Pool of threads consuming tasks from a queue"""
-	def __init__(self, num_threads):
-		self.tasks = Queue(num_threads)
-		for _ in range(num_threads): Worker(self.tasks)
-
-	def add_task(self, func, *args, **kargs):
-		"""Add a task to the queue"""
-		self.tasks.put((func, args, kargs))
-
-	def wait_completion(self):
-		"""Wait for completion of all the tasks in the queue"""
-		self.tasks.join()
