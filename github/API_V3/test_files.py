@@ -1,6 +1,6 @@
 from __future__ import division
 from api import git_access,api_access
-from git_understand import git_understand as git_understand
+from git_understand import git_understand
 from git_log import git2repo
 import json
 import pandas as pd
@@ -28,23 +28,23 @@ if __name__ == "__main__":
     for i in range(project_list.shape[0]):
         try:
             print("I am here")
-            understand_source = []
-            last_analyzed = None
-            access_token = project_list.loc[i,'access_token']
-            repo_owner = project_list.loc[i,'repo_owner']
-            source_type = project_list.loc[i,'source_type']
-            git_url = project_list.loc[i,'git_url']
-            api_base_url = project_list.loc[i,'api_base_url']
-            repo_name = project_list.loc[i,'repo_name']
-            repo_lang = project_list.loc[i,'lang']
-            understand_source.append([1,repo_name,git_url,last_analyzed])
-            understand_source_df = pd.DataFrame(understand_source,columns = ['id','name','url','last_analyzed'])
-            cas_manager = CAS_Manager(understand_source_df)
-            cas_manager.start()
-            git_data = git2data.git2data(access_token,repo_owner,source_type,git_url,api_base_url,repo_name)
-            #git_data = release_mine.git2data(access_token,repo_owner,source_type,git_url,api_base_url,repo_name)
-            git_data.create_data()
-            os.chdir(code_path)
+            #understand_source = []
+            #last_analyzed = None
+            #access_token = project_list.loc[i,'access_token']
+            #repo_owner = project_list.loc[i,'repo_owner']
+            #source_type = project_list.loc[i,'source_type']
+            #git_url = project_list.loc[i,'git_url']
+            #api_base_url = project_list.loc[i,'api_base_url']
+            #repo_name = project_list.loc[i,'repo_name']
+            #repo_lang = project_list.loc[i,'lang']
+            #understand_source.append([1,repo_name,git_url,last_analyzed])
+            #understand_source_df = pd.DataFrame(understand_source,columns = ['id','name','url','last_analyzed'])
+            #cas_manager = CAS_Manager(understand_source_df)
+            #cas_manager.start()
+            #git_data = git2data.git2data(access_token,repo_owner,source_type,git_url,api_base_url,repo_name)
+            ##git_data = release_mine.git2data(access_token,repo_owner,source_type,git_url,api_base_url,repo_name)
+            #git_data.create_data()
+            #os.chdir(code_path)
             df_commit = pd.read_pickle(up(code_path) + '/data/commit/' + repo_name + '_commit.pkl')
             df_commit_guru = pd.read_csv(up(code_path) + '/data/commit_guru/' + repo_name + '.csv')
             df_commit_guru_subset = df_commit_guru[['commit_hash','contains_bug']].fillna(False)
