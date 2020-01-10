@@ -1,2 +1,2 @@
 repo_name,repo_owner,git_url,api_base_url,source_type,access_token,lang
-docker-java,docker-java,https://github.com/docker-java/docker-java.git,http://api.github.com,github_repo,e4fd899aaa5ba2a03e03f081a2cb219b13d38648,java
+docker-java,docker-java,https://github.com/docker-java/docker-java.git,http://api.github.com,github_repo,f664ade18b42e4332da01839664a5732b8c9be5c,java
