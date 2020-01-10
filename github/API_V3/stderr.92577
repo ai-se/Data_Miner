@@ -1,0 +1,27 @@
+ModuleCmd_Load.c(213):ERROR:105: Unable to locate a modulefile for 'python'
+2020-01-09 17:40:40 INFO: Adding repo docker-java to work queue for ingesting
+2020-01-09 17:40:40 INFO: A worker is starting scan repository: docker-java
+2020-01-09 17:40:40 INFO: Git cloning repo: docker-java
+fatal: unable to access 'https://github.com/docker-java/docker-java.git/': Failed connect to github.com:443; Connection timed out
+Traceback (most recent call last):
+  File "new.py", line 52, in <module>
+    cas_manager.run()
+  File "/gpfs_common/share02/tjmenzie/smajumd3/AI4SE/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 65, in run
+    self.checkIngestion()
+  File "/gpfs_common/share02/tjmenzie/smajumd3/AI4SE/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 45, in checkIngestion
+    ingest(repo)
+  File "/gpfs_common/share02/tjmenzie/smajumd3/AI4SE/Data_Miner/github/API_V3/commit_guru/ingester/ingester.py", line 38, in ingest
+    ingestRepo(repo_id)
+  File "/gpfs_common/share02/tjmenzie/smajumd3/AI4SE/Data_Miner/github/API_V3/commit_guru/ingester/ingester.py", line 23, in ingestRepo
+    local_repo.sync()
+  File "/gpfs_common/share02/tjmenzie/smajumd3/AI4SE/Data_Miner/github/API_V3/commit_guru/ingester/localrepository.py", line 43, in sync
+    firstSync = self.syncRepoFiles()
+  File "/gpfs_common/share02/tjmenzie/smajumd3/AI4SE/Data_Miner/github/API_V3/commit_guru/ingester/localrepository.py", line 66, in syncRepoFiles
+    self.adapter.clone(self.adapter, self.repo)
+  File "/gpfs_common/share02/tjmenzie/smajumd3/AI4SE/Data_Miner/github/API_V3/commit_guru/ingester/git.py", line 362, in clone
+    cwd = repo_dir ) )
+  File "/gpfs_common/share02/tjmenzie/smajumd3/miniconda/lib/python3.7/subprocess.py", line 395, in check_output
+    **kwargs).stdout
+  File "/gpfs_common/share02/tjmenzie/smajumd3/miniconda/lib/python3.7/subprocess.py", line 487, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'git clone https://github.com/docker-java/docker-java.git ./docker-java' returned non-zero exit status 128.

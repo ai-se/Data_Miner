@@ -1,2 +1,2 @@
 repo_name,repo_owner,git_url,api_base_url,source_type,access_token,lang
-apollo-android,apollographql,https://github.com/apollographql/apollo-android.git,http://api.github.com,github_repo,,java
+docker-java,docker-java,https://github.com/docker-java/docker-java.git,http://api.github.com,github_repo,e4fd899aaa5ba2a03e03f081a2cb219b13d38648,java

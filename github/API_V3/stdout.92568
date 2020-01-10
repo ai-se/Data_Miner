@@ -1,0 +1,60 @@
+its working
+     repo_name   repo_owner  ...                              access_token  lang
+0  docker-java  docker-java  ...  e4fd899aaa5ba2a03e03f081a2cb219b13d38648  java
+
+[1 rows x 7 columns]
+I am here
+giturl: https://github.com/docker-java/docker-java.git
+http://api.github.com/repos/docker-java/docker-java/issues?state=all&page=1&per_page=100
+error HTTPConnectionPool(host='api.github.com', port=80): Max retries exceeded with url: /repos/docker-java/docker-java/issues?state=all&page=1&per_page=100 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x2b8fac88d9d0>: Failed to establish a new connection: [Errno 110] Connection timed out'))
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@n2c3-9>
+Subject: Job 92568: <#!/bin/tcsh;#BSUB -W 6000;#BSUB -n 8;#BSUB -R span[ptile=8];#BSUB -o stdout.%J;#BSUB -e stderr.%J; module load python;python new.py> in cluster <henry2> Done
+
+Job <#!/bin/tcsh;#BSUB -W 6000;#BSUB -n 8;#BSUB -R span[ptile=8];#BSUB -o stdout.%J;#BSUB -e stderr.%J; module load python;python new.py> was submitted from host <login04> by user <smajumd3> in cluster <henry2> at Thu Jan  9 17:20:00 2020
+Job was executed on host(s) <8*n2c3-9>, in queue <long>, as user <smajumd3> in cluster <henry2> at Thu Jan  9 17:20:02 2020
+</home/smajumd3> was used as the home directory.
+</share/tjmenzie/smajumd3/AI4SE/Data_Miner/github/API_V3> was used as the working directory.
+Started at Thu Jan  9 17:20:02 2020
+Terminated at Thu Jan  9 17:22:13 2020
+Results reported at Thu Jan  9 17:22:13 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/tcsh
+#BSUB -W 6000
+#BSUB -n 8
+#BSUB -R span[ptile=8]
+#BSUB -o stdout.%J
+#BSUB -e stderr.%J
+
+module load python
+python new.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   3.56 sec.
+    Max Memory :                                 131.27 MB
+    Average Memory :                             131.27 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   139 sec.
+    Turnaround time :                            133 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <stderr.92568> for stderr output of this job.
+

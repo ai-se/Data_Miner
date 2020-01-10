@@ -1,0 +1,65 @@
+its working
+     repo_name   repo_owner  ...                              access_token  lang
+0  docker-java  docker-java  ...  e4fd899aaa5ba2a03e03f081a2cb219b13d38648  java
+
+[1 rows x 7 columns]
+I am here
+giturl: https://github.com/docker-java/docker-java.git
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+The repo is: docker-java
+This is the current path: /gpfs_common/share02/tjmenzie/smajumd3/AI4SE/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/docker-java
+error Command 'git clone https://github.com/docker-java/docker-java.git ./docker-java' returned non-zero exit status 128.
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@n2c3-9>
+Subject: Job 92576: <#!/bin/tcsh;#BSUB -W 6000;#BSUB -n 8;#BSUB -R span[ptile=8];#BSUB -o stdout.%J;#BSUB -e stderr.%J; module load python;python new.py> in cluster <henry2> Done
+
+Job <#!/bin/tcsh;#BSUB -W 6000;#BSUB -n 8;#BSUB -R span[ptile=8];#BSUB -o stdout.%J;#BSUB -e stderr.%J; module load python;python new.py> was submitted from host <login04> by user <smajumd3> in cluster <henry2> at Thu Jan  9 17:35:41 2020
+Job was executed on host(s) <8*n2c3-9>, in queue <long>, as user <smajumd3> in cluster <henry2> at Thu Jan  9 17:35:45 2020
+</home/smajumd3> was used as the home directory.
+</share/tjmenzie/smajumd3/AI4SE/Data_Miner/github/API_V3> was used as the working directory.
+Started at Thu Jan  9 17:35:45 2020
+Terminated at Thu Jan  9 17:37:56 2020
+Results reported at Thu Jan  9 17:37:56 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/tcsh
+#BSUB -W 6000
+#BSUB -n 8
+#BSUB -R span[ptile=8]
+#BSUB -o stdout.%J
+#BSUB -e stderr.%J
+
+module load python
+python new.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   3.75 sec.
+    Max Memory :                                 136.39 MB
+    Average Memory :                             136.39 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                7
+    Run time :                                   158 sec.
+    Turnaround time :                            135 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <stderr.92576> for stderr output of this job.
+
