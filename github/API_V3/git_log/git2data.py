@@ -32,6 +32,7 @@ class git2data(object):
             os.makedirs(self.data_path)
         self.git_client = api_access.git_api_access(access_token,repo_owner,source_type,git_url,api_base_url,repo_name)
         self.git_repo = git2repo.git2repo(git_url,repo_name)
+        print('giturl:',git_url)
         self.repo = self.git_repo.clone_repo()
         
     def get_api_data(self):

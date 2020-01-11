@@ -73,7 +73,7 @@ class MetricsGetter(object):
             self.file_path = up(os.getcwd()) + '\\data\\commit\\' + self.repo_name + '_commit.pkl'
             self.committed_file = up(os.getcwd()) + '\\data\\committed_files\\' + self.repo_name + '_committed_file.pkl'
         self.buggy_clean_pairs = self.read_commits()
-        self.buggy_clean_pairs = self.buggy_clean_pairs[0:10]
+        #self.buggy_clean_pairs = self.buggy_clean_pairs[0:10]
         self.repo_path = self.repo_obj.repo_path
         # Reference current directory, so we can go back after we are done.
         self.cwd = Path(os.getcwd())
@@ -166,7 +166,7 @@ class MetricsGetter(object):
             cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages C++ add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         elif self.repo_lang == "java":
-            cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages Java add {} analyze {}".format(
+            cmd = "und create -languages Java add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         out, err = self._os_cmd(cmd)
 
@@ -431,6 +431,7 @@ class MetricsGetter(object):
             #printProgressBar(i, len(self.buggy_clean_pairs),
             #                 prefix='Progress:', suffix='Complete', length=50)
         os.chdir(self.root_dir)
+        print(self.und_file)
         metrics_dataframe.to_csv(self.und_file,index=False)
         return metrics_dataframe
 

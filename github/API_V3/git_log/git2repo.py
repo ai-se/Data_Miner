@@ -124,6 +124,7 @@ class git2repo(object):
         else:
             deldir = self.repo_path + '\\.git\\objects\\pack'
         delFiles = [f for f in listdir(deldir) if isfile(join(deldir, f))]
+        print(delFiles)
         if len(delFiles) > 0:   
             for i in delFiles:
                 if platform.system() == 'Darwin' or platform.system() == 'Linux':
@@ -191,7 +192,7 @@ class git2repo(object):
                 commit_parent = commit.parent_ids[0].hex
             commit_objs.append(commit)
             commits.append([commit_id,commit_message,commit_parent,commits_buggy,branch,commit.commit_time])
-        print(commit_objs)
+        #print(commit_objs)
         self.repos.append([repo,path]) 
         return commits,commit_objs
 
@@ -203,6 +204,7 @@ class git2repo(object):
         commits = []
         commit_objs = []
         branches = self.get_branches()
+        #print("at git commit objects")
         self.repo_remove()
         for branch in branches:
             branch= branch.split("/",1)[1]
