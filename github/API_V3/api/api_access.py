@@ -104,6 +104,21 @@ class git_api_access(object):
             user_mapping.append([user_name,user_logon])  
         return user_mapping
     
+    def get_lang(self):
+        #url = self.api_base_url + '/languages'
+        url_type = 'languages'
+        self.create_base_url(url_type)
+        url = self.base_url
+        langs = []
+        paged_url = url
+        print(paged_url)
+        res = self.client.get(paged_url)
+        x = json.loads(res.content)
+        for i in x.keys():
+            lang = i
+            langs.append(lang)  
+        return langs
+    
     def get_issues(self,url_type,url_details = ''):
         self.create_base_url(url_type)
         self.create_advanced_url(url_details)
