@@ -370,42 +370,42 @@ class MetricsGetter(object):
         return metrics_dataframe
 
 
-    def clean_rows(self):
-        """
-        Remove duplicate rows
-        """
+    # def clean_rows(self):
+    #     """
+    #     Remove duplicate rows
+    #     """
 
-        # Select columns which are considered for duplicate removal
-        metric_cols = [
-            col for col in self.metrics_dataframe.columns if not col in [
-                "Name", "Bugs"]]
+    #     # Select columns which are considered for duplicate removal
+    #     metric_cols = [
+    #         col for col in self.metrics_dataframe.columns if not col in [
+    #             "Name", "Bugs"]]
 
-        # Drop duplicate rows
-        self.deduped_metrics = self.metrics_dataframe.drop_duplicates(
-            subset=metric_cols, keep=False)
+    #     # Drop duplicate rows
+    #     self.deduped_metrics = self.metrics_dataframe.drop_duplicates(
+    #         subset=metric_cols, keep=False)
 
-        # Rearrange columns
-        self.metrics_dataframe = self.metrics_dataframe[
-            ["Name"]+metric_cols+["Bugs"]]
+    #     # Rearrange columns
+    #     self.metrics_dataframe = self.metrics_dataframe[
+    #         ["Name"]+metric_cols+["Bugs"]]
 
-    def save_to_csv(self):
-        """
-        Save the metrics dataframe to CSV
-        """
-        # Determine the path to save file
-        save_path = self.cwd.joinpath('datasets', self.repo_name+".csv")
-        # Save the dataframe (no index column)
-        self.metrics_dataframe.to_csv(save_path, index=False)
+    # def save_to_csv(self):
+    #     """
+    #     Save the metrics dataframe to CSV
+    #     """
+    #     # Determine the path to save file
+    #     save_path = self.cwd.joinpath('datasets', self.repo_name+".csv")
+    #     # Save the dataframe (no index column)
+    #     self.metrics_dataframe.to_csv(save_path, index=False)
 
-    def __exit__(self, exception_type, exception_value, traceback):
-        """
-        Actions to take on exit.
+    # def __exit__(self, exception_type, exception_value, traceback):
+    #     """
+    #     Actions to take on exit.
 
-        Notes
-        -----
-        Go back up one level, and then remove the cloned repo. We're done here.
-        """
-        os.chdir(self.cwd)
-        self._os_cmd("rm -rf {}/*und".format(self.udb_path))
-        # Optional -- remove the clone repo to save some space.
-        # self._os_cmd("rm -rf {}".format(self.source_path))
+    #     Notes
+    #     -----
+    #     Go back up one level, and then remove the cloned repo. We're done here.
+    #     """
+    #     os.chdir(self.cwd)
+    #     self._os_cmd("rm -rf {}/*und".format(self.udb_path))
+    #     # Optional -- remove the clone repo to save some space.
+    #     # self._os_cmd("rm -rf {}".format(self.source_path))

@@ -1,6 +1,0 @@
-ModuleCmd_Load.c(213):ERROR:105: Unable to locate a modulefile for 'python'
-2020-01-09 17:35:48 INFO: Adding repo docker-java to work queue for ingesting
-2020-01-09 17:35:48 INFO: A worker is starting scan repository: docker-java
-2020-01-09 17:35:48 INFO: Git cloning repo: docker-java
-fatal: unable to access 'https://github.com/docker-java/docker-java.git/': Failed connect to github.com:443; Connection timed out
-/home/smajumd3/scitools
