@@ -46,4 +46,5 @@ def _os_cmd(cmd, verbose=False):
             print(err)
         return out, err
 
+_os_cmd("ls -all", verbose=True)
 _os_cmd("git clone https://github.com/docker-java/docker-java.git", verbose=True)

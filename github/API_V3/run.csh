@@ -6,4 +6,4 @@
 #BSUB -e stderr.%J
 
 module load python
-python new.py
+python new_1.py

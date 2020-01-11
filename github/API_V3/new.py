@@ -35,7 +35,7 @@ if __name__ == "__main__":
   print(project_list)
   for i in range(project_list.shape[0]):
     try:
-      print("I am here")
+      print("I am here 1")
       understand_source = []
       last_analyzed = None
       access_token = project_list.loc[i,'access_token']
@@ -45,12 +45,15 @@ if __name__ == "__main__":
       api_base_url = project_list.loc[i,'api_base_url']
       repo_name = project_list.loc[i,'repo_name']
       repo_lang = project_list.loc[i,'lang']
+      print("I am here 2")
       understand_source.append([1,repo_name,git_url,last_analyzed])
       understand_source_df = pd.DataFrame(understand_source,columns = ['id','name','url','last_analyzed'])
       git_data = git2data.git2data(access_token,repo_owner,source_type,git_url,api_base_url,repo_name)
+      print("I am here 3")
       # cas_manager = CAS_Manager(understand_source_df)
       # cas_manager.run()
       git_data.create_data()
+      print("I am here 4")
       print(understand_source_df)
       # os.chdir(code_path)
       # df_commit = pd.read_pickle(up(code_path) + '/data/commit/' + repo_name + '_commit.pkl')
