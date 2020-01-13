@@ -210,7 +210,7 @@ class MetricsGetter(object):
         elif self.repo_lang == "C":
             cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages C++ add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
-        elif self.repo_lang == "java":
+        elif self.repo_lang == "Java":
             cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages Java add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         out, err = self._os_cmd(cmd)
