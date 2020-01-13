@@ -136,6 +136,7 @@ class MetricsGetter(object):
 
     def read_commits(self):
         df = pd.read_csv(self.file_path)
+        print(df)
         df = df[df['contains_bug'] == True]
         df = df.reset_index('drop' == True)
         self.commits = []
@@ -161,7 +162,7 @@ class MetricsGetter(object):
         return commits
 
     @staticmethod
-    def _os_cmd(cmd, verbose=False):
+    def _os_cmd(cmd, verbose=True):
         """
         Run a command on the shell
 
@@ -210,9 +211,10 @@ class MetricsGetter(object):
         elif self.repo_lang == "C":
             cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages C++ add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
-        elif self.repo_lang == "java":
-            cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages Java add {} analyze {}".format(
+        elif self.repo_lang == "Java":
+            cmd = "und create -languages Java add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
+        print(cmd)
         out, err = self._os_cmd(cmd)
 
         if file_name_suffix == "buggy":
@@ -273,7 +275,7 @@ class MetricsGetter(object):
         """
 
         metrics_dataframe = pd.DataFrame()
-        # print(len(commit_pairs))
+        print(len(self.buggy_clean_pairs))
         for i in range(len(self.buggy_clean_pairs)):
             buggy_hash = self.buggy_clean_pairs[i][0]
             clean_hash = self.buggy_clean_pairs[i][1]
@@ -299,7 +301,7 @@ class MetricsGetter(object):
 
             # Create a understand file for this hash
             self._create_und_files("buggy")
-            #print(self.buggy_und_file)
+            print(self.buggy_und_file)
             db_buggy = und.open(str(self.buggy_und_file))
             #print("Files",set(files_changed))
             for file in db_buggy.ents("Class"):

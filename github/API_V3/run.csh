@@ -6,4 +6,8 @@
 #BSUB -e stderr.%J
 
 module load python
-python new_1.py
+module load und
+
+und create -languages Java add /gpfs_common/share02/tjmenzie/smajumd3/AI4SE/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Android-ObservableScrollView analyze /gpfs_common/share02/tjmenzie/smajumd3/AI4SE/Data_Miner/github/API_V3/.temp/udb/Android-ObservableScrollView_clean.udb
+
+#python new.py
