@@ -25,7 +25,6 @@ from pathlib import Path
 from pdb import set_trace
 import sys
 from collections import defaultdict
-import os
 from utils.utils import utils
 import platform
 from os.path import dirname as up
@@ -33,21 +32,23 @@ from multiprocessing import Pool, cpu_count
 import threading
 from multiprocessing import Queue
 from threading import Thread
+import random
+import string
 #from main.utils.utils.utils import printProgressBar
 
-class ThreadWithReturnValue(Thread):
-    def __init__(self, group=None, target=None, name=None,
-                 args=(), kwargs={}, Verbose=None):
-        Thread.__init__(self, group, target, name, args, kwargs)
-        self._return = None
-    def run(self):
-        #print(type(self._target))
-        if self._target is not None:
-            self._return = self._target(*self._args,
-                                                **self._kwargs)
-    def join(self, *args):
-        Thread.join(self, *args)
-        return self._return
+# class ThreadWithReturnValue(Thread):
+#     def __init__(self, group=None, target=None, name=None,
+#                  args=(), kwargs={}, Verbose=None):
+#         Thread.__init__(self, group, target, name, args, kwargs)
+#         self._return = None
+#     def run(self):
+#         #print(type(self._target))
+#         if self._target is not None:
+#             self._return = self._target(*self._args,
+#                                                 **self._kwargs)
+#     def join(self, *args):
+#         Thread.join(self, *args)
+#         return self._return
 
 
 class MetricsGetter(object):
@@ -79,16 +80,16 @@ class MetricsGetter(object):
             self.file_path = up(os.getcwd()) + '\\data\\commit_guru\\' + self.repo_name + '.pkl'
             #self.committed_file = up(os.getcwd()) + '\\data\\committed_files\\' + self.repo_name + '_committed_file.pkl'
         self.buggy_clean_pairs = self.read_commits()
-        print(self.buggy_clean_pairs[0])
+        # print(self.buggy_clean_pairs[0])
         #self.buggy_clean_pairs = self.buggy_clean_pairs[0:10]
         # Reference current directory, so we can go back after we are done.
         self.cwd = Path(os.getcwd())
         self.cores = cpu_count()
         self.repo = self.clone_repo()
-        if self.repo == None:
-            raise ValueError
-        else:
-            print(self.repo)
+        # if self.repo == None:
+        #     raise ValueError
+        # else:
+        #     print(self.repo)
 
         # Generate path to store udb files
         self.udb_path = self.cwd.joinpath(".temp", "udb")
@@ -136,7 +137,7 @@ class MetricsGetter(object):
 
     def read_commits(self):
         df = pd.read_csv(self.file_path)
-        print(df)
+        # print(df)
         df = df[df['contains_bug'] == True]
         df = df.reset_index('drop' == True)
         self.commits = []
@@ -161,8 +162,8 @@ class MetricsGetter(object):
             commits.append([bug_existing_commit,bug_fixing_commit,committed_files])
         return commits
 
-    @staticmethod
-    def _os_cmd(cmd, verbose=True):
+    #@staticmethod
+    def _os_cmd(self,cmd, verbose=False):
         """
         Run a command on the shell
 
@@ -171,15 +172,24 @@ class MetricsGetter(object):
         cmd: str
             A command to run.
         """
+        print("before split")
         cmd = shlex.split(cmd)
-        #print(cmd)
+        print(cmd)
         with sp.Popen(cmd, stdout=sp.PIPE, stderr=sp.DEVNULL) as p:
             out, err = p.communicate()
-
+        print("run done")
         if verbose:
             print(out)
             print(err)
         return out, err
+
+    def generate_repo_path(self):
+        def randomStringDigits(stringLength=6):
+            """Generate a random string of letters and digits """
+            lettersAndDigits = string.ascii_letters + string.digits
+            return ''.join(random.choice(lettersAndDigits) for i in range(stringLength))
+        ukey = randomStringDigits(8)  
+        return ukey
     
     
     def _create_und_files(self, file_name_suffix):
@@ -195,7 +205,7 @@ class MetricsGetter(object):
             "{}_{}.udb".format(self.repo_name, file_name_suffix))
         # Go to the udb path
         os.chdir(self.udb_path)
-
+        print("dir changed to:",self.udb_path)
         # find and replace all F90 to f90
         for filename in glob(os.path.join(self.repo_path, '*/**')):
             if ".F90" in filename:
@@ -212,10 +222,11 @@ class MetricsGetter(object):
             cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages C++ add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         elif self.repo_lang == "Java":
-            cmd = "und create -languages Java add {} analyze {}".format(
+            cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages Java add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
-        print(cmd)
+        print("runnung command")
         out, err = self._os_cmd(cmd)
+        print("command done")
 
         if file_name_suffix == "buggy":
             self.buggy_und_file = und_file
@@ -288,6 +299,7 @@ class MetricsGetter(object):
             # Checkout the master branch first, we'll need this
             # to find what files have changed.
             self._os_cmd("git reset --hard master", verbose=False)
+            print("reset done")
 
             # Get a list of files changed between the two hashes
             #files_changed = self._files_changed_in_git_diff(
@@ -298,11 +310,14 @@ class MetricsGetter(object):
             # Checkout the buggy commit hash
             self._os_cmd(
                 "git reset --hard {}".format(buggy_hash), verbose=False)
+            print("checkout done")
 
             # Create a understand file for this hash
             self._create_und_files("buggy")
-            print(self.buggy_und_file)
+            print("file created")
+            # print(self.bugg sy_und_file)
             db_buggy = und.open(str(self.buggy_und_file))
+            print("file opened")
             #print("Files",set(files_changed))
             for file in db_buggy.ents("Class"):
                 # print directory name
