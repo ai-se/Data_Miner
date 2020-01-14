@@ -32,7 +32,7 @@ if __name__ == "__main__":
     code_path = os.getcwd()
   project_list = pd.read_csv(data_path)
   code_path = os.getcwd()
-  project_list = project_list[0:1]
+  project_list = project_list[1:2]
   project_list.reset_index(drop=True,inplace=True)
   for i in range(project_list.shape[0]):
     try:

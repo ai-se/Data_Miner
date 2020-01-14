@@ -60,7 +60,7 @@ class LocalRepository():
         # See if repo has already been downloaded, if it is pull, if not clone
         print("This is the current path:",path)
         if os.path.isdir(path):
-            #self.adapter.pull(self.adapter, self.repo)
+            self.adapter.pull(self.adapter, self.repo)
             firstSync = False
         else:
             self.adapter.clone(self.adapter, self.repo)
