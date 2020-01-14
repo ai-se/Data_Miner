@@ -1,0 +1,84 @@
+2020-01-14 10:12:03 INFO: Adding repo coursera-android to work queue for ingesting
+2020-01-14 10:12:03 INFO: A worker is starting scan repository: coursera-android
+2020-01-14 10:12:03 INFO: Getting/parsing git commits: coursera-android
+2020-01-14 10:12:03 INFO: Done getting/parsing git commits.
+2020-01-14 10:12:03 INFO: Saving commits to the csv...
+2020-01-14 10:12:03 INFO: Done saving commits to the csv.
+2020-01-14 10:12:03 INFO: A worker finished ingesting repo coursera-android
+2020-01-14 10:12:03 INFO: Adding repo coursera-android to work queue for analyzing.
+2020-01-14 10:12:03 INFO: Worker analyzing repository  coursera-android
+2020-01-14 10:12:03 INFO: Linking 0 new corrective commits for repo coursera-android
+2020-01-14 10:12:03 INFO: Linking done for repocoursera-android
+its working
+                       repo_name     repo_owner  ... commits defective
+0               coursera-android        aporter  ...     135         9
+1   Android-ObservableScrollView      ksoichiro  ...     383        80
+2                         dagger         square  ...     701       144
+3                        picasso         square  ...    1364       183
+4                       Telegram          DrKLO  ...     342       193
+5                       greenDAO     greenrobot  ...     857       195
+6                    springside4     springside  ...    1074       213
+7                      disruptor  LMAX-Exchange  ...     958       214
+8              ActionBarSherlock    JakeWharton  ...    1480       219
+9                      roboguice      roboguice  ...    1054       222
+10                       Hystrix        Netflix  ...    2109       241
+11          facebook-android-sdk       facebook  ...    1355       250
+12                         jsoup            jhy  ...    1261       355
+13                  AndroidAsync          koush  ...    1081       361
+14                       metrics     dropwizard  ...    2580       429
+15                         junit     junit-team  ...    2427       544
+16            androidannotations        excilys  ...    2908       583
+17                         zxing          zxing  ...    3521       847
+18                         glide       bumptech  ...    2445       873
+19                        okhttp         square  ...    4391       967
+20                         guava         google  ...    5172      1348
+21                        vert.x        eclipse  ...    4225      1404
+22                         titan  thinkaurelius  ...    4434      1563
+23                         druid        alibaba  ...    6057      1852
+24                         storm         apache  ...   10192      1873
+25                    realm-java          Realm  ...    8261      1912
+26                         netty          netty  ...    9674      3297
+27                        libgdx         libgdx  ...   13924      3678
+28                     cassandra         apache  ...   24868      4155
+29                        presto       facebook  ...   16688      4310
+
+[30 rows x 9 columns]
+I am here
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+The repo is: coursera-android
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/coursera-android
+======================== 2020-01-14 10:12:03.515837 2019-12-15 10:12:03.515823
+   age                    author_date  ...  rexp sexp
+0  0.0  Sun Jan 5 01:55:31 2014 -0800  ...   0.0    1
+
+[1 rows x 23 columns]
+Traceback (most recent call last):
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2657, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 132, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1601, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1608, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'contains_bug'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "new.py", line 53, in <module>
+    get_matrix = git_understand.MetricsGetter(git_url,repo_name,repo_lang)
+  File "/home/smajumd3/Data_Miner/github/API_V3/git_understand/git_understand_v1.py", line 81, in __init__
+    self.buggy_clean_pairs = self.read_commits()
+  File "/home/smajumd3/Data_Miner/github/API_V3/git_understand/git_understand_v1.py", line 140, in read_commits
+    df = df[df['contains_bug'] == True]
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/frame.py", line 2927, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2659, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 132, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1601, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1608, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'contains_bug'

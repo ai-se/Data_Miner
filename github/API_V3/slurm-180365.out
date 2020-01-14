@@ -1,0 +1,67 @@
+its working
+I am here
+              age  ...                                              fixes
+0        0.000000  ...                                                NaN
+1       12.341109  ...                                                NaN
+2        8.545294  ...                                                NaN
+3        0.176539  ...                                                NaN
+4        6.966632  ...                                                NaN
+5        0.034549  ...                                                NaN
+6        0.037963  ...                                                NaN
+7        0.047546  ...                                                NaN
+8       19.625090  ...                                                NaN
+9        7.122731  ...                                                NaN
+10            NaN  ...                                                NaN
+11       3.986007  ...                                                NaN
+12     115.788275  ...                                                NaN
+13            NaN  ...                                                NaN
+14      96.524178  ...                                                NaN
+15     148.140150  ...                                                NaN
+16      71.428067  ...                                                NaN
+17      26.336931  ...                                                NaN
+18      10.667106  ...                                                NaN
+19       9.174884  ...                                                NaN
+20     171.642454  ...                                                NaN
+21      48.110223  ...                                                NaN
+22      26.307002  ...                                                NaN
+23      10.121354  ...                                                NaN
+24      34.212951  ...                                                NaN
+25      46.223646  ...                                                NaN
+26       0.802882  ...                                                NaN
+27      73.166366  ...                                                NaN
+28       0.000000  ...                                                NaN
+29      18.305665  ...  ["bd923846bb0e73f13b4843177cc2c5a0a64f981c", "...
+...           ...  ...                                                ...
+2079    57.097500  ...                                                NaN
+2080   260.708562  ...                                                NaN
+2081   174.586238  ...                                                NaN
+2082          NaN  ...                                                NaN
+2083  1122.230978  ...                                                NaN
+2084   271.366134  ...                                                NaN
+2085   245.882569  ...                                                NaN
+2086   217.196366  ...                                                NaN
+2087     0.052963  ...                                                NaN
+2088          NaN  ...                                                NaN
+2089   129.923067  ...                                                NaN
+2090    83.383206  ...                                                NaN
+2091   385.808322  ...                                                NaN
+2092   677.564375  ...                                                NaN
+2093    83.677766  ...                                                NaN
+2094     0.037546  ...                                                NaN
+2095     0.008218  ...                                                NaN
+2096     0.045822  ...                                                NaN
+2097   193.296927  ...                                                NaN
+2098          NaN  ...                                                NaN
+2099     5.009664  ...                                                NaN
+2100          NaN  ...                                                NaN
+2101    20.973333  ...                                                NaN
+2102          NaN  ...                                                NaN
+2103          NaN  ...                                                NaN
+2104     1.658819  ...                                                NaN
+2105          NaN  ...                                                NaN
+2106   313.160174  ...                                                NaN
+2107  1073.938241  ...                                                NaN
+2108          NaN  ...                                                NaN
+
+[2109 rows x 25 columns]
+['ee89c24b958d3f045ca29d9dbadc4d6b56e40bc5', '4412e99999fc693ae67743622e84f06f3f7acdc4', ['main.java.com.netflix.hystrix.HystrixCircuitBreaker', 'main.java.com.netflix.hystrix.HystrixCollapser', 'main.java.com.netflix.hystrix.HystrixCollapserKey', 'main.java.com.netflix.hystrix.HystrixCollapserProperties', 'main.java.com.netflix.hystrix.HystrixCommand', 'main.java.com.netflix.hystrix.HystrixCommandGroupKey', 'main.java.com.netflix.hystrix.HystrixCommandKey', 'main.java.com.netflix.hystrix.HystrixCommandMetrics', 'main.java.com.netflix.hystrix.HystrixCommandProperties', 'main.java.com.netflix.hystrix.HystrixEventType', 'main.java.com.netflix.hystrix.HystrixExecutable', 'main.java.com.netflix.hystrix.HystrixRequestCache', 'main.java.com.netflix.hystrix.HystrixRequestLog', 'main.java.com.netflix.hystrix.HystrixThreadPool', 'main.java.com.netflix.hystrix.HystrixThreadPoolKey', 'main.java.com.netflix.hystrix.HystrixThreadPoolMetrics', 'main.java.com.netflix.hystrix.HystrixThreadPoolProperties', 'main.java.com.netflix.hystrix.exception.HystrixBadRequestException', 'main.java.com.netflix.hystrix.exception.HystrixRuntimeException', 'main.java.com.netflix.hystrix.exception.package-info', 'main.java.com.netflix.hystrix.package-info', 'main.java.com.netflix.hystrix.strategy.HystrixPlugins', 'main.java.com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategy', 'main.java.com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategyDefault', 'main.java.com.netflix.hystrix.strategy.concurrency.HystrixContextCallable', 'main.java.com.netflix.hystrix.strategy.concurrency.HystrixContextRunnable', 'main.java.com.netflix.hystrix.strategy.concurrency.HystrixRequestContext', 'main.java.com.netflix.hystrix.strategy.concurrency.HystrixRequestVariable', 'main.java.com.netflix.hystrix.strategy.concurrency.HystrixRequestVariableDefault', 'main.java.com.netflix.hystrix.strategy.concurrency.HystrixRequestVariableHolder', 'main.java.com.netflix.hystrix.strategy.concurrency.HystrixRequestVariableLifecycle', 'main.java.com.netflix.hystrix.strategy.concurrency.package-info', 'main.java.com.netflix.hystrix.strategy.eventnotifier.HystrixEventNotifier', 'main.java.com.netflix.hystrix.strategy.eventnotifier.HystrixEventNotifierDefault', 'main.java.com.netflix.hystrix.strategy.eventnotifier.package-info', 'main.java.com.netflix.hystrix.strategy.metrics.HystrixMetricsPublisher', 'main.java.com.netflix.hystrix.strategy.metrics.HystrixMetricsPublisherCommand', 'main.java.com.netflix.hystrix.strategy.metrics.HystrixMetricsPublisherCommandDefault', 'main.java.com.netflix.hystrix.strategy.metrics.HystrixMetricsPublisherDefault', 'main.java.com.netflix.hystrix.strategy.metrics.HystrixMetricsPublisherFactory', 'main.java.com.netflix.hystrix.strategy.metrics.HystrixMetricsPublisherThreadPool', 'main.java.com.netflix.hystrix.strategy.metrics.HystrixMetricsPublisherThreadPoolDefault', 'main.java.com.netflix.hystrix.strategy.metrics.HystrixMetricsServoPublisherAbstract', 'main.java.com.netflix.hystrix.strategy.metrics.package-info', 'main.java.com.netflix.hystrix.strategy.package-info', 'main.java.com.netflix.hystrix.strategy.properties.HystrixPropertiesChainedArchaiusProperty', 'main.java.com.netflix.hystrix.strategy.properties.HystrixPropertiesCollapserDefault', 'main.java.com.netflix.hystrix.strategy.properties.HystrixPropertiesCommandDefault', 'main.java.com.netflix.hystrix.strategy.properties.HystrixPropertiesFactory', 'main.java.com.netflix.hystrix.strategy.properties.HystrixPropertiesStrategy', 'main.java.com.netflix.hystrix.strategy.properties.HystrixPropertiesStrategyDefault', 'main.java.com.netflix.hystrix.strategy.properties.HystrixPropertiesThreadPoolDefault', 'main.java.com.netflix.hystrix.strategy.properties.HystrixProperty', 'main.java.com.netflix.hystrix.strategy.properties.package-info', 'main.java.com.netflix.hystrix.util.ExceptionThreadingUtility', 'main.java.com.netflix.hystrix.util.HystrixRollingNumber', 'main.java.com.netflix.hystrix.util.HystrixRollingNumberEvent', 'main.java.com.netflix.hystrix.util.HystrixRollingPercentile', 'main.java.com.netflix.hystrix.util.HystrixTimer', 'main.java.com.netflix.hystrix.util.LongAdder', 'main.java.com.netflix.hystrix.util.LongMaxUpdater', 'main.java.com.netflix.hystrix.util.Striped64', 'main.java.com.netflix.hystrix.util.package-info', 'main.java.com.netflix.hystrix.examples.basic.CommandCollapserGetValueForKey', 'main.java.com.netflix.hystrix.examples.basic.CommandFacadeWithPrimarySecondary', 'main.java.com.netflix.hystrix.examples.basic.CommandHelloFailure', 'main.java.com.netflix.hystrix.examples.basic.CommandHelloWorld', 'main.java.com.netflix.hystrix.examples.basic.CommandThatFailsFast', 'main.java.com.netflix.hystrix.examples.basic.CommandThatFailsSilently', 'main.java.com.netflix.hystrix.examples.basic.CommandUsingRequestCache', 'main.java.com.netflix.hystrix.examples.basic.CommandUsingRequestCacheInvalidation', 'main.java.com.netflix.hystrix.examples.basic.CommandUsingSemaphoreIsolation', 'main.java.com.netflix.hystrix.examples.basic.CommandWithFallbackViaNetwork', 'main.java.com.netflix.hystrix.examples.basic.CommandWithStubbedFallback']]ERROR: Cannot Read

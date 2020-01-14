@@ -80,8 +80,13 @@ class MetricsGetter(object):
             self.file_path = up(os.getcwd()) + '\\data\\commit_guru\\' + self.repo_name + '.pkl'
             #self.committed_file = up(os.getcwd()) + '\\data\\committed_files\\' + self.repo_name + '_committed_file.pkl'
         self.buggy_clean_pairs = self.read_commits()
+<<<<<<< HEAD
         # print(self.buggy_clean_pairs[0])
         #self.buggy_clean_pairs = self.buggy_clean_pairs[0:10]
+=======
+        print(self.buggy_clean_pairs[0])
+        #self.buggy_clean_pairs = self.buggy_clean_pairs[0:5]
+>>>>>>> 211636e4b27e1c193f7353a8a0dd99c96294b33c
         # Reference current directory, so we can go back after we are done.
         self.cwd = Path(os.getcwd())
         self.cores = cpu_count()
@@ -143,27 +148,31 @@ class MetricsGetter(object):
         self.commits = []
         commits = []
         for i in range(df.shape[0]):
-            committed_files = []
-            if df.loc[i,'parent_hashes'] == None:
-                continue
-            bug_fixing_commit = df.loc[i,'parent_hashes']
-            bug_existing_commit = df.loc[i,'commit_hash']
-            files_changed = df.loc[i,'fileschanged']
-            files_changed = files_changed.split(',')
-            files_changed = list(filter(('CAS_DELIMITER').__ne__, files_changed))
-            self.commits.append(bug_existing_commit)
-            if bug_fixing_commit == None:
-                print(df.iloc[i,0])
-                continue
-            for row in files_changed:
-                if len(row.split('src/')) == 1:
+            try:
+                committed_files = []
+                if df.loc[i,'parent_hashes'] == None:
                     continue
-                committed_files.append(row.split('src/')[1].replace('/','.').rsplit('.',1)[0])
-            commits.append([bug_existing_commit,bug_fixing_commit,committed_files])
+                bug_fixing_commit = df.loc[i,'parent_hashes']
+                bug_existing_commit = df.loc[i,'commit_hash']
+                files_changed = df.loc[i,'fileschanged']
+                #print(files_changed)
+                files_changed = files_changed.split(',')
+                files_changed = list(filter(('CAS_DELIMITER').__ne__, files_changed))
+                self.commits.append(bug_existing_commit)
+                if bug_fixing_commit == None:
+                    print(df.iloc[i,0])
+                    continue
+                for row in files_changed:
+                    if len(row.split('src/')) == 1:
+                        continue
+                    committed_files.append(row.split('src/')[1].replace('/','.').rsplit('.',1)[0])
+                commits.append([bug_existing_commit,bug_fixing_commit,committed_files])
+            except:
+              continue
         return commits
 
-    #@staticmethod
-    def _os_cmd(self,cmd, verbose=False):
+    @staticmethod
+    def _os_cmd(cmd, verbose=False):
         """
         Run a command on the shell
 
@@ -314,8 +323,8 @@ class MetricsGetter(object):
 
             # Create a understand file for this hash
             self._create_und_files("buggy")
-            print("file created")
-            # print(self.bugg sy_und_file)
+
+            #print(self.buggy_und_file)
             db_buggy = und.open(str(self.buggy_und_file))
             print("file opened")
             #print("Files",set(files_changed))

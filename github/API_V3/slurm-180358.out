@@ -1,0 +1,290 @@
+2020-01-14 11:55:26 INFO: Adding repo Telegram to work queue for ingesting
+2020-01-14 11:55:26 INFO: A worker is starting scan repository: Telegram
+Checking out files:  12% (1422/11246)   Checking out files:  13% (1462/11246)   Checking out files:  14% (1575/11246)   Checking out files:  15% (1687/11246)   Checking out files:  16% (1800/11246)   Checking out files:  16% (1895/11246)   Checking out files:  17% (1912/11246)   Checking out files:  17% (1977/11246)   Checking out files:  18% (2025/11246)   Checking out files:  19% (2137/11246)   Checking out files:  20% (2250/11246)   Checking out files:  21% (2362/11246)   Checking out files:  21% (2423/11246)   Checking out files:  22% (2475/11246)   Checking out files:  23% (2587/11246)   Checking out files:  24% (2700/11246)   Checking out files:  24% (2798/11246)   Checking out files:  25% (2812/11246)   Checking out files:  26% (2924/11246)   Checking out files:  27% (3037/11246)   Checking out files:  28% (3149/11246)   Checking out files:  29% (3262/11246)   Checking out files:  30% (3374/11246)   Checking out files:  31% (3487/11246)   Checking out files:  31% (3565/11246)   Checking out files:  32% (3599/11246)   Checking out files:  33% (3712/11246)   Checking out files:  34% (3824/11246)   Checking out files:  35% (3937/11246)   Checking out files:  36% (4049/11246)   Checking out files:  36% (4087/11246)   Checking out files:  37% (4162/11246)   Checking out files:  38% (4274/11246)   Checking out files:  39% (4386/11246)   Checking out files:  40% (4499/11246)   Checking out files:  41% (4611/11246)   Checking out files:  42% (4724/11246)   Checking out files:  43% (4836/11246)   Checking out files:  44% (4949/11246)   Checking out files:  45% (5061/11246)   Checking out files:  46% (5174/11246)   Checking out files:  46% (5176/11246)   Checking out files:  47% (5286/11246)   Checking out files:  48% (5399/11246)   Checking out files:  49% (5511/11246)   Checking out files:  50% (5623/11246)   Checking out files:  51% (5736/11246)   Checking out files:  52% (5848/11246)   Checking out files:  53% (5961/11246)   Checking out files:  54% (6073/11246)   Checking out files:  55% (6186/11246)   Checking out files:  55% (6240/11246)   Checking out files:  56% (6298/11246)   Checking out files:  57% (6411/11246)   Checking out files:  58% (6523/11246)   Checking out files:  59% (6636/11246)   Checking out files:  60% (6748/11246)   Checking out files:  61% (6861/11246)   Checking out files:  62% (6973/11246)   Checking out files:  63% (7085/11246)   Checking out files:  64% (7198/11246)   Checking out files:  64% (7298/11246)   Checking out files:  65% (7310/11246)   Checking out files:  66% (7423/11246)   Checking out files:  67% (7535/11246)   Checking out files:  68% (7648/11246)   Checking out files:  69% (7760/11246)   Checking out files:  70% (7873/11246)   Checking out files:  71% (7985/11246)   Checking out files:  71% (7995/11246)   Checking out files:  72% (8098/11246)   Checking out files:  73% (8210/11246)   Checking out files:  74% (8323/11246)   Checking out files:  75% (8435/11246)   Checking out files:  75% (8530/11246)   Checking out files:  76% (8547/11246)   Checking out files:  77% (8660/11246)   Checking out files:  78% (8772/11246)   Checking out files:  79% (8885/11246)   Checking out files:  80% (8997/11246)   Checking out files:  81% (9110/11246)   Checking out files:  82% (9222/11246)   Checking out files:  83% (9335/11246)   Checking out files:  84% (9447/11246)   Checking out files:  85% (9560/11246)   Checking out files:  86% (9672/11246)   Checking out files:  86% (9677/11246)   Checking out files:  87% (9785/11246)   Checking out files:  88% (9897/11246)   Checking out files:  89% (10009/11246)   Checking out files:  90% (10122/11246)   Checking out files:  91% (10234/11246)   Checking out files:  92% (10347/11246)   Checking out files:  93% (10459/11246)   Checking out files:  94% (10572/11246)   Checking out files:  95% (10684/11246)   Checking out files:  96% (10797/11246)   Checking out files:  96% (10803/11246)   Checking out files:  97% (10909/11246)   Checking out files:  98% (11022/11246)   Checking out files:  99% (11134/11246)   Checking out files: 100% (11246/11246)   Checking out files: 100% (11246/11246), done.
+HEAD is now at 6a10354 Merge pull request #1545 from janka102/patch-1
+2020-01-14 11:55:41 INFO: Pulling latest changes from repo: Telegram
+2020-01-14 11:55:43 INFO: Done fetching.
+2020-01-14 11:55:43 INFO: Getting/parsing git commits: Telegram
+2020-01-14 11:55:55 INFO: Done getting/parsing git commits.
+2020-01-14 11:55:55 INFO: Saving commits to the csv...
+2020-01-14 11:55:56 INFO: Done saving commits to the csv.
+2020-01-14 11:55:56 INFO: A worker finished ingesting repo Telegram
+2020-01-14 11:55:56 INFO: Adding repo Telegram to work queue for analyzing.
+2020-01-14 11:55:56 INFO: Worker analyzing repository  Telegram
+2020-01-14 11:55:56 INFO: Linking 146 new corrective commits for repo Telegram
+2020-01-14 11:55:56 INFO: Linkage for commit 5aee72ee33fd960df9173ab17942dd1a2ce912b5
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-01-14 11:55:56 INFO: Linkage for commit d2a6fa4d6d02cc1acff27d3284845bf8a18b72dd
+2020-01-14 11:55:57 INFO: Linkage for commit 507d05aaf1855320bc09863264f457756593d476
+2020-01-14 11:56:12 INFO: Linkage for commit ff85d74b85bf33aa661e34b6a9e2bf037924fe0f
+2020-01-14 11:56:12 INFO: Linkage for commit aa5ff577c48668c5ada2d5dbd778feeb875bf8e9
+2020-01-14 11:56:13 INFO: Linkage for commit ea8f92441c58ed6b3deaa9ef1b9a2500543b1ef8
+2020-01-14 11:56:13 INFO: Linkage for commit 6e63dee546704a721f3ee106b53c25b48709a9e3
+2020-01-14 11:56:13 INFO: Linkage for commit 8ecb9e97c92d607af78850cd2d9685ab24b38100
+2020-01-14 11:56:14 INFO: Linkage for commit dc00cb3c212209b430856a7b7f2469ddda50ed48
+2020-01-14 11:56:16 INFO: Linkage for commit 4ede31105599d0af566f4143c85b35767f98b59f
+2020-01-14 12:03:05 INFO: Linkage for commit 6be743c9c29402fc1438bac6a587fe021b9bfe8a
+2020-01-14 12:03:06 INFO: Linkage for commit c125097b9ce42e23816efbe51963366ec253b157
+2020-01-14 12:03:06 INFO: Linkage for commit 1eeb12f666c2bd88755023b59c1925879e1b903d
+2020-01-14 12:03:10 INFO: Linkage for commit 0e9d92e8f9bb227e2cad8d01c64d06255de936fe
+2020-01-14 12:03:11 INFO: Linkage for commit 22918f143a5d54cc56282575246e686d3baac3db
+2020-01-14 12:03:13 INFO: Linkage for commit bd4152dc814925e0c82d11d6ac577c83156a1857
+2020-01-14 12:03:20 INFO: Linkage for commit ebedf3c367639d43e6d1c63e2529d4d47ff59468
+2020-01-14 12:03:26 INFO: Linkage for commit 51aa4141a41a811e87b829f587753f0b20158a9b
+2020-01-14 12:03:28 INFO: Linkage for commit ec533c5fff68ed8649c7f02cfbbd05c50f62c14b
+2020-01-14 12:03:54 INFO: Linkage for commit 05471c43951383964dae87f07546dbd656c69819
+2020-01-14 12:03:55 INFO: Linkage for commit cea585cd39c934bfd4b4f55f882b345b8bd4f525
+2020-01-14 12:03:56 INFO: Linkage for commit afeb66b18c8df702f97102e83a5e1a09f108577d
+2020-01-14 12:03:56 INFO: Linkage for commit c783e25d6968bc137cdef6ba444846e26b6c2dd4
+2020-01-14 12:03:57 INFO: Linkage for commit 1321d9d6d659db36880f14532603902ff24a339a
+2020-01-14 12:03:57 INFO: Linkage for commit 0aea8f1532f8510c09062e3d841976496764f04f
+2020-01-14 12:03:57 INFO: Linkage for commit 2f191225b7cdf2cc9a23a179e91f563314272c02
+2020-01-14 12:03:57 INFO: Linkage for commit c4e113dc67d5cffb982f3eeb9bc8b7aa5e5271cc
+2020-01-14 12:04:00 INFO: Linkage for commit 4beb03dd560f81bd4ef0642bdab3d9296c796154
+2020-01-14 12:04:01 INFO: Linkage for commit 5ebe60a00de3047d6f745094b06cce67d2d5a127
+2020-01-14 12:04:50 INFO: Linkage for commit 0065ca64f5b020ac4644f0a5b3854c5c60ed3ea5
+2020-01-14 12:04:51 INFO: Linkage for commit ee38ecec5696d60b0326e778e9772784f03137cd
+2020-01-14 12:04:51 INFO: Linkage for commit 644fc7ccea9deee3686dc9c824893baa4ce4bef6
+2020-01-14 12:05:01 INFO: Linkage for commit e657c4f01066790192a471002466190278bc91f2
+2020-01-14 12:05:01 INFO: Linkage for commit 2c61da0001b57fe7a39229021123a1fe82e3e4b4
+2020-01-14 12:05:03 INFO: Linkage for commit 231999ed1073cd9e53fc4d7b8f6c0d1da0882487
+2020-01-14 12:05:03 INFO: Linkage for commit 92e1b0503b378251acb3c2a6d76b473e082abafc
+2020-01-14 12:05:17 INFO: Linkage for commit 0c49c20656fdeca6a98fca1bb1ca2c063701dec6
+2020-01-14 12:06:29 INFO: Linkage for commit 512aeaf2bbeed0ee3ea026d98c32231f0cf1ae22
+2020-01-14 12:06:29 INFO: Linkage for commit db64b2f6981738aa970fd06dd61c5c87df0936eb
+2020-01-14 12:06:30 INFO: Linkage for commit 69f8bb4f4033998da22c855e32ba3c9515775027
+2020-01-14 12:06:35 INFO: Linkage for commit 1cda12c76abed7c7d9c30d74158bcacdf192a4c5
+2020-01-14 12:06:37 INFO: Linkage for commit 01e0b7ae81e6a0f16306004b751e582e404a12b2
+2020-01-14 12:06:38 INFO: Linkage for commit ad0188baea5d747b946fad4f6dcb3439fb28518e
+2020-01-14 12:06:52 INFO: Linkage for commit fc14e8b4f79407dd134ef79390d6f5e57491e1d8
+2020-01-14 12:06:56 INFO: Linkage for commit 19ba20cdabb314de51b6771a588d7becfa4f5ff4
+2020-01-14 12:06:58 INFO: Linkage for commit 02a20acc4c7746f1de3628a74d095c4cf83b63a3
+2020-01-14 12:07:02 INFO: Linkage for commit 68aeaeefc363998f64c01b786b8ce3ded6acc4e6
+2020-01-14 12:07:07 INFO: Linkage for commit a87968cefc568d265d29b1b696c2ed351182ecc1
+2020-01-14 12:07:09 INFO: Linkage for commit 358a067accf0732cda8793eb3c62f97e71276df6
+2020-01-14 12:07:19 INFO: Linkage for commit 0b0d485093dc427a04b8173e6dad6a5f1ac8859a
+2020-01-14 12:07:23 INFO: Linkage for commit f6eac5cbceb25ddc7ade8a6fbe58ae39a9e709b8
+2020-01-14 12:07:25 INFO: Linkage for commit 9cbbe999e133645c6edd6ea48c9e544521cc1315
+2020-01-14 12:07:25 INFO: Linkage for commit d728d9c405d28dafa72d9f94f2c89fcb3674e3ef
+2020-01-14 12:07:25 INFO: Linkage for commit 91f207378075b291c58ec236c2112bb22cad2590
+2020-01-14 12:07:26 INFO: Linkage for commit d29eabd16359a4433c37216ea251a7f8fb3c398a
+2020-01-14 12:21:09 INFO: Linkage for commit c549e8bc57495797f6a55480e5d92ca75359e061
+2020-01-14 12:21:11 INFO: Linkage for commit d9b9a721a6c5620381d87e27f982e146587afeb0
+2020-01-14 12:21:11 INFO: Linkage for commit 172ded5ea551325b0761643da2c5155a16379b26
+2020-01-14 12:21:12 INFO: Linkage for commit f44955380fb7a063a9b327dfa3ca7f2457e87dec
+2020-01-14 12:21:18 INFO: Linkage for commit fa1734518d8df5746d4bbbffe87dc9cd8dc40899
+2020-01-14 12:21:18 INFO: Linkage for commit 780ca63d8d0575917c028d3de2701f84290800d5
+2020-01-14 12:21:19 INFO: Linkage for commit 9667a246b3c2da917a033b565716fabad025c256
+2020-01-14 12:21:21 INFO: Linkage for commit a0eb876c7bd5ebf4592cbc4f776362c6fa5dd715
+2020-01-14 12:21:21 INFO: Linkage for commit f00aef78bdf914b684b48e87ab7e0a5a93b6be51
+2020-01-14 12:21:22 INFO: Linkage for commit 1122ab85d16211888e90700ad7546e5ed8343cc7
+2020-01-14 12:21:24 INFO: Linkage for commit 1a9632e042ae46cdc0b3fdcdd64933514a7ca4cb
+2020-01-14 12:21:24 INFO: Linkage for commit a2a1868048817212ed92139bd5baf6c089b7fdb4
+2020-01-14 12:21:24 INFO: Linkage for commit ff7e6ab3c910cc0c7c6d106557c3912f23d0547d
+2020-01-14 12:21:34 INFO: Linkage for commit feaf6c32d82a438f19b79103e90a2ceb3cab9c69
+2020-01-14 12:21:35 INFO: Linkage for commit d24578fe6bc2c585a0b1a5b40b3ca80a719f7ef9
+2020-01-14 12:21:35 INFO: Linkage for commit 1c2010a428fda5a03a96b27a9be817bdac3d2b17
+2020-01-14 12:21:48 INFO: Linkage for commit 5855dc05674ee9324f34d4da63714d020835c07a
+2020-01-14 12:21:48 INFO: Linkage for commit e2a6511fbf1f45c9a934b895e22bf95032a7cff9
+2020-01-14 12:21:49 INFO: Linkage for commit f92df091ef298aa909f08b4ee2f6ed67c4416309
+2020-01-14 12:21:51 INFO: Linkage for commit e5cb3685a0467f7f7cce5814cef583036b493371
+2020-01-14 12:21:51 INFO: Linkage for commit 2eb84e23f616ddc284d648031d223776a2bafea2
+2020-01-14 12:21:52 INFO: Linkage for commit e27094b9632ac8c0f45fff913d8761fb98d47bac
+2020-01-14 12:21:56 INFO: Linkage for commit f7e0225f48ee3e7b521c6b8f89a3a4c1540282f1
+2020-01-14 12:21:59 INFO: Linkage for commit dbef14dfeb85878e461cef529f5a05b5327d09d4
+2020-01-14 12:22:03 INFO: Linkage for commit 87612e006b1889205d532ee351249d32897dd4cc
+2020-01-14 12:22:08 INFO: Linkage for commit 5d042955cd6a42d42bff0acf430a1e0671c2ea43
+2020-01-14 12:22:10 INFO: Linkage for commit 8f7652bb7e319c5aefffe81a8211af6722bfc745
+2020-01-14 12:22:12 INFO: Linkage for commit 21273f822c542ddd4939fcb672beba794ce64641
+2020-01-14 12:22:13 INFO: Linkage for commit 8b73d93d1a4e5854567bbad1a28ef199f4d259d7
+2020-01-14 12:22:14 INFO: Linkage for commit 2b15ac63f864c0c15a32e05c591cb4bb53ca432d
+2020-01-14 12:22:22 INFO: Linkage for commit 8bad65596615b6ce4b902b612b6c657f42fd82da
+2020-01-14 12:22:22 INFO: Linkage for commit 16150fe751d18dd1d08b13a450af49743ce934fe
+2020-01-14 12:23:08 INFO: Linkage for commit 9f7b47f5172e5df6143e2adecabc62e1bbff6523
+2020-01-14 12:23:09 INFO: Linkage for commit b8ecf4e083ff4337435560ff67cae09e167f83b6
+2020-01-14 12:23:10 INFO: Linkage for commit 3eed85a31d19481d0551deb3d41c847fe6cd2cce
+2020-01-14 12:23:58 INFO: Linkage for commit 27972c8ec54d55989b4d7486ac6f9de00007f522
+2020-01-14 12:23:59 INFO: Linkage for commit dff98476dd51c1d5f41982d8fa7348454fa4618a
+2020-01-14 12:24:23 INFO: Linkage for commit f83a1b56ff1743f783ab05ad87c7f79c65ae6cb4
+2020-01-14 12:24:25 INFO: Linkage for commit f7d3faab5aa9064bc6e705fe990296f172415ac2
+2020-01-14 12:24:41 INFO: Linkage for commit 53ddefb818cd1443ea1a364f241e405fa4a316d6
+2020-01-14 12:24:45 INFO: Linkage for commit 335434239099a48069cd25d9e05f5c160d19154b
+2020-01-14 12:24:50 INFO: Linkage for commit 28270a87d163154e6a776f9d50279dc9c5c09481
+2020-01-14 12:24:51 INFO: Linkage for commit a9e84c0e234d71c152ae6cfc31723ed1b5cf9f07
+2020-01-14 12:24:52 INFO: Linkage for commit 43674c486f92415e669a102d0c403fc94cac2cd3
+2020-01-14 12:25:07 INFO: Linkage for commit 22a0c2aca644d8f4c41f727a6c16a5401b191249
+2020-01-14 12:25:15 INFO: Linkage for commit 87cb843ea0e393961030064a16b4e616b9132e87
+2020-01-14 12:25:15 INFO: Linkage for commit 15ac6cdb386c1e98f520774d153dcd5110c20df2
+2020-01-14 12:25:17 INFO: Linkage for commit ef2b368b6547526d5d3fedfa86069713bcd1c203
+2020-01-14 12:25:17 INFO: Linkage for commit e3d2b9cece6c8bcb5069cefdd7a835a1123dcc4f
+2020-01-14 12:25:18 INFO: Linkage for commit d03fa95568bfcb5bb98ae6c79fedc037eaf0903a
+2020-01-14 12:25:19 INFO: Linkage for commit abf8f6f6199dfcc0df3cc315ce5ba1e4edeb9991
+2020-01-14 12:25:57 INFO: Linkage for commit 6e386c58841f6b10d6db22e7192dfe800cb7b9e4
+2020-01-14 12:25:57 INFO: Linkage for commit 3cd9b847e15a8d12927c7ecad57aa7e256c548b0
+2020-01-14 12:25:58 INFO: Linkage for commit a4af1fb2f7fb7eef97881cdee0573d71bde41cae
+2020-01-14 12:42:47 INFO: Linkage for commit 5ddd8a094071f9288f338913c67a1c443f6061a9
+2020-01-14 12:42:49 INFO: Linkage for commit 4ddfda63403e69c3c35f8c7f6bef850533af8599
+2020-01-14 12:43:52 INFO: Linkage for commit 6c4c5cf311d966bc9e2772b7c8e087e6c5d2015c
+2020-01-14 12:43:57 INFO: Linkage for commit a137f7a22ff238d9999bf2676d8d7fde0d0ad2df
+2020-01-14 12:43:59 INFO: Linkage for commit 77f239542883e3dbe428421e40f5211aa15a1efb
+2020-01-14 12:44:05 INFO: Linkage for commit ea8760f9a2210e5eedf1019ed5b573afee661e7a
+2020-01-14 12:44:06 INFO: Linkage for commit ba4cf583b48d1848ad95c1a68315ab89384b3b80
+2020-01-14 12:44:11 INFO: Linkage for commit dd61bbaa7ae798aa927f15a8446dd8824de05952
+2020-01-14 12:44:18 INFO: Linkage for commit a38e46cd8bde13b708ce073544b8092906a53e63
+2020-01-14 12:44:27 INFO: Linkage for commit baed4120bc03b05bad536a84e8f27c3e7869b8b9
+2020-01-14 12:44:30 INFO: Linkage for commit d69b5b3b36407f37e7723191e01e32c4bce52dbc
+2020-01-14 12:44:32 INFO: Linkage for commit fdaf4555c5d1551c9a6914a3a8279f84e7ed1ea8
+2020-01-14 12:44:33 INFO: Linkage for commit 95de265e1a8f13bc691710818db54059e30fe0ce
+2020-01-14 12:44:34 INFO: Linkage for commit e5e31e20e46e437dc347e1eea74ec65fb71ddf5a
+2020-01-14 12:44:36 INFO: Linkage for commit 4e03bc1a7530d55c892a7bdcae7845cca13666ee
+2020-01-14 12:44:36 INFO: Linkage for commit 2fcef37b9ed73d1bee19eef8b06d73ddd7903274
+2020-01-14 12:44:37 INFO: Linkage for commit 85bc7046bbf1064f1d527d5ea0fb8c314940196d
+2020-01-14 12:44:37 INFO: Linkage for commit 028f5d9c906cb02f864c288257b9a6726d3be01b
+2020-01-14 12:44:38 INFO: Linkage for commit a484ab0d7fcb1b76c85ef74442f2cc0a914c3671
+2020-01-14 12:44:39 INFO: Linkage for commit f759ce5a6532b9cfe579f5e189d68deff254118a
+2020-01-14 12:44:40 INFO: Linkage for commit 1b913b2a2f85c890ae1c7375c034bf370bf26245
+2020-01-14 12:44:41 INFO: Linkage for commit f8e8d089f7c7008288668f4f4cb053ea48d5df2f
+2020-01-14 12:44:41 INFO: Linkage for commit 3d165f17ecf04d66023e6b37261c85772f59082e
+2020-01-14 12:44:42 INFO: Linkage for commit 16af1b0fa7e0d7cb3519ad0ecd0b3a550741353c
+2020-01-14 12:44:42 INFO: Linkage for commit 58a645b6ed39d11fd8a5bf986a40c8f58c5a67f0
+2020-01-14 12:44:42 INFO: Linkage for commit 1c74ed4587f9a7e086067165eaea0532a6c33cae
+2020-01-14 12:44:46 INFO: Linkage for commit f563fbbb0518f81c9055368d4f913915e7066a38
+2020-01-14 12:44:46 INFO: Linkage for commit 64e8ec3fbd26a876b7683f83a6f59c6b67316421
+2020-01-14 12:44:46 INFO: Linkage for commit 5faa453835aa87517d6fb2bb644dbcbf793e8d0f
+2020-01-14 12:44:48 INFO: Linkage for commit 7fcd94d5c911e7b7ca9e823d7d603eeb90c418d0
+2020-01-14 12:44:51 INFO: Linkage for commit 9e4f5491f446b781eb5eee951a4f0c2cacc1cf7e
+2020-01-14 12:44:51 INFO: Linkage for commit e9e40cb13ea942b148b259c083fb3364a0cd90ea
+2020-01-14 12:44:52 INFO: Linkage for commit 7e327c1e2cf511b472e101ca0948343897757f10
+2020-01-14 12:44:52 INFO: Linkage for commit 5972d1d69f71e097c8f51bf60c8f3845965acf9a
+2020-01-14 12:44:53 INFO: Linkage for commit 75d782181e1b48b73223892c9b8b4b1cf4c10dfd
+2020-01-14 12:44:53 INFO: Linkage for commit ea72d6c0bd3b7f9f3e45e3d532c0cab24a9e0bcb
+2020-01-14 12:44:54 INFO: Linkage for commit 7fb9f0b85621940e0a5ba977278f6f27fc323046
+2020-01-14 12:44:54 INFO: Linking done for repoTelegram
+its working
+I am here
+   id      name                                    url last_analyzed
+0   1  Telegram  https://github.com/DrKLO/Telegram.git          None
+The repo is: Telegram
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram
+working on pulling
+======================== 2020-01-14 11:55:56.106849 2019-12-15 11:55:56.106836
+            age  ...                                              fixes
+0      0.000000  ...                                                NaN
+1      0.000000  ...                                                NaN
+2           NaN  ...                                                NaN
+3      1.302535  ...  ["4ede31105599d0af566f4143c85b35767f98b59f", "...
+4      9.567299  ...  ["507d05aaf1855320bc09863264f457756593d476", "...
+5     35.651132  ...  ["507d05aaf1855320bc09863264f457756593d476", "...
+6      1.699213  ...                                                NaN
+7      2.011861  ...  ["4ede31105599d0af566f4143c85b35767f98b59f", "...
+8      0.471088  ...  ["d2a6fa4d6d02cc1acff27d3284845bf8a18b72dd", "...
+9      0.033727  ...       ["d29eabd16359a4433c37216ea251a7f8fb3c398a"]
+10     4.050590  ...                                                NaN
+11     2.501790  ...  ["507d05aaf1855320bc09863264f457756593d476", "...
+12     2.636086  ...  ["507d05aaf1855320bc09863264f457756593d476", "...
+13    12.045012  ...  ["507d05aaf1855320bc09863264f457756593d476", "...
+14     0.488785  ...                                                NaN
+15     0.617500  ...                                                NaN
+16          NaN  ...                                                NaN
+17    24.709378  ...                                                NaN
+18          NaN  ...                                                NaN
+19    32.986344  ...  ["507d05aaf1855320bc09863264f457756593d476", "...
+20     8.953511  ...  ["ff85d74b85bf33aa661e34b6a9e2bf037924fe0f", "...
+21     0.008252  ...                                                NaN
+22    12.836065  ...                                                NaN
+23    21.309042  ...  ["ea8f92441c58ed6b3deaa9ef1b9a2500543b1ef8", "...
+24     0.523183  ...                                                NaN
+25     1.454641  ...       ["d29eabd16359a4433c37216ea251a7f8fb3c398a"]
+26     1.551678  ...       ["6e63dee546704a721f3ee106b53c25b48709a9e3"]
+27          NaN  ...                                                NaN
+28    14.186775  ...       ["d29eabd16359a4433c37216ea251a7f8fb3c398a"]
+29     5.781991  ...  ["4ede31105599d0af566f4143c85b35767f98b59f", "...
+..          ...  ...                                                ...
+314    0.425521  ...                                                NaN
+315    1.601447  ...                                                NaN
+316   29.617928  ...                                                NaN
+317         NaN  ...                                                NaN
+318  292.295783  ...                                                NaN
+319         NaN  ...                                                NaN
+320   15.393738  ...                                                NaN
+321   95.678156  ...                                                NaN
+322  451.042766  ...                                                NaN
+323   20.913044  ...                                                NaN
+324    7.442417  ...                                                NaN
+325  319.511655  ...                                                NaN
+326   37.148545  ...                                                NaN
+327   34.790868  ...                                                NaN
+328   62.943638  ...                                                NaN
+329   50.890332  ...                                                NaN
+330  184.291694  ...       ["7fb9f0b85621940e0a5ba977278f6f27fc323046"]
+331  165.205590  ...                                                NaN
+332    9.903717  ...                                                NaN
+333   19.641907  ...                                                NaN
+334    1.033921  ...                                                NaN
+335    1.466335  ...                                                NaN
+336    0.241767  ...                                                NaN
+337    0.285961  ...                                                NaN
+338    0.452110  ...                                                NaN
+339   11.715251  ...                                                NaN
+340    1.521039  ...                                                NaN
+341    1.514317  ...                                                NaN
+342    6.759688  ...                                                NaN
+343         NaN  ...                                                NaN
+
+[344 rows x 25 columns]
+['27b74b537eb74ecbe02c068a6e03940b2fa87334', 'c824df619a0367105ca485dc8828f2a498e2d667', ['main.java.org.telegram.messenger.ConnectionsManager', 'main.java.org.telegram.messenger.Emoji', 'main.java.org.telegram.messenger.FileUploadOperation', 'main.java.org.telegram.messenger.GcmBroadcastReceiver', 'main.java.org.telegram.messenger.MessagesController', 'main.java.org.telegram.messenger.TcpConnection', 'main.java.org.telegram.ui.ChatActivity', 'main.java.org.telegram.ui.UserProfileActivity']]
+pygit2.Repository('/home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram/.git/')
+194
+0 ('27b74b537eb74ecbe02c068a6e03940b2fa87334', 'c824df619a0367105ca485dc8828f2a498e2d667')
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_buggy.udb
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_clean.udb
+1 ('90d8e8a370fba504eadf40f410781c6f4085967b', '27b74b537eb74ecbe02c068a6e03940b2fa87334')
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_buggy.udb
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_clean.udb
+2 ('d52ade4855d3e939daa815c766bab427a22ada61', '90d8e8a370fba504eadf40f410781c6f4085967b')
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_buggy.udb
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_clean.udb
+3 ('02c8efb0df36a50185a36a03c1af862a9f130392', '5aee72ee33fd960df9173ab17942dd1a2ce912b5')
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_buggy.udb
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_clean.udb
+4 ('50a92dc44a7e6f85d55bccede4607394ccd5b378', '02c8efb0df36a50185a36a03c1af862a9f130392')
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_buggy.udb
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_clean.udb
+5 ('d2a6fa4d6d02cc1acff27d3284845bf8a18b72dd', '50a92dc44a7e6f85d55bccede4607394ccd5b378')
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_buggy.udb
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_clean.udb
+6 ('a65f5f9feefae2d9a2907243c9f9c6f36351a17d', '4f9384afee0cf8e3e6c981f3242534f8d3e932e8')
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_buggy.udb
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_clean.udb
+7 ('51add404effb8952ae285fe1cdb19faef6dc8c16', 'a65f5f9feefae2d9a2907243c9f9c6f36351a17d')
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_buggy.udb
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_clean.udb
+8 ('9d2dfd33eed31446632eac95119290e9c2d79d06', '51add404effb8952ae285fe1cdb19faef6dc8c16')
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_buggy.udb
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_clean.udb
+9 ('9814a6e927fa087794ec8b6776ea63e3877772c7', '1a4d0786ec1e28507e35c544094a7c463ec7ef09')
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_buggy.udb
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_clean.udb
+10 ('507d05aaf1855320bc09863264f457756593d476', '9814a6e927fa087794ec8b6776ea63e3877772c7')
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_buggy.udb
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_clean.udb
+11 ('a21494ade639e2e270b448ec6c5325b4be0ec7c5', '9aeb8be8938e6083376142a782166a15edf46743')
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_buggy.udb
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_clean.udb
+12 ('ea8f92441c58ed6b3deaa9ef1b9a2500543b1ef8', 'aa5ff577c48668c5ada2d5dbd778feeb875bf8e9')
+und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Telegram_buggy.udb
+Traceback (most recent call last):
+  File "new.py", line 55, in <module>
+    matrix = get_matrix.get_defective_pair_metrics()
+  File "/home/smajumd3/Data_Miner/github/API_V3/git_understand/git_understand_v1.py", line 305, in get_defective_pair_metrics
+    
+understand.UnderstandError: DBUnableOpen

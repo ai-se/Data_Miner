@@ -1,0 +1,35 @@
+its working
+I am here
+Traceback (most recent call last):
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2657, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 132, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 987, in pandas._libs.hashtable.Int64HashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 993, in pandas._libs.hashtable.Int64HashTable.get_item
+KeyError: 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "new.py", line 41, in <module>
+    access_token = project_list.loc[i,'access_token']
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/indexing.py", line 1494, in __getitem__
+    return self._getitem_tuple(key)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/indexing.py", line 868, in _getitem_tuple
+    return self._getitem_lowerdim(tup)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/indexing.py", line 988, in _getitem_lowerdim
+    section = self._getitem_axis(key, axis=i)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/indexing.py", line 1913, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/indexing.py", line 141, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py", line 3585, in xs
+    loc = self.index.get_loc(key)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2659, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 132, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 987, in pandas._libs.hashtable.Int64HashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 993, in pandas._libs.hashtable.Int64HashTable.get_item
+KeyError: 0
