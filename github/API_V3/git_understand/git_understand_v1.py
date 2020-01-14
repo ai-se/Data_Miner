@@ -297,96 +297,101 @@ class MetricsGetter(object):
         metrics_dataframe = pd.DataFrame()
         print(len(self.buggy_clean_pairs))
         for i in range(len(self.buggy_clean_pairs)):
-            buggy_hash = self.buggy_clean_pairs[i][0]
-            clean_hash = self.buggy_clean_pairs[i][1]
-            files_changed = self.buggy_clean_pairs[i][2]
-            if len((files_changed)) == 0:
+            try:
+                buggy_hash = self.buggy_clean_pairs[i][0]
+                clean_hash = self.buggy_clean_pairs[i][1]
+                files_changed = self.buggy_clean_pairs[i][2]
+                if len((files_changed)) == 0:
+                    continue
+                print(i,(buggy_hash, clean_hash))
+                # Go the the cloned project path
+                os.chdir(self.repo_path)
+                # Checkout the master branch first, we'll need this
+                # to find what files have changed.
+                self._os_cmd("git reset --hard master", verbose=False)
+                print("reset done")
+
+                # Get a list of files changed between the two hashes
+                #files_changed = self._files_changed_in_git_diff(
+                #    buggy_hash, clean_hash)
+                # ------------------------------------------------------------------
+                # ---------------------- BUGGY FILES METRICS -----------------------
+                # ------------------------------------------------------------------
+                # Checkout the buggy commit hash
+                self._os_cmd(
+                    "git reset --hard {}".format(buggy_hash), verbose=False)
+                print("checkout done")
+
+                # Create a understand file for this hash
+                self._create_und_files("buggy")
+
+                #print(self.buggy_und_file)
+                db_buggy = und.open(str(self.buggy_und_file))
+                print("file opened")
+                #print("Files",set(files_changed))
+                for file in db_buggy.ents("Class"):
+                    # print directory name
+                    #print(file,file.longname(), file.kind())
+                    r = re.compile(str(file.longname()))
+                    # print(file.longname())
+                    newlist = list(filter(r.search, list(set(files_changed))))
+                    #print(newlist)
+                    if len(newlist) > 0:
+                        metrics = file.metric(file.metrics())
+                        metrics["commit_hash"] = buggy_hash
+                        metrics["Name"] = file.longname()
+                        metrics["Bugs"] = 1
+                        metrics_dataframe = metrics_dataframe.append(
+                            pd.Series(metrics), ignore_index=True)
+                    else:
+                        metrics = file.metric(file.metrics())
+                        metrics["commit_hash"] = buggy_hash
+                        metrics["Name"] = file.longname()
+                        metrics["Bugs"] = 0
+                        metrics_dataframe = metrics_dataframe.append(
+                            pd.Series(metrics), ignore_index=True)
+                # Purge und file
+                db_buggy.close()
+                #break
+                self._os_cmd("rm {}".format(str(self.buggy_und_file)))
+                # ------------------------------------------------------------------
+                # ---------------------- CLEAN FILES METRICS -----------------------
+                # ------------------------------------------------------------------
+                # Checkout the clean commit hash
+                self._os_cmd(
+                    "git reset --hard {}".format(clean_hash), verbose=False)
+
+                # Create a understand file for this hash
+                self._create_und_files("clean")
+                db_clean = und.open(str(self.clean_und_file))
+                for file in db_clean.ents("class"):
+                    # print directory name
+                    r = re.compile(str(file.longname()))
+                    newlist = list(filter(r.search, files_changed))
+                    #if str(file) in files_changed:
+                    if len(newlist) > 0:
+                        metrics = file.metric(file.metrics())
+                        #print(metrics)
+                        metrics["commit_hash"] = clean_hash
+                        metrics["Name"] = file.name()
+                        metrics["Bugs"] = 0
+                        metrics_dataframe = metrics_dataframe.append(
+                            pd.Series(metrics), ignore_index=True)
+                    else:
+                        metrics = file.metric(file.metrics())
+                        #print(metrics)
+                        metrics["commit_hash"] = clean_hash
+                        metrics["Name"] = file.name()
+                        metrics["Bugs"] = 0
+                        metrics_dataframe = metrics_dataframe.append(
+                            pd.Series(metrics), ignore_index=True)
+                db_clean.close()
+                # Purge und file
+                self._os_cmd("rm {}".format(str(self.clean_und_file)))
+            except Exception as e:
+                print("issue with",buggy_hash)
+                print("Error:",e)
                 continue
-            print(i,(buggy_hash, clean_hash))
-            # Go the the cloned project path
-            os.chdir(self.repo_path)
-            # Checkout the master branch first, we'll need this
-            # to find what files have changed.
-            self._os_cmd("git reset --hard master", verbose=False)
-            print("reset done")
-
-            # Get a list of files changed between the two hashes
-            #files_changed = self._files_changed_in_git_diff(
-            #    buggy_hash, clean_hash)
-            # ------------------------------------------------------------------
-            # ---------------------- BUGGY FILES METRICS -----------------------
-            # ------------------------------------------------------------------
-            # Checkout the buggy commit hash
-            self._os_cmd(
-                "git reset --hard {}".format(buggy_hash), verbose=False)
-            print("checkout done")
-
-            # Create a understand file for this hash
-            self._create_und_files("buggy")
-
-            #print(self.buggy_und_file)
-            db_buggy = und.open(str(self.buggy_und_file))
-            print("file opened")
-            #print("Files",set(files_changed))
-            for file in db_buggy.ents("Class"):
-                # print directory name
-                #print(file,file.longname(), file.kind())
-                r = re.compile(str(file.longname()))
-                # print(file.longname())
-                newlist = list(filter(r.search, list(set(files_changed))))
-                #print(newlist)
-                if len(newlist) > 0:
-                    metrics = file.metric(file.metrics())
-                    metrics["commit_hash"] = buggy_hash
-                    metrics["Name"] = file.longname()
-                    metrics["Bugs"] = 1
-                    metrics_dataframe = metrics_dataframe.append(
-                        pd.Series(metrics), ignore_index=True)
-                else:
-                    metrics = file.metric(file.metrics())
-                    metrics["commit_hash"] = buggy_hash
-                    metrics["Name"] = file.longname()
-                    metrics["Bugs"] = 0
-                    metrics_dataframe = metrics_dataframe.append(
-                        pd.Series(metrics), ignore_index=True)
-            # Purge und file
-            db_buggy.close()
-            #break
-            self._os_cmd("rm {}".format(str(self.buggy_und_file)))
-            # ------------------------------------------------------------------
-            # ---------------------- CLEAN FILES METRICS -----------------------
-            # ------------------------------------------------------------------
-            # Checkout the clean commit hash
-            self._os_cmd(
-                "git reset --hard {}".format(clean_hash), verbose=False)
-
-            # Create a understand file for this hash
-            self._create_und_files("clean")
-            db_clean = und.open(str(self.clean_und_file))
-            for file in db_clean.ents("class"):
-                # print directory name
-                r = re.compile(str(file.longname()))
-                newlist = list(filter(r.search, files_changed))
-                #if str(file) in files_changed:
-                if len(newlist) > 0:
-                    metrics = file.metric(file.metrics())
-                    #print(metrics)
-                    metrics["commit_hash"] = clean_hash
-                    metrics["Name"] = file.name()
-                    metrics["Bugs"] = 0
-                    metrics_dataframe = metrics_dataframe.append(
-                        pd.Series(metrics), ignore_index=True)
-                else:
-                    metrics = file.metric(file.metrics())
-                    #print(metrics)
-                    metrics["commit_hash"] = clean_hash
-                    metrics["Name"] = file.name()
-                    metrics["Bugs"] = 0
-                    metrics_dataframe = metrics_dataframe.append(
-                        pd.Series(metrics), ignore_index=True)
-            db_clean.close()
-            # Purge und file
-            self._os_cmd("rm {}".format(str(self.clean_und_file)))
             # print(self.metrics_dataframe)
 
             #printProgressBar(i, len(self.buggy_clean_pairs),
