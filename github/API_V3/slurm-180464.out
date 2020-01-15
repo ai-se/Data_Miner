@@ -1,0 +1,148 @@
+16
+          repo_name repo_owner  ... commits defective
+0  coursera-android    aporter  ...     135         9
+
+[1 rows x 9 columns]
+                      repo_name repo_owner  ... commits defective
+0  Android-ObservableScrollView  ksoichiro  ...     383        80
+
+[1 rows x 9 columns]
+Empty DataFrame
+Columns: [repo_name, repo_owner, git_url, api_base_url, source_type, access_token, lang, commits, defective]
+Index: []
+Empty DataFrame
+Columns: [repo_name, repo_owner, git_url, api_base_url, source_type, access_token, lang, commits, defective]
+Index: []
+Empty DataFrame
+Columns: [repo_name, repo_owner, git_url, api_base_url, source_type, access_token, lang, commits, defective]
+Index: []
+Empty DataFrame
+Columns: [repo_name, repo_owner, git_url, api_base_url, source_type, access_token, lang, commits, defective]
+Index: []
+Empty DataFrame
+Columns: [repo_name, repo_owner, git_url, api_base_url, source_type, access_token, lang, commits, defective]
+Index: []
+Empty DataFrame
+Columns: [repo_name, repo_owner, git_url, api_base_url, source_type, access_token, lang, commits, defective]
+Index: []
+Empty DataFrame
+Columns: [repo_name, repo_owner, git_url, api_base_url, source_type, access_token, lang, commits, defective]
+Index: []
+Empty DataFrame
+Columns: [repo_name, repo_owner, git_url, api_base_url, source_type, access_token, lang, commits, defective]
+Index: []
+Empty DataFrame
+Columns: [repo_name, repo_owner, git_url, api_base_url, source_type, access_token, lang, commits, defective]
+Index: []
+Empty DataFrame
+Columns: [repo_name, repo_owner, git_url, api_base_url, source_type, access_token, lang, commits, defective]
+Index: []
+Empty DataFrame
+Columns: [repo_name, repo_owner, git_url, api_base_url, source_type, access_token, lang, commits, defective]
+Index: []
+Empty DataFrame
+Columns: [repo_name, repo_owner, git_url, api_base_url, source_type, access_token, lang, commits, defective]
+Index: []
+Empty DataFrame
+Columns: [repo_name, repo_owner, git_url, api_base_url, source_type, access_token, lang, commits, defective]
+Index: []
+Empty DataFrame
+Columns: [repo_name, repo_owner, git_url, api_base_url, source_type, access_token, lang, commits, defective]
+Index: []
+I am here
+I am here
+['af5efdad02535193d4e3e752f0ffd70495455a47', '35a7ecaf60aeb1dae62e6c14ae1a0f3fcc75708a', ['main.AndroidManifest', 'main.java.com.github.ksoichiro.android.observablescrollview.samples.ActionBarControlScrollViewActivity', 'main.res.layout.activity_actionbarcontrolscrollview', 'main.res.values.strings', 'main.java.com.github.ksoichiro.android.observablescrollview.ObservableScrollView']]
+80
+0 ('af5efdad02535193d4e3e752f0ffd70495455a47', '35a7ecaf60aeb1dae62e6c14ae1a0f3fcc75708a')
+['80de9cf1288f6ea27c5d98cb8f9f6b26b69bcb76', 'f5ec53d30d3607b0af069980408e2748f10a563d', ['course.examples.Alarms.AlarmCreate.AlarmCreateActivity', 'course.examples.Alarms.AlarmCreate.AlarmLoggerReceiver', 'course.examples.Alarms.AlarmCreate.AlarmNotificationReceiver', 'BrowserProvider', 'DialtactsActivity', 'MediaPlaybackService', 'SmsReceiver', 'course.examples.AudioVideo.AudioManager.AudioVideoAudioManagerActivity', 'course.examples.AudioVideo.AudioRecording.AudioRecordingActivity', 'course.examples.AudioVideo.Camera.AudioVideoCameraActivity', 'course.examples.AudioVideo.Ringtone.AudioVideoRingtoneManagerActivity', 'course.examples.AudioVideo.VideoPlay.AudioVideoVideoPlayActivity', 'course.examples.Bluetooth.SetupAndTransferData.AcceptThread', 'course.examples.Bluetooth.SetupAndTransferData.ConnectThread', 'course.examples.Bluetooth.SetupAndTransferData.ConnectionThread', 'course.examples.Bluetooth.SetupAndTransferData.DataTransferActivity', 'course.examples.Bluetooth.SetupAndTransferData.ShowDevices', 'course.examples.BroadcastReceiver.CompoundBroadcast.CompoundBroadcast', 'course.examples.BroadcastReceiver.CompoundBroadcast.Receiver1', 'course.examples.BroadcastReceiver.CompoundBroadcast.Receiver2', 'course.examples.BroadcastReceiver.CompoundBroadcast.Receiver3', 'course.examples.BroadcastReceiver.CompoundOrderedBroadcast.CompoundOrderedBroadcast', 'course.examples.BroadcastReceiver.CompoundOrderedBroadcast.Receiver1', 'course.examples.BroadcastReceiver.CompoundOrderedBroadcast.Receiver2', 'course.examples.BroadcastReceiver.CompoundOrderedBroadcast.Receiver3', 'course.examples.BroadcastReceiver.CompoundOrderedBroadcast.CompoundOrderedBroadcastWithResultReceiver', 'course.examples.BroadcastReceiver.CompoundOrderedBroadcast.Receiver1', 'course.examples.BroadcastReceiver.CompoundOrderedBroadcast.Receiver2', 'course.examples.BroadcastReceiver.CompoundOrderedBroadcast.Receiver3', 'course.examples.BroadcastReceiver.SingleBroadcastDynamicRegistration.Receiver', 'course.examples.BroadcastReceiver.SingleBroadcastDynamicRegistration.SingleBroadcast', 'course.examples.BroadcastReceiver.singleBroadcastStaticRegistration.Receiver', 'course.examples.BroadcastReceiver.singleBroadcastStaticRegistration.SimpleBroadcast', 'course.examples.BroadcastReceiver.StickyIntent.StickyIntentBroadcastReceiverActivity', 'course.examples.checkIntents.CheckActivityIntents', 'course.examples.checkBroadcastIntents.CheckBroadcastIntents', 'course.examples.ContentProviders.StringContentProvider.DataContract', 'course.examples.ContentProviders.StringContentProvider.DataRecord', 'course.examples.ContentProviders.StringContentProvider.StringsContentProvider', 'course.examples.ContentProviders.StringContentProvider.DataContract', 'course.examples.ContentProviders.StringContentProviderUser.CustomContactProviderDemo', 'course.examples.ContentProviders.ContactsList.ContactsListExample', 'course.examples.ContentProviders.ContactsList.ContactInfo', 'course.examples.ContentProviders.ContactsList.ContactInfoListAdapter', 'course.examples.ContentProviders.ContactsList.ContactsListExample', 'course.examples.ContentProviders.ContactsListInsertContacts.DisplayActivity', 'course.examples.ContentProviders.ContactsListInsertContacts.InsertActivity', 'course.examples.ContentProviders.ContactsListWithAdapter.ContactInfo', 'course.examples.ContentProviders.ContactsListWithAdapter.ContactInfoListAdapter', 'course.examples.ContentProviders.ContactsListWithAdapter.ContactsListExample', 'course.examples.DataManagement.FileExternal.ExternalFileWriteReadActivity', 'course.examples.DataManagement.FileInternal.InternalFileWriteReadActivity', 'course.examples.DataManagement.PreferenceActivity.PreferencesActivityExample', 'course.examples.DataManagement.PreferenceActivity.ViewAndUpdatePreferencesActivity', 'course.examples.DataManagement.DataBaseExample.DatabaseExampleActivity', 'course.examples.DataManagement.DataBaseExample.DatabaseOpenHelper', 'course.examples.DataManagement.SharedPreferences.SharedPreferenceReadWriteActivity', 'course.examples.Fragments.DynamicLayout.QuoteViewerActivity', 'course.examples.Fragments.DynamicLayout.QuotesFragment', 'course.examples.Fragments.DynamicLayout.TitlesFragment', 'course.examples.UI.FragmentActionBar.QuoteFragment', 'course.examples.UI.FragmentActionBar.QuoteViewerActivity', 'course.examples.UI.FragmentActionBar.TitlesFragment', 'course.examples.Fragments.ProgrammaticLayout.QuoteViewerActivity', 'course.examples.Fragments.ProgrammaticLayout.QuotesFragment', 'course.examples.Fragments.ProgrammaticLayout.TitlesFragment', 'course.examples.quoteviewer.QuoteListActivity', 'course.examples.quoteviewer.TitlesListActivity', 'course.examples.Fragments.StaticConfigLayout.QuoteViewerActivity', 'course.examples.Fragments.StaticConfigLayout.QuotesFragment', 'course.examples.Fragments.StaticConfigLayout.TitlesFragment', 'course.examples.Fragments.StaticLayout.QuoteViewerActivity', 'course.examples.Fragments.StaticLayout.QuotesFragment', 'course.examples.Fragments.StaticLayout.TitlesFragment', 'course.examples.Graphics.BubbleProgram.BubbleActivity', 'course.examples.Graphics.BubbleProgramXML.BubbleActivity', 'course.examples.Graphics.CanvasBubble.BubbleActivity', 'course.examples.Graphics.CanvasBubble.Coords', 'course.examples.Graphics.CanvasBubbleSurfaceView.BubbleActivity', 'course.examples.Graphics.FrameAnimation.GraphicsFrameAnimationActivity', 'course.examples.Graphics.Paint.GraphicsPaintActivity', 'course.examples.Graphics.ShapeDraw.ShapeDrawActivity', 'course.examples.Graphics.ShapeDrawXML.ShapeDrawActivity', 'course.examples.Graphics.TransitionDrawable.TransitionDrawableActivity', 'course.examples.Graphics.TweenAnimation.GraphicsTweenAnimationActivity', 'course.examples.graphics.objectpropertyanimator.ValueAnimatorActivity', 'course.examples.Graphics.ViewPropertyAnimator.GraphicsViewPropertyAnimatorActivity', 'course.examples.HelloWorld.HelloWorld.HelloAndroid', 'course.examples.HelloWorld.HelloWorld.test.HelloAndroidTest', 'course.examples.helloWorldWithLogin.HelloAndroid', 'course.examples.helloWorldWithLogin.LoginScreen', 'course.examples.UI.MenuExample.HelloAndroidWithMenuActivity', 'course.examples.HelloWorldTabWidget.AlbumsActivity', 'course.examples.HelloWorldTabWidget.ArtistsActivity', 'course.examples.HelloWorldTabWidget.HelloTabWidget', 'course.examples.HelloWorldTabWidget.SongsActivity', 'course.examples.Location.GetLocation.LocationGetLocationActivity', 'course.examples.Location.GetLocation.LocationGetLocationActivity', 'course.examples.Services.LocalLoggingService.LoggingService', 'course.examples.Services.LocalLoggingService.LoggingServiceClient', 'course.examples.Services.LoggingServiceWithMessenger.LoggingService', 'course.examples.Services.LoggingServiceWithMessengerClient.LoggingServiceClient', 'course.examples.Maps.EarthQuakeMap.EarthQuakeRec', 'course.examples.Maps.EarthQuakeMap.JSONResponseHandler', 'course.examples.Maps.EarthQuakeMap.MapsEarthquakeMapActivity', 'course.examples.MapLocation.MapLocation', 'course.examples.MapLocationFromContacts.MapLocationFromContactsActivity', 'course.examples.Services.MusicService.MusicService', 'course.examples.Services.MusicService.MusicServiceClient', 'course.examples.Networking.AndroidHttpClient.NetworkingAndroidHttpClientActivity', 'course.examples.Networking.AndroidHttpClientJSON.MainActivity', 'course.examples.Networking.AndroidHttpClientJSON.NetworkingAndroidHttpClientJSONActivity', 'course.examples.Networking.AndroidHttpClientXML.MainActivity', 'course.examples.Networking.AndroidHttpClientXML.NetworkingAndroidHttpClientXMLActivity', 'course.examples.Networking.AndroidHttpClientXML.XMLResponseHandler', 'course.examples.Networking.Sockets.NetworkingSocketsActivity', 'course.examples.Networking.URL.NetworkingURLActivity', 'course.examples.Notification.StatusBar.NotificationStatusBarActivity', 'course.examples.Notification.StatusBar.NotificationSubActivity', 'course.examples.Notification.StatusBarWithCustomView.NotificationStatusBarWithCustomViewActivity', 'course.examples.Notification.StatusBarWithCustomView.NotificationSubActivity', 'course.examples.Notification.Toast.NotificationToastActivity', 'course.examples.Notification.ToastWithCustomView.NotificationToastActivity', 'course.examples.permissionexample.boom.BoomActivity', 'course.examples.permissionexample.boomUser.BoomUserActivity', 'course.examples.compass.CompassActivity', 'course.examples.Sensors.ShowValues.SensorFilteredValuesActivity', 'course.examples.Sensors.ShowValues.SensorRawAccelerometerActivity', 'course.examples.Services.KeyClient.KeyServiceUser', 'course.examples.Services.KeyCommon.KeyGenerator', 'course.examples.Services.KeyCommon.KeyGenerator', 'course.examples.Services.KeyService.KeyGeneratorImpl', 'course.examples.theanswer.TheAnswer', 'course.examples.Threading.ThreadingAsyncTask.AsyncTaskActivity', 'course.examples.Threading.ThreadingHandlerMessages.HandlerMessagesActivity', 'course.examples.Threading.ThreadingHandlerRunnable.HandlerRunnableActivity', 'course.examples.Threading.NoThreading.NoThreadingExample', 'course.examples.Threading.ThreadingRunOnUiThread.SimpleThreadingExample', 'course.examples.Threading.ThreadingSimple.SimpleThreadingExample', 'course.examples.Threading.ThreadingViewPost.SimpleThreadingViewPostActivity', 'course.examples.touch.ViewTransitions.ViewFlipperTestActivity', 'course.examples.touch.Gestures.GesturesActivity', 'course.examples.Touch.LocateTouch.IndicateTouchLocationActivity', 'course.examples.UI.AlertDialog.AlertDialogActivity', 'course.examples.UI.AutoComplete.AutoCompleteActivity', 'course.examples.UI.Button.ButtonActivity', 'course.examples.UI.CheckBox.CheckBoxActivity', 'course.examples.UI.datepicker.DatePickerActivity', 'course.examples.UI.Gallery.GalleryActivity', 'course.examples.UI.MapView.GoogleMapActivity', 'course.examples.UI.GridLayout.GridLayoutActivity', 'course.examples.UI.GridLayout.ImageAdapter', 'course.examples.UI.GridLayout.ImageViewActivity', 'course.examples.UI.LinearLayout.LinearLayoutActivity', 'course.examples.UI.ListLayout.ListViewActivity', 'course.examples.UI.RadioGroup.RadioGroupActivity', 'course.examples.UI.RatingsBar.RatingsBarActivity', 'course.examples.UI.RelativeLayout.RelativeLayoutActivity', 'course.examples.UI.sampler.SamplerActivity', 'course.examples.UI.Spinner.SpinnerActivity', 'course.examples.UI.TabLayout.GridFragment', 'course.examples.UI.TabLayout.ImageAdapter', 'course.examples.UI.TabLayout.ImageViewActivity', 'course.examples.UI.TabLayout.TabLayoutActivity', 'course.examples.UI.TableLayout.TableLayoutActivity', 'course.examples.UI.timepicker.TimePickerActivity', 'course.examples.UI.ToggleButton.ToggleButtonActivity', 'course.examples.UI.WebView.WebViewActivity', 'android.UnusedStub']]
+9
+0 ('80de9cf1288f6ea27c5d98cb8f9f6b26b69bcb76', 'f5ec53d30d3607b0af069980408e2748f10a563d')
+1 ('bc3320c709e58c9013effd937357085ed95b6c55', 'af5efdad02535193d4e3e752f0ffd70495455a47')
+2 ('672cf5886b05110f84647f4fe75c21a46ebfc49c', '867d90b3d6ec95f7b348fb6a6dc186b25add3792')
+3 ('fa9009fe1b754c1f1963a6ba8b4414b0b968d887', '672cf5886b05110f84647f4fe75c21a46ebfc49c')
+4 ('1b847101fa5d0acf880fb640094662b725aca838', 'fa9009fe1b754c1f1963a6ba8b4414b0b968d887')
+5 ('a07f265d8c1027d050658e1addcb8d9ca41cc7db', 'e8d54df7f454e92b1c6ce7048bca351b7b57d66a')
+6 ('8766612beb06d32fa2c1169768557f2d234d770c', '9f69acf73e3945c6030eb839e9bf425449d552f1')
+7 ('c3be55068f7ce5b08b9d0c10c953e1767d8c874f', '9bce4bd196cac330de7bcc7a9591df6317cb7043')
+8 ('ad2356dca5d770d89d81061347d282f01266e5dd', 'f9e527dd8271f4970251f5690ed3bcfd9ae830df')
+9 ('3e1390b573399d44e0b59444f41c9c57a7a1bc6c', '68545edeff4a4bfc3ea2bc6b147b26bf311fb76f')
+10 ('236a587ec10bc7c6f66e35aa76a54953eba590f6', '59ac5565051cac87789cdeb7b76e7cd280abcc99')
+1 ('f9460dd5ffa48daa1d01b7f97c2ce20d9adeb33b', '627c156a41105d3a68888d1eddbc6ddfdd2ca59b')
+11 ('7e2d18176628bbf28ee54005de3f5ae35e1ba9c7', '7c59b05efa36056fc32b2815a52b51642421517e')
+12 ('17e6e64a2236a96cab8b0a698a31c8bbfb8def8e', '6e9d1341e599c9e6447bd98b6d38eeec5146b30f')
+13 ('fb40b902d1b010557f53ad7f8269724653066edf', 'ca729f609104a840862589756a56668815839d0a')
+14 ('7c6c16a737fcfe176e36b1e33153e512bba5f48e', 'fb40b902d1b010557f53ad7f8269724653066edf')
+15 ('c5a143bf0779592fbf74ca7daad87dbc56bd66d5', 'a5bd2eb040f32b2aa39166145562bbc174419f78')
+16 ('7e3ac63eab9dc86f5a70b1db8d0ca96ab88b7055', 'c5a143bf0779592fbf74ca7daad87dbc56bd66d5')
+17 ('29b983d4f4e8e43b5bedc6317e2328ff4ce8cd72', 'ba40acd201b080b8355f730fe5a9b9baf639104e')
+2 ('362787693eae42ed0b510b8c13d797638bf48662', 'a2834c38adaeedd5064ae9c75923b38b22034ddb')
+18 ('0f2fffccccd7238e8522aada3a725ee1ba6ff451', '29b983d4f4e8e43b5bedc6317e2328ff4ce8cd72')
+19 ('6b3c1b2aebe8998296791d2cca704f09de1ed09e', '0f2fffccccd7238e8522aada3a725ee1ba6ff451')
+20 ('d6077a543143401fbb509f7cb04a337eea3d276f', '6b3c1b2aebe8998296791d2cca704f09de1ed09e')
+21 ('49a88b67d0a6731915798802f58ee0e660ce49ba', 'd6077a543143401fbb509f7cb04a337eea3d276f')
+22 ('45739cd7fce218c1c22de068117f942b06a36a21', 'a99a0de2acf66423470d49c4ff7273862bf05a03')
+23 ('577cdb3dc1f9195d2bb101b110953eee561c40e5', '63a21c261723fb76ea66962fe61d2e11c50ba12d')
+3 ('2d7698d45323d655c3b4f3318fc0a7adab68b80e', '8adebbd2373cbc5f3cce7de66479f9fe7175674c')
+24 ('6e8197b1f995e91c807d3fde67d84f1f6ddf5ae3', '577cdb3dc1f9195d2bb101b110953eee561c40e5')
+25 ('a0966f0f9217dd80ee2e3eed1fb5e7d0256f4aad', '30ed6a325ef4191c1cb5cce77886afed8b7259cd')
+26 ('33f01d5d3cb742931f57d14fdf3fe328b0cb85fc', '2e2c5c3fcb8d4cad899983ea9edc09c8979556f6')
+27 ('af147ad9f282605d6bac257ed457806bc6c30037', '0e4cd99a14e4848ff08564fb8e1821207a5c17f0')
+28 ('33617ed3cb864a77e310bae31b3ad6470d97a65b', 'af147ad9f282605d6bac257ed457806bc6c30037')
+4 ('734724d79cb31406bff2046b201e9250d3419dfb', 'd0e672cbbcbb9910733e7177c5a8ffaca69be148')
+29 ('a7a88e109d8352712a1d1fa4fe15870fe2c38e67', '499579c07536ac3a2f114026d863437756b9444a')
+30 ('9996cbfa17b862282fce339df9de7a1b94eb5eb6', 'a7a88e109d8352712a1d1fa4fe15870fe2c38e67')
+31 ('8f7d7603406842de93e84f9d72a35316977de470', '0c49f520843a90675d9e7329f73fbaa576f6982a')
+32 ('3546d95a67e12581c2ceafcd129f523ea87a4652', '8f7d7603406842de93e84f9d72a35316977de470')
+5 ('f63fa9235ea6cf8d5084635d6d3d617b283f6da9', 'f4c83e11fb07300498a2bc2ac1c932c7c4db7abb')
+33 ('792999768052044d768c301518387b2358c567de', '3546d95a67e12581c2ceafcd129f523ea87a4652')
+34 ('669b35d95d03abd904abfaf4d19fff386ddce0e7', '792999768052044d768c301518387b2358c567de')
+35 ('528f1a76955c233f5abb0003394249924131d055', '669b35d95d03abd904abfaf4d19fff386ddce0e7')
+36 ('a16ba6e7d470a31069c2057cb1e8e10e2aa6b03c', '9a7f89736b1d5363a7aa1a77ed566574bce2e995')
+37 ('8bc6196ab930905ec70b5e1768002e5e0a125846', 'a830e31b8013ac9a568ef2044d48fa964bfd8b6e')
+6 ('ba37b4ed594eff674dad1c51a1306aa49e98646e', 'f63fa9235ea6cf8d5084635d6d3d617b283f6da9')
+38 ('6d3c0e1d7d82d066185f07a2f007a313821673ac', 'fb03339a75e757d6f9268b8e935165c947dc16fc')
+39 ('5a660958c25b7b9eb958505596b9aa43aa412659', '6d3c0e1d7d82d066185f07a2f007a313821673ac')
+40 ('eb4f884263a3d27cbecc997b1b7c604eec2dfa82', '7ff6d9210d79c68c7af526fff46938eb2d0986fc')
+41 ('8c12feec0f0e2dc932a5c1bea109daae950fe49a', 'ac666e95683fca1a901ef7419c09a90958e9cea6')
+7 ('43819d5955fcc82ae49381beab998e69a3eff8c3', 'd994a651e7cd7e625b77621753f771e0c6a51de7')
+42 ('46422edcaf3341fded09b3070675a9a25230ccf4', '0b849528e90f6dedcf5dc153ee8b3d8b514fccad')
+43 ('40ec4f1da53ced232f445a3ab44eb3b274adbe75', '46422edcaf3341fded09b3070675a9a25230ccf4')
+44 ('3e7cdd172570bdd127afd2d43befa6e8af215cc2', 'da6ee00c8af59b207d2750c7cbac3ccdba709866')
+45 ('28b59b34ac9e7051c3a4bbd56008fe441d9444e0', 'ae1f59200cb24713e3ef78e94b540a74a345d23e')
+46 ('a349a5f2232191864f3e16705c87cdb54da3373e', '28b59b34ac9e7051c3a4bbd56008fe441d9444e0')
+47 ('6f7e3a86f0bde6038710d413ca0ec8b0bb55a61d', '115ca0edbec2107c4189c0d1decb0787bab3c3f2')
+48 ('10e84f62bb23824396dd2c3d085c44b41f06467a', '6f7e3a86f0bde6038710d413ca0ec8b0bb55a61d')
+49 ('9a8c44f88983b004d942ec1c26ea1db99abc1767', '10e84f62bb23824396dd2c3d085c44b41f06467a')
+50 ('4eca3e11ad0610aa19dc515f80a12e50b8791f29', 'f950226b21f06d48705f6d4e1f9d317a31ffa562')
+51 ('eed4a81b82e341eda8ae3a48875e652cda386d4e', '4eca3e11ad0610aa19dc515f80a12e50b8791f29')
+52 ('39c1807a76762e12b30a111abd0a618f839feb5a', 'c0d7de289eb178c55dd9166889440ec29da2e93c')
+53 ('fdba95a43afc4f4737f10a06f86e60751ecd2b25', 'cc883e080140083842c917c23b6e392fe0265dd2')
+54 ('379c6ceba3aacc323832d5695d6a02aca1ca3665', 'a44b83570ae486ae8762a50db6e5941c333167c3')
+8 ('9a55c8988e378c46fd53eb274d2315a8dd6e793e', 'cc7fe42ec5268506925f814b22ef3c8371f67d0e')
+55 ('fe83197cffb0d421020287b40e3f6e221c914edb', '04c8ebb18ebebd369f97590f6d98e02a82495886')
+56 ('cb3d9713d4622f3c5ce41cb15883cc71532fb5ac', 'fe83197cffb0d421020287b40e3f6e221c914edb')
+57 ('3633f1408f223509bc1f16d08d55a7819209247a', 'cef0f1c53b7c466358fbb276c354e571da638cec')
+58 ('8139aa04f335f2855357d608c7653f67e25644b1', '3c65189f6d852e57b727cfec59da882f15c7cc6f')
+59 ('a552cb111a695ea69d63a152d2b0d51f6ac818ae', 'afcad795a229d2ca1a68fbd4a13a996a80a54286')
+60 ('9fc4412be081b299c42a9fd267e58fa13a39b220', 'afcad795a229d2ca1a68fbd4a13a996a80a54286')
+61 ('e21f35600a6eeb19e99dcd0b86bf379321b957c4', '3e91dd48b46e58c9fbd1e82900903cc55cc84a7e')
+62 ('814c079d8c845fcfecca0c70a6ddfe6f577612d4', '2a598547dd5770b931da33854f4e9d3c7599f82f')
+Done
+63 ('8013519189c6034fa91c9d3de0a66687c1d62a67', '199373fd469cc2fdb91844cb8f55d854ab73f595')
+64 ('75377c5476589405fafde65437070fa7eed0f669', '8013519189c6034fa91c9d3de0a66687c1d62a67')
+65 ('fd5f59fae789c876872be0a97ced3bd23d06c286', '75377c5476589405fafde65437070fa7eed0f669')
+66 ('0853ab8d8595ea999ab2f496c811974ce45352da', '854b684019642fb02cafa6284fa5c924a80149af')
+67 ('31cab6563f097b957f0dc34a36dc604741494c2c', '0853ab8d8595ea999ab2f496c811974ce45352da')
+68 ('554e33d278df6ec406e081bd31fff1a7fc6eb123', '31cab6563f097b957f0dc34a36dc604741494c2c')
+69 ('b56552270ead6ccf815abbff55e94784cd172515', 'e308b602aa753d0ef91db524761bebafa6345ba1')
+70 ('1d9f68e375a25abcc4f80eb7bb601b1dc325d7c7', 'c76542956e514414b265c1dec5cfbbefc46e8870')
+71 ('ad159b5c988f4829116024d05a1eae9afbc65717', '1d9f68e375a25abcc4f80eb7bb601b1dc325d7c7')
+72 ('3effb9c7962a411d7fb2c8323a37e5c92c68ffeb', 'ad159b5c988f4829116024d05a1eae9afbc65717')
+73 ('cfb3ae7dd438d20b13d3cb65300503e1f0a913aa', 'db593e383c2ba90d75c009ca54cf6417c7fecedf')
+74 ('bcfee364d38d6daea37d4be15ecb365bc259a30f', 'cfb3ae7dd438d20b13d3cb65300503e1f0a913aa')
+75 ('177d642432bba3a1a5255b6e31aae001369f7881', '2004a41870012be3d92df5469ae041de048db8ec')
+76 ('d6c8a3ead51e65c7b719f4485040964e41b58f9f', 'b24a12eeeee1adaa54eb7002bb00ce4e87c1103d')
+77 ('1bf12c6c14b973905481b2f7d4dc419abff79d05', '29d35e646eafef1ec9f1bd475b81b217b415aab2')
+78 ('33f600467ac632e8f521d21e9cc2d04d6b93a136', 'a85c1b1b611377998668b3cfb6282a00a2ccc895')
+79 ('d19cb44726a15cd03e4d9fdba551fc9c78634b25', 'c235e2d8a4a4d0e02dc9931d8077d012a87ad60b')
+Done

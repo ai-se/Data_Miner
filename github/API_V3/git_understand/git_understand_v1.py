@@ -70,6 +70,7 @@ class MetricsGetter(object):
         self.repo_lang = repo_lang
         #self.repo_obj = git2repo.git2repo(self.repo_url,self.repo_name)
         self.root_dir = os.getcwd()
+        print("root:",self.root_dir)
         if platform.system() == 'Darwin' or platform.system() == 'Linux':
             self.repo_path = os.getcwd() + '/commit_guru/ingester/CASRepos/git/' + self.repo_name
             self.file_path = up(os.getcwd()) + '/data/commit_guru/' + self.repo_name + '.csv'
@@ -85,22 +86,24 @@ class MetricsGetter(object):
         # Reference current directory, so we can go back after we are done.
         self.cwd = Path(os.getcwd())
         self.cores = cpu_count()
-        self.repo = self.clone_repo()
+        #self.repo = self.clone_repo()
         # if self.repo == None:
         #     raise ValueError
         # else:
         #     print(self.repo)
 
         # Generate path to store udb files
+        print("cwd",self.cwd)
         self.udb_path = self.cwd.joinpath("temp", "udb/"+self.repo_name)
+        print("udb at init",self.udb_path)
 
         # Create a folder to hold the udb files
         if not self.udb_path.is_dir():
             os.makedirs(self.udb_path)
 
         # Generate source path where the source file exist
-        self.source_path = self.cwd.joinpath(
-            ".temp", "sources", self.repo_name)
+        #self.source_path = self.cwd.joinpath(
+        #    ".temp", "sources", self.repo_name)
 
     def clone_repo(self):
         git_path = pygit2.discover_repository(self.repo_path)
@@ -124,25 +127,25 @@ class MetricsGetter(object):
                     continue
                 bug_fixing_commit = df.loc[i,'parent_hashes']
                 bug_existing_commit = df.loc[i,'commit_hash']
-                # files_changed = df.loc[i,'fileschanged']
-                # #print(files_changed)
-                # files_changed = files_changed.split(',')
-                # files_changed = list(filter(('CAS_DELIMITER').__ne__, files_changed))
+                #files_changed = df.loc[i,'fileschanged']
+                #print(files_changed)
+                #files_changed = files_changed.split(',')
+                #files_changed = list(filter(('CAS_DELIMITER').__ne__, files_changed))
                 self.commits.append(bug_existing_commit)
                 if bug_fixing_commit == None:
                     print(df.iloc[i,0])
                     continue
-                # for row in files_changed:
-                #     if len(row.split('src/')) == 1:
-                #         continue
-                #     committed_files.append(row.split('src/')[1].replace('/','.').rsplit('.',1)[0])
+                #for row in files_changed:
+                #    if len(row.split('src/')) == 1:
+                #        continue
+                #    committed_files.append(row.split('src/')[1].replace('/','.').rsplit('.',1)[0])
                 commits.append([bug_existing_commit,bug_fixing_commit])
             except:
               continue
         return commits
 
-    @staticmethod
-    def _os_cmd(cmd, verbose=False):
+    #@staticmethod
+    def _os_cmd(self,cmd, verbose=False):
         """
         Run a command on the shell
 
@@ -218,6 +221,7 @@ class MetricsGetter(object):
         und_file = self.udb_path.joinpath(
             "{}_{}.udb".format(self.repo_name+buggy_hash, file_name_suffix))
         # Go to the udb path
+        print("at und file",self.repo_name,self.udb_path,und_file)
         os.chdir(self.udb_path)
         # find and replace all F90 to f90
         for filename in glob(os.path.join(self.repo_path, '*/**')):
@@ -453,7 +457,7 @@ class MetricsGetter(object):
                     "git reset --hard {}".format(clean_hash), verbose=False)
 
                 self._create_und_files_v1("clean",buggy_hash)
-            except Exception as e:
+            except ValueError as e:
                 print("issue with",buggy_hash)
                 print("Error:",e)
                 continue
