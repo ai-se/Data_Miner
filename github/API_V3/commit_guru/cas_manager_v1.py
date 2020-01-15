@@ -75,6 +75,6 @@ class CAS_Manager(threading.Thread):
 		# 	# self.checkModel()
 		# 	# self.checkBuildModel()
 		# 	time.sleep(10)
-    
-  def run_ingestion(self):
-    self.checkIngestion()
+		#
+	def run_ingestion(self):
+		self.checkIngestion()
