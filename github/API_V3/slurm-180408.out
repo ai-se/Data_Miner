@@ -1,0 +1,49 @@
+Traceback (most recent call last):
+  File "new.py", line 3, in <module>
+    from git_understand import git_understand
+  File "/home/smajumd3/Data_Miner/github/API_V3/git_understand/git_understand.py", line 8, in <module>
+    from git_log import git2repo
+  File "/home/smajumd3/Data_Miner/github/API_V3/git_log/git2repo.py", line 16, in <module>
+    from utils.utils import utils
+  File "/home/smajumd3/Data_Miner/github/API_V3/utils/utils.py", line 8, in <module>
+    import nltk.corpus
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/nltk/__init__.py", line 143, in <module>
+    from nltk.chunk import *
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/nltk/chunk/__init__.py", line 157, in <module>
+    from nltk.chunk.api import ChunkParserI
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/nltk/chunk/api.py", line 13, in <module>
+    from nltk.parse import ParserI
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/nltk/parse/__init__.py", line 100, in <module>
+    from nltk.parse.transitionparser import TransitionParser
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/nltk/parse/transitionparser.py", line 22, in <module>
+    from sklearn.datasets import load_svmlight_file
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/sklearn/datasets/__init__.py", line 22, in <module>
+    from .twenty_newsgroups import fetch_20newsgroups
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/sklearn/datasets/twenty_newsgroups.py", line 44, in <module>
+    from ..feature_extraction.text import CountVectorizer
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/sklearn/feature_extraction/__init__.py", line 10, in <module>
+    from . import text
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/sklearn/feature_extraction/text.py", line 28, in <module>
+    from ..preprocessing import normalize
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/sklearn/preprocessing/__init__.py", line 6, in <module>
+    from ._function_transformer import FunctionTransformer
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/sklearn/preprocessing/_function_transformer.py", line 5, in <module>
+    from ..utils.testing import assert_allclose_dense_sparse
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/sklearn/utils/testing.py", line 61, in <module>
+    from nose.tools import raises as _nose_raises
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/nose/__init__.py", line 1, in <module>
+    from nose.core import collector, main, run, run_exit, runmodule
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/nose/core.py", line 11, in <module>
+    from nose.config import Config, all_config_files
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/nose/config.py", line 8, in <module>
+    from nose.util import absdir, tolist
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/nose/util.py", line 12, in <module>
+    from nose.pyversion import ClassType, TypeType, isgenerator, ismethod
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/nose/pyversion.py", line 36, in <module>
+    import new
+  File "/home/smajumd3/Data_Miner/github/API_V3/new.py", line 5, in <module>
+    from git_understand import git_understand_v1 as git_understand
+  File "/home/smajumd3/Data_Miner/github/API_V3/git_understand/git_understand_v1.py", line 83
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax

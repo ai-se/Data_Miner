@@ -34,7 +34,7 @@ if __name__ == "__main__":
   project_list = project_list
   project_list.reset_index(drop=True,inplace=True)
   code_path = os.getcwd()
-  project_list = project_list[0:1]
+  project_list = project_list[4:10]
   project_list.reset_index(drop=True,inplace=True)
   for i in range(project_list.shape[0]):
     try:
@@ -50,8 +50,8 @@ if __name__ == "__main__":
       repo_lang = project_list.loc[i,'lang']
       understand_source.append([1,repo_name,git_url,last_analyzed])
       understand_source_df = pd.DataFrame(understand_source,columns = ['id','name','url','last_analyzed'])
-      # cas_manager = CAS_Manager(understand_source_df)
-      # cas_manager.run()
+      #cas_manager = CAS_Manager(understand_source_df)
+      #cas_manager.run()
       os.chdir(code_path)
       get_matrix = git_understand.MetricsGetter(git_url,repo_name,repo_lang)
       matrix = get_matrix.get_defective_pair_udb_files()
