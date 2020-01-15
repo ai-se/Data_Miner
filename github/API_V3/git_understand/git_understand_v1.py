@@ -64,18 +64,18 @@ class MetricsGetter(object):
     The class is designed to run in conjunction with a context manager.
     """
 
-    def __init__(self,repo_url,repo_name,repo_lang):
+    def __init__(self,repo_url,repo_name,repo_lang,code_path):
         self.repo_url = repo_url
         self.repo_name = repo_name
         self.repo_lang = repo_lang
         #self.repo_obj = git2repo.git2repo(self.repo_url,self.repo_name)
-        self.root_dir = os.getcwd()
+        self.root_dir = code_path
         print("root:",self.root_dir)
         if platform.system() == 'Darwin' or platform.system() == 'Linux':
-            self.repo_path = os.getcwd() + '/commit_guru/ingester/CASRepos/git/' + self.repo_name
-            self.file_path = up(os.getcwd()) + '/data/commit_guru/' + self.repo_name + '.csv'
+            self.repo_path = self.root_dir+ '/commit_guru/ingester/CASRepos/git/' + self.repo_name
+            self.file_path = up(self.root_dir) + '/data/commit_guru/' + self.repo_name + '.csv'
             #self.committed_file = up(os.getcwd()) + '/data/committed_files/' + self.repo_name + '_committed_file.pkl'
-            self.und_file = up(os.getcwd()) + '/data/understand_files/' + self.repo_name + '_understand.csv'
+            self.und_file = up(self.root_dir) + '/data/understand_files/' + self.repo_name + '_understand.csv'
         else:
             self.repo_path = up(os.getcwd()) + '\\temp_repo\\' + self.repo_name
             self.file_path = up(os.getcwd()) + '\\data\\commit_guru\\' + self.repo_name + '.pkl'
@@ -84,7 +84,7 @@ class MetricsGetter(object):
         print(self.buggy_clean_pairs[0])
         #self.buggy_clean_pairs = self.buggy_clean_pairs[0:5]
         # Reference current directory, so we can go back after we are done.
-        self.cwd = Path(os.getcwd())
+        self.cwd = Path(self.root_dir)
         self.cores = cpu_count()
         #self.repo = self.clone_repo()
         # if self.repo == None:

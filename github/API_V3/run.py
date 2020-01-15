@@ -67,7 +67,7 @@ def mine(projects,code_path):
       #cas_manager.run()
       os.chdir(code_path)
       print(code_path)
-      get_matrix = git_understand.MetricsGetter(git_url,repo_name,repo_lang)
+      get_matrix = git_understand.MetricsGetter(git_url,repo_name,repo_lang,code_path)
       matrix = get_matrix.get_defective_pair_udb_files()
       print('Done')
     except ValueError as e:
