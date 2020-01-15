@@ -1767,3 +1767,4 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 2020-01-14 17:06:20 INFO: Linkage for commit 32c6cd2768bba27bff0d5c6a026ca65771131671
 2020-01-14 17:06:21 INFO: Linkage for commit 193baee35c9262fa708b839a913c30769bc0fb9e
 2020-01-14 17:06:29 INFO: Linkage for commit af76d758e3adcff5606dd55c424dbdd2d1de2e36
+slurmstepd: error: *** JOB 180385 ON c23 CANCELLED AT 2020-01-14T21:36:16 ***

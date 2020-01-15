@@ -176,12 +176,12 @@ class MetricsGetter(object):
         cmd: str
             A command to run.
         """
-        print("before split")
+        #print("before split")
         cmd = shlex.split(cmd)
-        print(cmd)
+        #print(cmd)
         with sp.Popen(cmd, stdout=sp.PIPE, stderr=sp.DEVNULL) as p:
             out, err = p.communicate()
-        print("run done")
+        #print("run done")
         if verbose:
             print(out)
             print(err)
@@ -226,11 +226,11 @@ class MetricsGetter(object):
             cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages C++ add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         elif self.repo_lang == "Java":
-            cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages Java add {} analyze {}".format(
+            cmd = "und create -languages Java add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
-        print("runnung command")
+        #print("runnung command")
         out, err = self._os_cmd(cmd)
-        print("command done")
+        #print("command done")
 
         if file_name_suffix == "buggy":
             self.buggy_und_file = und_file
@@ -304,7 +304,7 @@ class MetricsGetter(object):
                 # Checkout the master branch first, we'll need this
                 # to find what files have changed.
                 self._os_cmd("git reset --hard master", verbose=False)
-                print("reset done")
+                #print("reset done")
 
                 # Get a list of files changed between the two hashes
                 #files_changed = self._files_changed_in_git_diff(
@@ -315,14 +315,14 @@ class MetricsGetter(object):
                 # Checkout the buggy commit hash
                 self._os_cmd(
                     "git reset --hard {}".format(buggy_hash), verbose=False)
-                print("checkout done")
+                #print("checkout done")
 
                 # Create a understand file for this hash
                 self._create_und_files("buggy")
 
                 #print(self.buggy_und_file)
                 db_buggy = und.open(str(self.buggy_und_file))
-                print("file opened")
+                #print("file opened")
                 #print("Files",set(files_changed))
                 for file in db_buggy.ents("Class"):
                     # print directory name
