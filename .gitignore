@@ -114,3 +114,4 @@ venv.bak/
 github/data/
 github/API_V3/commit_guru/Data/
 github/API_V3/commit_guru/ingester/CASRepos/
+github/API_V3/temp

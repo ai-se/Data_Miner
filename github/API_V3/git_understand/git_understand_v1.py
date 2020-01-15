@@ -92,7 +92,7 @@ class MetricsGetter(object):
         #     print(self.repo)
 
         # Generate path to store udb files
-        self.udb_path = self.cwd.joinpath(".temp", "udb")
+        self.udb_path = self.cwd.joinpath("temp", "udb/"+self.repo_name)
 
         # Create a folder to hold the udb files
         if not self.udb_path.is_dir():
@@ -109,31 +109,6 @@ class MetricsGetter(object):
             return self.repo
         self.repo = None
         return self.repo
-
-
-    # def read_commits(self):
-    #     df = pd.read_pickle(self.file_path)
-    #     df_committed_file = pd.read_pickle(self.committed_file)
-    #     df = df[df['buggy'] == True]
-    #     df_commits = df.drop(labels = ['message','buggy'], axis = 1)
-    #     self.commits = []
-    #     commits = []
-    #     for i in range(df_commits.shape[0]):
-    #         committed_files = []
-    #         if df_commits.iloc[i,0] == None or df_commits.iloc[i,1] == None:
-    #             continue
-    #         bug_fixing_commit = self.repo.get(df_commits.iloc[i,0])
-    #         bug_existing_commit = self.repo.get(df_commits.iloc[i,1])
-    #         self.commits.append(bug_fixing_commit)
-    #         if bug_fixing_commit == None:
-    #             print(df_commits.iloc[i,0])
-    #             continue
-    #         for index,row in  df_committed_file[df_committed_file['commit_id'] == df_commits.iloc[i,0]].iterrows():
-    #             if len(row['file_path'].split('src/')) == 1:
-    #                 continue
-    #             committed_files.append(row['file_path'].split('src/')[1].replace('/','.').rsplit('.',1)[0])
-    #         commits.append([bug_existing_commit,bug_fixing_commit,committed_files])
-    #     return commits
 
     def read_commits(self):
         df = pd.read_csv(self.file_path)
@@ -176,12 +151,9 @@ class MetricsGetter(object):
         cmd: str
             A command to run.
         """
-        print("before split")
         cmd = shlex.split(cmd)
-        print(cmd)
         with sp.Popen(cmd, stdout=sp.PIPE, stderr=sp.DEVNULL) as p:
             out, err = p.communicate()
-        print("run done")
         if verbose:
             print(out)
             print(err)
@@ -209,7 +181,6 @@ class MetricsGetter(object):
             "{}_{}.udb".format(self.repo_name, file_name_suffix))
         # Go to the udb path
         os.chdir(self.udb_path)
-        print("dir changed to:",self.udb_path)
         # find and replace all F90 to f90
         for filename in glob(os.path.join(self.repo_path, '*/**')):
             if ".F90" in filename:
@@ -228,9 +199,45 @@ class MetricsGetter(object):
         elif self.repo_lang == "Java":
             cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages Java add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
-        print("runnung command")
         out, err = self._os_cmd(cmd)
-        print("command done")
+
+        if file_name_suffix == "buggy":
+            self.buggy_und_file = und_file
+        elif file_name_suffix == "clean":
+            self.clean_und_file = und_file
+
+    def _create_und_files_v1(self, file_name_suffix,buggy_hash):
+        """
+        Creates understand project files
+        Parameters
+        ----------
+        file_name_suffix : str
+            A suffix for the understand_filenames
+        """
+        # Create a handle for storing *.udb file for the project
+        und_file = self.udb_path.joinpath(
+            "{}_{}.udb".format(self.repo_name+buggy_hash, file_name_suffix))
+        # Go to the udb path
+        os.chdir(self.udb_path)
+        # find and replace all F90 to f90
+        for filename in glob(os.path.join(self.repo_path, '*/**')):
+            if ".F90" in filename:
+                os.rename(filename, filename[:-4] + '.f90')
+
+        # Generate udb file
+        if self.repo_lang == "fortran":
+            cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages Fortran add {} analyze {}".format(
+                str(self.repo_path), str(und_file))
+        elif self.repo_lang == "python":
+            cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages python add {} analyze {}".format(
+                str(self.repo_path), str(und_file))
+        elif self.repo_lang == "C":
+            cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages C++ add {} analyze {}".format(
+                str(self.repo_path), str(und_file))
+        elif self.repo_lang == "Java":
+            cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages Java add {} analyze {}".format(
+                str(self.repo_path), str(und_file))
+        out, err = self._os_cmd(cmd)
 
         if file_name_suffix == "buggy":
             self.buggy_und_file = und_file
@@ -322,6 +329,7 @@ class MetricsGetter(object):
 
                 #print(self.buggy_und_file)
                 db_buggy = und.open(str(self.buggy_und_file))
+                print(db_buggy.ents("Class"))
                 print("file opened")
                 #print("Files",set(files_changed))
                 for file in db_buggy.ents("Class"):
@@ -396,42 +404,61 @@ class MetricsGetter(object):
         return metrics_dataframe
 
 
-    # def clean_rows(self):
-    #     """
-    #     Remove duplicate rows
-    #     """
+    def get_defective_pair_udb_files(self):
+        """
+        Use the understand tool's API to generate metrics
 
-    #     # Select columns which are considered for duplicate removal
-    #     metric_cols = [
-    #         col for col in self.metrics_dataframe.columns if not col in [
-    #             "Name", "Bugs"]]
+        Notes
+        -----
+        + For every clean and buggy pairs of hashed, do the following:
+            1. Get the diff of the files changes
+            2. Checkout the snapshot at the buggy commit
+            3. Compute the metrics of the files in that commit.
+            4. Next, checkout the snapshot at the clean commit.
+            5. Compute the metrics of the files in that commit.
+        """
 
-    #     # Drop duplicate rows
-    #     self.deduped_metrics = self.metrics_dataframe.drop_duplicates(
-    #         subset=metric_cols, keep=False)
+        metrics_dataframe = pd.DataFrame()
+        print(len(self.buggy_clean_pairs))
+        for i in range(len(self.buggy_clean_pairs)):
+            try:
+                buggy_hash = self.buggy_clean_pairs[i][0]
+                clean_hash = self.buggy_clean_pairs[i][1]
+                files_changed = self.buggy_clean_pairs[i][2]
+                if len((files_changed)) == 0:
+                    continue
+                print(i,(buggy_hash, clean_hash))
+                # Go the the cloned project path
+                os.chdir(self.repo_path)
+                # Checkout the master branch first, we'll need this
+                # to find what files have changed.
+                self._os_cmd("git reset --hard master", verbose=False)
 
-    #     # Rearrange columns
-    #     self.metrics_dataframe = self.metrics_dataframe[
-    #         ["Name"]+metric_cols+["Bugs"]]
+                # Get a list of files changed between the two hashes
+                #files_changed = self._files_changed_in_git_diff(
+                #    buggy_hash, clean_hash)
+                # ------------------------------------------------------------------
+                # ---------------------- BUGGY FILES METRICS -----------------------
+                # ------------------------------------------------------------------
+                # Checkout the buggy commit hash
+                self._os_cmd(
+                    "git reset --hard {}".format(buggy_hash), verbose=False)
 
-    # def save_to_csv(self):
-    #     """
-    #     Save the metrics dataframe to CSV
-    #     """
-    #     # Determine the path to save file
-    #     save_path = self.cwd.joinpath('datasets', self.repo_name+".csv")
-    #     # Save the dataframe (no index column)
-    #     self.metrics_dataframe.to_csv(save_path, index=False)
+                # Create a understand file for this hash
+                self._create_und_files_v1("buggy",buggy_hash)
 
-    # def __exit__(self, exception_type, exception_value, traceback):
-    #     """
-    #     Actions to take on exit.
+                self._os_cmd(
+                    "git reset --hard {}".format(clean_hash), verbose=False)
 
-    #     Notes
-    #     -----
-    #     Go back up one level, and then remove the cloned repo. We're done here.
-    #     """
-    #     os.chdir(self.cwd)
-    #     self._os_cmd("rm -rf {}/*und".format(self.udb_path))
-    #     # Optional -- remove the clone repo to save some space.
-    #     # self._os_cmd("rm -rf {}".format(self.source_path))
+                self._create_und_files_v1("clean",buggy_hash)
+            except Exception as e:
+                print("issue with",buggy_hash)
+                print("Error:",e)
+                continue
+            # print(self.metrics_dataframe)
+
+            #printProgressBar(i, len(self.buggy_clean_pairs),
+            #                 prefix='Progress:', suffix='Complete', length=50)
+        os.chdir(self.root_dir)
+        #metrics_dataframe.to_csv(self.und_file,index=False)
+        return metrics_dataframe
