@@ -1,0 +1,1472 @@
+2020-01-15 15:23:57 INFO: Adding repo coursera-android to work queue for ingesting
+2020-01-15 15:23:57 INFO: Adding repo dagger to work queue for ingesting
+2020-01-15 15:23:57 INFO: A worker is starting scan repository: coursera-android
+2020-01-15 15:23:57 INFO: A worker is starting scan repository: dagger
+2020-01-15 15:23:57 INFO: Adding repo Telegram to work queue for ingesting
+2020-01-15 15:23:57 INFO: Adding repo springside4 to work queue for ingesting
+2020-01-15 15:23:57 INFO: A worker is starting scan repository: Telegram
+2020-01-15 15:23:57 INFO: Adding repo Hystrix to work queue for ingesting
+2020-01-15 15:23:57 INFO: Adding repo ActionBarSherlock to work queue for ingesting
+2020-01-15 15:23:57 INFO: Adding repo jsoup to work queue for ingesting
+2020-01-15 15:23:57 INFO: A worker is starting scan repository: springside4
+2020-01-15 15:23:57 INFO: Adding repo metrics to work queue for ingesting
+2020-01-15 15:23:57 INFO: A worker is starting scan repository: Hystrix
+2020-01-15 15:23:57 INFO: A worker is starting scan repository: ActionBarSherlock
+2020-01-15 15:23:57 INFO: Adding repo guava to work queue for ingesting
+2020-01-15 15:23:57 INFO: Adding repo glide to work queue for ingesting
+2020-01-15 15:23:57 INFO: Adding repo androidannotations to work queue for ingesting
+2020-01-15 15:23:57 INFO: Adding repo storm to work queue for ingesting
+2020-01-15 15:23:58 INFO: Adding repo titan to work queue for ingesting
+2020-01-15 15:23:58 INFO: A worker is starting scan repository: jsoup
+2020-01-15 15:23:58 INFO: Adding repo cassandra to work queue for ingesting
+2020-01-15 15:23:58 INFO: A worker is starting scan repository: metrics
+2020-01-15 15:23:58 INFO: Adding repo presto to work queue for ingesting
+2020-01-15 15:23:58 INFO: A worker is starting scan repository: guava
+2020-01-15 15:23:58 INFO: A worker is starting scan repository: glide
+2020-01-15 15:23:58 INFO: A worker is starting scan repository: androidannotations
+2020-01-15 15:23:58 INFO: A worker is starting scan repository: storm
+2020-01-15 15:23:58 INFO: A worker is starting scan repository: titan
+2020-01-15 15:23:58 INFO: Adding repo netty to work queue for ingesting
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-01-15 15:23:58 INFO: A worker is starting scan repository: cassandra
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-01-15 15:23:58 INFO: A worker is starting scan repository: presto
+2020-01-15 15:23:58 INFO: A worker is starting scan repository: netty
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-01-15 15:23:58 INFO: Pulling latest changes from repo: jsoup
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+HEAD is now at 8950746 FixCase
+2020-01-15 15:23:58 INFO: Pulling latest changes from repo: springside4
+HEAD is now at 3cb2158 Merge pull request #1904 from Netflix/qiangdavidliu-update-hystrix-status
+2020-01-15 15:23:58 INFO: Pulling latest changes from repo: metrics
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+HEAD is now at 572cdd2 Fix deprecation typos.
+2020-01-15 15:23:59 INFO: Pulling latest changes from repo: glide
+2020-01-15 15:23:59 INFO: Pulling latest changes from repo: androidannotations
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-01-15 15:23:59 INFO: Pulling latest changes from repo: cassandra
+2020-01-15 15:23:59 INFO: Done fetching.
+2020-01-15 15:23:59 INFO: Getting/parsing git commits: jsoup
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-01-15 15:23:59 INFO: Done fetching.
+2020-01-15 15:23:59 INFO: Getting/parsing git commits: springside4
+2020-01-15 15:23:59 INFO: Pulling latest changes from repo: dagger
+HEAD is now at 2c71339 Deprecate.
+2020-01-15 15:23:59 INFO: Pulling latest changes from repo: Hystrix
+2020-01-15 15:23:59 INFO: Done fetching.
+2020-01-15 15:23:59 INFO: Getting/parsing git commits: metrics
+2020-01-15 15:23:59 INFO: Pulling latest changes from repo: titan
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-01-15 15:23:59 INFO: Pulling latest changes from repo: ActionBarSherlock
+2020-01-15 15:23:59 INFO: Done fetching.
+2020-01-15 15:23:59 INFO: Getting/parsing git commits: androidannotations
+2020-01-15 15:23:59 INFO: Done fetching.
+2020-01-15 15:23:59 INFO: Getting/parsing git commits: glide
+2020-01-15 15:23:59 INFO: Done fetching.
+2020-01-15 15:23:59 INFO: Getting/parsing git commits: Hystrix
+2020-01-15 15:24:00 INFO: Pulling latest changes from repo: netty
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-01-15 15:24:00 INFO: Done getting/parsing git commits.
+2020-01-15 15:24:00 INFO: Saving commits to the csv...
+2020-01-15 15:24:00 INFO: Done fetching.
+2020-01-15 15:24:00 INFO: Getting/parsing git commits: titan
+2020-01-15 15:24:00 INFO: Done saving commits to the csv.
+2020-01-15 15:24:00 INFO: A worker finished ingesting repo jsoup
+2020-01-15 15:24:00 INFO: Adding repo jsoup to work queue for analyzing.
+2020-01-15 15:24:00 INFO: Worker analyzing repository  jsoup
+2020-01-15 15:24:00 INFO: Linking 285 new corrective commits for repo jsoup
+2020-01-15 15:24:00 INFO: Done fetching.
+2020-01-15 15:24:00 INFO: Getting/parsing git commits: ActionBarSherlock
+2020-01-15 15:24:00 INFO: Linkage for commit b8b73080085bed3b2062e1a90ed940056997a0ff
+2020-01-15 15:24:00 INFO: Done fetching.
+2020-01-15 15:24:00 INFO: Getting/parsing git commits: dagger
+2020-01-15 15:24:00 INFO: Done fetching.
+2020-01-15 15:24:00 INFO: Getting/parsing git commits: cassandra
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-01-15 15:24:00 INFO: Linkage for commit eb95cc7662dc5c438de8d9ef47ccf131bf7191a8
+HEAD is now at 13eaba5 Upgrade checker-qual to v2.11.1.
+2020-01-15 15:24:01 INFO: Done getting/parsing git commits.
+2020-01-15 15:24:01 INFO: Done getting/parsing git commits.
+2020-01-15 15:24:01 INFO: Pulling latest changes from repo: storm
+2020-01-15 15:24:01 INFO: Saving commits to the csv...
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-01-15 15:24:01 INFO: Saving commits to the csv...
+2020-01-15 15:24:01 INFO: Done fetching.
+2020-01-15 15:24:01 INFO: Getting/parsing git commits: netty
+2020-01-15 15:24:01 INFO: Done saving commits to the csv.
+2020-01-15 15:24:01 INFO: A worker finished ingesting repo dagger
+2020-01-15 15:24:01 INFO: Adding repo dagger to work queue for analyzing.
+2020-01-15 15:24:01 INFO: Worker analyzing repository  dagger
+2020-01-15 15:24:01 INFO: Done saving commits to the csv.
+2020-01-15 15:24:01 INFO: A worker finished ingesting repo springside4
+2020-01-15 15:24:01 INFO: Adding repo springside4 to work queue for analyzing.
+2020-01-15 15:24:01 INFO: Worker analyzing repository  springside4
+2020-01-15 15:24:01 INFO: Linking 121 new corrective commits for repo dagger
+2020-01-15 15:24:01 INFO: Pulling latest changes from repo: guava
+2020-01-15 15:24:01 INFO: Linkage for commit 42be55b71f7898a7ecdc55d237bce3f16f7579a6
+2020-01-15 15:24:02 INFO: Done fetching.
+2020-01-15 15:24:02 INFO: Getting/parsing git commits: storm
+2020-01-15 15:24:02 INFO: Pulling latest changes from repo: presto
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-01-15 15:24:02 INFO: Linkage for commit 7bfacddcd803cc29eae75b2989288b21a76d5242
+2020-01-15 15:24:02 INFO: Linking 119 new corrective commits for repo springside4
+2020-01-15 15:24:02 INFO: Done fetching.
+2020-01-15 15:24:02 INFO: Getting/parsing git commits: guava
+2020-01-15 15:24:03 INFO: Linkage for commit 72fe7662416118598bc0af126c15cba3ca09d9b4
+2020-01-15 15:24:03 INFO: Linkage for commit 5482a558d307625316cbf3a145af45ee8b67925a
+2020-01-15 15:24:03 INFO: Linkage for commit 019b530b0d56e578c8e41564870b729ee4abc7d6
+HEAD is now at 6a10354 Merge pull request #1545 from janka102/patch-1
+2020-01-15 15:24:03 INFO: Done fetching.
+2020-01-15 15:24:03 INFO: Done getting/parsing git commits.
+2020-01-15 15:24:03 INFO: Linkage for commit 0e83719e7e6b6b44834d7e79af118f03260d2104
+2020-01-15 15:24:03 INFO: Getting/parsing git commits: presto
+HEAD is now at 1573738 clean up
+2020-01-15 15:24:03 INFO: Saving commits to the csv...
+2020-01-15 15:24:04 INFO: Pulling latest changes from repo: Telegram
+2020-01-15 15:24:04 INFO: Linkage for commit dd11e792ad9e2fc57457f954b02e6d55b2f0ba19
+2020-01-15 15:24:04 INFO: Done getting/parsing git commits.
+2020-01-15 15:24:04 INFO: Linkage for commit 5ad73c0dbd5cee6da9b93688ae815be126d18f89
+2020-01-15 15:24:04 INFO: Done getting/parsing git commits.
+2020-01-15 15:24:04 INFO: Saving commits to the csv...
+2020-01-15 15:24:04 INFO: Saving commits to the csv...
+2020-01-15 15:24:04 INFO: Done saving commits to the csv.
+2020-01-15 15:24:04 INFO: A worker finished ingesting repo metrics
+2020-01-15 15:24:04 INFO: Adding repo metrics to work queue for analyzing.
+2020-01-15 15:24:04 INFO: Worker analyzing repository  metrics
+2020-01-15 15:24:05 INFO: Done fetching.
+2020-01-15 15:24:05 INFO: Done saving commits to the csv.
+2020-01-15 15:24:05 INFO: Getting/parsing git commits: Telegram
+2020-01-15 15:24:05 INFO: A worker finished ingesting repo Hystrix
+2020-01-15 15:24:05 INFO: Adding repo Hystrix to work queue for analyzing.
+2020-01-15 15:24:05 INFO: Worker analyzing repository  Hystrix
+2020-01-15 15:24:05 INFO: Done saving commits to the csv.
+2020-01-15 15:24:05 INFO: A worker finished ingesting repo ActionBarSherlock
+2020-01-15 15:24:05 INFO: Adding repo ActionBarSherlock to work queue for analyzing.
+2020-01-15 15:24:05 INFO: Worker analyzing repository  ActionBarSherlock
+2020-01-15 15:24:05 INFO: Linking 334 new corrective commits for repo metrics
+2020-01-15 15:24:06 INFO: Linkage for commit 0a1a6240b08ac55655dd1468f7007d5d6fc15e05
+2020-01-15 15:24:06 INFO: Linkage for commit 0e43b3b0d1db8ea8ea84d47c7e1348f84d3fd995
+2020-01-15 15:24:06 INFO: Linking 231 new corrective commits for repo Hystrix
+2020-01-15 15:24:07 INFO: Pulling latest changes from repo: coursera-android
+2020-01-15 15:24:07 INFO: Linking 202 new corrective commits for repo ActionBarSherlock
+2020-01-15 15:24:07 INFO: Linkage for commit 16f4a489619f96437920fc4211c320c9c0847598
+2020-01-15 15:24:07 INFO: Linkage for commit 66332d8b8fe98c8068c85c215dbbacc66397a68f
+2020-01-15 15:24:07 INFO: Linkage for commit 702752a36a3925381af8414ca41fae305c558fc5
+2020-01-15 15:24:07 INFO: Done fetching.
+2020-01-15 15:24:08 INFO: Getting/parsing git commits: coursera-android
+2020-01-15 15:24:08 INFO: Linkage for commit 963a55679fb2996c6a3e447e7d1d5c5cbf1b35ac
+2020-01-15 15:24:08 INFO: Linkage for commit ac57740b13bddd414c98253d53092546c1c330a2
+2020-01-15 15:24:08 INFO: Linkage for commit eaa8fc97a4427d51bf8637570a263d4f4e33e5af
+2020-01-15 15:24:08 INFO: Linkage for commit a3f05fc733051fa828b6d05a086ffc60a6e0233d
+2020-01-15 15:24:09 INFO: Linkage for commit 98e828a29423b72397d8783c4d02159e50bd50a4
+2020-01-15 15:24:09 INFO: Linkage for commit 6bb6de7fa270286964985d52f8035d1657ba79e2
+2020-01-15 15:24:09 INFO: Linkage for commit 1cbb4d6dbe34998f4caa2cbe52c59abc8e0e4886
+2020-01-15 15:24:10 INFO: Linkage for commit 49271b86acff6820309a3f6cf6519d01bbfa0c12
+2020-01-15 15:24:10 INFO: Linkage for commit c01af2290073af0ea42eb02dfe965b4cda58e112
+2020-01-15 15:24:10 INFO: Linkage for commit bd923846bb0e73f13b4843177cc2c5a0a64f981c
+2020-01-15 15:24:10 INFO: Linkage for commit 6e35c70288d86ed05845a676dfd3c3ed31021aa7
+2020-01-15 15:24:10 INFO: Done getting/parsing git commits.
+2020-01-15 15:24:10 INFO: Linkage for commit 040cbdc99e1b8ca7bfec3f687f402f2f23e48513
+2020-01-15 15:24:11 INFO: Linkage for commit 77add7946ea5bca622b1f4f654f97e62f6db1e95
+2020-01-15 15:24:11 INFO: Linkage for commit 5da5d1f1a3a6aa3e72d1542a6b09160909c2d44b
+2020-01-15 15:24:12 INFO: Linkage for commit ed51c31deb52d2ee97369ec209607869e90333e6
+2020-01-15 15:24:12 INFO: Saving commits to the csv...
+2020-01-15 15:24:12 INFO: Done getting/parsing git commits.
+2020-01-15 15:24:12 INFO: Linkage for commit 5cdbf70c431cdf5e93e50616a6fac06a21636480
+2020-01-15 15:24:12 INFO: Linkage for commit 9d427879f59870094857e6e9b5322039648905ab
+2020-01-15 15:24:12 INFO: Linkage for commit 17c357a1b6ed585e3edbcbae5c3987c5eb75d362
+2020-01-15 15:24:12 INFO: Saving commits to the csv...
+2020-01-15 15:24:13 INFO: Linkage for commit c103c4da33225e03d0d0c375ba3404ec030fb5a4
+2020-01-15 15:24:13 INFO: Linkage for commit 4890139ad39ae959dc5b0bb9e638fc66ef702513
+2020-01-15 15:24:14 INFO: Done getting/parsing git commits.
+2020-01-15 15:24:14 INFO: Saving commits to the csv...
+2020-01-15 15:24:15 INFO: Done saving commits to the csv.
+2020-01-15 15:24:15 INFO: A worker finished ingesting repo coursera-android
+2020-01-15 15:24:15 INFO: Adding repo coursera-android to work queue for analyzing.
+2020-01-15 15:24:15 INFO: Worker analyzing repository  coursera-android
+2020-01-15 15:24:15 INFO: Done saving commits to the csv.
+2020-01-15 15:24:15 INFO: A worker finished ingesting repo glide
+2020-01-15 15:24:15 INFO: Adding repo glide to work queue for analyzing.
+2020-01-15 15:24:15 INFO: Worker analyzing repository  glide
+2020-01-15 15:24:15 INFO: Done saving commits to the csv.
+2020-01-15 15:24:15 INFO: A worker finished ingesting repo androidannotations
+2020-01-15 15:24:15 INFO: Adding repo androidannotations to work queue for analyzing.
+2020-01-15 15:24:15 INFO: Worker analyzing repository  androidannotations
+2020-01-15 15:24:16 INFO: Linkage for commit 7a230ae196bfdef963d02bfe976addf8516f7ebe
+2020-01-15 15:24:16 INFO: Linking 23 new corrective commits for repo coursera-android
+2020-01-15 15:24:16 INFO: Linkage for commit ce98bbf80423a5e64af059c18dacdc2a8bbe3dc7
+2020-01-15 15:24:17 INFO: Linkage for commit 2e5b87154beffea3210d64d5db38ee1cad93542d
+2020-01-15 15:24:17 INFO: Linking 669 new corrective commits for repo glide
+2020-01-15 15:24:18 INFO: Linkage for commit 45bc62776a5312e0d5d40712e298247c9bdfed63
+2020-01-15 15:24:18 INFO: Linkage for commit 028fc3d9029e24c9360e5e8b7d6aa74215d3eabd
+2020-01-15 15:24:18 INFO: Linkage for commit 75203dcf24a6758d63362569b73c81b9f995e255
+2020-01-15 15:24:18 INFO: Linkage for commit 42907a41005c3d93c90fab145a46e5a1b805e288
+2020-01-15 15:24:18 INFO: Linking 373 new corrective commits for repo androidannotations
+2020-01-15 15:24:19 INFO: Linkage for commit 7f20140767a002534f0aa5af469bf5daa719b52f
+2020-01-15 15:24:19 INFO: Linkage for commit 490d51166be490c37e0515de479d7759e1cd6662
+2020-01-15 15:24:19 INFO: Linkage for commit ef052a4a1aaca2c7e82b8be2a3dfb25a3f17b813
+2020-01-15 15:24:19 INFO: Linkage for commit eff2b27e79c7e5a8b10b483d66b2a7fad5475ac0
+2020-01-15 15:24:19 INFO: Linkage for commit 5bf5a7857f2f613042f4e340311bafd1821e2cb3
+2020-01-15 15:24:20 INFO: Linkage for commit 290f175dd5296bd5938ae6e8c65c48d3193db259
+2020-01-15 15:24:20 INFO: Linkage for commit 2cb4e56a6452bbc903e664675edb95cd2224ff06
+2020-01-15 15:24:20 INFO: Linkage for commit 74f727f180fddf65de7c150ac3f1408f34cb6eb3
+2020-01-15 15:24:21 INFO: Linkage for commit 6ff4e1614b899a0acf435ee2f9594fadbdb7c6c0
+2020-01-15 15:24:21 INFO: Linkage for commit 27d790dd437edc9890e676a0ecd42377b1102663
+2020-01-15 15:24:22 INFO: Linkage for commit ac7b9b648fcc79f5a15dae746e8c54749fde9e7b
+2020-01-15 15:24:22 INFO: Linkage for commit a4662be81e6e34def297f522d878298bce858beb
+2020-01-15 15:24:23 INFO: Linkage for commit 3d8b18b6dcdc711f5f53f69821fc5ac338e9f8f0
+2020-01-15 15:24:23 INFO: Linkage for commit c23e55e744febc38b831dd8956831180fb9b1cc1
+2020-01-15 15:24:23 INFO: Linkage for commit de9727b5aeb4ae36e257c7cb589dfbb2b860c825
+2020-01-15 15:24:24 INFO: Linkage for commit 627c156a41105d3a68888d1eddbc6ddfdd2ca59b
+2020-01-15 15:24:24 INFO: Linkage for commit 2f35c728b44eeeb7a519dd1fce59cfaaaa0d7d9a
+2020-01-15 15:24:25 INFO: Linkage for commit 35864164c2875943aa60662d15f96f67dd615776
+2020-01-15 15:24:25 INFO: Linkage for commit 3cec4a5f95500ef5a91d5d13101d29e5e246870b
+2020-01-15 15:24:25 INFO: Linkage for commit 8a4d13c0fac2a0cc4c09851737ae3fe8fbcaa08f
+2020-01-15 15:24:26 INFO: Linkage for commit 8c3ff2908be1c927d5ee1916bcf0fad2716f62ee
+2020-01-15 15:24:26 INFO: Linkage for commit 9e40cb1f7ce0bfdc357ae8f984529ed2b3bd3004
+2020-01-15 15:24:27 INFO: Done getting/parsing git commits.
+2020-01-15 15:24:28 INFO: Linkage for commit b7847eb946161b85609621f0392eb33e32b5cf42
+2020-01-15 15:24:28 INFO: Linkage for commit b9b330c1cc17ee8f86dad038c4e328a371d7558f
+2020-01-15 15:24:29 INFO: Linkage for commit ccdb26c1f19ce871e0cd2cbb11644d5d963ec13f
+2020-01-15 15:24:29 INFO: Linkage for commit f9eccc470fab96f6fb0d915e31cdc3153d87af15
+2020-01-15 15:24:30 INFO: Saving commits to the csv...
+2020-01-15 15:24:30 INFO: Linkage for commit 9e19bf0d4784d355f3740371397d74a6d139cac8
+2020-01-15 15:24:30 INFO: Linkage for commit 8adebbd2373cbc5f3cce7de66479f9fe7175674c
+2020-01-15 15:24:30 INFO: Linkage for commit 43b6628cb8a0073fec6858e042832e71cc18a378
+2020-01-15 15:24:30 INFO: Linkage for commit cd9c9d2669272942f980d0e5e122b232deb76a0f
+2020-01-15 15:24:31 INFO: Linkage for commit 502a838078dca82f2fc2d5ea7149638eebfb0262
+2020-01-15 15:24:32 INFO: Linkage for commit 586975c5bb8060ec43fb77a02ab26dafda4db962
+2020-01-15 15:24:32 INFO: Linkage for commit 5d8e7c1bde8f1935b013bbb96b57530bd2f4bf65
+2020-01-15 15:24:32 INFO: Linkage for commit 142a8e5dc4f035b44093d3d84715595b50585c72
+2020-01-15 15:24:33 INFO: Linkage for commit 7d5a8a662f28245ab37196c28063f729b80d3ff9
+2020-01-15 15:24:33 INFO: Linkage for commit 849a67c33f680b498a2c425818e54644f53c443e
+2020-01-15 15:24:34 INFO: Linkage for commit 6df70a191b0337a6ace44dcea2a0523fb53900d6
+2020-01-15 15:24:35 INFO: Linkage for commit 1aef2fe8605db6f11bc26dfe1dd4121ca9b58d4e
+2020-01-15 15:24:35 INFO: Linkage for commit 4e9686a6b8d11ab105a65f8ccd383ebc93816eab
+2020-01-15 15:24:35 INFO: Done getting/parsing git commits.
+2020-01-15 15:24:35 INFO: Linkage for commit df93ea399024fff7b3586d77994b4b5dc1ed4d11
+2020-01-15 15:24:35 INFO: Linkage for commit 1ad3f4e768d2998056e307a9a5746c9260fbf555
+2020-01-15 15:24:36 INFO: Saving commits to the csv...
+2020-01-15 15:24:36 INFO: Linkage for commit ef9294041e695aec2d58aa2788ccdd820d52998f
+2020-01-15 15:24:37 INFO: Linkage for commit aaa650ec4d1dd88c2702e1e3c3df45786e5863e1
+2020-01-15 15:24:38 INFO: Linkage for commit 7af125c04ac080c1c1609e5d96aef54062998c09
+2020-01-15 15:24:38 INFO: Linkage for commit 0786ef300c31c2ba9ebaa4470635e22cee9397a3
+2020-01-15 15:24:38 INFO: Linkage for commit 72965c2a3215aabd559c00115a481c6118331bb3
+2020-01-15 15:24:38 INFO: Done saving commits to the csv.
+2020-01-15 15:24:38 INFO: A worker finished ingesting repo Telegram
+2020-01-15 15:24:39 INFO: Adding repo Telegram to work queue for analyzing.
+2020-01-15 15:24:39 INFO: Worker analyzing repository  Telegram
+2020-01-15 15:24:39 INFO: Linkage for commit 660f159aab4cd13c0bc7536110040d505020f05e
+2020-01-15 15:24:40 INFO: Done saving commits to the csv.
+2020-01-15 15:24:40 INFO: A worker finished ingesting repo titan
+2020-01-15 15:24:40 INFO: Adding repo titan to work queue for analyzing.
+2020-01-15 15:24:40 INFO: Linkage for commit 05eff9d53831bf1f8f6797d27135d803526a089d
+2020-01-15 15:24:40 INFO: Worker analyzing repository  titan
+2020-01-15 15:24:40 INFO: Linkage for commit 1efbd2ef574d9b596f4f5f164c208df8a82d31df
+2020-01-15 15:24:41 INFO: Linkage for commit 4d86a1000d047709fcfffc91f8ef7d2fea523323
+2020-01-15 15:24:41 INFO: Linking 146 new corrective commits for repo Telegram
+2020-01-15 15:24:41 INFO: Linkage for commit 10530c3f3302beb7e75dbfe1928801427257845a
+2020-01-15 15:24:42 INFO: Linkage for commit 5cd117059722af9969b0f2ebc9991c3b968cbbb5
+2020-01-15 15:24:42 INFO: Linkage for commit 5aee72ee33fd960df9173ab17942dd1a2ce912b5
+2020-01-15 15:24:42 INFO: Linkage for commit e066d4fdfc145b21d043bec180766a2f19cfb62d
+2020-01-15 15:24:43 INFO: Linkage for commit f091145f80ac67644389fbe00b732fdcafe63491
+2020-01-15 15:24:43 INFO: Linkage for commit 7b046ca96b7731e6468cea36d7a3d053d9aa4b96
+2020-01-15 15:24:43 INFO: Linkage for commit 0ebd5cbbbf342db0b9fb88c56042895b506da836
+2020-01-15 15:24:43 INFO: Linkage for commit 2e2c1fe08d0c22d73013455204898834ccaec640
+2020-01-15 15:24:43 INFO: Linkage for commit bf892134a444de798cc144447bcd5823a942fe7a
+2020-01-15 15:24:44 INFO: Linkage for commit d2a6fa4d6d02cc1acff27d3284845bf8a18b72dd
+2020-01-15 15:24:45 INFO: Linkage for commit 1ba9a837563245b9b1e21c3cf7c696661bdb11b3
+2020-01-15 15:24:45 INFO: Linkage for commit 27a52f90a25699bebe23ff1ff94d6db361fdb11d
+2020-01-15 15:24:46 INFO: Linking 926 new corrective commits for repo titan
+2020-01-15 15:24:46 INFO: Linkage for commit ffd50c23a9ab04ae36f1e9cc2f53577e7a50fc72
+2020-01-15 15:24:47 INFO: Linkage for commit b752b91fabb457fecb18ee16e44c8c21d7d0f7c1
+2020-01-15 15:24:47 INFO: Linkage for commit ffbfa8b4ca4945abb354e3488da5288a36f55bd2
+2020-01-15 15:24:47 INFO: Linkage for commit 579ce9725f7a640ef364d20198dc01159eefceee
+2020-01-15 15:24:47 INFO: Linkage for commit b8343d9f9d54a6c579e1568cd20dbaf9d07c381c
+2020-01-15 15:24:48 INFO: Linkage for commit e50af62cb1f974b731e18e1540454a3bff48f042
+2020-01-15 15:24:48 INFO: Linkage for commit a36330e9cbe39da17d9f6687c259b222b5716593
+2020-01-15 15:24:48 INFO: Linkage for commit 4743cfc38b17ee3f8aa7faf658cd758c0ad3e12e
+2020-01-15 15:24:48 INFO: Linkage for commit bb4ead7c350695c1ed3c52d028090da4d4cecd1e
+2020-01-15 15:24:49 INFO: Linkage for commit 393b1c445985ae6aabfaf0b1e6e2b854cc3f6694
+2020-01-15 15:24:50 INFO: Linkage for commit 6c2032dc6cc1b502c88cad8964d59b668039c3db
+2020-01-15 15:24:51 INFO: Linkage for commit 507d05aaf1855320bc09863264f457756593d476
+2020-01-15 15:24:51 INFO: Linkage for commit c716627a7b36e6815b815354abbc01cbd61a68bd
+2020-01-15 15:24:51 INFO: Linkage for commit ae11c30a0b577e6b8e8863d8f29c8847b946b9fa
+2020-01-15 15:24:52 INFO: Linkage for commit 0081d162cca8ad23b500b53799195fec644f261b
+2020-01-15 15:24:52 INFO: Linkage for commit 2fb4858ef6331e1f2db5b00bbb26c0c359cdbc53
+2020-01-15 15:24:53 INFO: Linkage for commit 55ad7efd3add586976557a7be0bcb9cfd431c13c
+2020-01-15 15:24:53 INFO: Linkage for commit a68041aedf334a20a917668f58782b360a1baa57
+2020-01-15 15:24:53 INFO: Linkage for commit 5153c9061ee9767c7ddd0524ff09f5a4905088d1
+2020-01-15 15:24:54 INFO: Linkage for commit edbe3dbb91bc17d8ee56c864a22fc418f196c2f4
+2020-01-15 15:24:54 INFO: Done getting/parsing git commits.
+2020-01-15 15:24:55 INFO: Linkage for commit 713a2a87a8117cb5181c3ab95380555e2d65aa0b
+2020-01-15 15:24:56 INFO: Linkage for commit 1e9842ecc1a712a80f8ef98238adf2fa295d612a
+2020-01-15 15:24:56 INFO: Linkage for commit 256cb3d05b50f6fd36988ef4a87fdc07b79efe0d
+2020-01-15 15:24:56 INFO: Saving commits to the csv...
+2020-01-15 15:24:58 INFO: Linkage for commit 37a81f81e509bacd8ecc1624ea7bfbe9ac89246b
+2020-01-15 15:24:58 INFO: Linkage for commit 2db8acbae5fba298b1990536cf99d9a7755ab8be
+2020-01-15 15:24:59 INFO: Linkage for commit 53601580ae7938c212373b8513f60d745c70fbb4
+2020-01-15 15:24:59 INFO: Linkage for commit 54efb532b24b5b110bb34005fcb8dc7bee57c1db
+2020-01-15 15:25:00 INFO: Linkage for commit c3477877da453c81a3c3c121d7677fce2911551d
+2020-01-15 15:25:01 INFO: Linkage for commit 72aa2bd8b6a71fc6df37ff5138972b426af9c824
+2020-01-15 15:25:01 INFO: Linkage for commit 01031d59746d1eec857f43ce2d52e7837c2e3bdb
+2020-01-15 15:25:02 INFO: Linkage for commit c8c18c3138544306880fb94d4bdd9c83d8969f40
+2020-01-15 15:25:03 INFO: Linkage for commit 97d203b3e70d9f2387fb6b11fb115b182e1f5e41
+2020-01-15 15:25:04 INFO: Linkage for commit af580c310cab08ed637afb235c22a83bb71f4f9a
+2020-01-15 15:25:05 INFO: Linkage for commit 0ba5fb69da11dbe8b0dfe079eb879080b81d20b1
+2020-01-15 15:25:06 INFO: Linkage for commit 59795530b1ebf229c34e61dff1743738c0cff189
+2020-01-15 15:25:06 INFO: Linkage for commit 069551bd232c6172f794aad430157659b2e3c354
+2020-01-15 15:25:07 INFO: Linkage for commit 1df384eeccd2ff81cde585d91cb4307029f90dee
+2020-01-15 15:25:07 INFO: Done saving commits to the csv.
+2020-01-15 15:25:07 INFO: Linkage for commit 0be16397ca3146dc1bb58fb3f45d17348703aea5
+2020-01-15 15:25:07 INFO: A worker finished ingesting repo guava
+16
+                      repo_name repo_owner  ... commits defective
+0              coursera-android    aporter  ...     135         9
+1  Android-ObservableScrollView  ksoichiro  ...     383        80
+
+[2 rows x 9 columns]
+  repo_name repo_owner  ... commits defective
+0    dagger     square  ...     701       144
+1   picasso     square  ...    1364       183
+
+[2 rows x 9 columns]
+  repo_name  repo_owner  ... commits defective
+0  Telegram       DrKLO  ...     342       193
+1  greenDAO  greenrobot  ...     857       195
+
+[2 rows x 9 columns]
+     repo_name     repo_owner  ... commits defective
+0  springside4     springside  ...    1074       213
+1    disruptor  LMAX-Exchange  ...     958       214
+
+[2 rows x 9 columns]
+           repo_name   repo_owner  ... commits defective
+0  ActionBarSherlock  JakeWharton  ...    1480       219
+1          roboguice    roboguice  ...    1054       222
+
+[2 rows x 9 columns]
+              repo_name repo_owner  ... commits defective
+0               Hystrix    Netflix  ...    2109       241
+1  facebook-android-sdk   facebook  ...    1355       250
+
+[2 rows x 9 columns]
+      repo_name repo_owner  ... commits defective
+0         jsoup        jhy  ...    1261       355
+1  AndroidAsync      koush  ...    1081       361
+
+[2 rows x 9 columns]
+  repo_name  repo_owner  ... commits defective
+0   metrics  dropwizard  ...    2580       429
+1     junit  junit-team  ...    2427       544
+
+[2 rows x 9 columns]
+            repo_name repo_owner  ... commits defective
+0  androidannotations    excilys  ...    2908       583
+1               zxing      zxing  ...    3521       847
+
+[2 rows x 9 columns]
+  repo_name repo_owner  ... commits defective
+0     glide   bumptech  ...    2445       873
+1    okhttp     square  ...    4391       967
+
+[2 rows x 9 columns]
+  repo_name repo_owner  ... commits defective
+0     guava     google  ...    5172      1348
+1    vert.x    eclipse  ...    4225      1404
+
+[2 rows x 9 columns]
+  repo_name     repo_owner  ... commits defective
+0     titan  thinkaurelius  ...    4434      1563
+1     druid        alibaba  ...    6057      1852
+
+[2 rows x 9 columns]
+    repo_name repo_owner  ... commits defective
+0       storm     apache  ...   10192      1873
+1  realm-java      Realm  ...    8261      1912
+
+[2 rows x 9 columns]
+  repo_name repo_owner  ... commits defective
+0     netty      netty  ...    9674      3297
+1    libgdx     libgdx  ...   13924      3678
+
+[2 rows x 9 columns]
+   repo_name repo_owner  ... commits defective
+0  cassandra     apache  ...   24868      4155
+
+[1 rows x 9 columns]
+  repo_name repo_owner  ... commits defective
+0    presto   facebook  ...   16688      4310
+
+[1 rows x 9 columns]
+I am here
+I am here
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id    name                                   url last_analyzed
+0   1  dagger  https://github.com/square/dagger.git          None
+I am here
+   id      name                                    url last_analyzed
+0   1  Telegram  https://github.com/DrKLO/Telegram.git          None
+I am here
+   id         name                                            url last_analyzed
+0   1  springside4  https://github.com/springside/springside4.git          None
+The repo is: coursera-android
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/coursera-android
+I am here
+The repo is: dagger
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/dagger
+working on pulling
+working on pulling
+I am here
+   id     name                                     url last_analyzed
+0   1  Hystrix  https://github.com/Netflix/Hystrix.git          None
+I am here
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id   name                               url last_analyzed
+0   1  jsoup  https://github.com/jhy/jsoup.git          None
+I am here
+The repo is: Telegram
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Telegram
+   id     name                                        url last_analyzed
+0   1  metrics  https://github.com/dropwizard/metrics.git          None
+working on pulling
+I am here
+I am here
+I am here
+I am here
+   id   name                                  url last_analyzed
+0   1  guava  https://github.com/google/guava.git          None
+   id   name                                    url last_analyzed
+0   1  glide  https://github.com/bumptech/glide.git          None
+I am here
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id   name                                  url last_analyzed
+0   1  storm  https://github.com/apache/storm.git          None
+   id   name                                         url last_analyzed
+0   1  titan  https://github.com/thinkaurelius/titan.git          None
+I am here
+I am here
+I am here
+   id       name                                      url last_analyzed
+0   1  cassandra  https://github.com/apache/cassandra.git          None
+The repo is: springside4
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/springside4
+working on pulling
+The repo is: Hystrix
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Hystrix
+   id    name                                     url last_analyzed
+0   1  presto  https://github.com/facebook/presto.git          None
+The repo is: ActionBarSherlock
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/ActionBarSherlock
+working on pulling
+working on pulling
+   id   name                                 url last_analyzed
+0   1  netty  https://github.com/netty/netty.git          None
+The repo is: jsoup
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/jsoup
+The repo is: metrics
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/metrics
+working on pulling
+The repo is: guava
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/guava
+The repo is: glide
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/glide
+working on pulling
+working on pulling
+The repo is: androidannotations
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/androidannotations
+working on pulling
+working on pulling
+The repo is: storm
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/storm
+The repo is: titan
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/titan
+working on pulling
+working on pulling
+The repo is: cassandra
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/cassandra
+working on pulling
+The repo is: presto
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/presto
+The repo is: netty
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/netty
+working on pulling
+working on pulling
+======================== 2020-01-15 15:24:00.206014 2019-12-16 15:24:00.205999
+======================== 2020-01-15 15:24:01.585891 2019-12-16 15:24:01.585876
+======================== 2020-01-15 15:24:01.692714 2019-12-16 15:24:01.692692
+======================== 2020-01-15 15:24:04.944834 2019-12-16 15:24:04.944814
+======================== 2020-01-15 15:24:05.555782 2019-12-16 15:24:05.555760
+======================== 2020-01-15 15:24:05.784251 2019-12-16 15:24:05.784233
+======================== 2020-01-15 15:24:15.210625 2019-12-16 15:24:15.210600
+======================== 2020-01-15 15:24:15.725104 2019-12-16 15:24:15.725090
+======================== 2020-01-15 15:24:15.854698 2019-12-16 15:24:15.854686
+======================== 2020-01-15 15:24:39.131493 2019-12-16 15:24:39.131471
+======================== 2020-01-15 15:24:40.236332 2019-12-16 15:24:40.236316
+======================== 2020-01-15 15:25:07.489980 2019-12-16 15:25:07.4899532020-01-15 15:25:07 INFO: Adding repo guava to work queue for analyzing.
+2020-01-15 15:25:07 INFO: Worker analyzing repository  guava
+2020-01-15 15:25:07 INFO: Linkage for commit 33aed2235cbae6801680303c17932e00bbf069fa
+2020-01-15 15:25:08 INFO: Linkage for commit eb1edd463b1f3b52b541d58487718676445d0d34
+2020-01-15 15:25:08 INFO: Linkage for commit 4b2fe4f7306f8c7fb569300f76359b5d647b7c27
+2020-01-15 15:25:09 INFO: Linkage for commit eecc3a3fd7aa24266175b41077ff962a171e5b5e
+2020-01-15 15:25:09 INFO: Linkage for commit a8ead54938ac8b922eacd3b38687529c1c69ea9d
+2020-01-15 15:25:10 INFO: Linkage for commit 2e033ea759f72ed517fef6d958f6b25de767aeae
+2020-01-15 15:25:12 INFO: Linkage for commit 7fff0f21cd0ca42be81b4610a83c9a6e4ed92d46
+2020-01-15 15:25:12 INFO: Linkage for commit e7568b69d21100ba5a5e2188ef076abec2d59b93
+2020-01-15 15:25:13 INFO: Linking 1030 new corrective commits for repo guava
+2020-01-15 15:25:13 INFO: Linkage for commit fac5216512ca376a9128307ea812fba51970a7b1
+2020-01-15 15:25:13 INFO: Linkage for commit 5cd0c304b6be9d0d1fd7b13524b569384a1e26ca
+2020-01-15 15:25:13 INFO: Linkage for commit aa3701b1c6f5577dfe7877c62f2e7e61b8abbf96
+2020-01-15 15:25:14 INFO: Linkage for commit d5081666d89b75225b729283d45842189b1c5524
+2020-01-15 15:25:15 INFO: Linkage for commit 7fc9039c3c6cab6d7d5da14c9f36d2e66badba9e
+2020-01-15 15:25:15 INFO: Linkage for commit cad245f7583d1c8cb9bfa4ef18c29fe01d0731de
+2020-01-15 15:25:15 INFO: Linkage for commit bbab2ce3c162b244119bdc22a990d7b75fdef0af
+2020-01-15 15:25:17 INFO: Linkage for commit 5d496f0aba8618ec003dd397cdb9a91bbefe70fb
+2020-01-15 15:25:18 INFO: Linkage for commit 1342c6117241469f0c376353798821105cf7cd02
+2020-01-15 15:25:18 INFO: Linkage for commit 52104a88a4d7a1ad20758f6e66c9704bb8ac9f1b
+2020-01-15 15:25:19 INFO: Linkage for commit 79b95088ecc613bfa75ef8a8b89e2f627f0f91bf
+2020-01-15 15:25:19 INFO: Linkage for commit 5e52f1b266173593fab32fe9d8a4963066b2f2fe
+2020-01-15 15:25:21 INFO: Linkage for commit a93d79fcdda55ded81a536e8e38bf8acd271f3c8
+2020-01-15 15:25:21 INFO: Linkage for commit a300d93ac0081fc22515b28e68edbbeb08e2ff46
+2020-01-15 15:25:22 INFO: Linkage for commit 6df65bf346344a1b29abc51c2f3e866b6a9d2c55
+2020-01-15 15:25:23 INFO: Linkage for commit 167bd0e39253753569ffdd1f57a3a393c8c37087
+2020-01-15 15:25:23 INFO: Linkage for commit e8f1e1692a0140410a69fe5699ade5cf050eefca
+2020-01-15 15:25:24 INFO: Linkage for commit 62afbdf6a85fec75fde38d327928a180bc5bccb3
+2020-01-15 15:25:25 INFO: Linkage for commit 412acc794634ac751654327155c543aa1a0c8d15
+2020-01-15 15:25:26 INFO: Linkage for commit c6936dd3daab6dc7098065dff0bf39d8318349eb
+2020-01-15 15:25:27 INFO: Linkage for commit 1185f5faa20f1b3beb9060992029325f800ffbed
+2020-01-15 15:25:27 INFO: Linkage for commit d65b6dad2a88e584be032481d30b7fc09112d225
+2020-01-15 15:25:28 INFO: Linkage for commit ea5ee473e484562f02128568a7fd68c0a69d2acc
+2020-01-15 15:25:29 INFO: Linkage for commit 98a292395ad675bdb8a4152a6ce14462cacf5e75
+2020-01-15 15:25:29 INFO: Linkage for commit e256bb7fc5979de256371bb324f1ca1330e38112
+2020-01-15 15:25:30 INFO: Linkage for commit a0b1f4e39cfce71c5383473c1d3eed36865a9ac2
+2020-01-15 15:25:32 INFO: Linkage for commit 864ec0efae0b56d2cd46e5668a4b4ed0b9add6a3
+2020-01-15 15:25:34 INFO: Linkage for commit b6e8b517759682fbaa44de56a4a2c81fa442a937
+2020-01-15 15:25:35 INFO: Linkage for commit dfe666c45ece6ee90c0a7586f38ddfc6825cd65c
+2020-01-15 15:25:35 INFO: Linkage for commit 34c3e5c4d812b3335b613f1235c73af45fcf6e45
+2020-01-15 15:25:35 INFO: Linkage for commit 44aadf06dfea3ee3189e67a926494c2b81464394
+2020-01-15 15:25:36 INFO: Linkage for commit d2c93c0f0dda0f6e2432465842e0466c13027b18
+2020-01-15 15:25:38 INFO: Linkage for commit 79961e8f15c4a16f72451f010744c86d3380fd63
+2020-01-15 15:25:39 INFO: Linkage for commit 0b56f3e5e012e689af8dda0e96d6e0c9f31853b6
+2020-01-15 15:25:40 INFO: Linkage for commit 9c85d32a8098567abe27b70d2c95579fb3182088
+2020-01-15 15:25:42 INFO: Linkage for commit a6e570e7f69f97ce89187df996a941bec14b7c15
+2020-01-15 15:25:45 INFO: Linkage for commit 26343fe255ade4b4965c307c46f1dad4dc4e1f40
+2020-01-15 15:25:45 INFO: Linkage for commit 20ed24cefb5df53c48021459af98bef83c55f241
+2020-01-15 15:25:47 INFO: Linkage for commit ef57a000b65f075de35f8d593a5223779755ac26
+2020-01-15 15:25:49 INFO: Linkage for commit 4a776f3bc8eca133421a31398e5f1d878e2c3371
+2020-01-15 15:25:50 INFO: Linkage for commit a7defb9de474711f134a51179fda7164be7194c3
+2020-01-15 15:25:51 INFO: Linkage for commit 2cb2d9d361f0efb6c84736673c1ab18ed5e7c70f
+2020-01-15 15:25:56 INFO: Linkage for commit cacbbfb9604fc5ce565b3547f4a7de77c037013f
+2020-01-15 15:25:57 INFO: Linkage for commit 36da44b40109679babbbdcfc635b436765510fbe
+2020-01-15 15:25:59 INFO: Linkage for commit 82039a274328f3338f0cf5350111da858c8e6947
+2020-01-15 15:26:01 INFO: Linkage for commit dc346a59e117f43a2589f9351ed0ac3649a21aa7
+2020-01-15 15:26:01 INFO: Linkage for commit c87eb7a0cf6692600405dc01ed1479cb21ce7dea
+2020-01-15 15:26:03 INFO: Linkage for commit 82855b07f5336d30c70dc20548ab7ab8adeac05e
+2020-01-15 15:26:03 INFO: Linkage for commit c06ca0595f91e6bdec8d8a62da7119b90e158dac
+2020-01-15 15:26:06 INFO: Linkage for commit 8aba2c3e48b0a0efe66aa9ccd97526ad277eb7fd
+2020-01-15 15:26:06 INFO: Linkage for commit 76c86f65048e2fb885ff13572f4d1c05e134fece
+2020-01-15 15:26:06 INFO: Linkage for commit da9b977ef99e2595602a964561906a930b4332f3
+2020-01-15 15:26:07 INFO: Linkage for commit 51294ac458938241478e86f152895e5de6a2b5dc
+2020-01-15 15:26:08 INFO: Linkage for commit 2e4969497c5734d90d394103728bb517644f9157
+2020-01-15 15:26:09 INFO: Linkage for commit d227864459cc0c9aab2f3a171d0d2f3c1a3eeae3
+2020-01-15 15:26:09 INFO: Linkage for commit ae0047807565aae4d03e4cb6fc74a58442323cda
+2020-01-15 15:26:10 INFO: Linkage for commit 34aa92dca9aee7ee6e0ba551e69639f853df15d3
+2020-01-15 15:26:12 INFO: Linkage for commit 2f5b1878624b28c268e337fcb2748dbc249c5e6d
+2020-01-15 15:26:12 INFO: Linkage for commit 6898745b620f62ed56eccc3c07dc89925924c836
+2020-01-15 15:26:13 INFO: Linkage for commit a9c0926f6350b64fc74dfa954f21f89fbed70ecc
+2020-01-15 15:26:15 INFO: Linkage for commit 5ca6b4041d0605025f1a1582a605d2aee377bc1c
+2020-01-15 15:26:15 INFO: Linkage for commit 4d93a6018b6f9c318c388842e13342171a0e2ea3
+2020-01-15 15:26:15 INFO: Linkage for commit cc2246a43d79a479e1e2776cd59fcf9700e11bf0
+2020-01-15 15:26:16 INFO: Linkage for commit fbc87d24526ee9a77fb8faddc1eaf6b708f3c948
+2020-01-15 15:26:17 INFO: Linkage for commit a1732c2f2a09af05c4368bcc76dc59514b708444
+2020-01-15 15:26:18 INFO: Linkage for commit cd8004ed8ebb3be9f83a16764f9bc08e06f8dd6a
+2020-01-15 15:26:19 INFO: Linkage for commit adce18ec3d06b849886d203fe932205f312cc37f
+2020-01-15 15:26:20 INFO: Linkage for commit 1fc045e0709f24d54a67091ddb49e346c5adf33c
+2020-01-15 15:26:21 INFO: Linkage for commit 073d9734451738985650074bee2ab45cb395fbb7
+2020-01-15 15:26:23 INFO: Linkage for commit 170c25f964066982cc0ce7cb5d9084d4b0dc4227
+2020-01-15 15:26:25 INFO: Linkage for commit dbbe693c9fbeef94d663c963b57ea379c75806a1
+2020-01-15 15:26:29 INFO: Linkage for commit 0a7990763436fe91cd497688e471d3457bd0f38b
+2020-01-15 15:26:30 INFO: Linkage for commit d0a7e3a00350ea9bdca6a1f005ccc75e5b2d19d4
+2020-01-15 15:26:30 INFO: Linkage for commit 811b576804f566b1fbaa3c8be4e77116557d35a5
+2020-01-15 15:26:30 INFO: Done getting/parsing git commits.
+2020-01-15 15:26:30 INFO: Linkage for commit d9118c8e857b9f6b371dc38fa951cdd3e502bffc
+2020-01-15 15:26:32 INFO: Linkage for commit fbde4bdbf9c72d736193be054f100daf43e7304d
+2020-01-15 15:26:32 INFO: Linkage for commit 3186090a6e8e85a6aff7d701b25b668aa41488ba
+2020-01-15 15:26:34 INFO: Linkage for commit 584d592dd4b11f313a938e063f33494925cf0b80
+2020-01-15 15:26:36 INFO: Linkage for commit ca41d300a9d92d6349b0a6a2a7aa9d0b5515f45d
+2020-01-15 15:26:37 INFO: Linkage for commit 1ee0146284f5ab3011c228be0c0bf5068aae5793
+2020-01-15 15:26:37 INFO: Saving commits to the csv...
+2020-01-15 15:26:38 INFO: Linkage for commit 6355f25cf60687face2a9837ea6ee0236df2defc
+2020-01-15 15:26:40 INFO: Linkage for commit d994a651e7cd7e625b77621753f771e0c6a51de7
+2020-01-15 15:26:42 INFO: Linkage for commit dcc81900267db66a42a1fe1013978b0e0ec074f8
+2020-01-15 15:26:42 INFO: Done getting/parsing git commits.
+2020-01-15 15:26:43 INFO: Linkage for commit cc7fe42ec5268506925f814b22ef3c8371f67d0e
+2020-01-15 15:26:45 INFO: Linkage for commit d91db55c8c3828902b6a92592dd52607b3be07c9
+2020-01-15 15:26:46 INFO: Linkage for commit 3cae2b58592b8ec0a80fd1c774b4c588af4530d8
+2020-01-15 15:26:46 INFO: Saving commits to the csv...
+2020-01-15 15:26:48 INFO: Linkage for commit 16e6c5b4a53cf03322b8efe70be5a61f6d741acb
+2020-01-15 15:26:49 INFO: Done saving commits to the csv.
+2020-01-15 15:26:49 INFO: A worker finished ingesting repo storm
+2020-01-15 15:26:49 INFO: Adding repo storm to work queue for analyzing.
+2020-01-15 15:26:49 INFO: Worker analyzing repository  storm
+2020-01-15 15:26:49 INFO: Linkage for commit 3d37f16b25895c5025fbd92e3812fcdfe1e27709
+2020-01-15 15:26:53 INFO: Linkage for commit 4a470a028e1f146c04695819c48b9ec8b7950f36
+2020-01-15 15:26:53 INFO: Linkage for commit 0d4a6f3d47f53b3e9d25698a585ef30bad5424c1
+2020-01-15 15:26:54 INFO: Linkage for commit d2d80a5efc56a551d6bccb22ed56d1b31d2c7945
+2020-01-15 15:26:55 INFO: Linkage for commit 277949e7115059f6f0071e1b3418b6f6cbf48e48
+2020-01-15 15:26:55 INFO: Linkage for commit 9856086781de8fe95e02f3e0df18fd4c6d657fe0
+2020-01-15 15:26:56 INFO: Linking 993 new corrective commits for repo storm
+2020-01-15 15:26:57 INFO: Linkage for commit f317c04acf821d61601f5d986252db40505153bc
+2020-01-15 15:26:57 INFO: Linkage for commit 1130376bcd38668b80d3aa4e35c617d063fd7095
+2020-01-15 15:26:59 INFO: Linkage for commit f9d8a9c8a47be87c6d4f949dc24c6520e84590d0
+2020-01-15 15:27:00 INFO: Linkage for commit f02533bd6b1257891220e6ddcb5210cb7d823a0d
+2020-01-15 15:27:00 INFO: Linkage for commit fa8a8deb6e03ee00c10138f42b9b5cf83803e425
+2020-01-15 15:27:01 INFO: Linkage for commit b3b4b715f88dfb1167024dee23fccb33d1accaa1
+2020-01-15 15:27:02 INFO: Linkage for commit a14fb16d6430d8de4bf31c898d119ab713840c2d
+2020-01-15 15:27:03 INFO: Linkage for commit 57ddaae5fd72ff2cef6d179568640b1fac8f4f08
+2020-01-15 15:27:04 INFO: Linkage for commit 6d9081bba66809602428ea0b0f7ea78229b3087a
+2020-01-15 15:27:05 INFO: Linkage for commit d353e6be58ac830e7cd20a10c05d84d2651cce2a
+2020-01-15 15:27:05 INFO: Linkage for commit 3258782752763d360d3beecca15e583934c62e09
+2020-01-15 15:27:05 INFO: Linkage for commit a28fb8eae225ac16279a6086420f310145bf6100
+2020-01-15 15:27:07 INFO: Linkage for commit a3f2882aa888f9515546a9fa27c359e4817c9f4f
+2020-01-15 15:27:07 INFO: Linkage for commit 71608a8424e1ad5d110a71d93313c370b2923411
+2020-01-15 15:27:08 INFO: Linkage for commit 0699624e1dc9b736220f135112448e4474c00446
+2020-01-15 15:27:08 INFO: Done saving commits to the csv.
+2020-01-15 15:27:08 INFO: A worker finished ingesting repo netty
+2020-01-15 15:27:08 INFO: Adding repo netty to work queue for analyzing.
+2020-01-15 15:27:08 INFO: Worker analyzing repository  netty
+2020-01-15 15:27:08 INFO: Linkage for commit 51cb86699beae26b74c594e2daaa098116f9f572
+2020-01-15 15:27:09 INFO: Linkage for commit 7a550af50c29c8504c47da4583572c07a618a6aa
+2020-01-15 15:27:10 INFO: Linkage for commit 4eb942239e4a2495de6b55e84a28321fc3652908
+2020-01-15 15:27:11 INFO: Linkage for commit 2277eddb6c9eb2ef3f9a520fe098d16eb7664f11
+2020-01-15 15:27:12 INFO: Linkage for commit 76de9d87000f375749f355a7d7d6af9fe37c3558
+2020-01-15 15:27:15 INFO: Linkage for commit 02cfd6b1e6798c51c5ddd4bf8c925374a61a7dd7
+2020-01-15 15:27:15 INFO: Linkage for commit 2ea41319be15171c7ac08d617b29e8510b6c1f0e
+2020-01-15 15:27:15 INFO: Linking 2486 new corrective commits for repo netty
+2020-01-15 15:27:16 INFO: Linkage for commit 53cc66142c9cf1a59d096423d4a4514cd4f25037
+2020-01-15 15:27:17 INFO: Linkage for commit c50f960974a3d78b137f79c634d544872a8b4ea5
+2020-01-15 15:27:18 INFO: Linkage for commit c3fbb15f25022a29bb4e3e2297c358c398cb1b9e
+2020-01-15 15:27:18 INFO: Linkage for commit a640026327c9e699a0203f7bd2edecd8a135f7f6
+2020-01-15 15:27:19 INFO: Linkage for commit 2740da7c70d6d47d6d0670c1bb903e974330b320
+2020-01-15 15:27:20 INFO: Linkage for commit 437d8eca9f51dd0ed7af5b828412ee96ac192f17
+2020-01-15 15:27:20 INFO: Linkage for commit eb96291f5ae999aa4b364b6e51daaa627c18bc60
+2020-01-15 15:27:21 INFO: Linkage for commit 7c2934c15f4f53e256a13433018265641cd6757e
+2020-01-15 15:27:21 INFO: Linkage for commit 85663513f5cea9d25b8dcd5672053ad1aa359f40
+2020-01-15 15:27:22 INFO: Linkage for commit 628bf5c0cae556958f476a0b2fb316f74cf2bf6b
+2020-01-15 15:27:22 INFO: Linkage for commit db902bc0e52dddd00c87f9b358835d8925651fad
+2020-01-15 15:27:23 INFO: Linkage for commit 1ad95d7433f67e1b888f521e27a0293b1d9c5288
+2020-01-15 15:27:23 INFO: Linkage for commit bf55150ac7aaf9a50457e26af12e2d916113e8dd
+2020-01-15 15:27:24 INFO: Linkage for commit c562cdd1f9658bee3644dcbadbf713eb777942d7
+2020-01-15 15:27:24 INFO: Linkage for commit 14ae3239d22ec1c1fed122e9f903d46d90129c38
+2020-01-15 15:27:24 INFO: Linkage for commit 444b5cea6a4c02cecfd50e5d1ecaaaa389d05781
+2020-01-15 15:27:26 INFO: Linkage for commit 6b57766422be5eae1395e589780748351dd37991
+2020-01-15 15:27:26 INFO: Linkage for commit a1c07e91228f01e88c1ae68f5db6fa557e58f5c1
+2020-01-15 15:27:26 INFO: Linkage for commit e30ed5d35cbcb92584d7fee8ae862f3929e443d8
+2020-01-15 15:27:27 INFO: Linkage for commit dfa32d3cc05771fb494a5f8edd7afd43b2cc705f
+2020-01-15 15:27:27 INFO: Linkage for commit da2440535c7aa65cab866f383bb5d156708a5dfe
+2020-01-15 15:27:28 INFO: Linkage for commit 707c2aa9413d5c543085ba3d7a55d8ca460ca75d
+2020-01-15 15:27:28 INFO: Linkage for commit 26a2dfe5f3b2e7d593881203f7e82855d5862a99
+2020-01-15 15:27:30 INFO: Linkage for commit db63ff1f83e294483ab882d474a76455003a091a
+2020-01-15 15:27:30 INFO: Linkage for commit 9968eea08bf15cf42c41da717923967d606b3c1c
+2020-01-15 15:27:31 INFO: Linkage for commit 49eb02fe329f0bf1bbc847f613c8aa147e6c5330
+2020-01-15 15:27:31 INFO: Linkage for commit 1f5cb7fe76ac3a56e9b0f6f6f5b2df0025003303
+2020-01-15 15:27:32 INFO: Linkage for commit 844c29016bc25ac7114b290f2728d20ca6f81910
+2020-01-15 15:27:32 INFO: Linkage for commit ab4890183496beea6d4908c4adb672e15c1136a5
+2020-01-15 15:27:33 INFO: Linkage for commit de9955f5f31ff6a9cd17444075a26f5565b65368
+2020-01-15 15:27:33 INFO: Linkage for commit b428d24973bf6f91d11af71a33cf867f4ca8b56d
+2020-01-15 15:27:34 INFO: Linkage for commit b5f53ec2c61f95bcb96a856b15ef867be02edd3b
+2020-01-15 15:27:35 INFO: Linkage for commit 3b815c3aa5d8b3500c9c0ff84ee41e9f6b748c56
+2020-01-15 15:27:35 INFO: Linkage for commit c12e978d05f4c66ef9eee347b1a08f90ba821b89
+2020-01-15 15:27:35 INFO: Linkage for commit 7fe868089855c33d6345e740bfdbe6f140794598
+2020-01-15 15:27:36 INFO: Linkage for commit b8bb84c5e4c01f73ca7a013f26d7e6ab5ce8f86b
+2020-01-15 15:27:38 INFO: Linkage for commit f16c0c17aa38ecff097f5fc50db7cd5e247c8737
+2020-01-15 15:27:39 INFO: Linkage for commit faa41dc7daa5a8cade726baa74f0c0d3eebab334
+2020-01-15 15:27:39 INFO: Linkage for commit 1b929414dbe3bf1a09ffd7f9d1832a32362f4e6b
+2020-01-15 15:27:40 INFO: Linkage for commit f36b950de16f6db134bd98969cd8fbe578d37480
+2020-01-15 15:27:40 INFO: Linkage for commit 6e0109beb503b118fd96f8a3a8e7da9e4ec4d5b8
+2020-01-15 15:27:41 INFO: Linkage for commit b2aca92bf775691e85c770d2774139d422d3c06c
+2020-01-15 15:27:42 INFO: Linkage for commit 3d6f1e47ccf93d01364ed5f7603fa66d43eae0e2
+2020-01-15 15:27:43 INFO: Linkage for commit 128b3f8212e357468cb608546a52da3826903fad
+2020-01-15 15:27:44 INFO: Linkage for commit f40ca1958aae3d10c75c77a13b2e39057841acdb
+2020-01-15 15:27:45 INFO: Linkage for commit 3fb895c9a9185c04eb263ef77038cd7ec8b5dfa7
+2020-01-15 15:27:46 INFO: Linkage for commit 03f18152c182cf110389a6d626c656518853ceba
+2020-01-15 15:27:47 INFO: Linkage for commit 0ce96c57bd6fedb0a9e99957892b2fcce8cc11f0
+2020-01-15 15:27:47 INFO: Linkage for commit 863bad7886c1bbf84391f5e9e330f20a4daf8894
+2020-01-15 15:27:47 INFO: Linkage for commit e89a880b0fbffa78ef37299e3fc3068c4c7f554a
+2020-01-15 15:27:49 INFO: Linkage for commit c2ecaa18c25d92d260718217e5ba1f0496cb8eb2
+2020-01-15 15:27:50 INFO: Linkage for commit 794419823fe492bd400bc9fff102113b3718cd04
+2020-01-15 15:27:50 INFO: Linkage for commit a42166e132f6902051a583e8aff6aca9b8f71e4c
+2020-01-15 15:27:50 INFO: Linkage for commit 70b2cf9a73e38bd3831a8e196c84556275c3f588
+2020-01-15 15:27:51 INFO: Linkage for commit c165ad07be5e07e7ee74b3c9a9a20192fe90c3ee
+2020-01-15 15:27:51 INFO: Linkage for commit 2e8da58144b6337e8bcd270058b743630764c9e9
+2020-01-15 15:27:52 INFO: Linkage for commit 3592968bc03a914ea69506b7b25494b344860274
+2020-01-15 15:27:53 INFO: Linkage for commit 99c4da880b4cff044696b9df680d22a47c23cbcd
+2020-01-15 15:27:53 INFO: Linkage for commit 5c8b9d8d407f9ebc57331dfe5ab40455c2fbfeec
+2020-01-15 15:27:54 INFO: Linkage for commit ea13d7e8ea6508ec167622d747c415c6040aff19
+2020-01-15 15:27:55 INFO: Linkage for commit f9718e2b2a0055bb59e44029a7fc02a64e9692bd
+2020-01-15 15:27:57 INFO: Linkage for commit 4927e6a008126457ccbaa32d6fab83c4e187100f
+2020-01-15 15:27:57 INFO: Linkage for commit adf463ee840af5d27be64698f9d218f041670e64
+2020-01-15 15:27:58 INFO: Linkage for commit 9516401e8c2c85c51b97d41b1d8fb27b521e6125
+2020-01-15 15:27:59 INFO: Linkage for commit d8c3f9cbc6a562a7d23711d4c0f97f4e4758444e
+2020-01-15 15:28:00 INFO: Linkage for commit 785ee3bd2f343b795a86d07fbc508ef5fc7883fc
+2020-01-15 15:28:00 INFO: Linkage for commit 0f9dc1646bd38c24959c30e334068ba93ff830e5
+2020-01-15 15:28:00 INFO: Linkage for commit 6f30a4a748afced35b10f7d42290977a6eb56df2
+2020-01-15 15:28:01 INFO: Linkage for commit d882e4f27cb175c0a0c66ddc9e340075f746a37c
+2020-01-15 15:28:05 INFO: Linkage for commit cef7c2b7a00110621cc833f0eccfd6692ec828b4
+2020-01-15 15:28:05 INFO: Linkage for commit 7aa5da14cdc71cba8286e737746303a9e933375f
+2020-01-15 15:28:08 INFO: Linkage for commit 8856168e303b108a5e0c5f1554573670083349e6
+2020-01-15 15:28:08 INFO: Linkage for commit 68c05150bf4ce702c334405dc707d95c6fe73577
+2020-01-15 15:28:09 INFO: Linkage for commit c73dc014cf958abd13f48df5fc3425b4d13a99c7
+2020-01-15 15:28:09 INFO: Linkage for commit 1d31086acba06579c4e7d5928dbba9ca8a0128b1
+2020-01-15 15:28:11 INFO: Linkage for commit 1030e6182d2fde38d4d307af8e21791ad9b91429
+2020-01-15 15:28:11 INFO: Linkage for commit 0a594a27d5584f174abd1545aed9f273c208ac81
+2020-01-15 15:28:11 INFO: Linkage for commit 06e2f9826fe25904f0c9a30792e1df56b136739e
+2020-01-15 15:28:12 INFO: Linkage for commit 6ed6e22c7d4cbcf5b8269004ae37d72f0e0a5446
+2020-01-15 15:28:13 INFO: Linkage for commit ad805a1f703eeaa64f7af2a9be1c4994f657950a
+2020-01-15 15:28:13 INFO: Linkage for commit 0ea12d3d662fab6adefa6d13a7ad017f793a2fa1
+2020-01-15 15:28:15 INFO: Linkage for commit 27827068cdafc63e664c4371ed602bc956576c64
+2020-01-15 15:28:15 INFO: Linkage for commit 249e5a8aae9324cc6c8caf5303a607056b15a9da
+2020-01-15 15:28:17 INFO: Linkage for commit 1b40d714b5f44cac5ca8890ff0d0bf94312ca3a8
+2020-01-15 15:28:19 INFO: Linkage for commit 166363d438860b03f5915ac23826f7e644768bbd
+2020-01-15 15:28:20 INFO: Linkage for commit 5c1ee6a8c7f66d98b6b1ffaa4ad6e33a2260d021
+2020-01-15 15:28:20 INFO: Linkage for commit 8e9b51a412b2e99d0456dc91c633651b2e9c361e
+2020-01-15 15:28:21 INFO: Linkage for commit 23c7b1f25b1ec54aa2134b53d0f0f10e44914827
+2020-01-15 15:28:22 INFO: Linkage for commit 5d56ace149ae3264d2502d49dd85302fc613a27c
+2020-01-15 15:28:22 INFO: Linkage for commit 866a74305c4b64eb5ffb177d7cee43638579c6f3
+2020-01-15 15:28:22 INFO: Linkage for commit bb72f7a33f20ee8e54d7a707cfeadce36b64b18c
+2020-01-15 15:28:26 INFO: Linkage for commit a2eed846b4a1ebd1b4c623e22cbff299ed19bc6a
+2020-01-15 15:28:27 INFO: Linkage for commit 9a602ab64311e65cfcb4c7ddc00da3bf54783b77
+2020-01-15 15:28:28 INFO: Linkage for commit 81decc321cc3463f206cd3b7c06434fa527d679d
+2020-01-15 15:28:29 INFO: Linkage for commit 436a8acf450710e4710601eb335f95a9d8f26737
+2020-01-15 15:28:29 INFO: Linkage for commit a7c73d2e52535abe93e40daccbdb133bb41014fc
+2020-01-15 15:28:31 INFO: Linkage for commit 4b0dde413a3c38a77461ac64ad278a042d6eea68
+2020-01-15 15:28:31 INFO: Linkage for commit b368e63e3c04e861c2cd6e26b3fc6c001e287cc8
+2020-01-15 15:28:31 INFO: Linkage for commit f2e60810a8a8c57b3d1c15ea81f21b5615af01c6
+2020-01-15 15:28:33 INFO: Linkage for commit 2d6cfe9af6a8ed85c4ee43c435c791a0a261bb08
+2020-01-15 15:28:33 INFO: Linkage for commit b0805c8504f4a1ff31ab5c7a919d1c8ff26cec81
+2020-01-15 15:28:34 INFO: Linkage for commit dbc1e34bdeede1cabee58b65bceb02f930ce5d88
+2020-01-15 15:28:34 INFO: Linkage for commit 562dc22797422cc485493322880bcb905c58ba3b
+2020-01-15 15:28:35 INFO: Linkage for commit 6cd9c96b21e380f3fc976b7435746b7c66edd3cd
+2020-01-15 15:28:36 INFO: Linkage for commit 1d37cef1d8367af963fee4dc99164708f5d3c6f8
+2020-01-15 15:28:37 INFO: Linkage for commit ff85d74b85bf33aa661e34b6a9e2bf037924fe0f
+2020-01-15 15:28:37 INFO: Linkage for commit 49bac1aa73e0c83f1d6526c95954ed3b8bcb7485
+2020-01-15 15:28:38 INFO: Linkage for commit f28af3054536d2a1d421137dacd6172561940157
+2020-01-15 15:28:39 INFO: Linkage for commit f5ad01f0326405c321a4d1a7bbafb01b7d4d5074
+2020-01-15 15:28:39 INFO: Linkage for commit 04b8921d4dcab019b02588620d953c4f19d43a58
+2020-01-15 15:28:40 INFO: Linkage for commit 64b6d88e922b1818976a45ed30754b18e9b9e6e7
+2020-01-15 15:28:40 INFO: Linkage for commit b5c1960662993d7f18b2be076291af0426b5e710
+2020-01-15 15:28:40 INFO: Linkage for commit 970ad12d61e18d5171f3a5e8e3d07c83f587d2ed
+2020-01-15 15:28:40 INFO: Linkage for commit aa5ff577c48668c5ada2d5dbd778feeb875bf8e9
+2020-01-15 15:28:42 INFO: Linkage for commit ff6eac6af086741d2e38e41e82a6e6bcc836bde7
+2020-01-15 15:28:42 INFO: Linkage for commit 472c7e55ee9d5cc7e7771696092c6eeca5a91b4d
+2020-01-15 15:28:42 INFO: Linkage for commit 1837b200512031991c963e935705a0447673c3be
+2020-01-15 15:28:43 INFO: Linkage for commit ea8f92441c58ed6b3deaa9ef1b9a2500543b1ef8
+2020-01-15 15:28:43 INFO: Linkage for commit 99e6e7bfdd683302c4a9833970eeaf2797090ca4
+2020-01-15 15:28:44 INFO: Linkage for commit 57d11797395ac2e00731f425af2fa6f19b3f6950
+2020-01-15 15:28:44 INFO: Linkage for commit ea1722f9a4fd091493a4eb6e9d7b106df5e33dd3
+2020-01-15 15:28:46 INFO: Linkage for commit b608c3daf41933ea225d6b8ae4aca02a127b85a4
+2020-01-15 15:28:46 INFO: Linkage for commit 094a4aaa8db5bbae6aa475fadabce0a933b5286a
+2020-01-15 15:28:46 INFO: Linkage for commit b39a7105d02beba61bf4ae7e859e886a08c05043
+2020-01-15 15:28:47 INFO: Linkage for commit 6e63dee546704a721f3ee106b53c25b48709a9e3
+2020-01-15 15:28:47 INFO: Linkage for commit 9c3d34adfd233c305e878b53238e9cbbcbf11271
+2020-01-15 15:28:48 INFO: Linkage for commit 5c3bf86014f05cc29825b3261e2fb9c6e774cfc6
+2020-01-15 15:28:48 INFO: Linkage for commit 65eda0902d61438898fb15acc5828ff68fc2160e
+2020-01-15 15:28:49 INFO: Linkage for commit a8186fb26cb4eec77182935578dd6cdbe7ffdda8
+2020-01-15 15:28:49 INFO: Linkage for commit 246845b816954f8744872ebd59e701e5f9f48ed1
+2020-01-15 15:28:50 INFO: Linkage for commit 96e1cf0385ef2015c87d836ee60ba20d57d6c3fe
+2020-01-15 15:28:51 INFO: Linkage for commit 52bea4fd4757001b5fb95e3955c1101f8fc61871
+2020-01-15 15:28:51 INFO: Linkage for commit 8ecb9e97c92d607af78850cd2d9685ab24b38100
+2020-01-15 15:28:53 INFO: Linkage for commit 3cf6a95a3242d8d6bd74a6f78015311fa15e3d64
+2020-01-15 15:28:53 INFO: Linkage for commit dc00cb3c212209b430856a7b7f2469ddda50ed48
+2020-01-15 15:28:55 INFO: Linkage for commit 393357b7852db2dc4f674041e98344f7277f137d
+2020-01-15 15:28:57 INFO: Linkage for commit 6bbc2780447de724b7030c86c0fab5cb9e0f0237
+2020-01-15 15:28:59 INFO: Linkage for commit 8aed7da5af3a2794f3be7e79524615548a02c767
+2020-01-15 15:28:59 INFO: Linkage for commit 040ec26ad7fb27f5e171bbd24793816fc28acf96
+2020-01-15 15:29:02 INFO: Linkage for commit edd969b384583e63aa8e463cd8edbb4dd1380514
+2020-01-15 15:29:03 INFO: Linkage for commit 66f7d5a800517dcb788c736c2ef482e669c7de15
+2020-01-15 15:29:05 INFO: Linkage for commit 4ede31105599d0af566f4143c85b35767f98b59f
+2020-01-15 15:29:05 INFO: Linkage for commit a79f5e5c0d2b0a8cc7df1803779a9566e422b180
+2020-01-15 15:29:07 INFO: Linkage for commit cdf5c38efda92c64c129a307e3debc93fa09e124
+2020-01-15 15:29:07 INFO: Linkage for commit f52e773c00be9c7b5ac244e0575cc75a4671750e
+2020-01-15 15:29:08 INFO: Linkage for commit 2c25099e501b5461b28f81f069fac42f6c35f9a3
+2020-01-15 15:29:09 INFO: Linkage for commit 0f38de643fb07ae6761ad4d3e28586ab5e42e9b7
+2020-01-15 15:29:09 INFO: Linkage for commit 4e1d32308e0abdaf8d98726a0422ba1f5e725d21
+2020-01-15 15:29:11 INFO: Linkage for commit 69e80bd349273a78e779a54557db885bc23e3c8c
+2020-01-15 15:29:12 INFO: Linkage for commit 058ef77ccc7fd40a80a2da72dc97695c7dda2c0b
+2020-01-15 15:29:12 INFO: Linkage for commit 6cdd0ca5669a31d2d98d77799481cff354f07952
+2020-01-15 15:29:13 INFO: Linkage for commit cc8bc978f49c771d10b78e1d81e4f117646617b6
+2020-01-15 15:29:15 INFO: Linkage for commit 68a2445e7d3f105cc7b24de43f6e129c6bc58755
+2020-01-15 15:29:16 INFO: Linkage for commit ccc75fb5e558add3b28029aecbef0ca030edd8a2
+2020-01-15 15:29:18 INFO: Linkage for commit a2272d7cb59f8e7f94e6366731a5bad50640fa60
+2020-01-15 15:29:20 INFO: Linkage for commit 3fe220072cb523a4675747140438bee384004447
+2020-01-15 15:29:22 INFO: Linkage for commit 48248b5c7b0e85c9fa2b95464c963203ae80b4ac
+2020-01-15 15:29:23 INFO: Linkage for commit 1e8707cffba2de1aa358f41da91c979bb25bdf1c
+2020-01-15 15:29:24 INFO: Linkage for commit 07f17cfd4f51a397ebd058bd047ec330f8d4b572
+2020-01-15 15:29:25 INFO: Linkage for commit e1eb16b3783bbcda9d2b83f7b1224a51c00e5e62
+2020-01-15 15:29:26 INFO: Linkage for commit ff8f148990a594c8d66c5f0403ae77511317face
+2020-01-15 15:29:28 INFO: Linkage for commit d0e6831b016d457c501b9236b24141253da465a0
+2020-01-15 15:29:28 INFO: Linkage for commit 9dd9b00851f77b9b35ca724ab785fdc29b79e492
+2020-01-15 15:29:28 INFO: Linkage for commit 6cdb8ce663c94e8b338179dca5f63da87058e2b3
+2020-01-15 15:29:29 INFO: Linkage for commit 87c14759ce42401877f5e61d5349b91dd6ece99a
+2020-01-15 15:29:30 INFO: Linkage for commit 4afd69b78f36a0523be19185a3a3b4a1f72b771f
+2020-01-15 15:29:32 INFO: Linkage for commit c5a59166fb420fd6a1595a69952092877b9a5c51
+2020-01-15 15:29:34 INFO: Linkage for commit d66ef49022858664841d3d60d0d531bdd13bd882
+2020-01-15 15:29:39 INFO: Linkage for commit b4c6d82be736baf971ed9c7bc1896413a0577d1e
+2020-01-15 15:29:41 INFO: Linkage for commit a0d9a59206ffd6fa96c26aa0f07170531f6f6fdc
+2020-01-15 15:29:41 INFO: Done getting/parsing git commits.
+2020-01-15 15:29:42 INFO: Linkage for commit 5f95b44ba2358114e6cf81dd6438ed6544aa4ec8
+2020-01-15 15:29:43 INFO: Linkage for commit 1a5ccaf98dc81f05a7dbb8ec4900da49b0b3483c
+2020-01-15 15:29:44 INFO: Linkage for commit 14a8f63f5704ccca9168ec482d16b4bbbac799ac
+2020-01-15 15:29:45 INFO: Linkage for commit 3dbe9737357844b4201ac70ef6e97801225d7c3d
+2020-01-15 15:29:47 INFO: Linkage for commit 90cfddd9bd8808d59a218109ff699a68c4cfb95b
+2020-01-15 15:29:48 INFO: Linkage for commit 63f01424e2a650b5280eedbda1a955d03cb03514
+2020-01-15 15:29:51 INFO: Linkage for commit 92bf65ab65d99595061586c2dc1abda6bb20dc91
+2020-01-15 15:29:53 INFO: Linkage for commit 126fcef8804606fd69b02b17074fef11f857ccd0
+2020-01-15 15:29:54 INFO: Linkage for commit 9dd7e81c9f8e221eac6165ab21b1ba2ee1d955a1
+2020-01-15 15:29:55 INFO: Saving commits to the csv...
+2020-01-15 15:29:57 INFO: Linkage for commit 7c70a9406b3e8061ef6a11abbb775f21a6568e06
+2020-01-15 15:30:14 INFO: Linkage for commit c8fbf43aaf573cf4eab44fc7529bd09ccf3b062e
+2020-01-15 15:30:21 INFO: Linkage for commit 59b95395db1f25e3fe7e09f7983a0dedd5d2b445
+2020-01-15 15:30:28 INFO: Done saving commits to the csv.
+2020-01-15 15:30:29 INFO: A worker finished ingesting repo cassandra
+2020-01-15 15:30:29 INFO: Adding repo cassandra to work queue for analyzing.
+2020-01-15 15:30:29 INFO: Worker analyzing repository  cassandra
+2020-01-15 15:30:33 INFO: Linkage for commit 6ff5a87d01b3af3c441983a60b7e9a4c46d46106
+2020-01-15 15:30:37 INFO: Linkage for commit a8482db5bf5b35dc3cc72303c7198a1c9abf81b1
+2020-01-15 15:30:38 INFO: Linking 3537 new corrective commits for repo cassandra
+2020-01-15 15:30:39 INFO: Linkage for commit e90036f6e1b2c799bef4842f69a0df9ee5b08ec9
+2020-01-15 15:30:40 INFO: Linkage for commit ab8e41413f77c69dde354a5a990fc4063155239e
+2020-01-15 15:30:48 INFO: Linkage for commit 70829fd71fa9902bcb2e6d2661aba3340f498a37
+2020-01-15 15:30:50 INFO: Linkage for commit 46144a267bf548833a663c4cc6cdb98b813374a5
+2020-01-15 15:30:53 INFO: Linkage for commit 16f30f16749fe4f75c94b17aa4a4b63df4ddb825
+2020-01-15 15:30:53 INFO: Linkage for commit 7b103b83e9eebb5f5dfef9b86ab2abd43a6ec822
+2020-01-15 15:30:55 INFO: Linkage for commit 5c6599e1c24d23389a879baf8b59dae9017794e0
+2020-01-15 15:30:56 INFO: Linkage for commit b293ed1fbb3d8b46bf4f2f638d46295329babccc
+2020-01-15 15:30:57 INFO: Linkage for commit 819ded6a8356b8f7409838e29a4b43ec89e759a7
+2020-01-15 15:30:58 INFO: Linkage for commit eff5674e3e976e9095ddc1de6e168f39922bfeee
+2020-01-15 15:31:00 INFO: Linkage for commit 13069757e6c52405e46a922946d337623bcbc0e4
+2020-01-15 15:31:00 INFO: Linkage for commit 8e0a43c3b1cff012dd4096443d1260242c5be646
+2020-01-15 15:31:00 INFO: Linkage for commit 4c949e3399a80396525774a0ffc66b8af3155242
+2020-01-15 15:31:02 INFO: Linkage for commit bd6dfac5255753978253605f7e8b4c6af68fa23c
+2020-01-15 15:31:03 INFO: Linkage for commit e6403c4473e4e9ba3a1bace1a7a786a67a2f5e5d
+2020-01-15 15:31:05 INFO: Linkage for commit 91bfc60371048ba04bd6316bbb84e52986e883e7
+2020-01-15 15:31:05 INFO: Linkage for commit fdb5f853e615ab46a4f3dea3a46bfca09c75f27a
+2020-01-15 15:31:07 INFO: Linkage for commit 673466805f2e69b6d8567604732435058696daca
+2020-01-15 15:31:08 INFO: Linkage for commit 5b900da0604059f8ec3f01081a89b7343e7e89ee
+2020-01-15 15:31:09 INFO: Linkage for commit c1f3023ae09ff5a8c71369c79e3f5509df6e3399
+2020-01-15 15:31:10 INFO: Linkage for commit e9bb38b983ede3ce22220af5de3ba803c50248c8
+2020-01-15 15:31:12 INFO: Linkage for commit 8cfe9c42b3163489b7add832dbacd19f529f5fa2
+2020-01-15 15:31:12 INFO: Linkage for commit 770d6a74c6a83e83dfbb5a87364d36eac7858c6a
+2020-01-15 15:31:13 INFO: Linkage for commit b4d84ce73b3209b3165b3934ca9f0ca98ff35e89
+2020-01-15 15:31:15 INFO: Linkage for commit 4d13ccc1092b83d79980419e04392dd239b01676
+2020-01-15 15:31:18 INFO: Linkage for commit a8c5f840bda6206c164f77ec269f8c9c13d527de
+2020-01-15 15:31:19 INFO: Linkage for commit 35fb8ce1455139d1213290cadfadda017c145018
+2020-01-15 15:31:19 INFO: Linkage for commit ebb881862b1dff0c44c68134204cdec5b96a601b
+2020-01-15 15:31:21 INFO: Linkage for commit a4edbd444e3cb1afb981eef3de5b96d7f74cff3d
+2020-01-15 15:31:21 INFO: Linkage for commit fc7d4e9980c7530cf05628a750565ed897895beb
+2020-01-15 15:31:23 INFO: Linkage for commit 88833d9ded6949e03de3a98ccff67c67b2c6e551
+2020-01-15 15:31:24 INFO: Linkage for commit 3f013f16c6663fa023c1c64a4a291e7083712fe7
+2020-01-15 15:31:24 INFO: Linkage for commit 35cb20e1a8eb09f1c346246346eb90e5fd29412c
+2020-01-15 15:31:24 INFO: Linkage for commit 10bc616b4b5599becbcbcc4b76d95fb2a8a4106c
+2020-01-15 15:31:25 INFO: Linkage for commit 25a4731ab152232f54761618610367e11fd38791
+2020-01-15 15:31:25 INFO: Linkage for commit e3fd7cf0ecebd692dc3067f4737df5098092e565
+2020-01-15 15:31:27 INFO: Linkage for commit 74dcfb263ca695534ec631d8cf11f909e54a9765
+2020-01-15 15:31:29 INFO: Linkage for commit d31dc2d21bdadc720a8dfadd0e692131afc266dc
+2020-01-15 15:31:29 INFO: Linkage for commit 6bbc8e03415b0c2544cd893df2701091ab5f67dc
+2020-01-15 15:31:31 INFO: Linkage for commit af47dc8476a6e4e4856476e4acff1ac8321a6a39
+2020-01-15 15:31:31 INFO: Linkage for commit 46208a893d227865c875fa2665b614a895b85e85
+2020-01-15 15:31:33 INFO: Linkage for commit bffc92136a197f0fae9feeb8db5992da6574ecfc
+2020-01-15 15:31:33 INFO: Linkage for commit a82e72267daef598d82b8ce4f84a8a987245f333
+2020-01-15 15:31:33 INFO: Linkage for commit 0ac10a7e3ffe87519dd1aa1c9f3608475d7c80bb
+2020-01-15 15:31:36 INFO: Linkage for commit e5f1639f241213d45b354753a721c1600edc1fde
+2020-01-15 15:31:38 INFO: Linkage for commit 655bd0b7a4660fcfca5ad598ac1d8a9070d2328e
+2020-01-15 15:31:39 INFO: Linkage for commit ba5282d0a246a9529d615ca35521a71a98009f5e
+2020-01-15 15:31:39 INFO: Linkage for commit 0b806793821d92fcd3b6febff2d6d61b05eb385c
+2020-01-15 15:31:41 INFO: Linkage for commit b6ae87ba0054ed3bb7ebcf69dfa7d47e92da399d
+2020-01-15 15:31:43 INFO: Linkage for commit d2f36ca770e1fae1ce3391eb8ee7c267ae328bbb
+2020-01-15 15:31:44 INFO: Linkage for commit 1ae53127777ee7da5fafe466658c443b25219ebb
+2020-01-15 15:31:45 INFO: Linkage for commit 4602ef9e1128f68f4efd9137127f3c29af8cf6cc
+2020-01-15 15:31:46 INFO: Linkage for commit 129335140e0c5338871dda3587b9870b7fd1057b
+2020-01-15 15:31:48 INFO: Linkage for commit 8f3799c02e1026bc4f5f4bb9958fb94b57a72490
+2020-01-15 15:31:53 INFO: Linkage for commit 16781c226000fbf3da93af19adaa1c4d01820366
+2020-01-15 15:31:53 INFO: Linkage for commit b3804dc9b51bca094e92f4c21ef263cd5cbb27a1
+2020-01-15 15:31:56 INFO: Linkage for commit b1e8b19a6dddc28c90e32051bb47d1220b6ba21b
+2020-01-15 15:31:57 INFO: Linkage for commit 57551914af578f4d4615440828394b769338ce7f
+2020-01-15 15:32:01 INFO: Linkage for commit fd67e011b0334fb95ee68b110d64b4e873f9e35b
+2020-01-15 15:32:03 INFO: Linkage for commit 10d59671f34734f5547ef995cb032dbef46a6158
+2020-01-15 15:32:04 INFO: Linkage for commit 769e179fd99a7d17f065449e66c9bfd646e1ac0e
+2020-01-15 15:32:08 INFO: Linkage for commit c67b55a6d9bf051c6bcd447362da05b552672c64
+2020-01-15 15:32:09 INFO: Linkage for commit 525d50359e27ca73eeeba96a994155c684d05292
+2020-01-15 15:32:10 INFO: Linkage for commit 814e3d21c793d9980826583a6356488f5fdc8017
+2020-01-15 15:32:12 INFO: Linkage for commit f188cf98aa3fe85708c13fd295315f36a56af79d
+2020-01-15 15:32:13 INFO: Linkage for commit 48929afd60aab28574b2356773ab24f80dfa193b
+2020-01-15 15:32:14 INFO: Linkage for commit f4165b10e907eb8c69f221a7a201f70f46ef7bfe
+2020-01-15 15:32:18 INFO: Linkage for commit 834b373a9626e558c1a554a1f3ec757c49588d0f
+2020-01-15 15:32:19 INFO: Linkage for commit 075c41cba8b0ec93fb25983f71de6d303eb8a33d
+2020-01-15 15:32:20 INFO: Linkage for commit 1bfa069d3781ed858f54055ef2cc8f2d1bf5c18c
+2020-01-15 15:32:21 INFO: Linkage for commit 96006426c97d4e4a3b4378585a847b50cd8b63d7
+2020-01-15 15:32:23 INFO: Linkage for commit 3b69dd7ddb72c2708cf4ae804a8fa9afcc4a2ebc
+2020-01-15 15:32:26 INFO: Linkage for commit f83b7e59356f490c19d154d29b1007ff82f58a06
+2020-01-15 15:32:27 INFO: Linkage for commit a7c181072efaa18d12c75de7c09beca4443e6ae5
+2020-01-15 15:32:27 INFO: Linkage for commit 387872f47a801102dba3d47250f82839976108e1
+2020-01-15 15:32:31 INFO: Linkage for commit 82341a72e30da80de01c59303e72855d10b5f945
+2020-01-15 15:32:33 INFO: Linkage for commit 62a88c0259ec08080da8dde72df1d978039f0d6f
+2020-01-15 15:32:35 INFO: Linkage for commit 86f828998f6452dcb0b8f788b8cb63c7a858441a
+2020-01-15 15:32:45 INFO: Linkage for commit db3e9b8fb571f6c3ee1a043f98133fa5cdfb438e
+2020-01-15 15:32:49 INFO: Linkage for commit d5ddd93ac507c52f316b094a6740ddb5f122125f
+2020-01-15 15:32:52 INFO: Linkage for commit 4144017b7547ed64a02426cc5cb5d88fdd632a82
+2020-01-15 15:32:52 INFO: Done getting/parsing git commits.
+2020-01-15 15:32:56 INFO: Linkage for commit 605ac3d35aba0cd165d9f2a34b4fb9a452eca7bb
+2020-01-15 15:33:03 INFO: Linkage for commit 7d1ec117878b63aa610410432fd713523790b0c4
+2020-01-15 15:33:04 INFO: Saving commits to the csv...
+2020-01-15 15:33:17 INFO: Linkage for commit ea784b00b5029a6ecce3d2358a1739115c58688e
+2020-01-15 15:33:18 INFO: Linkage for commit 07fba7f8593822dc1b18eaad98537b03c6b56be7
+2020-01-15 15:33:19 INFO: Linkage for commit 8da05713fe08b226dbb6d1ee4bf6066954e29fce
+2020-01-15 15:33:23 INFO: Linkage for commit 7a503f15192f258e8541caf11c7f2439ffe3a9ea
+2020-01-15 15:33:25 INFO: Linkage for commit d1be3feefc417f6ebac8f07cbf1ddb3c276db2bf
+2020-01-15 15:33:29 INFO: Linkage for commit 658b40c42e9ab53a2a26297f6a9416fab7cf5e87
+2020-01-15 15:33:36 INFO: Done saving commits to the csv.
+2020-01-15 15:33:36 INFO: A worker finished ingesting repo presto
+2020-01-15 15:33:37 INFO: Adding repo presto to work queue for analyzing.
+2020-01-15 15:33:37 INFO: Worker analyzing repository  presto
+2020-01-15 15:33:37 INFO: Linkage for commit 82e677591c1548210e2d95d2b081bdce6f2ccc85
+2020-01-15 15:33:38 INFO: Linkage for commit 4d6f44d84d0871d5bad591bc01668b85ade28821
+2020-01-15 15:33:39 INFO: Linkage for commit d96b633b5f1048ca6ef9b032d956b0be77a11e66
+2020-01-15 15:33:41 INFO: Linkage for commit 70955010ab252e74c7009f55d5e228d03394f380
+2020-01-15 15:33:41 INFO: Linkage for commit 8b9f63e578133664df86b8a734f70fb27ec067d5
+2020-01-15 15:33:43 INFO: Linkage for commit 1d1e88397ea4acd548fd58b28b15a0bc492e810e
+2020-01-15 15:33:45 INFO: Linkage for commit 699b85572f607856a143ac713784ce5ee7728e61
+2020-01-15 15:33:45 INFO: Linkage for commit d9a37093e2b24cd6d5dc09bde5ac596402e6226c
+2020-01-15 15:33:47 INFO: Linking 3105 new corrective commits for repo presto
+2020-01-15 15:33:48 INFO: Linkage for commit a056b9af633042738afbc06fe267f7c9e447e68b
+2020-01-15 15:33:49 INFO: Linkage for commit c17292ee7b4d853473129bec3ffcb5297005456d
+2020-01-15 15:33:51 INFO: Linkage for commit 48b6329ac45e9d3d455579564814a63cc5f8ca75
+2020-01-15 15:33:52 INFO: Linkage for commit 803f44ac9c6a3457388394e952132fe18449cb9f
+2020-01-15 15:33:55 INFO: Linkage for commit c74890efa59b8254d879c37803ddc888b75c3ad5
+2020-01-15 15:33:55 INFO: Linkage for commit 47fad0c45de60f5193e12c8b4ea725f9e5916809
+2020-01-15 15:33:56 INFO: Linkage for commit ab4d7f766066421eef7b3c6362bc59fe1fff6a74
+2020-01-15 15:33:57 INFO: Linkage for commit 458130fc420317b320626ba45918e5fbadc15a76
+2020-01-15 15:33:58 INFO: Linkage for commit 39275778509e577c3f86f60ea47d8dbad3465888
+2020-01-15 15:33:59 INFO: Linkage for commit ef6404ae0cdf32cb420dfa4cf493cc63b724a517
+2020-01-15 15:33:59 INFO: Linkage for commit 7c1cb94c2fbd5ae327a4fd48ec06b9a17a2965bd
+2020-01-15 15:34:05 INFO: Linkage for commit 97db4a6e9302d8bc3a97de628a7d8f6e5135c76c
+2020-01-15 15:34:05 INFO: Linkage for commit e34d49449664a2a35da20d0e111c8f9c050a9938
+2020-01-15 15:34:07 INFO: Linkage for commit 5b08a8c2b55678ec9884534297e0602a9512c85e
+2020-01-15 15:34:08 INFO: Linkage for commit 20718a2b6407adaec6ff87365426e19fa6147731
+2020-01-15 15:34:09 INFO: Linkage for commit e98e2e00df16ad98b8b22bf94a95335c36ee9ebf
+2020-01-15 15:34:09 INFO: Linkage for commit 107937d5ae566cee7deaae562ea5873c6d950bac
+2020-01-15 15:34:11 INFO: Linkage for commit caa5c34cbef91fe378c479bd796cd5747f1e5d82
+2020-01-15 15:34:11 INFO: Linkage for commit 10196cf614d9167b3a9a0ffbd87b502f0a87e944
+2020-01-15 15:34:12 INFO: Linkage for commit d52b238d6260382d650ae8afcdac49f825d60a7c
+2020-01-15 15:34:13 INFO: Linkage for commit 594e9ff520428e46ebf02ee4c6bf8cb062dac612
+2020-01-15 15:34:15 INFO: Linkage for commit c114cb45e6515193ce35de00a897fcc6d8b3ecb1
+2020-01-15 15:34:15 INFO: Linkage for commit cf34602a1bd194018dfd186be793c300ba168fb9
+2020-01-15 15:34:16 INFO: Linkage for commit 032226521dc7af4f28a746cdbe3b11d81112e406
+2020-01-15 15:34:16 INFO: Linkage for commit 3d0fec00ad8795af7682ae9bc7cf502c44313476
+2020-01-15 15:34:17 INFO: Linkage for commit 0f3edc8cd8ef10e1afddfc996848677a00be962f
+2020-01-15 15:34:18 INFO: Linkage for commit 98d6081a63181d48dab6c059ebaa223ea7cb9296
+2020-01-15 15:34:19 INFO: Linkage for commit ea7c7e769cce94cf44e2b95da36171ce672be169
+2020-01-15 15:34:19 INFO: Linkage for commit 99ff9fb9521874d2e4e11d8c0338b63ebe4573b8
+2020-01-15 15:34:21 INFO: Linkage for commit d3f24589a40bf38e79deefe289a8dc6845ed7017
+2020-01-15 15:34:22 INFO: Linkage for commit 284d566a9b50409078ce3784607eb4d37bfc346b
+2020-01-15 15:34:22 INFO: Linkage for commit 6a759f0c63e4a632edde2cec3d6df123e8b6ce9c
+2020-01-15 15:34:23 INFO: Linkage for commit 129afbf75868f0e18ae712f5d1ae8fe0a3c4b008
+2020-01-15 15:34:23 INFO: Linkage for commit 5c041eaed32751af3b81959a498c8abb58042d77
+2020-01-15 15:34:24 INFO: Linkage for commit 57d98a938d0d012ee2ade57a0f5ff5a68cb13c65
+2020-01-15 15:34:26 INFO: Linkage for commit 45eb7b8c8ecfef65fe79af7b1d5df5975197a59c
+2020-01-15 15:34:29 INFO: Linkage for commit 0a3b7f04e14fe6c09e41c44db7c7ddeeedd1c7af
+2020-01-15 15:34:30 INFO: Linkage for commit c4b7fbe4aaef354a5cad9d24cdf40d5d871c476c
+2020-01-15 15:34:31 INFO: Linkage for commit d0034d03bf125ebd4a620845f39f06dff5509688
+2020-01-15 15:34:32 INFO: Linkage for commit c21a57600739a7d7840561b86fd6df1cbf751478
+2020-01-15 15:34:33 INFO: Linkage for commit 8a0620f783efe2616afb659276bbc47c2f876d95
+2020-01-15 15:34:34 INFO: Linkage for commit 5ded880f5b500a71f32c16122b937d6c7a3b420f
+2020-01-15 15:34:44 INFO: Linkage for commit b08fd491dad750ccd061ff5e307a96384a5c42e2
+2020-01-15 15:34:46 INFO: Linkage for commit 0ff76fe5f606495ee30a642b3d3f15d9fcb7e354
+2020-01-15 15:34:46 INFO: Linkage for commit 8f0d15c7e72ba4956a0961a22200db117eb490c7
+2020-01-15 15:34:47 INFO: Linkage for commit 9708b31fc6ab9e49dc9a77a3411001e28fc4da3e
+2020-01-15 15:34:51 INFO: Linkage for commit 8a896b37a0a5ef7a24d1b9077ac4f6bf51b6bda3
+2020-01-15 15:34:54 INFO: Linkage for commit 6340c9c02203ad1191ffff176065e975f416ccd7
+2020-01-15 15:34:55 INFO: Linkage for commit 0c474ebc75fe6d845fa5256f80a4df135229c85b
+2020-01-15 15:34:55 INFO: Linkage for commit 7a1bf1205fcc80d959f424030525271da502a3a6
+2020-01-15 15:34:57 INFO: Linkage for commit a55e2011ddbc4c2bac3789903ec338b892aacf10
+2020-01-15 15:34:57 INFO: Linkage for commit ace9e19779c1c87a2db97e660d8775bbdffc05fb
+2020-01-15 15:34:59 INFO: Linkage for commit 52478ae9b1cfcff6ba45e499632515b276f742bb
+2020-01-15 15:35:00 INFO: Linkage for commit e5c079cb5df9ef0fa9b93f4df80f9002c351db61
+2020-01-15 15:35:02 INFO: Linkage for commit 93be3618635fddce5dba0df1126c310409b97a90
+2020-01-15 15:35:02 INFO: Linkage for commit 333b4d0be7fd98bd14d215a17b0143e9dd1e2be8
+2020-01-15 15:35:03 INFO: Linkage for commit 49dc8c3c7fedea7eebcc34d8f357f41cfcc761ac
+2020-01-15 15:35:05 INFO: Linkage for commit 43e7a52d0abb9a03d87e7dfa7bb041f91d5bf039
+2020-01-15 15:35:05 INFO: Linkage for commit 5f1ecc9022cd62d64cc715d25b8fe714ed43d7f4
+2020-01-15 15:35:06 INFO: Linkage for commit 362ecf640bf449334ccda8361776045e08e8860f
+2020-01-15 15:35:07 INFO: Linkage for commit 7db180336a0dd670a7c574a5e5e36a9501e2a5c0
+2020-01-15 15:35:08 INFO: Linkage for commit 09f2c97a8dae4e0158cd5cfe6a788059fcf77dd8
+2020-01-15 15:35:09 INFO: Linkage for commit 982d0cd5281f66d1023ec09abda5882cd447a114
+2020-01-15 15:35:10 INFO: Linkage for commit e27690bca8ca8bb12864a759590bc0952a83744f
+2020-01-15 15:35:10 INFO: Linkage for commit 5170838e795e008330966030b584a9b2b12d5c62
+2020-01-15 15:35:12 INFO: Linkage for commit 6611563c8c350815dab782229f82ebccccdcd264
+2020-01-15 15:35:13 INFO: Linkage for commit b16c7513906c7d859d5c5c8c262d054809203351
+2020-01-15 15:35:16 INFO: Linkage for commit aa2ae012ac14c62cf79a768cbd5bbb89867dd302
+2020-01-15 15:35:18 INFO: Linkage for commit d7c53437e90f27639fe2e69838d8c45964e04c80
+2020-01-15 15:35:19 INFO: Linkage for commit 3b7ef68740b81bb0a14cbdcf27f48c450180c477
+2020-01-15 15:35:21 INFO: Linkage for commit 50f043fa3eb1266df9c80d211c3064b5f081110d
+2020-01-15 15:35:22 INFO: Linkage for commit 1ab791a7631baeaaeac8c8dba9aafdec3f3ff2f3
+2020-01-15 15:35:23 INFO: Linkage for commit 01aa6006def432982a271b80daa2e356383e4f05
+2020-01-15 15:35:25 INFO: Linkage for commit 6f18c940dd255419893a99cdc26f2df09201f533
+2020-01-15 15:35:26 INFO: Linkage for commit 08b61677e60069ba681b56cf6312fc0b92020962
+2020-01-15 15:35:27 INFO: Linkage for commit 8c15102bc34a454da8ab421a430715f4c90fe3ad
+2020-01-15 15:35:36 INFO: Linkage for commit 54eceab5454f1c24332e1e01bfd59e0c9eab0d38
+2020-01-15 15:35:39 INFO: Linkage for commit 85dc8f93f568a62fb8e7506d6acf4418441ad27e
+2020-01-15 15:35:39 INFO: Linkage for commit d085072ef354479f5aea8a5c6c68d72d169808b2
+2020-01-15 15:35:40 INFO: Linkage for commit 4a5c89d88103190fa594199fbd4a1a2a62c675d7
+2020-01-15 15:35:41 INFO: Linkage for commit a61bc312bae6bf99b9c254e4609810718211dfdf
+2020-01-15 15:35:43 INFO: Linkage for commit cfa679429232bf4d049269467949246315e32f47
+2020-01-15 15:35:47 INFO: Linkage for commit 8d5d8fd1724d0d02c084658e7cf2bcaf0a7dfeb8
+2020-01-15 15:35:51 INFO: Linkage for commit 826c7837204897437e9020211ed6b45516905fda
+2020-01-15 15:35:54 INFO: Linkage for commit b7b42060dbc2b48ccb4c9570428236d3238da2e6
+2020-01-15 15:36:01 INFO: Linkage for commit 7b2e1e1a5d17428d853aa964971695bc63ccd5b8
+2020-01-15 15:36:02 INFO: Linkage for commit eeba3b7ca5a5c409c09c45ccc71ebefdffc6efd4
+2020-01-15 15:36:05 INFO: Linkage for commit d845b56d49a74bc4cd7916f4b5e7a353c8a7277a
+2020-01-15 15:36:06 INFO: Linkage for commit 289ccbf731395097d3e9f6432d8857998ddbc979
+2020-01-15 15:36:06 INFO: Linkage for commit 91c77c074eb325b601071516cd98514cd1b9d355
+2020-01-15 15:36:08 INFO: Linkage for commit 97c9053667b102002ad1a98d7252fff08ca16b71
+2020-01-15 15:36:08 INFO: Linkage for commit 1b5e34074dff8fc8ef60393fbfba3c137a4bd5c3
+2020-01-15 15:36:09 INFO: Linkage for commit 5cffe4f4d1dd5a647bc34fb29e62a16e9321a833
+2020-01-15 15:36:09 INFO: Linkage for commit 505626f13e9ca439997eeaf0f3bc019c40665fa3
+2020-01-15 15:36:11 INFO: Linkage for commit 1224f50c5f09df18da720042dca7dd03bf2c6a2e
+2020-01-15 15:36:13 INFO: Linkage for commit 0b981c73ab5d5aad3234bcc96049060e98f2027b
+2020-01-15 15:36:14 INFO: Linkage for commit 57efce268d86249145510a4f06f7897b6a215f34
+2020-01-15 15:36:15 INFO: Linkage for commit 3f8d4ceddd52677340df8007216ad633f749a379
+2020-01-15 15:36:17 INFO: Linkage for commit 57bf9ec78a5b5ddac206ed4f560f7b44b4f1d0f9
+2020-01-15 15:36:17 INFO: Linkage for commit 3291ead520514ebaa8bd19f65074aaa9a93cdd7f
+2020-01-15 15:36:19 INFO: Linkage for commit 4376cd5a913798e539696b1dc61d556a4569fccc
+2020-01-15 15:36:19 INFO: Linkage for commit 44b89ba468c3f0f996bf1497d2f55fc9b50de0e8
+2020-01-15 15:36:21 INFO: Linkage for commit da04e2cae996492d112cc60ded80d19e07674f42
+2020-01-15 15:36:26 INFO: Linkage for commit dddf14f79afac0e0083809c17b64112238f4e8d3
+2020-01-15 15:36:28 INFO: Linkage for commit e899c1158b140d6b1dc845dbc16ab9bb04747a2c
+2020-01-15 15:36:28 INFO: Linkage for commit 486218ab2843547da8962810a5dbf9bffbf789cd
+2020-01-15 15:36:29 INFO: Linkage for commit 7f1ff668f760ab2a3977abee2847296baee0c5ea
+2020-01-15 15:36:29 INFO: Linkage for commit 4fb1044b295e4544b4e0113c3694282d4da4e0ad
+2020-01-15 15:36:31 INFO: Linkage for commit 00ec5be6ddca2985dce561ae8ce9a8fd1cbb94cd
+2020-01-15 15:36:32 INFO: Linkage for commit 3e6aa6826c2556bb51f4a93be07bd324217ddf2f
+2020-01-15 15:36:32 INFO: Linkage for commit abc75388a3df8de72b28a5edb830e1c19ed9ec80
+2020-01-15 15:36:38 INFO: Linkage for commit 85e63a2c98884bbaee249b010bdb7e036439c149
+2020-01-15 15:36:41 INFO: Linkage for commit 22f33539c1f977d098d24bc7c978bdb1c5691d99
+2020-01-15 15:36:43 INFO: Linkage for commit 7db3eacbb4f22b1eed1a2ad4a577a20412a602cd
+2020-01-15 15:36:44 INFO: Linkage for commit 79fe2324c9167a74df45be5c254b2e254b265962
+2020-01-15 15:36:46 INFO: Linkage for commit c92d2691b0f2e4d46db3d624d82cbb1cd33951b8
+2020-01-15 15:36:49 INFO: Linkage for commit 33187d0285e1c48f1fb4953f1199a53e123da6a6
+2020-01-15 15:36:51 INFO: Linkage for commit d8cd49c1b725a5e0a9355a25d6fa7ce887774138
+2020-01-15 15:36:52 INFO: Linkage for commit 81d29bafc29049f5f5094ac6cd553eef60b5dee6
+2020-01-15 15:36:52 INFO: Linkage for commit 7f953bca6b27910727739076481efd244f240075
+2020-01-15 15:36:52 INFO: Linkage for commit d4bb4613293d384e8322dc36a65d81be68e060f5
+2020-01-15 15:36:53 INFO: Linkage for commit 08397cf9cb9678f3ee626e0bcf3e36d69b2527f5
+2020-01-15 15:36:54 INFO: Linkage for commit acacc7017b46df1888ea4e674087f8da73d8ddc5
+2020-01-15 15:36:55 INFO: Linkage for commit 34b9b00723765dab8ed6cf50137931be13dd19c9
+2020-01-15 15:36:56 INFO: Linkage for commit 4624c12138d4e7f4b7ceb3d5280a2974def66d41
+2020-01-15 15:36:57 INFO: Linkage for commit cee920f3b818957d3425e4afe11517da9418cb29
+2020-01-15 15:36:58 INFO: Linkage for commit b8af182e8c75ab781a39833d10ec231bb26ed3a2
+2020-01-15 15:37:00 INFO: Linkage for commit 40fcf75133f68fd25dfda355b0276cb2a6065fbc
+2020-01-15 15:37:02 INFO: Linkage for commit 0711a4485de018dca08508d8cc19562628ebaddf
+2020-01-15 15:37:02 INFO: Linkage for commit 0976673ac23e1978a8bbdf5e6b960f41d950e5fc
+2020-01-15 15:37:10 INFO: Linkage for commit cd3acef9e12dcf03f1ddabb1e36977a080cbaab7
+2020-01-15 15:37:13 INFO: Linkage for commit 9aed1addb18430e64b11afdf541013e0ab955890
+2020-01-15 15:37:15 INFO: Linkage for commit c5a211e07a648cf3e822e8e9afc5fa61a5e84d69
+2020-01-15 15:37:16 INFO: Linkage for commit d19877f286c734ca3edcea292e2371a8077329dc
+2020-01-15 15:37:17 INFO: Linkage for commit b876bd8cec3d6f403a577e0094e992b8ab0a9687
+2020-01-15 15:37:18 INFO: Linkage for commit 3b5c36782daf2a49dc21d3aa3d39a6d37f02b319
+2020-01-15 15:37:21 INFO: Linkage for commit 7896ec05f6b7451ed3e019611157bcc6bc228b47
+2020-01-15 15:37:25 INFO: Linkage for commit b3f39c1bb3057f0a18ea5b019dd24c4965b0947e
+2020-01-15 15:37:25 INFO: Linkage for commit e49665951d63dd92bf6c77219e41c61b69550531
+2020-01-15 15:37:26 INFO: Linkage for commit b2b601d22855f3b2b85c010aea2093113e39bece
+2020-01-15 15:37:27 INFO: Linkage for commit 93a7d66f5f698a0a46810b14758e39aa84ec5be8
+2020-01-15 15:37:28 INFO: Linkage for commit c848b8cc582756a8d023b958439d9adb1079cb13
+2020-01-15 15:37:29 INFO: Linkage for commit 7106dbb1daf72f30c8fbcb668828c84d513c8a37
+2020-01-15 15:37:30 INFO: Linkage for commit 060d31db04253282497417395d5d548ec2113a0d
+2020-01-15 15:37:31 INFO: Linkage for commit 834277a9ebaec7e53e85e7c37888891d1199d020
+2020-01-15 15:37:31 INFO: Linkage for commit 23b976b418e90e7cc2fc84a23a05c0fa0a80eb62
+2020-01-15 15:37:33 INFO: Linkage for commit 635146071232d82df2d6d7af7d939d8e5f89a674
+2020-01-15 15:37:34 INFO: Linkage for commit ea94ea850bb4eb236ef85aea6512f0940877eebe
+2020-01-15 15:37:37 INFO: Linkage for commit b29b5a8289a35fb6846e53f2a38b611f9d3b9e1a
+2020-01-15 15:37:41 INFO: Linkage for commit 630473bf84ba548456c92b8a8cd7c0e2f534425e
+2020-01-15 15:37:43 INFO: Linkage for commit feac0d6a3da6c3ee27ae83d31aa320d3ed3da5f6
+2020-01-15 15:37:44 INFO: Linkage for commit 0e3679e919ff6b8eb25e87486f5b2c1143d8462b
+2020-01-15 15:37:46 INFO: Linkage for commit 57b2d9a443d52a20777d92998af81f25281010c4
+2020-01-15 15:37:48 INFO: Linkage for commit 840744a97d5ca3e8bdc1f69eecd5463e665218fb
+2020-01-15 15:37:51 INFO: Linkage for commit a70cb10cdfe3413f0bb1a0406c8257d6d6279e54
+2020-01-15 15:37:52 INFO: Linkage for commit 738dc26797c51d4412715c0b6bc7dc3a99e06c11
+2020-01-15 15:37:53 INFO: Linkage for commit a5e015aa9997144434b892a17ae389e59bc3c937
+2020-01-15 15:37:54 INFO: Linkage for commit 8cd31c7b0e89f2b89ebcbfeda2adccb9ba211e24
+2020-01-15 15:37:55 INFO: Linkage for commit c1f6fa02f85d8b274059e15316cc50b69de0a9b7
+2020-01-15 15:37:56 INFO: Linkage for commit d5833081d219c579933c33fc894d665d7d08e19e
+2020-01-15 15:37:58 INFO: Linkage for commit 35d1c328c790a1c127ac16f64548d13c0d462cef
+2020-01-15 15:37:58 INFO: Linkage for commit dffc9dbb10c55c97a86b17b746859f312369de63
+2020-01-15 15:37:58 INFO: Linkage for commit 03fadace40908b5a82a58a829f59a75d3a34c185
+2020-01-15 15:38:00 INFO: Linkage for commit 1d7d6979eb3773a4e74b862efed83b915ace0779
+2020-01-15 15:38:02 INFO: Linkage for commit f7c9d28917eb99e38a7011e3715cb93927ab94c8
+2020-01-15 15:38:04 INFO: Linkage for commit 9a9d53e638974979c0e109a32e3af5095c1e79a4
+2020-01-15 15:38:05 INFO: Linkage for commit ebcf6baf6fa60849a57c9e8dda2673048295690f
+2020-01-15 15:38:05 INFO: Linkage for commit c678e285e0eca5f7049102442fe598699c195f3b
+2020-01-15 15:38:06 INFO: Linkage for commit 959788e9d2b8cc10785bf3474fe9ccc5055ce3ef
+2020-01-15 15:38:06 INFO: Linkage for commit 964dd9bb57230e1973aaede17c520ede1453a210
+2020-01-15 15:38:07 INFO: Linkage for commit 78628b89945d16a1f7816bb21530d780ac4b978e
+2020-01-15 15:38:07 INFO: Linkage for commit 498ca406c0c4d88233f9034a676310fc3619a61c
+2020-01-15 15:38:08 INFO: Linkage for commit dffbebc0e406a6f2c65e010c0d14619e13ff8288
+2020-01-15 15:38:09 INFO: Linkage for commit d152835a0c4e919cbeb5fc0aff63671cf6e4f11f
+2020-01-15 15:38:10 INFO: Linkage for commit 9611ac0b862b7bfc6b70ecb5e64dfb08e5f8f6af
+2020-01-15 15:38:12 INFO: Linkage for commit cf553e3b104f503fd9becb9a9573fd5b365a8551
+2020-01-15 15:38:13 INFO: Linkage for commit 0a43c81bda1ac709cd4c11aa09876aa0c0e01276
+2020-01-15 15:38:14 INFO: Linkage for commit 3d4c2dc211356da37ac2638d137d00ee8f1dffe7
+2020-01-15 15:38:14 INFO: Linkage for commit 8e0bc04fcef5f25debf1d2b23879d34550750e03
+2020-01-15 15:38:16 INFO: Linkage for commit c6ce2c3984a22a70e2c8a5afefdaa2c5bba6a5b3
+2020-01-15 15:38:17 INFO: Linkage for commit ab92e2cf3133525febaf22e3295e5529f5551a19
+2020-01-15 15:38:17 INFO: Linkage for commit 29c1b9a271d2565585193b445c3bf8052e6c7a43
+2020-01-15 15:38:19 INFO: Linkage for commit f1047cf063981c72d85d66b9f394ac08c4f283d5
+2020-01-15 15:38:19 INFO: Linkage for commit d64ec9e88cff85116700ef2324de14271aac0d81
+2020-01-15 15:38:21 INFO: Linkage for commit 208ea04ac3b399a87e867db97d260300c8d9d506
+2020-01-15 15:38:22 INFO: Linkage for commit b4a6ec4a8c6f72833772d82a2a3d6952777b66fa
+2020-01-15 15:38:24 INFO: Linkage for commit 2e929d6c858150f1c6b1845bb96be2925304fb7f
+2020-01-15 15:38:24 INFO: Linkage for commit 678137b638cd84ab303c4db22991e273b4ba9618
+2020-01-15 15:38:25 INFO: Linkage for commit 2d2b1839df605d59e390323d4d32fe373d6cf784
+2020-01-15 15:38:26 INFO: Linkage for commit 397b5f37622785134994046bbc5c89defaa8e599
+2020-01-15 15:38:26 INFO: Linkage for commit c979563dcd64507e92ee2a9a86def61918a4c7c9
+2020-01-15 15:38:27 INFO: Linkage for commit 2812040f6410a0cedbc512c49e7e6cbcf288840b
+2020-01-15 15:38:28 INFO: Linkage for commit 84d7a38febedae7af7509ef609c8f535ef3f4775
+2020-01-15 15:38:28 INFO: Linkage for commit f138643a7334e5a3038cceeabf290349f797c8fc
+2020-01-15 15:38:29 INFO: Linkage for commit 1ff2b7bbc944eb76a2780f4555fb66f00f5bf291
+2020-01-15 15:38:29 INFO: Linkage for commit 2d8bb55dac41c886e7e77207dc8f69661b747c87
+2020-01-15 15:38:30 INFO: Linkage for commit 6e40f62574eb8d7fcf3d3e316de94fd466ec8858
+2020-01-15 15:38:31 INFO: Linkage for commit 1a5d9095c208f94b821ceddc21ca020414cfb5c2
+2020-01-15 15:38:34 INFO: Linkage for commit f784b96520d0a408ac76b5b187e7bb9dc5c32ff1
+2020-01-15 15:38:36 INFO: Linkage for commit c5949f345b5abf965c85ff1db08be8874273d813
+2020-01-15 15:38:37 INFO: Linkage for commit 82441fa54f21f46d17ec0071f321a6398a4b8462
+2020-01-15 15:38:38 INFO: Linkage for commit 0886c11645c25ab750cebcfd4d9ee068eea53ed3
+2020-01-15 15:38:39 INFO: Linkage for commit d262b84a77a2d434993036deb273984267d88d35
+2020-01-15 15:38:40 INFO: Linkage for commit e7d5048440899e6f3f1d5814f0076c24a7ab0423
+2020-01-15 15:38:41 INFO: Linkage for commit 044fd23b0ba34bf06c7a178e5387184e4c41e8df
+2020-01-15 15:38:44 INFO: Linkage for commit c153d5c776ec96f39e7d61c0a637382e47a349ab
+2020-01-15 15:38:44 INFO: Linkage for commit 18ac6f925f0e577794cccdee2746963e92a4d59e
+2020-01-15 15:38:46 INFO: Linkage for commit 4e7852e29e602e6f5a2c6ded1213ee92814ad9cf
+2020-01-15 15:38:46 INFO: Linkage for commit 6ae3bbbf9c1a919d8f03b6ef8bc7f17fc483742f
+2020-01-15 15:38:46 INFO: Linkage for commit a6e483c23117285bf683a254764333098a59ece9
+2020-01-15 15:38:48 INFO: Linkage for commit 8aec6c55a6c03b6cd6ae80abe2dd573bb7707585
+2020-01-15 15:38:50 INFO: Linkage for commit 39598dd17e596edab21e80829dd2796c833927da
+2020-01-15 15:38:53 INFO: Linkage for commit 1b2dfc1dd599080cbbf5ee47f9deecd8d4c1b8b0
+2020-01-15 15:38:55 INFO: Linkage for commit d4348ab4d75c2db7befbe59b050a98f8a70a27fd
+2020-01-15 15:38:55 INFO: Linkage for commit 4583e8bd8b7eac0e3fbef41d341d57ef5a925c5d
+2020-01-15 15:39:01 INFO: Linkage for commit e213b54b71921c658aafbf631a1cfd154beea72a
+2020-01-15 15:39:01 INFO: Linkage for commit 641ca5bae4f41b1d063533f87d36d2cfe556626f
+2020-01-15 15:39:02 INFO: Linkage for commit 9fc278e12300128c14757877fe81a7d0d47808d1
+2020-01-15 15:39:02 INFO: Linkage for commit 488b9daa74213a0c35517a296837181b7dabac7c
+2020-01-15 15:39:02 INFO: Linkage for commit b97a26d17601cd97cb71f8230b4a3338c6249b98
+2020-01-15 15:39:03 INFO: Linkage for commit c98edcf13ea01130fe6366930693db03bdb6e003
+2020-01-15 15:39:04 INFO: Linkage for commit 017dfff5273a2a37eca36f0c6e91a56fdc3a9e4b
+2020-01-15 15:39:06 INFO: Linkage for commit ee48a012c65f2ed43fbc8c2fda234c0e83b49ad2
+2020-01-15 15:39:06 INFO: Linkage for commit 2bf7467726fa246466dd331742c5209167bbe869
+2020-01-15 15:39:07 INFO: Linkage for commit c11f6485c1fd30fc3ea4707d2565402ea8742ed3
+2020-01-15 15:39:08 INFO: Linkage for commit 748c169ee2efd834b70e52e53728564621e3bfdc
+2020-01-15 15:39:09 INFO: Linkage for commit cee648fb591371d108e4c01acd0d6f37d44db813
+2020-01-15 15:39:09 INFO: Linkage for commit 549145687e2d5f1b5a3e4f536849082cf85e274b
+2020-01-15 15:39:11 INFO: Linkage for commit 414e02cb3e01ea90bc1dd46bfbbfaba785ca1b37
+2020-01-15 15:39:12 INFO: Linkage for commit ccd35ff388a3e7c5001779f44d74f57d8b1261c5
+2020-01-15 15:39:13 INFO: Linkage for commit 4d1e8fd647305f12dd6904353d381cf63ff05240
+2020-01-15 15:39:15 INFO: Linkage for commit 799a95774cb30225ba069e43d472f44cc60991ff
+2020-01-15 15:39:16 INFO: Linkage for commit cd24a10d2045399e14f09124acf7a5604bc5d51c
+2020-01-15 15:39:17 INFO: Linkage for commit 878eda0d26f0272e2502bca479d45dd32fa3e760
+2020-01-15 15:39:18 INFO: Linkage for commit 063020db301f9a3d96c8aa6a7f0b0bc1651ba45e
+2020-01-15 15:39:24 INFO: Linkage for commit a37592fb57e7cd95b53d9493e0f339d04b38b808
+2020-01-15 15:39:36 INFO: Linkage for commit afe9c3c57795bcf001970182a5c7bb4a0b5feff8
+2020-01-15 15:39:36 INFO: Linkage for commit 1da5fb3dbafd6053fb0d49fa0a33428621c7fc05
+2020-01-15 15:39:37 INFO: Linkage for commit ad6cf2f488c1536710390156ad631e8720c7f741
+2020-01-15 15:39:38 INFO: Linkage for commit 6329cbe94080df5e72a398e61b3733a026be8390
+2020-01-15 15:39:39 INFO: Linkage for commit 6c8366ca087aed0ab4cd26bd723ccea852bab130
+2020-01-15 15:39:41 INFO: Linkage for commit 5eec9ac58cb4f2fe2518ef21b07845c7cf4c7b99
+2020-01-15 15:39:42 INFO: Linkage for commit bc6ec05db429ec2b3426dbb5f1d974b3b5172075
+2020-01-15 15:39:43 INFO: Linkage for commit f5fb85a0afc2b1dcaeaaf64e734f921bf9b725f9
+2020-01-15 15:39:44 INFO: Linkage for commit 8cd89650179b0bc41dfabeff223a3dbb6a173cbb
+2020-01-15 15:39:45 INFO: Linkage for commit 5418dc3731eeda8bc2ca4eeba576ae9d0a7a199d
+2020-01-15 15:39:45 INFO: Linkage for commit e6f36ef3961ef8b44b42aea12f2f06e76d80f03f
+2020-01-15 15:39:48 INFO: Linkage for commit 4e93521eec37e6ced67c02fba9ba46ae96ec049b
+2020-01-15 15:39:48 INFO: Linkage for commit 6602f1332959d916738587983dcfb0b733d28dea
+2020-01-15 15:39:49 INFO: Linkage for commit ac17cee9e447433b9087d1a75f12355cbcf965d1
+2020-01-15 15:39:50 INFO: Linkage for commit 6dcf2d61b1f90f4e79d34784a727117f986f5dd3
+2020-01-15 15:39:51 INFO: Linkage for commit 61731817928420fbe9229c2797a9b2fc32fc0ee4
+2020-01-15 15:39:52 INFO: Linkage for commit 9ad845d4e8d83f9a3d9b4be0d9b4d1c311910926
+2020-01-15 15:39:53 INFO: Linkage for commit c460c90dea8a4d3b23fedc75b4c22347e3b35b18
+2020-01-15 15:39:54 INFO: Linkage for commit 89b32f14dea661c0812ff94b42db8ca9f81ba9ec
+2020-01-15 15:39:54 INFO: Linkage for commit 512fcec1d596928ceac3e63ca80292543c30e82e
+2020-01-15 15:39:55 INFO: Linkage for commit ce442755884c64936a00495efa846a284328f61b
+2020-01-15 15:39:55 INFO: Linkage for commit 73a6716c4b97425895ae5bf3d92efd80bb8afe71
+2020-01-15 15:39:56 INFO: Linkage for commit 8e6bfdc2ec09724d00235216d125acc2ed771f09
+2020-01-15 15:39:57 INFO: Linkage for commit 8bba7ccb5b68157d5467df97ff4a7c6277ffe334
+2020-01-15 15:39:58 INFO: Linkage for commit 4e9b1bc3a38760a51a5aaf0375b4d23141739a02
+2020-01-15 15:39:58 INFO: Linkage for commit ba753282c681f55ff64cce2bbb9e545f5992b1ac
+2020-01-15 15:40:00 INFO: Linkage for commit 0e5c17eede17b825fe2f9205944d9a3949888e2c
+2020-01-15 15:40:01 INFO: Linkage for commit 444371118bf079a412017948166cf4eb4db48103
+2020-01-15 15:40:02 INFO: Linkage for commit 0694d323961424bd7e00d7aa06c1d65a2a5195f8
+2020-01-15 15:40:03 INFO: Linkage for commit 60396d55ef5e2f348356ce0b7b3adf1b170eeeb4
+2020-01-15 15:40:05 INFO: Linkage for commit ab9b219b37382878ae8db5bee66f373d743914bc
+2020-01-15 15:40:12 INFO: Linkage for commit 4e3f6162369c45d9fc1d2c9049452236bbb77ffd
+2020-01-15 15:40:14 INFO: Linkage for commit 8bd8ac7321e75f75fa4f4ac8f4a2666f98643e3c
+2020-01-15 15:40:15 INFO: Linkage for commit fcca8d79a3a04e71924d06799de2af46c923a84e
+2020-01-15 15:40:18 INFO: Linkage for commit 6d4ea4eb4692d3a383c4400e9d51a50708d8756e
+2020-01-15 15:40:19 INFO: Linkage for commit 2d5dcec769a2ac17df6aab0547befc80344f8967
+2020-01-15 15:40:20 INFO: Linkage for commit 68cc612038c82e8b037b91ba59c33f40fc4076ff
+2020-01-15 15:40:22 INFO: Linkage for commit b37d5473635eb15afc40a7f1f3f8ab6cca95bbd1
+2020-01-15 15:40:22 INFO: Linkage for commit f0442efacdae9dc1025b3c381d06215a957be21b
+2020-01-15 15:40:22 INFO: Linkage for commit 8e94c0cd604053168e17bb1d7a5059a5b9e04c7d
+2020-01-15 15:40:23 INFO: Linkage for commit 669b218b9c2b3fe75607df5947e2d75a91c8d12f
+2020-01-15 15:40:24 INFO: Linkage for commit 66b1960979106b148623dc5a9ff016c9965f9308
+2020-01-15 15:40:24 INFO: Linkage for commit e5fd0a7706b951d91ca97478d954a96e211bda08
+2020-01-15 15:40:24 INFO: Linkage for commit a14eb6c33769953804fc5a94c801e5a8c28ff7c2
+2020-01-15 15:40:26 INFO: Linkage for commit 4fdf70002a73087bcb94ac0619f819bbc6c035d8
+2020-01-15 15:40:26 INFO: Linkage for commit 927860d5cb33fb28a17e3b41b90dd27f43eb4f0d
+2020-01-15 15:40:27 INFO: Linkage for commit 53c16e03081b659c2c9009721b1a50728d4fae80
+2020-01-15 15:40:27 INFO: Linkage for commit 1912930e01b418d4d156875cf6c358a2c5705203
+2020-01-15 15:40:38 INFO: Linkage for commit 4f579a81caf5c4ff505bb8d48d903062a52254bd
+2020-01-15 15:40:39 INFO: Linkage for commit a99c67fad1ac8540d954c5d7d5c94570c64e063e
+2020-01-15 15:40:39 INFO: Linkage for commit d1e96f479ee873c4cadfff2c748821d14262dd34
+2020-01-15 15:40:42 INFO: Linkage for commit a6abdf254070ed17319d3d93a83ba40ee2642358
+2020-01-15 15:40:43 INFO: Linkage for commit 907ba8ef0b9105e4e9602435f95202479e75cc9d
+2020-01-15 15:40:45 INFO: Linkage for commit aac66a2f483eb4d6fdb1690f0b96d7e980138326
+2020-01-15 15:40:46 INFO: Linkage for commit 74948145b99edcf7a2ec7c5ea8772ed110620eb5
+2020-01-15 15:40:48 INFO: Linkage for commit ea2b460fd2872bd0412302c06b468ec3d1ea796d
+2020-01-15 15:40:48 INFO: Linkage for commit a865090d7a1c503590c4b5726cf9ee56b3cf20aa
+2020-01-15 15:40:48 INFO: Linkage for commit 64c14e58b2c4242596ffb55686b5504814b4b708
+2020-01-15 15:40:49 INFO: Linkage for commit 08d6f451325fe39d7cf1bdd97b25ec6aa0716d71
+2020-01-15 15:40:50 INFO: Linkage for commit bd403bdb98db5f845255fd52d878d320b0e3d408
+2020-01-15 15:40:50 INFO: Linkage for commit 70a96dd02771e701691f64e975094c87bf3c75a7
+2020-01-15 15:40:52 INFO: Linkage for commit 10e447d25dd0d27f07df021218204e32d12f0697
+2020-01-15 15:40:53 INFO: Linkage for commit f478f405baffb8d55bacf2b3eadfd10d7c3792ce
+2020-01-15 15:40:54 INFO: Linkage for commit 0368aaed3f75b6f6e01a7c59204cc835d6e9ea90
+2020-01-15 15:40:55 INFO: Linkage for commit b96585a372eb17ab2c1fd7f855352d99e99801b3
+2020-01-15 15:40:55 INFO: Linkage for commit 93cec1c6d59a01af0d2cc924b3075843c894c119
+2020-01-15 15:40:57 INFO: Linkage for commit d24de31206d07eecc7f212554c0f9587d1974d40
+2020-01-15 15:40:58 INFO: Linkage for commit 80237f3074c1334334771bab586fe53b3467460c
+2020-01-15 15:40:59 INFO: Linkage for commit 01bfefa6a4e0d33cbe0e7fdf9143f927ef59f5b7
+2020-01-15 15:41:01 INFO: Linkage for commit 18d5c371d568d0f2e33b8b5e78b400156c1720f5
+2020-01-15 15:41:03 INFO: Linkage for commit fe090f50f3040f4d478143a3e0ffa8cdf813fefc
+2020-01-15 15:41:09 INFO: Linkage for commit 7498e27b43363229e216fd3152aa160d79b9f28a
+2020-01-15 15:41:11 INFO: Linkage for commit 9048d993c4d47840aa9ef075c2da6297b16a66c6
+2020-01-15 15:41:11 INFO: Linkage for commit b7eb59e57d4dd6fee56716dedae3ce23073454ae
+2020-01-15 15:41:12 INFO: Linkage for commit 3b7cc4502a0a91f5a92e2eebbf4b58560bb49150
+2020-01-15 15:41:13 INFO: Linkage for commit 30f044a7de5b29e444f3198faf400aac7c815910
+2020-01-15 15:41:13 INFO: Linkage for commit 1924e30482861bbfd3c9a5d97b1be655777e9ed7
+2020-01-15 15:41:13 INFO: Linkage for commit 1cbf7f8d2c816df7c90c665868a2e34d3c76c60c
+2020-01-15 15:41:15 INFO: Linkage for commit 0e82556b3fde434d0959cc895663f8b5f3ae2a55
+2020-01-15 15:41:15 INFO: Linkage for commit 546ac3260ced42eb55b205c10bdcf050b538327c
+2020-01-15 15:41:15 INFO: Linkage for commit 2541df7276a14dc2a568d5782e7b7adbe6a00665
+2020-01-15 15:41:15 INFO: Linkage for commit 9da096b3a64e07225b8b6657927af13f295a18cb
+2020-01-15 15:41:16 INFO: Linkage for commit 0713811c56ba1e1f41775a8569dc7e864cfef68a
+2020-01-15 15:41:17 INFO: Linkage for commit 11f7606b6d0114a2cd9a82709301486fbc4ce860
+2020-01-15 15:41:18 INFO: Linkage for commit 002a4940935a7545ed94f1b776e4d7f6bf6c2525
+2020-01-15 15:41:19 INFO: Linkage for commit a97385eb2870d113427b0d9430e108236ae363b4
+2020-01-15 15:41:20 INFO: Linkage for commit 92d18c1e2f3333e68fc9e5ca066b85dd94f6a73b
+2020-01-15 15:41:21 INFO: Linkage for commit 561d12a9894210d9f5a8a41d655361732a39b6c8
+2020-01-15 15:41:22 INFO: Linkage for commit fb0ae12753d97080bad437cd8e3f8b66fb177464
+2020-01-15 15:41:24 INFO: Linkage for commit 5c43ce2d83e44cd46049a7f0bfaeb5d9a322c032
+2020-01-15 15:41:24 INFO: Linkage for commit cb9271557fb88aa39a843e6163caff7013814414
+2020-01-15 15:41:25 INFO: Linkage for commit 886ce2b96b3e9fca24e27edf4e4568a827f09287
+2020-01-15 15:41:26 INFO: Linkage for commit 1e85878fe008f6c651c348dd1d5b2edf713f63bb
+2020-01-15 15:41:26 INFO: Linkage for commit dbfa84f0edc51d82bc3c871ca956037f43714bb7
+2020-01-15 15:41:27 INFO: Linkage for commit 4be3f9fe97d85c6e9edc7f340971e34493dde079
+2020-01-15 15:41:28 INFO: Linkage for commit 9a5d4f3b7b2abf8664842f49d67e84c828afa534
+2020-01-15 15:41:29 INFO: Linkage for commit 21759032d2b2b76e338d22c15d13bdf7993c13e1
+2020-01-15 15:41:31 INFO: Linkage for commit 94002db5f90395b8927ae69c569e5a0726dd00c4
+2020-01-15 15:41:32 INFO: Linkage for commit cedcf07f29d60531c77342967b1a5ab0b37e4cf8
+2020-01-15 15:41:32 INFO: Linkage for commit e313f95e19c752a3316048468547af939e19cdd3
+2020-01-15 15:41:33 INFO: Linkage for commit 700c21d5637a6dceb78b1f23fc97f1d89ceefe21
+2020-01-15 15:41:34 INFO: Linkage for commit 48bb75b7dc1ae418709af6f2193afde4a3c0f6ba
+2020-01-15 15:41:35 INFO: Linkage for commit cf8ae1c58905cca6cddf69d9f736c1f6e7e2933a
+2020-01-15 15:41:36 INFO: Linkage for commit 9959cdd7058a6e6132ab5cc98be5b15ac590e3e7
+2020-01-15 15:41:37 INFO: Linkage for commit d7b5d5b28a6dd7ff198f02e1ee82160220135a74
+2020-01-15 15:41:39 INFO: Linkage for commit bbd778464660544e1bcacade75ca219aefd1b82e
+2020-01-15 15:41:40 INFO: Linkage for commit d2427cac7ad30228512e4ef5b96546441d8d5373
+2020-01-15 15:41:41 INFO: Linkage for commit 82f8683129e83b2d7ad9c95efcd4777212d13762
+2020-01-15 15:41:41 INFO: Linkage for commit f457d87cb62d5cc5d66ac818f45dc1c2bf17a336
+2020-01-15 15:41:42 INFO: Linkage for commit baea5f7a00bd9b9ba40a746007bb40ccb12ae065
+2020-01-15 15:41:43 INFO: Linkage for commit 009013169754d4869f3a55c27a3443fc72d1d1f1
+2020-01-15 15:41:43 INFO: Linkage for commit 2fa92e61fc5b6eac0129eb36e514fbab11990731
+2020-01-15 15:41:44 INFO: Linkage for commit bd5b63e3fe3b5d505c0b422f0423094f542ff7e2
+2020-01-15 15:41:44 INFO: Linkage for commit 67d90615e142c6b9af487cf47b6f0f375c66c836
+2020-01-15 15:41:45 INFO: Linkage for commit 8963e2ac79a97e694c388622e935a0471267e9eb
+2020-01-15 15:41:46 INFO: Linkage for commit e3a26c8b2c949badcf1f8b628fa6661d3bf86577
+2020-01-15 15:41:47 INFO: Linkage for commit 2d8b3b0a4e7fe1c831b51fab6bb90feba22df217
+2020-01-15 15:41:48 INFO: Linkage for commit 9b85aea847f85982b6f2d9d910e9112f771ab5a5
+2020-01-15 15:41:48 INFO: Linkage for commit 2a9203f8bfcc8e7425f9fb94ce04b2dd2c4c0577
+2020-01-15 15:41:50 INFO: Linkage for commit c3d7c1b6369c450f5914fc2157fd9b6e54290462
+2020-01-15 15:41:50 INFO: Linkage for commit acfa2b1ce0f40c04f105677c7d6b55a9b99d1dac
+2020-01-15 15:41:52 INFO: Linkage for commit 188c7f94aa6aca2c8c7cd857b7ee72faa9762516
+2020-01-15 15:41:53 INFO: Linkage for commit 0403d77e2fdd24e16db859e34312c554e5cbbf21
+2020-01-15 15:41:54 INFO: Linkage for commit 8cab65d1e8fd34606cd89b8ecbec0eaa742f595e
+2020-01-15 15:41:55 INFO: Linkage for commit 398f9cf93414253c216585efdfca3b9f73f90d74
+2020-01-15 15:41:55 INFO: Linkage for commit 9445fd1b6fc6fb02536adfeb9a76d39833cc4158
+2020-01-15 15:41:56 INFO: Linkage for commit a31ec08e102fd3832f3ff4449e9163440f0afb2c
+2020-01-15 15:41:57 INFO: Linkage for commit 5e37b18f235ceb7d5986fb676f6502b7de3f7d66
+2020-01-15 15:41:58 INFO: Linkage for commit ad3f05ddb4028b3bfd022388783fb718dd001c5a
+2020-01-15 15:41:59 INFO: Linkage for commit 0fc8977bf23d736d4a5c993a902cf79bba2428c0
+2020-01-15 15:42:00 INFO: Linkage for commit 6c60374009d58ce94d98bc4047249fcba3b2474d
+2020-01-15 15:42:01 INFO: Linkage for commit ce7ca53bdf10434767f65fb52733402fe381195d
+2020-01-15 15:42:02 INFO: Linkage for commit bf0ad78782c0257c982b6feec45274cf680892bf
+2020-01-15 15:42:03 INFO: Linkage for commit 7aa96975cb858508bd911440e1943ee92b7388b5
+2020-01-15 15:42:04 INFO: Linkage for commit 3569e869a95c1157a34d4fd5b68e510cad6ed4c9
+2020-01-15 15:42:05 INFO: Linkage for commit 5e0ae65995165741dcff0c5e23fc81b8dc78e92f
+2020-01-15 15:42:05 INFO: Linkage for commit d50322f27fd99d594d58c4025b27a0edb4d6eb44
+2020-01-15 15:42:07 INFO: Linkage for commit 16bb5da083924a2d75faecfc99a225f528cd1963
+2020-01-15 15:42:08 INFO: Linkage for commit 7e1dae813fed7d6043787aadd7685484c1f91a44
+2020-01-15 15:42:09 INFO: Linkage for commit 26d543ba986dcf28b3a4ab8a41b15bcfc0007ed6
+2020-01-15 15:42:09 INFO: Linkage for commit f7cc2c971dc0a7530c9319d6df24da4d8550a7d9
+2020-01-15 15:42:16 INFO: Linkage for commit e7571355834f68275bbf0b5dcc3f5eab6dde1642
+2020-01-15 15:42:17 INFO: Linkage for commit 05ae97865c84536a6cfe7759ca6c382eb761ecb2
+2020-01-15 15:42:18 INFO: Linkage for commit 77e6a1a900685c173afd5d88c9bc6123b568fc72
+2020-01-15 15:42:19 INFO: Linkage for commit 6d917ca7ebd0329f0ac8e2f38d18884d4c128079
+2020-01-15 15:42:20 INFO: Linkage for commit bb898265b9fc3b0883dd9d4eec90d5c1769a3d90
+2020-01-15 15:42:22 INFO: Linkage for commit 4ea1d640c2973a8940956fc1e855afddca831f5c
+2020-01-15 15:42:27 INFO: Linkage for commit 55bf51fad68a1f3141c2362cdbe066bced34de37
+2020-01-15 15:42:27 INFO: Linkage for commit 44498e067ff021e144c87d58417c5803f19f9171
+2020-01-15 15:42:29 INFO: Linkage for commit 736c652b2f0afcd7f6115dd0c4d719fac26aee10
+2020-01-15 15:42:29 INFO: Linkage for commit 9125ff5616d5bb5c42996f0e4b58b0058d9f303a
+2020-01-15 15:42:30 INFO: Linkage for commit 3fbaf56f390db1a7c442ceaeab2c3a8bc1c8fd79
+2020-01-15 15:42:30 INFO: Linkage for commit ff95341c835313483eec741cb09542fd10d81769
+2020-01-15 15:42:33 INFO: Linkage for commit 081ec51e6f7de2245bf2218b4add22fbeab375ec
+2020-01-15 15:42:35 INFO: Linkage for commit d843cb92cf9fd312517da673fbc6ead2ac34774a
+2020-01-15 15:42:36 INFO: Linkage for commit 2ac8d11a343bbfeade6ff19c4b11800e6c37ab62
+2020-01-15 15:42:37 INFO: Linkage for commit dfac9ce465ff9c988904d05014d2be2715aa1d2b
+2020-01-15 15:42:37 INFO: Linkage for commit 5ee6da38927b22df9f058ea990e27bbec596a52e
+2020-01-15 15:42:39 INFO: Linkage for commit ebe77cef211a76fa8653437bd7a40f3fdb5b0ee4
+2020-01-15 15:42:39 INFO: Linkage for commit 4f8681686bd506c9dcc579b048cffe50a212fd8e
+2020-01-15 15:42:41 INFO: Linkage for commit 602c99c53200a10b76e8a5a93b1e4dbd86f03c09
+2020-01-15 15:42:44 INFO: Linkage for commit 2d682dc2a3ecd32a179d4455c1b7a0e675768945
+2020-01-15 15:42:45 INFO: Linkage for commit caf61a4a0778a72ab713f72e9ef749bf373c98ac
+2020-01-15 15:42:46 INFO: Linkage for commit 3cb4cee19e3cb6830735a0f89d890576c7413f2c
+2020-01-15 15:42:48 INFO: Linkage for commit 3cfd45112b28c5401fc6bd70cd25b22f98c9b3f9
+2020-01-15 15:42:49 INFO: Linkage for commit 7ff15ee20c961e370837d8f96ae77886ecd910d8
+2020-01-15 15:42:50 INFO: Linkage for commit dd75857254b12b79f264ec6c285ad4da585a7309
+2020-01-15 15:42:50 INFO: Linkage for commit 431151b8e59458fbc0fef506f682e9c0b0d89b39
+2020-01-15 15:42:52 INFO: Linkage for commit deaf9f6a51b928dcad619fd8300ee3926345d1ea
+2020-01-15 15:42:53 INFO: Linkage for commit 2c3e7565fa5f86c42032f2e88e5b28de113f4bb6
+2020-01-15 15:42:57 INFO: Linkage for commit 11478edb5b653b136705f5005d52e9277fb95ba7
+2020-01-15 15:42:58 INFO: Linkage for commit 0e37cba87eea9d89156c144e3d4298c9c9ed04d4
+2020-01-15 15:43:00 INFO: Linkage for commit 91d7a329d4362fc65bc78123fb9f1b9b6b4cd7e4
+2020-01-15 15:43:00 INFO: Linkage for commit 2d56df2c9060c889e35bf4c386429ad1b6cacb35
+2020-01-15 15:43:02 INFO: Linkage for commit 10b5aa297cf8a69c87965840f3fd9fb469b76f1e
+2020-01-15 15:43:02 INFO: Linkage for commit 1fd0a617cb216113997569937b43ec7c7a9c2fd2
+2020-01-15 15:43:05 INFO: Linkage for commit 39fbaad1df64ba579bc41031dfbde99e5f4ba1d4
+2020-01-15 15:43:11 INFO: Linkage for commit 3982ea1198b8d780b42587e16ace3407bf7621e1
+2020-01-15 15:43:17 INFO: Linkage for commit d94f56c25485b622ebf3b35b71868c74b9501ece
+2020-01-15 15:43:19 INFO: Linkage for commit c3c952e55f10b07dd9d4a9121db1b3828b0a1bc7
+2020-01-15 15:43:24 INFO: Linkage for commit 82200d7847e72c176611fdfa738dac62a0f79b58
+2020-01-15 15:43:26 INFO: Linkage for commit 4d94c5d0f0e60e50d555178ff0ca5b8d4da5f054
+2020-01-15 15:43:28 INFO: Linkage for commit 2518e92a052d922d81d11e28b8e5205639fed9a7
+2020-01-15 15:43:30 INFO: Linkage for commit 88730bf9f399aab6a150212faeea012598be9ec6
+2020-01-15 15:43:32 INFO: Linkage for commit 76399e5b273d63d6affeb94597d8dfddce811964
+2020-01-15 15:43:34 INFO: Linkage for commit 219a420e1436b9606dcaf40dc6670df6e0f78f9a
+2020-01-15 15:43:34 INFO: Linkage for commit d3705477a13939f5e3f15c5422d2c67611fbb8da
+2020-01-15 15:43:35 INFO: Linkage for commit d118ca527c6dfa19ed6b7cdc377e82546723fbfd
+2020-01-15 15:43:36 INFO: Linkage for commit f052908ec90e12bdc6b67915ef2290aa9eefa48b
+2020-01-15 15:43:38 INFO: Linkage for commit 2098c7eeee64c5e51f96d5436cf806392635b602
+2020-01-15 15:43:46 INFO: Linkage for commit 0644b39c8786176b5cdfde62039ca5ee0f7c2f4a
+2020-01-15 15:43:48 INFO: Linkage for commit c07ba8a34b6a6d6665928e106fea67bd9144e4e0
+2020-01-15 15:43:49 INFO: Linkage for commit 1600c312e2b6a51c887afd47b47c7079885f02c8
+2020-01-15 15:43:50 INFO: Linkage for commit 6a788aaac2096c85159a64b910028481095d97ed
+2020-01-15 15:43:51 INFO: Linkage for commit 9e9e15856d41f55cee4a215acae3c3866e78d200
+2020-01-15 15:43:52 INFO: Linkage for commit 26cf709faa6db019b642f362c85083a9ad7a82ac
+2020-01-15 15:43:53 INFO: Linkage for commit 57362ffcbcb58ec99d9582a3df431c8b3b263be5
+2020-01-15 15:43:53 INFO: Linkage for commit 6c4f16f233cdfd7aedef33374609e9aa4ede255c
+2020-01-15 15:43:54 INFO: Linkage for commit 993e2caef44f668a72f302168c529c36d28d48cb
+2020-01-15 15:43:55 INFO: Linkage for commit a7da0cc79471fb9a2702409d5a14b88b481a998d
+2020-01-15 15:43:57 INFO: Linkage for commit 04acc44a1212d37ad2f76983e52a22e30fd67ed4
+2020-01-15 15:43:57 INFO: Linkage for commit b533d152372e37a5fcc041d372f77570ef6f6e82
+2020-01-15 15:43:58 INFO: Linkage for commit 04af674ebb40c6d42a1325ab1695bd23355e63a5
+2020-01-15 15:43:58 INFO: Linkage for commit 06a8c4a8f93d46ddf224121cf02e61e835a7cc09
+2020-01-15 15:43:59 INFO: Linkage for commit 95e062453070df1a59648e5e407522bdcd95ae11
+2020-01-15 15:44:00 INFO: Linkage for commit a090e4a156923e48ea5ecd1520cce1b380d59dc8
+2020-01-15 15:44:02 INFO: Linkage for commit a6dc3ad29b675b453dd603f16b546a2cd645f109
+2020-01-15 15:44:02 INFO: Linkage for commit babcf3128ca0f1609beb9c7caeff3fc1cfb1be1e
+2020-01-15 15:44:04 INFO: Linkage for commit 638ea92f0351fea0e307b3670c04c320124eb523
+2020-01-15 15:44:06 INFO: Linkage for commit 6d1a280976e58c9426fbfc3572e9221e7f136c14
+2020-01-15 15:44:06 INFO: Linkage for commit 619f2fdef79df82fea98cfb6d8bfc12ecbc7f31e
+2020-01-15 15:44:07 INFO: Linkage for commit dd8b09b01f50ab93d0633a39f3674e42f66f2329
+2020-01-15 15:44:08 INFO: Linkage for commit 9dacabe703968ea4ae0d23e600f734fd7f843ced
+2020-01-15 15:44:09 INFO: Linkage for commit 036ebbac7132b8ae7156a7939d77578f668b3c35
+2020-01-15 15:44:10 INFO: Linkage for commit 952fe55d184f875007c88e728434b67fb8ef1e25
+2020-01-15 15:44:12 INFO: Linkage for commit c30813c559e4f6391dc6aaab8988670298eeb4ee
+2020-01-15 15:44:13 INFO: Linkage for commit 9576260c5c45bdaeb3b5b4481edf78ae4a3672b6
+2020-01-15 15:44:14 INFO: Linkage for commit 3038ff09373454946cff602d8a1c6e2ad7c28760
+2020-01-15 15:44:16 INFO: Linkage for commit c6ca340b6ee577f69bb073fd012b596a23d92e76
+2020-01-15 15:44:16 INFO: Linkage for commit b383815167fb3975854b950cacd3c0c09cc60bda
+2020-01-15 15:44:18 INFO: Linkage for commit 4f8cd0eb762894b6424a6216a52418dbeeed686d
+2020-01-15 15:44:18 INFO: Linkage for commit 4fb6361a2d71443519bb65a2336374e7b96ddb35
+2020-01-15 15:44:20 INFO: Linkage for commit f39a1944c59bd4e7adbd9b7fb5de9115acfdb821
+2020-01-15 15:44:20 INFO: Linkage for commit 3f9f33d88355f22aefc7ea402da09fd1950289ce
+2020-01-15 15:44:21 INFO: Linkage for commit ca80439e951062780c2408a4f1d63cbcfae488d1
+2020-01-15 15:44:21 INFO: Linkage for commit 79f792128b6de251e83621f257ec5020f2cfd9fd
+2020-01-15 15:44:24 INFO: Linkage for commit 82e1e8920df6116ba51c851cefbb76a00f719607
+2020-01-15 15:44:24 INFO: Linkage for commit d29cf6a591869989edb42629287420fcadd321c0
+2020-01-15 15:44:24 INFO: Linkage for commit 311d2e7e7123814364907b65143117efc3ddf92d
+2020-01-15 15:44:27 INFO: Linkage for commit 32ab9579f9df6f4c9dbab5e6e035dd5f8d644e2a
+2020-01-15 15:44:28 INFO: Linkage for commit 25294526e61e8029393667061b921dac54395b96
+2020-01-15 15:44:28 INFO: Linkage for commit 924c480762e8af2ece8da553f7fe90244085341e
+2020-01-15 15:44:29 INFO: Linkage for commit 3fcc7efda692ab08f1c5efd86374b7e3b3bd7986
+2020-01-15 15:44:29 INFO: Linkage for commit 0c83fac9e27bc21f26708fec6d989a7e713ef17c
+2020-01-15 15:44:30 INFO: Linkage for commit 60613149b802e88064383461319ef708aa69e69d

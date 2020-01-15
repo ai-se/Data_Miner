@@ -82,7 +82,7 @@ class MetricsGetter(object):
             #self.committed_file = up(os.getcwd()) + '\\data\\committed_files\\' + self.repo_name + '_committed_file.pkl'
         self.buggy_clean_pairs = self.read_commits()
         print(self.buggy_clean_pairs[0])
-        #self.buggy_clean_pairs = self.buggy_clean_pairs[0:5]
+        self.buggy_clean_pairs = self.buggy_clean_pairs[0:5]
         # Reference current directory, so we can go back after we are done.
         self.cwd = Path(self.root_dir)
         self.cores = cpu_count()
