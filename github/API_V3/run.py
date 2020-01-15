@@ -63,11 +63,13 @@ def mine(projects,code_path):
       repo_lang = projects.loc[i,'lang']
       understand_source.append([1,repo_name,git_url,last_analyzed])
       understand_source_df = pd.DataFrame(understand_source,columns = ['id','name','url','last_analyzed'])
-      cas_manager = CAS_Manager(understand_source_df)
-      cas_manager.run()
+      #cas_manager = CAS_Manager(understand_source_df)
+      #cas_manager.run()
       os.chdir(code_path)
+      print(code_path)
       get_matrix = git_understand.MetricsGetter(git_url,repo_name,repo_lang)
       matrix = get_matrix.get_defective_pair_udb_files()
+      print('Done')
     except ValueError as e:
       print("error",e)
       continue
@@ -79,13 +81,14 @@ if __name__ == "__main__":
     data_path = os.getcwd() + '\\Test_projects.csv'
     code_path = os.getcwd()
   project_list = pd.read_csv(data_path)
-  project_list = project_list[0:2]
+  project_list = project_list[3:6]
   # miner = data_mine(project_list)
   # miner.start()
   code_path = os.getcwd()
   cores = cpu_count()
   threads = []
-  projects = np.array_split(project_list.index.tolist(), 2)
+  print(cores)
+  projects = np.array_split(project_list.index.tolist(), cores)
   for i in range(len(projects)):
     _sub_group = project_list.loc[list(projects[i])]
     _sub_group.reset_index(inplace = True, drop = True)

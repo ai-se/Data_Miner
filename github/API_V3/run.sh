@@ -1,3 +1,3 @@
 #!/bin/sh
 #SBATCH -p max
-python new.py
+python run.py
