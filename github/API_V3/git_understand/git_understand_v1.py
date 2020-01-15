@@ -124,19 +124,19 @@ class MetricsGetter(object):
                     continue
                 bug_fixing_commit = df.loc[i,'parent_hashes']
                 bug_existing_commit = df.loc[i,'commit_hash']
-                files_changed = df.loc[i,'fileschanged']
-                #print(files_changed)
-                files_changed = files_changed.split(',')
-                files_changed = list(filter(('CAS_DELIMITER').__ne__, files_changed))
+                # files_changed = df.loc[i,'fileschanged']
+                # #print(files_changed)
+                # files_changed = files_changed.split(',')
+                # files_changed = list(filter(('CAS_DELIMITER').__ne__, files_changed))
                 self.commits.append(bug_existing_commit)
                 if bug_fixing_commit == None:
                     print(df.iloc[i,0])
                     continue
-                for row in files_changed:
-                    if len(row.split('src/')) == 1:
-                        continue
-                    committed_files.append(row.split('src/')[1].replace('/','.').rsplit('.',1)[0])
-                commits.append([bug_existing_commit,bug_fixing_commit,committed_files])
+                # for row in files_changed:
+                #     if len(row.split('src/')) == 1:
+                #         continue
+                #     committed_files.append(row.split('src/')[1].replace('/','.').rsplit('.',1)[0])
+                commits.append([bug_existing_commit,bug_fixing_commit])
             except:
               continue
         return commits
@@ -235,7 +235,7 @@ class MetricsGetter(object):
             cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages C++ add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         elif self.repo_lang == "Java":
-            cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages Java add {} analyze {}".format(
+            cmd = "und create -languages Java add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         out, err = self._os_cmd(cmd)
         #print("runnung command")
@@ -426,10 +426,10 @@ class MetricsGetter(object):
             try:
                 buggy_hash = self.buggy_clean_pairs[i][0]
                 clean_hash = self.buggy_clean_pairs[i][1]
-                files_changed = self.buggy_clean_pairs[i][2]
-                if len((files_changed)) == 0:
-                    continue
-                print(i,(buggy_hash, clean_hash))
+                #files_changed = self.buggy_clean_pairs[i][2]
+                # if len((files_changed)) == 0:
+                #     continue
+                print(i,self.repo_name,(buggy_hash, clean_hash))
                 # Go the the cloned project path
                 os.chdir(self.repo_path)
                 # Checkout the master branch first, we'll need this

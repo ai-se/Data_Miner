@@ -85,7 +85,7 @@ if __name__ == "__main__":
   code_path = os.getcwd()
   cores = cpu_count()
   threads = []
-  projects = np.array_split(project_list.index.tolist(), 2)
+  projects = np.array_split(project_list.index.tolist(), cores)
   for i in range(len(projects)):
     _sub_group = project_list.loc[list(projects[i])]
     _sub_group.reset_index(inplace = True, drop = True)
