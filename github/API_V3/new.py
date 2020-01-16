@@ -2,7 +2,7 @@ import understand as und
 import numpy
 from git_understand import git_understand
 from api import git_access,api_access
-from git_understand import git_understand_v1 as git_understand
+from git_understand import git_understand_compute as git_understand
 from git_log import git2repo
 import json
 import pandas as pd
@@ -50,11 +50,9 @@ if __name__ == "__main__":
       repo_lang = project_list.loc[i,'lang']
       understand_source.append([1,repo_name,git_url,last_analyzed])
       understand_source_df = pd.DataFrame(understand_source,columns = ['id','name','url','last_analyzed'])
-      #cas_manager = CAS_Manager(understand_source_df)
-      #cas_manager.run()
       os.chdir(code_path)
-      get_matrix = git_understand.MetricsGetter(git_url,repo_name,repo_lang)
-      matrix = get_matrix.get_defective_pair_udb_files()
+      get_matrix = git_understand.MetricsGetter(git_url,repo_name,repo_lang,code_path)
+      matrix = get_matrix.get_defective_pair_metrics()
       #if i == 0:
       #  break
     except ValueError as e:
