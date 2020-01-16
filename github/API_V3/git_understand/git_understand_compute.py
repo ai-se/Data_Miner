@@ -86,6 +86,7 @@ class MetricsGetter(object):
         self.cwd = Path(self.root_dir)
         #self.repo = self.clone_repo()
         # Generate path to store udb files
+        #self.udb_path = self.cwd.joinpath(".temp", "udb")
         self.udb_path = self.cwd.joinpath("temp", "udb/"+self.repo_name)
 
         # Create a folder to hold the udb files
@@ -146,7 +147,7 @@ class MetricsGetter(object):
                 files_changed = self.buggy_clean_pairs[i][2]
                 if len((files_changed)) == 0:
                     continue
-                print(i,(buggy_hash, clean_hash))
+                print(i,self.repo_name,(buggy_hash, clean_hash))
                 # Go the the cloned project path
                 buggy_und_file = self.udb_path.joinpath("{}_{}.udb".format(self.repo_name+buggy_hash, "buggy"))
                 #print(self.buggy_und_file)
