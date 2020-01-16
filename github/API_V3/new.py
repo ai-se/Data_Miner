@@ -34,7 +34,7 @@ if __name__ == "__main__":
   project_list = project_list
   project_list.reset_index(drop=True,inplace=True)
   code_path = os.getcwd()
-  project_list = project_list[4:10]
+  project_list = project_list[1:2]
   project_list.reset_index(drop=True,inplace=True)
   for i in range(project_list.shape[0]):
     try:
