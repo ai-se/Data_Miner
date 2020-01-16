@@ -1,338 +1,0 @@
-2020-01-14 13:25:48 INFO: Adding repo coursera-android to work queue for ingesting
-2020-01-14 13:25:48 INFO: A worker is starting scan repository: coursera-android
-Checking out files:  11% (437/3666)   Checking out files:  12% (440/3666)   Checking out files:  13% (477/3666)   Checking out files:  14% (514/3666)   Checking out files:  15% (550/3666)   Checking out files:  16% (587/3666)   Checking out files:  17% (624/3666)   Checking out files:  18% (660/3666)   Checking out files:  19% (697/3666)   Checking out files:  20% (734/3666)   Checking out files:  21% (770/3666)   Checking out files:  22% (807/3666)   Checking out files:  23% (844/3666)   Checking out files:  24% (880/3666)   Checking out files:  24% (897/3666)   Checking out files:  25% (917/3666)   Checking out files:  26% (954/3666)   Checking out files:  27% (990/3666)   Checking out files:  28% (1027/3666)   Checking out files:  29% (1064/3666)   Checking out files:  30% (1100/3666)   Checking out files:  31% (1137/3666)   Checking out files:  32% (1174/3666)   Checking out files:  33% (1210/3666)   Checking out files:  34% (1247/3666)   Checking out files:  35% (1284/3666)   Checking out files:  36% (1320/3666)   Checking out files:  37% (1357/3666)   Checking out files:  38% (1394/3666)   Checking out files:  39% (1430/3666)   Checking out files:  39% (1439/3666)   Checking out files:  40% (1467/3666)   Checking out files:  41% (1504/3666)   Checking out files:  42% (1540/3666)   Checking out files:  43% (1577/3666)   Checking out files:  44% (1614/3666)   Checking out files:  45% (1650/3666)   Checking out files:  46% (1687/3666)   Checking out files:  47% (1724/3666)   Checking out files:  48% (1760/3666)   Checking out files:  49% (1797/3666)   Checking out files:  50% (1833/3666)   Checking out files:  51% (1870/3666)   Checking out files:  52% (1907/3666)   Checking out files:  53% (1943/3666)   Checking out files:  54% (1980/3666)   Checking out files:  55% (2017/3666)   Checking out files:  56% (2053/3666)   Checking out files:  56% (2072/3666)   Checking out files:  57% (2090/3666)   Checking out files:  58% (2127/3666)   Checking out files:  59% (2163/3666)   Checking out files:  60% (2200/3666)   Checking out files:  61% (2237/3666)   Checking out files:  62% (2273/3666)   Checking out files:  63% (2310/3666)   Checking out files:  64% (2347/3666)   Checking out files:  65% (2383/3666)   Checking out files:  66% (2420/3666)   Checking out files:  67% (2457/3666)   Checking out files:  68% (2493/3666)   Checking out files:  69% (2530/3666)   Checking out files:  70% (2567/3666)   Checking out files:  71% (2603/3666)   Checking out files:  72% (2640/3666)   Checking out files:  73% (2677/3666)   Checking out files:  74% (2713/3666)   Checking out files:  74% (2721/3666)   Checking out files:  75% (2750/3666)   Checking out files:  76% (2787/3666)   Checking out files:  77% (2823/3666)   Checking out files:  78% (2860/3666)   Checking out files:  79% (2897/3666)   Checking out files:  80% (2933/3666)   Checking out files:  81% (2970/3666)   Checking out files:  82% (3007/3666)   Checking out files:  83% (3043/3666)   Checking out files:  84% (3080/3666)   Checking out files:  85% (3117/3666)   Checking out files:  86% (3153/3666)   Checking out files:  87% (3190/3666)   Checking out files:  88% (3227/3666)   Checking out files:  89% (3263/3666)   Checking out files:  90% (3300/3666)   Checking out files:  91% (3337/3666)   Checking out files:  92% (3373/3666)   Checking out files:  92% (3397/3666)   Checking out files:  93% (3410/3666)   Checking out files:  94% (3447/3666)   Checking out files:  95% (3483/3666)   Checking out files:  96% (3520/3666)   Checking out files:  97% (3557/3666)   Checking out files:  98% (3593/3666)   Checking out files:  99% (3630/3666)   Checking out files: 100% (3666/3666)   Checking out files: 100% (3666/3666), done.
-HEAD is now at 1573738 clean up
-2020-01-14 13:25:57 INFO: Pulling latest changes from repo: coursera-android
-2020-01-14 13:25:58 INFO: Done fetching.
-2020-01-14 13:25:58 INFO: Getting/parsing git commits: coursera-android
-2020-01-14 13:26:00 INFO: Done getting/parsing git commits.
-2020-01-14 13:26:00 INFO: Saving commits to the csv...
-2020-01-14 13:26:00 INFO: Done saving commits to the csv.
-2020-01-14 13:26:00 INFO: A worker finished ingesting repo coursera-android
-2020-01-14 13:26:00 INFO: Adding repo coursera-android to work queue for analyzing.
-2020-01-14 13:26:00 INFO: Worker analyzing repository  coursera-android
-2020-01-14 13:26:00 INFO: Linking 23 new corrective commits for repo coursera-android
-2020-01-14 13:26:00 INFO: Linkage for commit ce98bbf80423a5e64af059c18dacdc2a8bbe3dc7
-/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
-/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-  self.loc[key] = value
-2020-01-14 13:26:00 INFO: Linkage for commit 75203dcf24a6758d63362569b73c81b9f995e255
-2020-01-14 13:26:00 INFO: Linkage for commit ef052a4a1aaca2c7e82b8be2a3dfb25a3f17b813
-2020-01-14 13:26:01 INFO: Linkage for commit 6ff4e1614b899a0acf435ee2f9594fadbdb7c6c0
-2020-01-14 13:26:01 INFO: Linkage for commit ac7b9b648fcc79f5a15dae746e8c54749fde9e7b
-2020-01-14 13:26:01 INFO: Linkage for commit de9727b5aeb4ae36e257c7cb589dfbb2b860c825
-2020-01-14 13:26:01 INFO: Linkage for commit 627c156a41105d3a68888d1eddbc6ddfdd2ca59b
-2020-01-14 13:26:01 INFO: Linkage for commit 3cec4a5f95500ef5a91d5d13101d29e5e246870b
-2020-01-14 13:26:02 INFO: Linkage for commit b9b330c1cc17ee8f86dad038c4e328a371d7558f
-2020-01-14 13:26:02 INFO: Linkage for commit 8adebbd2373cbc5f3cce7de66479f9fe7175674c
-2020-01-14 13:26:03 INFO: Linkage for commit 586975c5bb8060ec43fb77a02ab26dafda4db962
-2020-01-14 13:26:03 INFO: Linkage for commit 849a67c33f680b498a2c425818e54644f53c443e
-2020-01-14 13:26:03 INFO: Linkage for commit 10530c3f3302beb7e75dbfe1928801427257845a
-2020-01-14 13:26:05 INFO: Linkage for commit 54efb532b24b5b110bb34005fcb8dc7bee57c1db
-2020-01-14 13:26:06 INFO: Linkage for commit ea5ee473e484562f02128568a7fd68c0a69d2acc
-2020-01-14 13:26:08 INFO: Linkage for commit 36da44b40109679babbbdcfc635b436765510fbe
-2020-01-14 13:26:11 INFO: Linkage for commit 811b576804f566b1fbaa3c8be4e77116557d35a5
-2020-01-14 13:26:11 INFO: Linkage for commit 584d592dd4b11f313a938e063f33494925cf0b80
-2020-01-14 13:26:11 INFO: Linkage for commit ca41d300a9d92d6349b0a6a2a7aa9d0b5515f45d
-2020-01-14 13:26:12 INFO: Linkage for commit 6355f25cf60687face2a9837ea6ee0236df2defc
-2020-01-14 13:26:12 INFO: Linkage for commit d994a651e7cd7e625b77621753f771e0c6a51de7
-2020-01-14 13:26:12 INFO: Linkage for commit cc7fe42ec5268506925f814b22ef3c8371f67d0e
-2020-01-14 13:27:21 INFO: Linkage for commit 9635869ede11198093250abeaa49a6626ca98145
-2020-01-14 13:35:22 INFO: Linking done for repocoursera-android
-its working
-I am here
-   id  ... last_analyzed
-0   1  ...          None
-
-[1 rows x 4 columns]
-The repo is: coursera-android
-This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/coursera-android
-working on pulling
-======================== 2020-01-14 13:26:00.232718 2019-12-15 13:26:00.232706
-           age  ...                                              fixes
-0     0.000000  ...                                                NaN
-1     0.000000  ...  ["6ff4e1614b899a0acf435ee2f9594fadbdb7c6c0", "...
-2     1.645920  ...                                                NaN
-3     0.000000  ...                                                NaN
-4          NaN  ...                                                NaN
-5    14.689971  ...                                                NaN
-6    20.987317  ...                                                NaN
-7    32.201782  ...                                                NaN
-8    35.519734  ...                                                NaN
-9     0.000000  ...                                                NaN
-10    1.313623  ...                                                NaN
-11         NaN  ...                                                NaN
-12   42.370046  ...                                                NaN
-13         NaN  ...                                                NaN
-14    0.000000  ...                                                NaN
-15    0.007072  ...                                                NaN
-16         NaN  ...                                                NaN
-17   27.776574  ...                                                NaN
-18   63.040104  ...                                                NaN
-19    0.002488  ...       ["3cec4a5f95500ef5a91d5d13101d29e5e246870b"]
-20    0.001366  ...                                                NaN
-21   17.346470  ...                                                NaN
-22   47.826806  ...                                                NaN
-23   32.525937  ...                                                NaN
-24   42.042141  ...                                                NaN
-25   35.791574  ...                                                NaN
-26         NaN  ...                                                NaN
-27   70.665544  ...                                                NaN
-28   70.665903  ...                                                NaN
-29         NaN  ...                                                NaN
-..         ...  ...                                                ...
-105   0.000000  ...                                                NaN
-106   0.000000  ...                                                NaN
-107   0.000000  ...                                                NaN
-108   0.000000  ...                                                NaN
-109   0.000000  ...                                                NaN
-110   0.000000  ...                                                NaN
-111   0.000000  ...                                                NaN
-112   0.000000  ...                                                NaN
-113   0.000000  ...                                                NaN
-114   0.000000  ...                                                NaN
-115   0.000000  ...                                                NaN
-116   0.000000  ...                                                NaN
-117   0.000000  ...                                                NaN
-118   0.000000  ...                                                NaN
-119   0.000000  ...                                                NaN
-120   0.000000  ...                                                NaN
-121   0.000000  ...                                                NaN
-122   0.001053  ...                                                NaN
-123   0.000000  ...                                                NaN
-124  40.113396  ...                                                NaN
-125        NaN  ...                                                NaN
-126   0.001065  ...                                                NaN
-127   0.007130  ...       ["cc7fe42ec5268506925f814b22ef3c8371f67d0e"]
-128   0.002384  ...                                                NaN
-129   0.002546  ...                                                NaN
-130   0.000000  ...       ["9635869ede11198093250abeaa49a6626ca98145"]
-131   0.000465  ...                                                NaN
-132   0.003171  ...                                                NaN
-133   0.000000  ...                                                NaN
-134   0.198910  ...                                                NaN
-
-[135 rows x 25 columns]
-['80de9cf1288f6ea27c5d98cb8f9f6b26b69bcb76', 'f5ec53d30d3607b0af069980408e2748f10a563d', ['course.examples.Alarms.AlarmCreate.AlarmCreateActivity', 'course.examples.Alarms.AlarmCreate.AlarmLoggerReceiver', 'course.examples.Alarms.AlarmCreate.AlarmNotificationReceiver', 'BrowserProvider', 'DialtactsActivity', 'MediaPlaybackService', 'SmsReceiver', 'course.examples.AudioVideo.AudioManager.AudioVideoAudioManagerActivity', 'course.examples.AudioVideo.AudioRecording.AudioRecordingActivity', 'course.examples.AudioVideo.Camera.AudioVideoCameraActivity', 'course.examples.AudioVideo.Ringtone.AudioVideoRingtoneManagerActivity', 'course.examples.AudioVideo.VideoPlay.AudioVideoVideoPlayActivity', 'course.examples.Bluetooth.SetupAndTransferData.AcceptThread', 'course.examples.Bluetooth.SetupAndTransferData.ConnectThread', 'course.examples.Bluetooth.SetupAndTransferData.ConnectionThread', 'course.examples.Bluetooth.SetupAndTransferData.DataTransferActivity', 'course.examples.Bluetooth.SetupAndTransferData.ShowDevices', 'course.examples.BroadcastReceiver.CompoundBroadcast.CompoundBroadcast', 'course.examples.BroadcastReceiver.CompoundBroadcast.Receiver1', 'course.examples.BroadcastReceiver.CompoundBroadcast.Receiver2', 'course.examples.BroadcastReceiver.CompoundBroadcast.Receiver3', 'course.examples.BroadcastReceiver.CompoundOrderedBroadcast.CompoundOrderedBroadcast', 'course.examples.BroadcastReceiver.CompoundOrderedBroadcast.Receiver1', 'course.examples.BroadcastReceiver.CompoundOrderedBroadcast.Receiver2', 'course.examples.BroadcastReceiver.CompoundOrderedBroadcast.Receiver3', 'course.examples.BroadcastReceiver.CompoundOrderedBroadcast.CompoundOrderedBroadcastWithResultReceiver', 'course.examples.BroadcastReceiver.CompoundOrderedBroadcast.Receiver1', 'course.examples.BroadcastReceiver.CompoundOrderedBroadcast.Receiver2', 'course.examples.BroadcastReceiver.CompoundOrderedBroadcast.Receiver3', 'course.examples.BroadcastReceiver.SingleBroadcastDynamicRegistration.Receiver', 'course.examples.BroadcastReceiver.SingleBroadcastDynamicRegistration.SingleBroadcast', 'course.examples.BroadcastReceiver.singleBroadcastStaticRegistration.Receiver', 'course.examples.BroadcastReceiver.singleBroadcastStaticRegistration.SimpleBroadcast', 'course.examples.BroadcastReceiver.StickyIntent.StickyIntentBroadcastReceiverActivity', 'course.examples.checkIntents.CheckActivityIntents', 'course.examples.checkBroadcastIntents.CheckBroadcastIntents', 'course.examples.ContentProviders.StringContentProvider.DataContract', 'course.examples.ContentProviders.StringContentProvider.DataRecord', 'course.examples.ContentProviders.StringContentProvider.StringsContentProvider', 'course.examples.ContentProviders.StringContentProvider.DataContract', 'course.examples.ContentProviders.StringContentProviderUser.CustomContactProviderDemo', 'course.examples.ContentProviders.ContactsList.ContactsListExample', 'course.examples.ContentProviders.ContactsList.ContactInfo', 'course.examples.ContentProviders.ContactsList.ContactInfoListAdapter', 'course.examples.ContentProviders.ContactsList.ContactsListExample', 'course.examples.ContentProviders.ContactsListInsertContacts.DisplayActivity', 'course.examples.ContentProviders.ContactsListInsertContacts.InsertActivity', 'course.examples.ContentProviders.ContactsListWithAdapter.ContactInfo', 'course.examples.ContentProviders.ContactsListWithAdapter.ContactInfoListAdapter', 'course.examples.ContentProviders.ContactsListWithAdapter.ContactsListExample', 'course.examples.DataManagement.FileExternal.ExternalFileWriteReadActivity', 'course.examples.DataManagement.FileInternal.InternalFileWriteReadActivity', 'course.examples.DataManagement.PreferenceActivity.PreferencesActivityExample', 'course.examples.DataManagement.PreferenceActivity.ViewAndUpdatePreferencesActivity', 'course.examples.DataManagement.DataBaseExample.DatabaseExampleActivity', 'course.examples.DataManagement.DataBaseExample.DatabaseOpenHelper', 'course.examples.DataManagement.SharedPreferences.SharedPreferenceReadWriteActivity', 'course.examples.Fragments.DynamicLayout.QuoteViewerActivity', 'course.examples.Fragments.DynamicLayout.QuotesFragment', 'course.examples.Fragments.DynamicLayout.TitlesFragment', 'course.examples.UI.FragmentActionBar.QuoteFragment', 'course.examples.UI.FragmentActionBar.QuoteViewerActivity', 'course.examples.UI.FragmentActionBar.TitlesFragment', 'course.examples.Fragments.ProgrammaticLayout.QuoteViewerActivity', 'course.examples.Fragments.ProgrammaticLayout.QuotesFragment', 'course.examples.Fragments.ProgrammaticLayout.TitlesFragment', 'course.examples.quoteviewer.QuoteListActivity', 'course.examples.quoteviewer.TitlesListActivity', 'course.examples.Fragments.StaticConfigLayout.QuoteViewerActivity', 'course.examples.Fragments.StaticConfigLayout.QuotesFragment', 'course.examples.Fragments.StaticConfigLayout.TitlesFragment', 'course.examples.Fragments.StaticLayout.QuoteViewerActivity', 'course.examples.Fragments.StaticLayout.QuotesFragment', 'course.examples.Fragments.StaticLayout.TitlesFragment', 'course.examples.Graphics.BubbleProgram.BubbleActivity', 'course.examples.Graphics.BubbleProgramXML.BubbleActivity', 'course.examples.Graphics.CanvasBubble.BubbleActivity', 'course.examples.Graphics.CanvasBubble.Coords', 'course.examples.Graphics.CanvasBubbleSurfaceView.BubbleActivity', 'course.examples.Graphics.FrameAnimation.GraphicsFrameAnimationActivity', 'course.examples.Graphics.Paint.GraphicsPaintActivity', 'course.examples.Graphics.ShapeDraw.ShapeDrawActivity', 'course.examples.Graphics.ShapeDrawXML.ShapeDrawActivity', 'course.examples.Graphics.TransitionDrawable.TransitionDrawableActivity', 'course.examples.Graphics.TweenAnimation.GraphicsTweenAnimationActivity', 'course.examples.graphics.objectpropertyanimator.ValueAnimatorActivity', 'course.examples.Graphics.ViewPropertyAnimator.GraphicsViewPropertyAnimatorActivity', 'course.examples.HelloWorld.HelloWorld.HelloAndroid', 'course.examples.HelloWorld.HelloWorld.test.HelloAndroidTest', 'course.examples.helloWorldWithLogin.HelloAndroid', 'course.examples.helloWorldWithLogin.LoginScreen', 'course.examples.UI.MenuExample.HelloAndroidWithMenuActivity', 'course.examples.HelloWorldTabWidget.AlbumsActivity', 'course.examples.HelloWorldTabWidget.ArtistsActivity', 'course.examples.HelloWorldTabWidget.HelloTabWidget', 'course.examples.HelloWorldTabWidget.SongsActivity', 'course.examples.Location.GetLocation.LocationGetLocationActivity', 'course.examples.Location.GetLocation.LocationGetLocationActivity', 'course.examples.Services.LocalLoggingService.LoggingService', 'course.examples.Services.LocalLoggingService.LoggingServiceClient', 'course.examples.Services.LoggingServiceWithMessenger.LoggingService', 'course.examples.Services.LoggingServiceWithMessengerClient.LoggingServiceClient', 'course.examples.Maps.EarthQuakeMap.EarthQuakeRec', 'course.examples.Maps.EarthQuakeMap.JSONResponseHandler', 'course.examples.Maps.EarthQuakeMap.MapsEarthquakeMapActivity', 'course.examples.MapLocation.MapLocation', 'course.examples.MapLocationFromContacts.MapLocationFromContactsActivity', 'course.examples.Services.MusicService.MusicService', 'course.examples.Services.MusicService.MusicServiceClient', 'course.examples.Networking.AndroidHttpClient.NetworkingAndroidHttpClientActivity', 'course.examples.Networking.AndroidHttpClientJSON.MainActivity', 'course.examples.Networking.AndroidHttpClientJSON.NetworkingAndroidHttpClientJSONActivity', 'course.examples.Networking.AndroidHttpClientXML.MainActivity', 'course.examples.Networking.AndroidHttpClientXML.NetworkingAndroidHttpClientXMLActivity', 'course.examples.Networking.AndroidHttpClientXML.XMLResponseHandler', 'course.examples.Networking.Sockets.NetworkingSocketsActivity', 'course.examples.Networking.URL.NetworkingURLActivity', 'course.examples.Notification.StatusBar.NotificationStatusBarActivity', 'course.examples.Notification.StatusBar.NotificationSubActivity', 'course.examples.Notification.StatusBarWithCustomView.NotificationStatusBarWithCustomViewActivity', 'course.examples.Notification.StatusBarWithCustomView.NotificationSubActivity', 'course.examples.Notification.Toast.NotificationToastActivity', 'course.examples.Notification.ToastWithCustomView.NotificationToastActivity', 'course.examples.permissionexample.boom.BoomActivity', 'course.examples.permissionexample.boomUser.BoomUserActivity', 'course.examples.compass.CompassActivity', 'course.examples.Sensors.ShowValues.SensorFilteredValuesActivity', 'course.examples.Sensors.ShowValues.SensorRawAccelerometerActivity', 'course.examples.Services.KeyClient.KeyServiceUser', 'course.examples.Services.KeyCommon.KeyGenerator', 'course.examples.Services.KeyCommon.KeyGenerator', 'course.examples.Services.KeyService.KeyGeneratorImpl', 'course.examples.theanswer.TheAnswer', 'course.examples.Threading.ThreadingAsyncTask.AsyncTaskActivity', 'course.examples.Threading.ThreadingHandlerMessages.HandlerMessagesActivity', 'course.examples.Threading.ThreadingHandlerRunnable.HandlerRunnableActivity', 'course.examples.Threading.NoThreading.NoThreadingExample', 'course.examples.Threading.ThreadingRunOnUiThread.SimpleThreadingExample', 'course.examples.Threading.ThreadingSimple.SimpleThreadingExample', 'course.examples.Threading.ThreadingViewPost.SimpleThreadingViewPostActivity', 'course.examples.touch.ViewTransitions.ViewFlipperTestActivity', 'course.examples.touch.Gestures.GesturesActivity', 'course.examples.Touch.LocateTouch.IndicateTouchLocationActivity', 'course.examples.UI.AlertDialog.AlertDialogActivity', 'course.examples.UI.AutoComplete.AutoCompleteActivity', 'course.examples.UI.Button.ButtonActivity', 'course.examples.UI.CheckBox.CheckBoxActivity', 'course.examples.UI.datepicker.DatePickerActivity', 'course.examples.UI.Gallery.GalleryActivity', 'course.examples.UI.MapView.GoogleMapActivity', 'course.examples.UI.GridLayout.GridLayoutActivity', 'course.examples.UI.GridLayout.ImageAdapter', 'course.examples.UI.GridLayout.ImageViewActivity', 'course.examples.UI.LinearLayout.LinearLayoutActivity', 'course.examples.UI.ListLayout.ListViewActivity', 'course.examples.UI.RadioGroup.RadioGroupActivity', 'course.examples.UI.RatingsBar.RatingsBarActivity', 'course.examples.UI.RelativeLayout.RelativeLayoutActivity', 'course.examples.UI.sampler.SamplerActivity', 'course.examples.UI.Spinner.SpinnerActivity', 'course.examples.UI.TabLayout.GridFragment', 'course.examples.UI.TabLayout.ImageAdapter', 'course.examples.UI.TabLayout.ImageViewActivity', 'course.examples.UI.TabLayout.TabLayoutActivity', 'course.examples.UI.TableLayout.TableLayoutActivity', 'course.examples.UI.timepicker.TimePickerActivity', 'course.examples.UI.ToggleButton.ToggleButtonActivity', 'course.examples.UI.WebView.WebViewActivity', 'android.UnusedStub']]2020-01-14 13:37:23 INFO: Adding repo Android-ObservableScrollView to work queue for ingesting
-2020-01-14 13:37:23 INFO: A worker is starting scan repository: Android-ObservableScrollView
-HEAD is now at 47a5fb2 Add "{Soft} Skills" by Fanatic Devs to the "Apps that use this library" list
-2020-01-14 13:37:24 INFO: Pulling latest changes from repo: Android-ObservableScrollView
-2020-01-14 13:37:25 INFO: Done fetching.
-2020-01-14 13:37:25 INFO: Getting/parsing git commits: Android-ObservableScrollView
-2020-01-14 13:37:25 INFO: Done getting/parsing git commits.
-2020-01-14 13:37:25 INFO: Saving commits to the csv...
-2020-01-14 13:37:25 INFO: Done saving commits to the csv.
-2020-01-14 13:37:25 INFO: A worker finished ingesting repo Android-ObservableScrollView
-2020-01-14 13:37:25 INFO: Adding repo Android-ObservableScrollView to work queue for analyzing.
-2020-01-14 13:37:25 INFO: Worker analyzing repository  Android-ObservableScrollView
-2020-01-14 13:37:25 INFO: Linking 83 new corrective commits for repo Android-ObservableScrollView
-2020-01-14 13:37:26 INFO: Linkage for commit 34e45168b4ec1b45a4585aca9a2eb7a58da6209f
-/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
-/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-  self.loc[key] = value
-2020-01-14 13:37:26 INFO: Linkage for commit e8d54df7f454e92b1c6ce7048bca351b7b57d66a
-2020-01-14 13:37:26 INFO: Linkage for commit 236a587ec10bc7c6f66e35aa76a54953eba590f6
-2020-01-14 13:37:27 INFO: Linkage for commit 7c59b05efa36056fc32b2815a52b51642421517e
-2020-01-14 13:37:27 INFO: Linkage for commit 7e2d18176628bbf28ee54005de3f5ae35e1ba9c7
-2020-01-14 13:37:28 INFO: Linkage for commit 5cc51d6b64446e9618721973a7a8d2492cb7e423
-2020-01-14 13:37:28 INFO: Linkage for commit a2e18435d2560cf20eb0f7659196174ecd86ce47
-2020-01-14 13:37:28 INFO: Linkage for commit fb40b902d1b010557f53ad7f8269724653066edf
-2020-01-14 13:37:29 INFO: Linkage for commit 29b983d4f4e8e43b5bedc6317e2328ff4ce8cd72
-2020-01-14 13:37:29 INFO: Linkage for commit 0f2fffccccd7238e8522aada3a725ee1ba6ff451
-2020-01-14 13:37:29 INFO: Linkage for commit 6b3c1b2aebe8998296791d2cca704f09de1ed09e
-2020-01-14 13:37:29 INFO: Linkage for commit d6077a543143401fbb509f7cb04a337eea3d276f
-2020-01-14 13:37:29 INFO: Linkage for commit 49a88b67d0a6731915798802f58ee0e660ce49ba
-2020-01-14 13:37:30 INFO: Linkage for commit a99a0de2acf66423470d49c4ff7273862bf05a03
-2020-01-14 13:37:30 INFO: Linkage for commit 45739cd7fce218c1c22de068117f942b06a36a21
-2020-01-14 13:37:30 INFO: Linkage for commit f04e6096e3f24fb8e0f28bf18ec889d60f177bd5
-2020-01-14 13:37:30 INFO: Linkage for commit 8fe216d17bf7c805dfbe2f1df5c85553f0990fa7
-2020-01-14 13:37:30 INFO: Linkage for commit 33617ed3cb864a77e310bae31b3ad6470d97a65b
-2020-01-14 13:37:31 INFO: Linkage for commit 9a7f89736b1d5363a7aa1a77ed566574bce2e995
-2020-01-14 13:37:31 INFO: Linkage for commit a16ba6e7d470a31069c2057cb1e8e10e2aa6b03c
-2020-01-14 13:37:32 INFO: Linkage for commit 3d4cc7874ef11b8ea2e5270bf3826d57fa1ba616
-2020-01-14 13:37:32 INFO: Linkage for commit ade4430ae68b1cd2035a829fafb66ae4db936751
-2020-01-14 13:37:34 INFO: Linkage for commit 6f915f7482635c1f4889281c7941a586f2cfb611
-2020-01-14 13:37:35 INFO: Linkage for commit 8bc6196ab930905ec70b5e1768002e5e0a125846
-2020-01-14 13:37:35 INFO: Linkage for commit af334ea7e62ecaf78bff6a8b26ff88dd8d91d088
-2020-01-14 13:37:35 INFO: Linkage for commit d305c46db12361640531ccfb54b50f323b3f8caf
-2020-01-14 13:37:35 INFO: Linkage for commit 770da692dcc72c9cb42149079447937aab4cebcd
-2020-01-14 13:37:36 INFO: Linkage for commit 4eca3e11ad0610aa19dc515f80a12e50b8791f29
-2020-01-14 13:37:36 INFO: Linkage for commit eed4a81b82e341eda8ae3a48875e652cda386d4e
-2020-01-14 13:37:37 INFO: Linkage for commit c0d7de289eb178c55dd9166889440ec29da2e93c
-2020-01-14 13:37:37 INFO: Linkage for commit e8cba4b81ed37b705e9a673f4db719fb8d33129d
-2020-01-14 13:37:39 INFO: Linkage for commit fdba95a43afc4f4737f10a06f86e60751ecd2b25
-2020-01-14 13:37:40 INFO: Linkage for commit 379c6ceba3aacc323832d5695d6a02aca1ca3665
-2020-01-14 13:37:40 INFO: Linkage for commit 81b2be383d35e45297ded51887d60bc746af8b7b
-2020-01-14 13:37:41 INFO: Linkage for commit ec1e7745079bc680a50a277ce334f6888dd18bc4
-2020-01-14 13:37:41 INFO: Linkage for commit 55aa9ee4f04aa3c75ffba3f744ea7f0c81d16764
-2020-01-14 13:37:43 INFO: Linkage for commit cb3d9713d4622f3c5ce41cb15883cc71532fb5ac
-2020-01-14 13:37:43 INFO: Linkage for commit da534cab284d4b82e9553d3f28ae57360ad5f436
-2020-01-14 13:37:43 INFO: Linkage for commit ef6e1db5d4f009902207a31081fb591679c49fa6
-2020-01-14 13:37:44 INFO: Linkage for commit d41b3018b77d69ab85c6f6ab07ee948bb044cf23
-2020-01-14 13:37:44 INFO: Linkage for commit e60a0cd751cb2776bd05ee8afea8b71c21d8feda
-2020-01-14 13:37:44 INFO: Linkage for commit 32c78d528a813689475d97f81588257a195e9481
-2020-01-14 13:37:44 INFO: Linkage for commit 63bc769085f630974fd4daafc0028fb518129e0f
-2020-01-14 13:37:44 INFO: Linkage for commit 825c919243b1a9f8c4616729c46756e862dd4a1b
-2020-01-14 13:37:45 INFO: Linkage for commit 0e42bce0de767e7c417263c80ac100c885c94556
-2020-01-14 13:37:45 INFO: Linkage for commit dc787fc8f5b2dc59ebb83cbd50f2c91236a37f56
-2020-01-14 13:37:45 INFO: Linkage for commit 0cf2f107f1ac2c128db8cd1e18d2312f5d31ee51
-2020-01-14 13:37:45 INFO: Linkage for commit 2e37057111a3e20f840af5887d2dae2719883741
-2020-01-14 13:37:46 INFO: Linkage for commit 81ba41d8fbd43de8f9997aadebacbeeaf0df55eb
-2020-01-14 13:37:46 INFO: Linkage for commit 2a33b649ac8346deb9598ce22fde78461416669f
-2020-01-14 13:37:46 INFO: Linkage for commit ba21836388a0a3550c3e2e1136e0fda60baf6b46
-2020-01-14 13:37:46 INFO: Linkage for commit 362f5a48d3ab414c793bc6fcd4b1b1ff370403dd
-2020-01-14 13:37:46 INFO: Linkage for commit e05451a172c164c21b20785e68de17ef7b5e0fde
-2020-01-14 13:37:47 INFO: Linkage for commit 814c079d8c845fcfecca0c70a6ddfe6f577612d4
-2020-01-14 13:37:49 INFO: Linkage for commit 8013519189c6034fa91c9d3de0a66687c1d62a67
-2020-01-14 13:37:50 INFO: Linkage for commit fd5f59fae789c876872be0a97ced3bd23d06c286
-2020-01-14 13:37:50 INFO: Linkage for commit a6c434f8c894f73d809aaa16a2bad5c6654f4ed9
-2020-01-14 13:37:50 INFO: Linkage for commit 09df6651ff0ece9c9cb05170101a0fbeb1599e8b
-2020-01-14 13:37:55 INFO: Linkage for commit a1e4058dfeee193311166616be43c38c1af48302
-2020-01-14 13:37:56 INFO: Linkage for commit 39facdea0710c505969445f611adae4f5c5d2c45
-2020-01-14 13:37:56 INFO: Linkage for commit 14aa8b087de176c9a3b061f6bbb5ebeae4d7f44f
-2020-01-14 13:37:57 INFO: Linkage for commit 62cc8a4a18cece7ee9c214d3ee2b0541d4f35388
-2020-01-14 13:37:57 INFO: Linkage for commit b5a438713a8545e8a381acd10fb911ee52d677bc
-2020-01-14 13:37:57 INFO: Linkage for commit dc77c14f931e8e62bdf03378077666bb05cb87ee
-2020-01-14 13:37:57 INFO: Linkage for commit 9f27f0d35d5a90ab315304d8a77eb2d63efca419
-2020-01-14 13:37:58 INFO: Linkage for commit 87f0487a1008fd49d2ebd660b31141b6e7d0e85e
-2020-01-14 13:37:58 INFO: Linkage for commit db593e383c2ba90d75c009ca54cf6417c7fecedf
-2020-01-14 13:37:58 INFO: Linkage for commit 676de558a9a263d2246676735feed5ae1a10a6fd
-2020-01-14 13:37:58 INFO: Linkage for commit a10a67f18f8c9f8579d425562a83a796191da23d
-2020-01-14 13:37:58 INFO: Linkage for commit 177d642432bba3a1a5255b6e31aae001369f7881
-2020-01-14 13:37:59 INFO: Linkage for commit 9da2dea142e3e70310d47cec7184b04f9837f1eb
-2020-01-14 13:37:59 INFO: Linkage for commit 1bf12c6c14b973905481b2f7d4dc419abff79d05
-2020-01-14 13:38:02 INFO: Linkage for commit a85c1b1b611377998668b3cfb6282a00a2ccc895
-2020-01-14 13:38:02 INFO: Linkage for commit 33f600467ac632e8f521d21e9cc2d04d6b93a136
-2020-01-14 13:38:02 INFO: Linkage for commit d19cb44726a15cd03e4d9fdba551fc9c78634b25
-2020-01-14 13:38:03 INFO: Linkage for commit c8ae4d5529fe2ab35069830c25dcba9e4c2002a2
-2020-01-14 13:38:03 INFO: Linkage for commit f03fd2db27a273a40fa63b8c672e67a9f8df5b39
-2020-01-14 13:38:03 INFO: Linkage for commit 830781c9ae45c4ae2c54646c1e146a42b21429a4
-2020-01-14 13:38:04 INFO: Linkage for commit 97d39359a9960aecb034ada832d8c33c33504f88
-2020-01-14 13:38:04 INFO: Linkage for commit 2202be5cf9e7a9f85991d1c3ca497ca8f30c909e
-2020-01-14 13:38:04 INFO: Linkage for commit d0e0c9a6e60dd16ec06145391ec88937645fb165
-2020-01-14 13:38:04 INFO: Linkage for commit d16939345eb03cbde5ca34380ed8f252d292f9ed
-2020-01-14 13:38:04 INFO: Linkage for commit bee7c0b8300b2ff8f72546a3a953f24bd9c596bb
-2020-01-14 13:38:05 INFO: Linking done for repoAndroid-ObservableScrollView
-
-pygit2.Repository('/home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/coursera-android/.git/')
-5
-0 ('80de9cf1288f6ea27c5d98cb8f9f6b26b69bcb76', 'f5ec53d30d3607b0af069980408e2748f10a563d')
-und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/coursera-android analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/coursera-android_buggy.udb
-und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/coursera-android analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/coursera-android_clean.udb
-1 ('f9460dd5ffa48daa1d01b7f97c2ce20d9adeb33b', '627c156a41105d3a68888d1eddbc6ddfdd2ca59b')
-und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/coursera-android analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/coursera-android_buggy.udb
-und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/coursera-android analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/coursera-android_clean.udb
-2 ('362787693eae42ed0b510b8c13d797638bf48662', 'a2834c38adaeedd5064ae9c75923b38b22034ddb')
-und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/coursera-android analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/coursera-android_buggy.udb
-und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/coursera-android analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/coursera-android_clean.udb
-3 ('2d7698d45323d655c3b4f3318fc0a7adab68b80e', '8adebbd2373cbc5f3cce7de66479f9fe7175674c')
-und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/coursera-android analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/coursera-android_buggy.udb
-und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/coursera-android analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/coursera-android_clean.udb
-4 ('734724d79cb31406bff2046b201e9250d3419dfb', 'd0e672cbbcbb9910733e7177c5a8ffaca69be148')
-und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/coursera-android analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/coursera-android_buggy.udb
-und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/coursera-android analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/coursera-android_clean.udb
-I am here
-   id  ... last_analyzed
-0   1  ...          None
-
-[1 rows x 4 columns]
-The repo is: Android-ObservableScrollView
-This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Android-ObservableScrollView
-working on pulling
-======================== 2020-01-14 13:37:25.947752 2019-12-15 13:37:25.947739
-            age  ...                                              fixes
-0      0.000000  ...                                                NaN
-1      0.006238  ...       ["7c59b05efa36056fc32b2815a52b51642421517e"]
-2      0.002438  ...       ["830781c9ae45c4ae2c54646c1e146a42b21429a4"]
-3      0.000000  ...                                                NaN
-4      0.006690  ...                                                NaN
-5      0.020586  ...                                                NaN
-6      0.039039  ...                                                NaN
-7      0.024086  ...                                                NaN
-8      0.097561  ...  ["236a587ec10bc7c6f66e35aa76a54953eba590f6", "...
-9      0.140472  ...  ["af334ea7e62ecaf78bff6a8b26ff88dd8d91d088", "...
-10     0.044387  ...  ["379c6ceba3aacc323832d5695d6a02aca1ca3665", "...
-11     0.003634  ...                                                NaN
-12     0.436426  ...  ["236a587ec10bc7c6f66e35aa76a54953eba590f6", "...
-13     0.151714  ...                                                NaN
-14     0.175428  ...  ["236a587ec10bc7c6f66e35aa76a54953eba590f6", "...
-15     0.320579  ...                                                NaN
-16     0.486123  ...                                                NaN
-17     0.016898  ...                                                NaN
-18     0.135903  ...                                                NaN
-19     0.000162  ...                                                NaN
-20     0.011632  ...                                                NaN
-21     0.083900  ...                                                NaN
-22     0.418546  ...  ["a16ba6e7d470a31069c2057cb1e8e10e2aa6b03c", "...
-23     0.905171  ...                                                NaN
-24     1.331655  ...                                                NaN
-25     0.009554  ...                                                NaN
-26     0.077014  ...                                                NaN
-27     0.145366  ...  ["7e2d18176628bbf28ee54005de3f5ae35e1ba9c7", "...
-28     0.863885  ...                                                NaN
-29     1.171331  ...                                                NaN
-..          ...  ...                                                ...
-353    2.157712  ...       ["c8ae4d5529fe2ab35069830c25dcba9e4c2002a2"]
-354   14.020845  ...       ["c8ae4d5529fe2ab35069830c25dcba9e4c2002a2"]
-355         NaN  ...                                                NaN
-356         NaN  ...                                                NaN
-357   25.256327  ...                                                NaN
-358  110.286698  ...                                                NaN
-359   85.053499  ...                                                NaN
-360   95.050826  ...                                                NaN
-361   22.748831  ...                                                NaN
-362   34.151389  ...                                                NaN
-363  170.059259  ...                                                NaN
-364    0.843750  ...                                                NaN
-365    7.760134  ...                                                NaN
-366    0.112928  ...                                                NaN
-367    0.800556  ...                                                NaN
-368    2.975012  ...                                                NaN
-369    2.745208  ...                                                NaN
-370    6.007762  ...                                                NaN
-371    0.020185  ...                                                NaN
-372  213.952037  ...                                                NaN
-373  109.570642  ...                                                NaN
-374    0.040463  ...                                                NaN
-375         NaN  ...                                                NaN
-376  181.302419  ...                                                NaN
-377  266.026053  ...                                                NaN
-378         NaN  ...                                                NaN
-379         NaN  ...                                                NaN
-380    4.770775  ...                                                NaN
-381         NaN  ...                                                NaN
-382   15.365637  ...                                                NaN
-
-[383 rows x 25 columns]
-['af5efdad02535193d4e3e752f0ffd70495455a47', '35a7ecaf60aeb1dae62e6c14ae1a0f3fcc75708a', ['main.AndroidManifest', 'main.java.com.github.ksoichiro.android.observablescrollview.samples.ActionBarControlScrollViewActivity', 'main.res.layout.activity_actionbarcontrolscrollview', 'main.res.values.strings', 'main.java.com.github.ksoichiro.android.observablescrollview.ObservableScrollView']]
-pygit2.Repository('/home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Android-ObservableScrollView/.git/')
-5
-0 ('af5efdad02535193d4e3e752f0ffd70495455a47', '35a7ecaf60aeb1dae62e6c14ae1a0f3fcc75708a')
-und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Android-ObservableScrollView analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Android-ObservableScrollView_buggy.udb
-und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Android-ObservableScrollView analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Android-ObservableScrollView_clean.udb
-1 ('bc3320c709e58c9013effd937357085ed95b6c55', 'af5efdad02535193d4e3e752f0ffd70495455a47')
-und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Android-ObservableScrollView analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Android-ObservableScrollView_buggy.udb
-und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Android-ObservableScrollView analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Android-ObservableScrollView_clean.udb
-2 ('672cf5886b05110f84647f4fe75c21a46ebfc49c', '867d90b3d6ec95f7b348fb6a6dc186b25add3792')
-und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Android-ObservableScrollView analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Android-ObservableScrollView_buggy.udb
-und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Android-ObservableScrollView analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Android-ObservableScrollView_clean.udb
-3 ('fa9009fe1b754c1f1963a6ba8b4414b0b968d887', '672cf5886b05110f84647f4fe75c21a46ebfc49c')
-und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Android-ObservableScrollView analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Android-ObservableScrollView_buggy.udb
-und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Android-ObservableScrollView analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Android-ObservableScrollView_clean.udb
-4 ('1b847101fa5d0acf880fb640094662b725aca838', 'fa9009fe1b754c1f1963a6ba8b4414b0b968d887')
-und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Android-ObservableScrollView analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Android-ObservableScrollView_buggy.udb
-und create -languages Java add /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Android-ObservableScrollView analyze /home/smajumd3/Data_Miner/github/API_V3/.temp/udb/Android-ObservableScrollView_clean.udb

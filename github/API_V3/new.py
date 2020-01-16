@@ -31,7 +31,8 @@ if __name__ == "__main__":
     data_path = os.getcwd() + '\\Test_projects.csv'
     code_path = os.getcwd()
   project_list = pd.read_csv(data_path)
-  project_list = project_list
+  # project_list = project_list[project_list['lang'] == 'C++']
+  # project_list = project_list[0:1]
   project_list.reset_index(drop=True,inplace=True)
   code_path = os.getcwd()
   #project_list = project_list[0:1]

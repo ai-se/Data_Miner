@@ -81,8 +81,6 @@ class MetricsGetter(object):
             self.file_path = up(os.getcwd()) + '\\data\\commit_guru\\' + self.repo_name + '.pkl'
             #self.committed_file = up(os.getcwd()) + '\\data\\committed_files\\' + self.repo_name + '_committed_file.pkl'
         self.buggy_clean_pairs = self.read_commits()
-        print(self.buggy_clean_pairs[0])
-        self.buggy_clean_pairs = self.buggy_clean_pairs[0:5]
         # Reference current directory, so we can go back after we are done.
         self.cwd = Path(self.root_dir)
         self.cores = cpu_count()
@@ -191,16 +189,25 @@ class MetricsGetter(object):
 
         # Generate udb file
         if self.repo_lang == "fortran":
-            cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages Fortran add {} analyze {}".format(
+            cmd = "und create -languages Fortran add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         elif self.repo_lang == "python":
-            cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages python add {} analyze {}".format(
+            cmd = "und create -languages python add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         elif self.repo_lang == "C":
-            cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages C++ add {} analyze {}".format(
+            cmd = "und create -languages C++ add {} analyze {}".format(
+                str(self.repo_path), str(und_file))
+        elif self.repo_lang == "C++":
+            cmd = "und create -languages C++ add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         elif self.repo_lang == "Java":
             cmd = "und create -languages Java add {} analyze {}".format(
+                str(self.repo_path), str(und_file))
+        elif self.repo_lang == "C#":
+            cmd = "und create -languages C# add {} analyze {}".format(
+                str(self.repo_path), str(und_file))
+        elif self.repo_lang == "JavaScript":
+            cmd = "und create -languages JavaScript add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         out, err = self._os_cmd(cmd)
 
@@ -230,16 +237,25 @@ class MetricsGetter(object):
 
         # Generate udb file
         if self.repo_lang == "fortran":
-            cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages Fortran add {} analyze {}".format(
+            cmd = "und create -languages Fortran add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         elif self.repo_lang == "python":
-            cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages python add {} analyze {}".format(
+            cmd = "und create -languages python add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         elif self.repo_lang == "C":
-            cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages C++ add {} analyze {}".format(
+            cmd = "und create -languages C++ add {} analyze {}".format(
+                str(self.repo_path), str(und_file))
+        elif self.repo_lang == "C++":
+            cmd = "und create -languages C++ add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         elif self.repo_lang == "Java":
             cmd = "und create -languages Java add {} analyze {}".format(
+                str(self.repo_path), str(und_file))
+        elif self.repo_lang == "C#":
+            cmd = "und create -languages C# add {} analyze {}".format(
+                str(self.repo_path), str(und_file))
+        elif self.repo_lang == "JavaScript":
+            cmd = "und create -languages JavaScript add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         out, err = self._os_cmd(cmd)
         #print("runnung command")

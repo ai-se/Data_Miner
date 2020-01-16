@@ -120,8 +120,9 @@ class MetricsGetter(object):
                         continue
                     committed_files.append(row.split('src/')[1].replace('/','.').rsplit('.',1)[0])
                 commits.append([bug_existing_commit,bug_fixing_commit,committed_files])
-            except:
-              continue
+            except Exception as e:
+                print(e)
+                continue
         return commits
 
     def get_defective_pair_metrics(self):
@@ -145,8 +146,8 @@ class MetricsGetter(object):
                 buggy_hash = self.buggy_clean_pairs[i][0]
                 clean_hash = self.buggy_clean_pairs[i][1]
                 files_changed = self.buggy_clean_pairs[i][2]
-                if len((files_changed)) == 0:
-                    continue
+                # if len((files_changed)) == 0:
+                #     continue
                 print(i,self.repo_name,(buggy_hash, clean_hash))
                 # Go the the cloned project path
                 buggy_und_file = self.udb_path.joinpath("{}_{}.udb".format(self.repo_name+buggy_hash, "buggy"))
@@ -155,7 +156,7 @@ class MetricsGetter(object):
                 #print("Files",set(files_changed))
                 for file in db_buggy.ents("Class"):
                     # print directory name
-                    #print(file,file.longname(), file.kind())
+                    print(file,file.longname(), file.kind())
                     r = re.compile(str(file.longname()))
                     # print(file.longname())
                     newlist = list(filter(r.search, list(set(files_changed))))
