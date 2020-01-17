@@ -156,7 +156,7 @@ class MetricsGetter(object):
                 #print("Files",set(files_changed))
                 for file in db_buggy.ents("Class"):
                     # print directory name
-                    print(file,file.longname(), file.kind())
+                    # print(file,file.longname(), file.kind())
                     r = re.compile(str(file.longname()))
                     # print(file.longname())
                     newlist = list(filter(r.search, list(set(files_changed))))
