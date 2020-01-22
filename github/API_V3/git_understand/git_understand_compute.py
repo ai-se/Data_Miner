@@ -112,13 +112,21 @@ class MetricsGetter(object):
                 files_changed = files_changed.split(',')
                 files_changed = list(filter(('CAS_DELIMITER').__ne__, files_changed))
                 self.commits.append(bug_existing_commit)
+                language = "Python"
                 if bug_fixing_commit == None:
                     print(df.iloc[i,0])
                     continue
                 for row in files_changed:
-                    if len(row.split('src/')) == 1:
-                        continue
-                    committed_files.append(row.split('src/')[1].replace('/','.').rsplit('.',1)[0])
+                    if language == "Java" or language == "C++" or language "C":
+                        if len(row.split('src/')) == 1:
+                            continue
+                        committed_files.append(row.split('src/')[1].replace('/','.').rsplit('.',1)[0])
+                    elif language == "Python" :
+                        committed_files.append(row['file_path'].replace('/', '.').rsplit('.', 1)[0])
+                    elif language == "Fortran" :
+                        committed_files.append(row['file_path'].replace('/', '.').rsplit('.', 1)[0])
+                    else:
+                        print("Language under construction")
                 commits.append([bug_existing_commit,bug_fixing_commit,committed_files])
             except Exception as e:
                 print(e)
@@ -157,10 +165,31 @@ class MetricsGetter(object):
                 for file in db_buggy.ents("Class"):
                     # print directory name
                     # print(file,file.longname(), file.kind())
-                    r = re.compile(str(file.longname()))
-                    # print(file.longname())
-                    newlist = list(filter(r.search, list(set(files_changed))))
-                    #print(newlist)
+                    language = "Python"
+                    if language == "Java" or language == "C++" or language "C":
+                        r = re.compile(str(file.longname()))
+                        newlist = list(filter(r.search, list(set(files_changed))))
+                    elif language == "Python" :
+                        if file.library() == "Standard":
+                            continue
+                        temp_str = file.longname().split(".")[-2]
+                        r = re.compile(str(temp_str))
+                        newlist = list(filter(r.search, list(set(files_changed))))
+                    elif language == "Fortran" :
+                        if file.library() == "Standard":
+                            continue
+                        t3 = file.longname()
+                        t7 = file.refs()
+                        t8 = file.ref()
+                        comp = str(file).split(".")[0]
+                        # print("-------Here is the library : ",file.library())
+                        # r = re.compile(str(file.longname()))
+                        # temp_str = file.longname().split(".")[-2]
+                        r = re.compile(comp)
+                        newlist = list(filter(r.search, list(set(files_changed))))
+                    else:
+                        newlist = []
+                        print("Language under construction")
                     if len(newlist) > 0:
                         metrics = file.metric(file.metrics())
                         metrics["commit_hash"] = buggy_hash
@@ -181,9 +210,31 @@ class MetricsGetter(object):
                 db_clean = und.open(str(clean_und_file))
                 for file in db_clean.ents("class"):
                     # print directory name
-                    r = re.compile(str(file.longname()))
-                    newlist = list(filter(r.search, files_changed))
-                    #if str(file) in files_changed:
+                    language = "Python"
+                    if language == "Java" or language == "C++" or language "C":
+                        r = re.compile(str(file.longname()))
+                        newlist = list(filter(r.search, list(set(files_changed))))
+                    elif language == "Python" :
+                        if file.library() == "Standard":
+                            continue
+                        temp_str = file.longname().split(".")[-2]
+                        r = re.compile(str(temp_str))
+                        newlist = list(filter(r.search, list(set(files_changed))))
+                    elif language == "Fortran" :
+                        if file.library() == "Standard":
+                            continue
+                        t3 = file.longname()
+                        t7 = file.refs()
+                        t8 = file.ref()
+                        comp = str(file).split(".")[0]
+                        # print("-------Here is the library : ",file.library())
+                        # r = re.compile(str(file.longname()))
+                        # temp_str = file.longname().split(".")[-2]
+                        r = re.compile(comp)
+                        newlist = list(filter(r.search, list(set(files_changed))))
+                    else:
+                        newlist = []
+                        print("Language under construction")
                     if len(newlist) > 0:
                         metrics = file.metric(file.metrics())
                         #print(metrics)
