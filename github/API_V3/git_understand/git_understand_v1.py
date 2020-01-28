@@ -239,7 +239,7 @@ class MetricsGetter(object):
         if self.repo_lang == "fortran":
             cmd = "und create -languages Fortran add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
-        elif self.repo_lang == "python":
+        elif self.repo_lang == "Python":
             cmd = "und create -languages python add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         elif self.repo_lang == "C":

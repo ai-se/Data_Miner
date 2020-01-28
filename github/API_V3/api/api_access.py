@@ -36,6 +36,13 @@ class git_api_access(object):
     def create_base_url(self, url_type):
         self.url_type = url_type
         self.base_url = self.api_base_url + '/repos/' + self.repo_owner + '/' + self.repo_name + '/' +  self.url_type
+
+    def create_search_url(self):
+        return self.api_base_url + '/search/repositories?'
+
+    def create_search_query(self,language,forks=0,stars=0):
+        query = 'q=language:' + language + '+forks:' + str(forks) + '..' + str(50+forks)# + '+stars:>=' + str(stars)
+        return self.create_search_url() + query
         
     def create_advanced_url(self, url_details = ''):
         if url_details != '':
@@ -87,6 +94,33 @@ class git_api_access(object):
                 release_details.append([release_id,author_logon,tag_name,created_at,description])
         return release_details
     
+
+    def get_tagged_release(self,url_type,url_details = ''):
+        self.create_base_url(url_type)
+        self.create_advanced_url(url_details)
+        x = [0]*100
+        page_number = 1
+        release_details = []
+        while len(x) >= 100 and page_number<=400:
+            paged_url = self.advanced_url + '?page=' + str(page_number) + '&per_page=100'
+            page_number += 1
+            print(paged_url)
+            res = self.client.get(paged_url)
+            x = json.loads(res.content)
+            print(len(x))
+            for i in range(len(x)):
+                sha_url = x[i]['commit']['url']
+                print(sha_url)
+                tag_data = self.client.get(sha_url)
+                tag_data = json.loads(tag_data.content)
+                release_id = tag_data['node_id']
+                author_logon = tag_data['commit']['author']['email']
+                tag_name = x[i]['name']
+                tag_message = tag_data['commit']['message']
+                created_at =  tag_data['commit']['author']['date'].split('T')[0]
+                description = "None"
+                release_details.append([release_id,author_logon,tag_name,created_at,description])
+        return release_details
     
     def set_uniq_users(self,comment_details):
         comment_df = pd.DataFrame(comment_details, columns = ['issue_number','user_logon','author_association','body','created_at'])
@@ -167,5 +201,44 @@ class git_api_access(object):
                     print('Some Issue in issues')
                     continue
         return event_details
-    
+
+    def get_projects(self,language,forks=0,stars=0):
+        y = [0]*100
+        page_number = 1
+        projects = []
+        while(forks <= 5000):
+            url = self.create_search_query(language,forks,stars)
+            page_number = 1
+            print('url creation',url)
+            while page_number<=34:
+                try:
+                    paged_url = url + '&page=' + str(page_number)
+                    page_number += 1
+                    print("This is paged:",paged_url)
+                    res = self.client.get(paged_url)
+                    x = json.loads(res.content)
+                    y = x['items']
+                    print(len(y))
+                    for i in range(len(y)):
+                        try:
+                            name = y[i]['name']
+                            project_url = y[i]['html_url']
+                            description = y[i]['description']
+                            size = y[i]['size']
+                            watchers_count = y[i]['watchers_count']
+                            forks_count = y[i]['forks_count']
+                            open_issues = y[i]['open_issues']
+                            owner = y[i]['owner']['login']
+                            projects.append([name,owner,project_url,description,size,watchers_count,forks_count,open_issues])
+                        except Exception as e:
+                            print('Some Issue in issues',e)
+                            continue
+                except Exception as e:
+                    print('Some Issue in issues',e)
+                    continue
+                if len(y) < 30:
+                    break
+            print('updating fork')
+            forks += 50
+        return projects
     

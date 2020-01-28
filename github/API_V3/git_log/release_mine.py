@@ -37,7 +37,7 @@ class git2data(object):
         
     def get_api_data(self):
         # self.git_issues = self.git_client.get_issues(url_type = 'issues',url_details = '')
-        self.git_releases = self.git_client.get_releases(url_type = 'releases',url_details = '')
+        self.git_releases = self.git_client.get_tagged_release(url_type = 'tags',url_details = '')
         # self.git_issue_events = self.git_client.get_events(url_type = 'issues',url_details = 'events')
         # self.git_issue_comments = self.git_client.get_comments(url_type = 'issues',url_details = 'comments')
         # self.user_map = self.git_client.get_users()
@@ -50,3 +50,4 @@ class git2data(object):
         release_df.to_pickle(self.data_path + '/release/' + self.repo_name + '_release.pkl')
         #self.git_repo.repo_remove()
         #print(self.repo_name,"Repo Done")
+        return release_df.shape[0]
