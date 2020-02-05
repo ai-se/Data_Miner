@@ -1,0 +1,1669 @@
+2020-02-04 11:56:05 INFO: Adding repo tailor to work queue for ingesting
+2020-02-04 11:56:05 INFO: A worker is starting scan repository: tailor
+2020-02-04 11:56:05 INFO: Git cloning repo: tailor
+2020-02-04 11:56:05 INFO: Adding repo mvisc to work queue for ingesting
+2020-02-04 11:56:05 INFO: Adding repo IntelliJ-Key-Promoter-X to work queue for ingesting
+2020-02-04 11:56:05 INFO: A worker is starting scan repository: mvisc
+2020-02-04 11:56:05 INFO: Adding repo react-native-node to work queue for ingesting
+2020-02-04 11:56:05 INFO: Adding repo neurolab-desktop to work queue for ingesting
+2020-02-04 11:56:05 INFO: Adding repo bodyapps-android to work queue for ingesting
+2020-02-04 11:56:05 INFO: Adding repo loklak_jlib_api to work queue for ingesting
+2020-02-04 11:56:05 INFO: Adding repo phimpme-android-v1 to work queue for ingesting
+2020-02-04 11:56:05 INFO: A worker is starting scan repository: IntelliJ-Key-Promoter-X
+2020-02-04 11:56:05 INFO: Adding repo ots15-companion to work queue for ingesting
+2020-02-04 11:56:05 INFO: Adding repo susi_android_v1 to work queue for ingesting
+2020-02-04 11:56:05 INFO: Adding repo Android-Resource-Usage-Count to work queue for ingesting
+2020-02-04 11:56:05 INFO: A worker is starting scan repository: react-native-node
+2020-02-04 11:56:05 INFO: A worker is starting scan repository: neurolab-desktop
+2020-02-04 11:56:05 INFO: A worker is starting scan repository: bodyapps-android
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-02-04 11:56:05 INFO: A worker is starting scan repository: loklak_jlib_api
+2020-02-04 11:56:05 INFO: A worker is starting scan repository: phimpme-android-v1
+2020-02-04 11:56:05 INFO: A worker is starting scan repository: ots15-companion
+2020-02-04 11:56:05 INFO: Git cloning repo: IntelliJ-Key-Promoter-X
+2020-02-04 11:56:05 INFO: A worker is starting scan repository: susi_android_v1
+2020-02-04 11:56:05 INFO: A worker is starting scan repository: Android-Resource-Usage-Count
+2020-02-04 11:56:05 INFO: Git cloning repo: neurolab-desktop
+2020-02-04 11:56:05 INFO: Git cloning repo: bodyapps-android
+2020-02-04 11:56:05 INFO: Git cloning repo: loklak_jlib_api
+2020-02-04 11:56:05 INFO: Git cloning repo: phimpme-android-v1
+2020-02-04 11:56:05 INFO: Git cloning repo: ots15-companion
+2020-02-04 11:56:05 INFO: Git cloning repo: susi_android_v1
+2020-02-04 11:56:05 INFO: Git cloning repo: Android-Resource-Usage-Count
+2020-02-04 11:56:05 INFO: Pulling latest changes from repo: mvisc
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+HEAD is now at 63423a5 Create FUNDING.yml
+2020-02-04 11:56:05 INFO: Pulling latest changes from repo: react-native-node
+2020-02-04 11:56:06 INFO: Done fetching.
+2020-02-04 11:56:06 INFO: Getting/parsing git commits: react-native-node
+2020-02-04 11:56:06 INFO: Done fetching.
+2020-02-04 11:56:06 INFO: Getting/parsing git commits: mvisc
+2020-02-04 11:56:06 INFO: Done getting/parsing git commits.
+2020-02-04 11:56:06 INFO: Saving commits to the csv...
+2020-02-04 11:56:06 INFO: Done saving commits to the csv.
+2020-02-04 11:56:06 INFO: A worker finished ingesting repo mvisc
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2657, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 132, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1601, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1608, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'contains_bug'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/smajumd3/anaconda3/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "run.py", line 44, in run
+    **self._kwargs)
+  File "run.py", line 75, in mine
+    get_matrix = git_understand.MetricsGetter(git_url,repo_name,repo_lang,code_path)
+  File "/home/smajumd3/Data_Miner/github/API_V3/git_understand/git_understand_v1.py", line 83, in __init__
+    self.buggy_clean_pairs = self.read_commits()
+  File "/home/smajumd3/Data_Miner/github/API_V3/git_understand/git_understand_v1.py", line 118, in read_commits
+    df = df[df['contains_bug'] == True]
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/frame.py", line 2927, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2659, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 132, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1601, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1608, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'contains_bug'
+
+2020-02-04 11:56:06 INFO: Done getting/parsing git commits.
+2020-02-04 11:56:06 INFO: Saving commits to the csv...
+2020-02-04 11:56:06 INFO: Done saving commits to the csv.
+2020-02-04 11:56:06 INFO: A worker finished ingesting repo react-native-node
+2020-02-04 11:56:06 INFO: Done cloning.
+2020-02-04 11:56:06 INFO: Getting/parsing git commits: Android-Resource-Usage-Count
+2020-02-04 11:56:06 INFO: Done getting/parsing git commits.
+2020-02-04 11:56:06 INFO: Saving commits to the csv...
+2020-02-04 11:56:06 INFO: Done saving commits to the csv.
+2020-02-04 11:56:06 INFO: A worker finished ingesting repo Android-Resource-Usage-Count
+2020-02-04 11:56:06 INFO: Adding repo Android-Resource-Usage-Count to work queue for analyzing.
+2020-02-04 11:56:06 INFO: Worker analyzing repository  Android-Resource-Usage-Count
+2020-02-04 11:56:06 INFO: Done cloning.
+2020-02-04 11:56:06 INFO: Getting/parsing git commits: loklak_jlib_api
+2020-02-04 11:56:06 INFO: Linking 0 new corrective commits for repo Android-Resource-Usage-Count
+2020-02-04 11:56:06 INFO: Done cloning.
+2020-02-04 11:56:06 INFO: Getting/parsing git commits: susi_android_v1
+2020-02-04 11:56:06 INFO: Linking done for repoAndroid-Resource-Usage-Count
+Exception in thread Thread-11:
+Traceback (most recent call last):
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2657, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 132, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1601, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1608, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'contains_bug'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/smajumd3/anaconda3/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "run.py", line 44, in run
+    **self._kwargs)
+  File "run.py", line 75, in mine
+    get_matrix = git_understand.MetricsGetter(git_url,repo_name,repo_lang,code_path)
+  File "/home/smajumd3/Data_Miner/github/API_V3/git_understand/git_understand_v1.py", line 83, in __init__
+    self.buggy_clean_pairs = self.read_commits()
+  File "/home/smajumd3/Data_Miner/github/API_V3/git_understand/git_understand_v1.py", line 118, in read_commits
+    df = df[df['contains_bug'] == True]
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/frame.py", line 2927, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2659, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 132, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1601, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1608, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'contains_bug'
+
+2020-02-04 11:56:06 INFO: Done getting/parsing git commits.
+2020-02-04 11:56:06 INFO: Saving commits to the csv...
+2020-02-04 11:56:06 INFO: Done cloning.
+2020-02-04 11:56:06 INFO: Getting/parsing git commits: IntelliJ-Key-Promoter-X
+2020-02-04 11:56:06 INFO: Done saving commits to the csv.
+2020-02-04 11:56:06 INFO: A worker finished ingesting repo loklak_jlib_api
+2020-02-04 11:56:06 INFO: Adding repo loklak_jlib_api to work queue for analyzing.
+2020-02-04 11:56:06 INFO: Worker analyzing repository  loklak_jlib_api
+2020-02-04 11:56:06 INFO: Done getting/parsing git commits.
+2020-02-04 11:56:06 INFO: Saving commits to the csv...
+2020-02-04 11:56:06 INFO: Linking 3 new corrective commits for repo loklak_jlib_api
+2020-02-04 11:56:06 INFO: Done saving commits to the csv.
+2020-02-04 11:56:06 INFO: A worker finished ingesting repo susi_android_v1
+2020-02-04 11:56:06 INFO: Adding repo susi_android_v1 to work queue for analyzing.
+2020-02-04 11:56:06 INFO: Worker analyzing repository  susi_android_v1
+2020-02-04 11:56:06 INFO: Linking 4 new corrective commits for repo susi_android_v1
+2020-02-04 11:56:07 INFO: Done getting/parsing git commits.
+2020-02-04 11:56:07 INFO: Saving commits to the csv...
+2020-02-04 11:56:07 INFO: Linkage for commit 0b2cbe42b6e91e97975e61fdef496c979f7635f3
+2020-02-04 11:56:07 INFO: Linkage for commit c0b18e0b9406382b4e9817b1b4241c978c638645
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+2020-02-04 11:56:07 INFO: Done saving commits to the csv.
+2020-02-04 11:56:07 INFO: A worker finished ingesting repo IntelliJ-Key-Promoter-X
+2020-02-04 11:56:07 INFO: Adding repo IntelliJ-Key-Promoter-X to work queue for analyzing.
+2020-02-04 11:56:07 INFO: Worker analyzing repository  IntelliJ-Key-Promoter-X
+2020-02-04 11:56:07 INFO: Linking 26 new corrective commits for repo IntelliJ-Key-Promoter-X
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:07 INFO: Linkage for commit f3414bbd23ec36e5dd9f64b5799fb266b97c7783
+2020-02-04 11:56:07 INFO: Done cloning.
+2020-02-04 11:56:07 INFO: Getting/parsing git commits: bodyapps-android
+2020-02-04 11:56:07 INFO: Linkage for commit 232224f50845f4a4f057f6f570c7b830eafa7caf
+2020-02-04 11:56:07 INFO: Done cloning.
+2020-02-04 11:56:07 INFO: Getting/parsing git commits: ots15-companion
+2020-02-04 11:56:07 INFO: Done cloning.
+2020-02-04 11:56:07 INFO: Getting/parsing git commits: tailor
+2020-02-04 11:56:07 INFO: Linkage for commit 394744f96435c9545ce3afdf34e3cdea1a231128
+2020-02-04 11:56:07 INFO: Done getting/parsing git commits.
+2020-02-04 11:56:07 INFO: Saving commits to the csv...
+2020-02-04 11:56:07 INFO: Done getting/parsing git commits.
+2020-02-04 11:56:07 INFO: Linkage for commit c26f8b2a29f0fe6a31cac263d12a874b2c1ff6b9
+2020-02-04 11:56:08 INFO: Linkage for commit d5691fec24295a0b362a354aeefd1e88ba25d519
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:08 INFO: Done saving commits to the csv.
+2020-02-04 11:56:08 INFO: Saving commits to the csv...
+2020-02-04 11:56:08 INFO: A worker finished ingesting repo ots15-companion
+2020-02-04 11:56:08 INFO: Done saving commits to the csv.
+2020-02-04 11:56:08 INFO: Adding repo ots15-companion to work queue for analyzing.
+2020-02-04 11:56:08 INFO: A worker finished ingesting repo bodyapps-android
+2020-02-04 11:56:08 INFO: Worker analyzing repository  ots15-companion
+2020-02-04 11:56:08 INFO: Linkage for commit fcb9a7b23cefd6ed20854c6a8a8870db85c63a2f
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+2020-02-04 11:56:08 INFO: Adding repo bodyapps-android to work queue for analyzing.
+2020-02-04 11:56:08 INFO: Worker analyzing repository  bodyapps-android
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:08 INFO: Linkage for commit 78bf6cee01e120a23037330d2ed4e2eda982cc46
+2020-02-04 11:56:08 INFO: Linking 7 new corrective commits for repo ots15-companion
+2020-02-04 11:56:08 INFO: Done cloning.
+2020-02-04 11:56:08 INFO: Getting/parsing git commits: neurolab-desktop
+2020-02-04 11:56:08 INFO: Linking 9 new corrective commits for repo bodyapps-android
+2020-02-04 11:56:08 INFO: Linkage for commit 7630e6bd77c61f5be2f2f9e7cb10b313100c0313
+2020-02-04 11:56:08 INFO: Linkage for commit d879cd419bb01eeede025954e8596ef071f732c2
+2020-02-04 11:56:09 INFO: Linkage for commit 08eb1647c9a9c5332157baa591033917a15d6852
+2020-02-04 11:56:09 INFO: Linkage for commit e1743f11853af5e36bb57be0e784f8b7b21840c2
+2020-02-04 11:56:09 INFO: Done getting/parsing git commits.
+2020-02-04 11:56:09 INFO: Saving commits to the csv...
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+2020-02-04 11:56:09 INFO: Linkage for commit 7c1109282e376beff7e147330e07e7232afc9265
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:09 INFO: Done saving commits to the csv.
+2020-02-04 11:56:09 INFO: A worker finished ingesting repo neurolab-desktop
+2020-02-04 11:56:09 INFO: Adding repo neurolab-desktop to work queue for analyzing.
+2020-02-04 11:56:09 INFO: Worker analyzing repository  neurolab-desktop
+2020-02-04 11:56:10 INFO: Linking 2 new corrective commits for repo neurolab-desktop
+2020-02-04 11:56:10 INFO: Done getting/parsing git commits.
+2020-02-04 11:56:10 INFO: Linkage for commit 89b36a4115a12800f96dee84c2107d346fe8bc0b
+2020-02-04 11:56:10 INFO: Linkage for commit 976b26d8dd231071411f300e852ed906f0232855
+2020-02-04 11:56:10 INFO: Saving commits to the csv...
+2020-02-04 11:56:10 INFO: Linkage for commit a07638025053fce4de4d37d672f366a72e0d4066
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:10 ERROR: Got an exception linking bug fixing changes to bug inducing changes for repo susi_android_v1
+Traceback (most recent call last):
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 54, in analyzeRepo
+    final_commits.to_csv(up(up(up(up(up(up(os.getcwd())))))) + '/data/commit_guru/' + repo_name + '.csv',index=False)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py", line 3020, in to_csv
+    formatter.save()
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 157, in save
+    compression=self.compression)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/common.py", line 424, in _get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: '//data/commit_guru/susi_android_v1.csv'
+2020-02-04 11:56:10 INFO: Done saving commits to the csv.
+2020-02-04 11:56:11 INFO: Linkage for commit dd0b4f71afa0230747e91c7632e1cbeb607ef188
+2020-02-04 11:56:11 INFO: Linkage for commit fc0a092c6e1e293c7eb93a40b5a62fd0515e7103
+2020-02-04 11:56:11 INFO: A worker finished ingesting repo tailor
+Exception in thread Thread-10:
+Traceback (most recent call last):
+  File "/home/smajumd3/anaconda3/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "run.py", line 44, in run
+    **self._kwargs)
+  File "run.py", line 72, in mine
+    cas_manager.run()
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 67, in run
+    self.checkAnalyzation()
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 60, in checkAnalyzation
+    analyze(repo)
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 31, in analyze
+    analyzeRepo(repo_id)
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 54, in analyzeRepo
+    final_commits.to_csv(up(up(up(up(up(up(os.getcwd())))))) + '/data/commit_guru/' + repo_name + '.csv',index=False)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py", line 3020, in to_csv
+    formatter.save()
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 157, in save
+    compression=self.compression)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/common.py", line 424, in _get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: '//data/commit_guru/susi_android_v1.csv'
+
+2020-02-04 11:56:11 INFO: Done cloning.
+2020-02-04 11:56:11 INFO: Getting/parsing git commits: phimpme-android-v1
+2020-02-04 11:56:11 INFO: Linkage for commit c75c15ad71c951657ad1e08701a80bc118ffdbea
+2020-02-04 11:56:11 INFO: Linkage for commit 3ebff23343e83aa51e48eb0b7eae0b29290f4d53
+2020-02-04 11:56:11 INFO: Linkage for commit bdcf7a8b13a072b70fe91ca870a83731e8bf44ed
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:12 INFO: Linkage for commit 25246ca538b5428fc2b4e5a087f6b69cb7518a5b
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:12 INFO: Linkage for commit 49019a0b4d6482ecf5345eb471a691b30025ca14
+2020-02-04 11:56:12 ERROR: Got an exception linking bug fixing changes to bug inducing changes for repo neurolab-desktop
+Traceback (most recent call last):
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 54, in analyzeRepo
+    final_commits.to_csv(up(up(up(up(up(up(os.getcwd())))))) + '/data/commit_guru/' + repo_name + '.csv',index=False)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py", line 3020, in to_csv
+    formatter.save()
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 157, in save
+    compression=self.compression)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/common.py", line 424, in _get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: '//data/commit_guru/neurolab-desktop.csv'
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/home/smajumd3/anaconda3/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "run.py", line 44, in run
+    **self._kwargs)
+  File "run.py", line 72, in mine
+    cas_manager.run()
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 67, in run
+    self.checkAnalyzation()
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 60, in checkAnalyzation
+    analyze(repo)
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 31, in analyze
+    analyzeRepo(repo_id)
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 54, in analyzeRepo
+    final_commits.to_csv(up(up(up(up(up(up(os.getcwd())))))) + '/data/commit_guru/' + repo_name + '.csv',index=False)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py", line 3020, in to_csv
+    formatter.save()
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 157, in save
+    compression=self.compression)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/common.py", line 424, in _get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: '//data/commit_guru/neurolab-desktop.csv'
+
+2020-02-04 11:56:13 INFO: Linkage for commit 2ccfa89335957ad82767ce5913b9d259590ce079
+2020-02-04 11:56:13 INFO: Done getting/parsing git commits.
+2020-02-04 11:56:13 INFO: Saving commits to the csv...
+2020-02-04 11:56:13 INFO: Linkage for commit 29838e2cbdf1bfef691faa740949e44cbbf77b3d
+2020-02-04 11:56:13 INFO: Done saving commits to the csv.
+2020-02-04 11:56:13 INFO: A worker finished ingesting repo phimpme-android-v1
+2020-02-04 11:56:13 INFO: Adding repo phimpme-android-v1 to work queue for analyzing.
+2020-02-04 11:56:13 INFO: Worker analyzing repository  phimpme-android-v1
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+2020-02-04 11:56:13 INFO: Linking 19 new corrective commits for repo phimpme-android-v1
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:13 INFO: Linkage for commit 34462ff67118a38cbeab5448081fb8ee6dba278d
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:13 INFO: Linkage for commit 1868968c324f6bb8cddcc20b7361a864f5367d38
+2020-02-04 11:56:14 INFO: Linkage for commit 5be96f006a9daba7433682bb4ea1851f5b0b8689
+2020-02-04 11:56:14 INFO: Linkage for commit b201d038c3c2c6a1e608da22cdaeb2bb57595a14
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:14 INFO: Linkage for commit f4e4f10f34bd70ac9e6bee5f0b0f77d2e592f0f2
+2020-02-04 11:56:14 INFO: Linkage for commit a6ef395b0fa1bbbf9749bd5d5bbbc076b7098aa8
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:14 INFO: Linkage for commit f3684e26acdf87589e23dcf61cfcd4bd92099780
+2020-02-04 11:56:15 INFO: Linkage for commit a901302a2cc2d1adf2598e3a8aeafa36c2cf5dec
+2020-02-04 11:56:15 INFO: Linkage for commit 7ca48320fcf5b5d6d29dc0955b9764b631279ae4
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:15 INFO: Linkage for commit 71c5320079afaeb11f4f85cf753e57238cd373d6
+2020-02-04 11:56:15 INFO: Linkage for commit 74e48fc1f0ac34dc71e5bd21da44bcac7072bd1a
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:16 INFO: Linkage for commit 175d429296699b44340d604dc666b271f496bf58
+16
+                 repo_name repo_owner  ... defective done
+0  IntelliJ-Key-Promoter-X  halirutan  ...        57    0
+
+[1 rows x 10 columns]
+  repo_name repo_owner  ... defective done
+0    tailor  sleekbyte  ...       101    0
+
+[1 rows x 10 columns]
+  repo_name repo_owner  ... defective done
+0     mvisc   fossasia  ...       119    0
+
+[1 rows x 10 columns]
+          repo_name repo_owner  ... defective done
+0  neurolab-desktop   fossasia  ...       124    0
+
+[1 rows x 10 columns]
+           repo_name repo_owner  ... defective done
+0  react-native-node     staltz  ...       135    0
+
+[1 rows x 10 columns]
+          repo_name  repo_owner  ... defective done
+0  bodyapps-android  fashiontec  ...       428    0
+
+[1 rows x 10 columns]
+         repo_name repo_owner  ... defective done
+0  ots15-companion     OpnTec  ...       668    0
+
+[1 rows x 10 columns]
+         repo_name repo_owner  ... defective done
+0  loklak_jlib_api     loklak  ...       749    0
+
+[1 rows x 10 columns]
+            repo_name repo_owner  ... defective done
+0  phimpme-android-v1    phimpme  ...       833    0
+
+[1 rows x 10 columns]
+         repo_name repo_owner  ... defective done
+0  susi_android_v1     susiai  ...      1014    0
+
+[1 rows x 10 columns]
+                      repo_name repo_owner  ... defective done
+0  Android-Resource-Usage-Count    niorgai  ...      1228    0
+
+[1 rows x 10 columns]
+Empty DataFrame
+Columns: [repo_name, repo_owner, git_url, api_base_url, source_type, access_token, lang, commits, defective, done]
+Index: []
+Empty DataFrame
+Columns: [repo_name, repo_owner, git_url, api_base_url, source_type, access_token, lang, commits, defective, done]
+Index: []
+Empty DataFrame
+Columns: [repo_name, repo_owner, git_url, api_base_url, source_type, access_token, lang, commits, defective, done]
+Index: []
+Empty DataFrame
+Columns: [repo_name, repo_owner, git_url, api_base_url, source_type, access_token, lang, commits, defective, done]
+Index: []
+Empty DataFrame
+Columns: [repo_name, repo_owner, git_url, api_base_url, source_type, access_token, lang, commits, defective, done]
+Index: []
+I am here
+I am here
+   id    name                                  url last_analyzed
+0   1  tailor  https://github.com/sleekbyte/tailor          None
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+file exist
+I am here
+The repo is: tailor
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/tailor
+   id   name                                url last_analyzed
+0   1  mvisc  https://github.com/fossasia/mvisc          None
+I am here
+file exist
+I am here
+I am here
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+I am here
+file exist
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+I am here
+   id             name                                        url last_analyzed
+0   1  loklak_jlib_api  https://github.com/loklak/loklak_jlib_api          None
+I am here
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+I am here
+   id             name                                        url last_analyzed
+0   1  susi_android_v1  https://github.com/susiai/susi_android_v1          None
+   id             name                                        url last_analyzed
+0   1  ots15-companion  https://github.com/OpnTec/ots15-companion          None
+I am here
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+The repo is: mvisc
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/mvisc
+working on pulling
+The repo is: IntelliJ-Key-Promoter-X
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/IntelliJ-Key-Promoter-X
+The repo is: react-native-node
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/react-native-node
+The repo is: neurolab-desktop
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/neurolab-desktop
+working on pulling
+The repo is: bodyapps-android
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/bodyapps-android
+The repo is: loklak_jlib_api
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/loklak_jlib_api
+The repo is: phimpme-android-v1
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/phimpme-android-v1
+The repo is: ots15-companion
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/ots15-companion
+The repo is: susi_android_v1
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/susi_android_v1
+The repo is: Android-Resource-Usage-Count
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Android-Resource-Usage-Count
+/home/smajumd3/Data_Miner/github/API_V3
+root: /home/smajumd3/Data_Miner/github/API_V3
+/home/smajumd3/Data_Miner/github/API_V3
+root: /home/smajumd3/Data_Miner/github/API_V3
+cwd /tmp/smajumd3
+udb at init /tmp/smajumd3/temp/udb/react-native-node
+3
+0 react-native-node ('6647132ebef3e048df583e729e6dc3c53ea284c9', 'ae295be49a294331191531123c103ee46b0ad7c1')
+at und file react-native-node /tmp/smajumd3/temp/udb/react-native-node /tmp/smajumd3/temp/udb/react-native-node/react-native-node6647132ebef3e048df583e729e6dc3c53ea284c9_buggy.udb
+======================== 2020-02-04 11:56:06.782715 2020-01-05 11:56:06.782700
+/home/smajumd3/Data_Miner/github/API_V3
+root: /home/smajumd3/Data_Miner/github/API_V3
+======================== 2020-02-04 11:56:06.896137 2020-01-05 11:56:06.896114
+======================== 2020-02-04 11:56:06.940697 2020-01-05 11:56:06.940683
+======================== 2020-02-04 11:56:07.205165 2020-01-05 11:56:07.205147
+at und file react-native-node /tmp/smajumd3/temp/udb/react-native-node /tmp/smajumd3/temp/udb/react-native-node/react-native-node6647132ebef3e048df583e729e6dc3c53ea284c9_clean.udb
+======================== 2020-02-04 11:56:08.390508 2020-01-05 11:56:08.390486
+======================== 2020-02-04 11:56:08.417843 2020-01-05 11:56:08.417823
+1 react-native-node ('2c864714b1b646dbfb12f4aa03324b683c70a1aa', '5af72c0cba449f7e5db9fe04ed750307c2a47dd5')
+at und file react-native-node /tmp/smajumd3/temp/udb/react-native-node /tmp/smajumd3/temp/udb/react-native-node/react-native-node2c864714b1b646dbfb12f4aa03324b683c70a1aa_buggy.udb
+======================== 2020-02-04 11:56:09.874700 2020-01-05 11:56:09.874677
+/home/smajumd3/Data_Miner/github/API_V3
+root: /home/smajumd3/Data_Miner/github/API_V3
+at und file react-native-node /tmp/smajumd3/temp/udb/react-native-node /tmp/smajumd3/temp/udb/react-native-node/react-native-node2c864714b1b646dbfb12f4aa03324b683c70a1aa_clean.udb
+cwd /tmp/smajumd3
+udb at init /tmp/smajumd3/temp/udb/tailor
+199
+0 tailor ('5b2e1957b652b04de62b66106702add2c38f2793', 'd7cbaf9a1b2d8bf0ebd0e602d4438d0d369ee395')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor5b2e1957b652b04de62b66106702add2c38f2793_buggy.udb
+2 react-native-node ('c306ea9c57ae9bfb5862bf73de4f4409c3a0472e', '7cd5991cc1f9d16c651e8c9203d18d590560415e')
+at und file react-native-node /tmp/smajumd3/temp/udb/react-native-node /tmp/smajumd3/temp/udb/react-native-node/react-native-nodec306ea9c57ae9bfb5862bf73de4f4409c3a0472e_buggy.udb
+======================== 2020-02-04 11:56:13.300381 2020-01-05 11:56:13.300358
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor5b2e1957b652b04de62b66106702add2c38f2793_clean.udb
+1 tailor ('98cf3389a535194f4349640c2edeaacffd70f8d4', 'a2fa3108b0949db77c5292fe5929475a68459ff6')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor98cf3389a535194f4349640c2edeaacffd70f8d4_buggy.udb
+at und file react-native-node /tmp/smajumd3/temp/udb/react-native-node /tmp/smajumd3/temp/udb/react-native-node/react-native-nodec306ea9c57ae9bfb5862bf73de4f4409c3a0472e_clean.udb
+at und file tailor/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:16 INFO: Linkage for commit f074fb122bb24649b6265078159fe2ceee9bdc07
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:17 ERROR: Got an exception linking bug fixing changes to bug inducing changes for repo ots15-companion
+Traceback (most recent call last):
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 54, in analyzeRepo
+    final_commits.to_csv(up(up(up(up(up(up(os.getcwd())))))) + '/data/commit_guru/' + repo_name + '.csv',index=False)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py", line 3020, in to_csv
+    formatter.save()
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 157, in save
+    compression=self.compression)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/common.py", line 424, in _get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: '//data/commit_guru/ots15-companion.csv'
+Exception in thread Thread-7:
+Traceback (most recent call last):
+  File "/home/smajumd3/anaconda3/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "run.py", line 44, in run
+    **self._kwargs)
+  File "run.py", line 72, in mine
+    cas_manager.run()
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 67, in run
+    self.checkAnalyzation()
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 60, in checkAnalyzation
+    analyze(repo)
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 31, in analyze
+    analyzeRepo(repo_id)
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 54, in analyzeRepo
+    final_commits.to_csv(up(up(up(up(up(up(os.getcwd())))))) + '/data/commit_guru/' + repo_name + '.csv',index=False)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py", line 3020, in to_csv
+    formatter.save()
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 157, in save
+    compression=self.compression)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/common.py", line 424, in _get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: '//data/commit_guru/ots15-companion.csv'
+
+2020-02-04 11:56:17 INFO: Linkage for commit 4542419a6534bed454022434c7f5000758c6e088
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:17 INFO: Linkage for commit 9fed8a7084f3adf87918fa1512025548258b97f9
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:19 INFO: Linkage for commit 52d04262fc031f0f09c6aa1606211f5a1832487c
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:20 INFO: Linkage for commit 08417f93c8cb9aa10da1999cd8af9f40596b56a2
+2020-02-04 11:56:20 INFO: Linkage for commit 52e4cc5938f0ddf56335a28b7b0498ddc3f810b9
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:20 INFO: Linkage for commit f365b59e1cbd2241a62842602e3177fb3938dba9
+2020-02-04 11:56:20 INFO: Linkage for commit 37da4d75a5183ccd2c166c77601ca52092960471
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:21 INFO: Linkage for commit 7fc00e720980c6346f08d92db540bebd3a840a8f
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:21 ERROR: Got an exception linking bug fixing changes to bug inducing changes for repo bodyapps-android
+Traceback (most recent call last):
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 54, in analyzeRepo
+    final_commits.to_csv(up(up(up(up(up(up(os.getcwd())))))) + '/data/commit_guru/' + repo_name + '.csv',index=False)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py", line 3020, in to_csv
+    formatter.save()
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 157, in save
+    compression=self.compression)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/common.py", line 424, in _get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: '//data/commit_guru/bodyapps-android.csv'
+Exception in thread Thread-6:
+Traceback (most recent call last):
+  File "/home/smajumd3/anaconda3/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "run.py", line 44, in run
+    **self._kwargs)
+  File "run.py", line 72, in mine
+    cas_manager.run()
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 67, in run
+    self.checkAnalyzation()
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 60, in checkAnalyzation
+    analyze(repo)
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 31, in analyze
+    analyzeRepo(repo_id)
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 54, in analyzeRepo
+    final_commits.to_csv(up(up(up(up(up(up(os.getcwd())))))) + '/data/commit_guru/' + repo_name + '.csv',index=False)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py", line 3020, in to_csv
+    formatter.save()
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 157, in save
+    compression=self.compression)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/common.py", line 424, in _get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: '//data/commit_guru/bodyapps-android.csv'
+
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:34 INFO: Linkage for commit 7bc200e41f3002190ff67c5853c55eefc14b303f
+2020-02-04 11:56:34 INFO: Linkage for commit 32cedc91f56b95b42d6e828fae8827709764d440
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:34 INFO: Linkage for commit f5313614052483d42fb18527f079f2f941450b81
+2020-02-04 11:56:35 INFO: Linkage for commit 975a14531fea851c4db7fafe36157ed7fba3c5b3
+2020-02-04 11:56:35 INFO: Linkage for commit bf3083b44646214f9e66b10b89c8ad152e757e11
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:35 INFO: Linkage for commit 13decbd29d9da0b47946120b345dbea94156e8b1
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:36 INFO: Linkage for commit ef912656280708e5820ce52dc0641fb8ac4df19c
+2020-02-04 11:56:36 INFO: Linkage for commit a9fa84cd68e5ca7e8a75fb27166a8f6df16f0968
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:37 INFO: Linkage for commit 29d0bb71e4caf622fb541754f23cb0629dd8f86d
+2020-02-04 11:56:38 INFO: Linkage for commit 7b5d28c678c1152619ae32d6986d845a7941c8ec
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:38 ERROR: Got an exception linking bug fixing changes to bug inducing changes for repo IntelliJ-Key-Promoter-X
+Traceback (most recent call last):
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 54, in analyzeRepo
+    final_commits.to_csv(up(up(up(up(up(up(os.getcwd())))))) + '/data/commit_guru/' + repo_name + '.csv',index=False)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py", line 3020, in to_csv
+    formatter.save()
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 157, in save
+    compression=self.compression)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/common.py", line 424, in _get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: '//data/commit_guru/IntelliJ-Key-Promoter-X.csv'
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/home/smajumd3/anaconda3/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "run.py", line 44, in run
+    **self._kwargs)
+  File "run.py", line 72, in mine
+    cas_manager.run()
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 67, in run
+    self.checkAnalyzation()
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 60, in checkAnalyzation
+    analyze(repo)
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 31, in analyze
+    analyzeRepo(repo_id)
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 54, in analyzeRepo
+    final_commits.to_csv(up(up(up(up(up(up(os.getcwd())))))) + '/data/commit_guru/' + repo_name + '.csv',index=False)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py", line 3020, in to_csv
+    formatter.save()
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 157, in save
+    compression=self.compression)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/common.py", line 424, in _get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: '//data/commit_guru/IntelliJ-Key-Promoter-X.csv'
+
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:56:40 INFO: Linkage for commit a256bc7d171c290a82c00f0d070f2d9eb81b361f
+ /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor98cf3389a535194f4349640c2edeaacffd70f8d4_clean.udb
+Done
+2 tailor ('886caaefbc9a5c793821265e898928dba52f076e', 'c69c5c1f19f22a88f2690e56c568c26f5e02ca00')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor886caaefbc9a5c793821265e898928dba52f076e_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor886caaefbc9a5c793821265e898928dba52f076e_clean.udb
+3 tailor ('beacac43c4de5b5abbdfb155e6892c7ae0a53b92', 'fae2fdcb6cde1ca8a7694ebe36a00ab7e24981fa')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorbeacac43c4de5b5abbdfb155e6892c7ae0a53b92_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorbeacac43c4de5b5abbdfb155e6892c7ae0a53b92_clean.udb
+4 tailor ('72fb8aca34821e8a0ccdd119fb33603f8d3408d0', 'b524c338973ec4a5e61e9a3c3875cd6619f6e2eb')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor72fb8aca34821e8a0ccdd119fb33603f8d3408d0_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor72fb8aca34821e8a0ccdd119fb33603f8d3408d0_clean.udb
+5 tailor ('954247eda1e09704ef91dc0eae54235bde237ee4', '249b0ebd12aa284b34359eb951374bd54858f5e6')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor954247eda1e09704ef91dc0eae54235bde237ee4_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor954247eda1e09704ef91dc0eae54235bde237ee4_clean.udb
+6 tailor ('6dad509eb5d2246d4f4ddb425a26527bf03e856c', '068f750d657f7db3548bf73abcc6220ab91a20f2')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor6dad509eb5d2246d4f4ddb425a26527bf03e856c_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor6dad509eb5d2246d4f4ddb425a26527bf03e856c_clean.udb
+7 tailor ('d263185a983315c5e9b1224eba851ae58d8fb621', '6dad509eb5d2246d4f4ddb425a26527bf03e856c')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailord263185a983315c5e9b1224eba851ae58d8fb621_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailord263185a983315c5e9b1224eba851ae58d8fb621_clean.udb
+8 tailor ('1ccf945f9675645b0791cd06c9200199fe5f416e', 'd263185a983315c5e9b1224eba851ae58d8fb621')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor1ccf945f9675645b0791cd06c9200199fe5f416e_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor1ccf945f9675645b0791cd06c9200199fe5f416e_clean.udb
+9 tailor ('a548213ebe3fed1a70bf1478464fc0af5ca48c7d', 'f0a3ae1944748f70cadb35e4d8515693a5a6392e')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailora548213ebe3fed1a70bf1478464fc0af5ca48c7d_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailora548213ebe3fed1a70bf1478464fc0af5ca48c7d_clean.udb
+10 tailor ('5d2649fc005e514452c8d83f103b4fd2c5b03519', 'f0a3ae1944748f70cadb35e4d8515693a5a6392e')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor5d2649fc005e514452c8d83f103b4fd2c5b03519_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor5d2649fc005e514452c8d83f103b4fd2c5b03519_clean.udb
+11 tailor ('7cbb51279f2199d29f1e06041adebaceabcaff72', 'ad644aa0aebbd81edf7c375ef2af83c76fc122b0')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor7cbb51279f2199d29f1e06041adebaceabcaff72_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor7cbb51279f2199d29f1e06041adebaceabcaff72_clean.udb
+12 tailor ('f9eaaf982d066096bbd5b1d4148f81020b6f4235', 'fc481d5f67ff9d1e1a493b4d156de4ec2f3e1d2b')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf9eaaf982d066096bbd5b1d4148f81020b6f4235_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf9eaaf982d066096bbd5b1d4148f81020b6f4235_clean.udb
+13 tailor ('b6946082accb21abf1af9399720d187c9b9a47f1', '634a296915da06319c7f5dcaeb9ea2e1b2797c75')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorb6946082accb21abf1af9399720d187c9b9a47f1_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorb6946082accb21abf1af9399720d187c9b9a47f1_clean.udb
+14 tailor ('2cf7d2ee854db05cd550bbea0e8b429b7c8a7552', '11471d054b06d635093eac465fcef2c6039f9bc4')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor2cf7d2ee854db05cd550bbea0e8b429b7c8a7552_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor2cf7d2ee854db05cd550bbea0e8b429b7c8a7552_clean.udb
+15 tailor ('6e2e52ebfa234a9d3b43895f1353c06554e6039d', '510093dc987c91392ebf4ec50fc10684e9c157af')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor6e2e52ebfa234a9d3b43895f1353c06554e6039d_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor6e2e52ebfa234a9d3b43895f1353c06554e6039d_clean.udb
+16 tailor ('e01c0bd98599583142bea38eefa85cdc68a3c65b', '3dd1d40a963dccd4e805fcc325b03cbe5d325e94')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore01c0bd98599583142bea38eefa85cdc68a3c65b_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore01c0bd98599583142bea38eefa85cdc68a3c65b_clean.udb
+17 tailor ('1908fa82249a16b736e1b562eead942da97a06b3', 'e01c0bd98599583142bea38eefa85cdc68a3c65b')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor1908fa82249a16b736e1b562eead942da97a06b3_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor1908fa82249a16b736e1b562eead942da97a06b3_clean.udb
+18 tailor ('7320c21b79d7d769176f430a8747c26d722fae63', '6326af69f2de2e4e91a04e312e39c0ef5ff86ba6')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor7320c21b79d7d769176f430a8747c26d722fae63_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor7320c21b79d7d769176f430a8747c26d722fae63_clean.udb
+19 tailor ('1dd6bdf15b814d4a8faceafed95773c10e62a0ca', 'b902cbfbeb06a32eae0195d74606b9214e833d99')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor1dd6bdf15b814d4a8faceafed95773c10e62a0ca_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor1dd6bdf15b814d4a8faceafed95773c10e62a0ca_clean.udb
+20 tailor ('e56893ef6214a3feed182d68c8e1297751bc3710', 'e4963b9e4c0258c6ab786af687ec453a0bdeea6e')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore56893ef6214a3feed182d68c8e1297751bc3710_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore56893ef6214a3feed182d68c8e1297751bc3710_clean.udb
+21 tailor ('4275436c7f0b8151ba96d736a5702b66d994ad7e', 'e56893ef6214a3feed182d68c8e1297751bc3710')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor4275436c7f0b8151ba96d736a5702b66d994ad7e_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor4275436c7f0b8151ba96d736a5702b66d994ad7e_clean.udb
+22 tailor ('8b4862a70aac7cc861847b6739b6824b11cd6eab', 'd2f4c0b0fa76a2dad5ca466d8feb835eaf331a08')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor8b4862a70aac7cc861847b6739b6824b11cd6eab_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor8b4862a70aac7cc861847b6739b6824b11cd6eab_clean.udb
+23 tailor ('7898cb8938287fb88e4190bceacf30d2e73a6d19', '8b4862a70aac7cc861847b6739b6824b11cd6eab')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor7898cb8938287fb88e4190bceacf30d2e73a6d19_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor7898cb8938287fb88e4190bceacf30d2e73a6d19_clean.udb/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:57:00 INFO: Linkage for commit c8b6d32316695e95f45b1f8457eb697bed563975
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:57:01 INFO: Linkage for commit 88de2e054acc1ae9a3147ea4c10d63a128aa50f4
+2020-02-04 11:57:01 INFO: Linkage for commit aae0d78f1282de9910f936db1229c259b6f0916e
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:57:02 INFO: Linkage for commit 46ad7981b3ccf9c637568c02db6fab4836582811
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:57:02 INFO: Linkage for commit fc4d71d6c7a3213a01ce2553ef27a9e48390156e
+2020-02-04 11:57:02 INFO: Linkage for commit ea8885ace40371e25d085676961d87aa818bcd3d
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:57:03 INFO: Linkage for commit 5412945a47b1d7aac3091cbf3dc3516552ede0b5
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:57:07 INFO: Linkage for commit 46630151a6a17959cc27c6ec417c44c4e26f4b44
+2020-02-04 11:57:07 INFO: Linkage for commit 1dc38fec676f2243e4f8a109ecfd7f731dc8f4f3
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:57:09 INFO: Linkage for commit ea31656244e4f0df90889e6cb399e2972e1c0494
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:57:09 INFO: Linkage for commit 263c2a8888f93c094b7aa3bba4361734581ed32a
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:57:09 INFO: Linkage for commit efaaa06cf822335e2050de9e8b8572abefa76a5a
+2020-02-04 11:57:10 ERROR: Got an exception linking bug fixing changes to bug inducing changes for repo phimpme-android-v1
+Traceback (most recent call last):
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 54, in analyzeRepo
+    final_commits.to_csv(up(up(up(up(up(up(os.getcwd())))))) + '/data/commit_guru/' + repo_name + '.csv',index=False)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py", line 3020, in to_csv
+    formatter.save()
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 157, in save
+    compression=self.compression)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/common.py", line 424, in _get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: '//data/commit_guru/phimpme-android-v1.csv'
+
+24 tailor ('101faf2baf3193560edbbd80d56539b7bbe67516', '7898cb8938287fb88e4190bceacf30d2e73a6d19')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor101faf2baf3193560edbbd80d56539b7bbe67516_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor101faf2baf3193560edbbd80d56539b7bbe67516_clean.udb
+25 tailor ('7e099f539b2104737bef45a2129081dc1c168d12', '2775b29b9b55dddbc18ea543716a936277a10fa8')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor7e099f539b2104737bef45a2129081dc1c168d12_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor7e099f539b2104737bef45a2129081dc1c168d12_clean.udb
+26 tailor ('f4ae175c7c7ea862bf70d50bfbe61fa85f117979', 'f9d106b975125412935a0688c38014f09a6b61b7')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf4ae175c7c7ea862bf70d50bfbe61fa85f117979_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf4ae175c7c7ea862bf70d50bfbe61fa85f117979_clean.udb
+27 tailor ('c5f48ccc50aab6cc76246e793e860a2a7bac7e17', '9a72376e7e9b1cccfa3353fbe64421aaac96a91e')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorc5f48ccc50aab6cc76246e793e860a2a7bac7e17_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorc5f48ccc50aab6cc76246e793e860a2a7bac7e17_clean.udb
+28 tailor ('ceedacb0bda825857357bf32ae099aa937c94019', 'a2ff0a3737bddd1052f89ae0aa3ea8b3c022e791')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorceedacb0bda825857357bf32ae099aa937c94019_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorceedacb0bda825857357bf32ae099aa937c94019_clean.udb
+29 tailor ('1586136cf3844880f8c29e3c62534147adbb7247', '6201a57f76dadf59cc440abca06efafba9535b4d')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor1586136cf3844880f8c29e3c62534147adbb7247_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor1586136cf3844880f8c29e3c62534147adbb7247_clean.udb
+30 tailor ('0da8cb940456265fae977a01f18e2af2a0a886af', '1586136cf3844880f8c29e3c62534147adbb7247')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor0da8cb940456265fae977a01f18e2af2a0a886af_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor0da8cb940456265fae977a01f18e2af2a0a886af_clean.udb
+31 tailor ('0eeec883866b050cad8e9eb4af52b5d1cbe3ee44', '0da8cb940456265fae977a01f18e2af2a0a886af')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor0eeec883866b050cad8e9eb4af52b5d1cbe3ee44_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor0eeec883866b050cad8e9eb4af52b5d1cbe3ee44_clean.udb
+32 tailor ('7ff6c46126eb9ab7b0775fd933e7dfa01be58481', '57ba08fd69c09221c90bd23b7c17514bdad69eb5')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor7ff6c46126eb9ab7b0775fd933e7dfa01be58481_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor7ff6c46126eb9ab7b0775fd933e7dfa01be58481_clean.udb
+33 tailor ('29b82a29140f5adb61651e24c1070cdb8d54e209', '57ba08fd69c09221c90bd23b7c17514bdad69eb5')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor29b82a29140f5adb61651e24c1070cdb8d54e209_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor29b82a29140f5adb61651e24c1070cdb8d54e209_clean.udb
+34 tailor ('1b1f2d61ca5e46f18e8cfd1bf10e6b08c177e758', 'f44d3822ede6ad45b13e1979bae94f67f347ed71')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor1b1f2d61ca5e46f18e8cfd1bf10e6b08c177e758_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor1b1f2d61ca5e46f18e8cfd1bf10e6b08c177e758_clean.udb
+35 tailor ('14bc3dcd5923e0aabdc17100ef8338ec93de97dc', '77dc4e8762738e7670172f322c3502e5097f9a12')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor14bc3dcd5923e0aabdc17100ef8338ec93de97dc_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor14bc3dcd5923e0aabdc17100ef8338ec93de97dc_clean.udb
+36 tailor ('39a4f304af2c6998fcffd62b1fc914bb5041eb88', '14bc3dcd5923e0aabdc17100ef8338ec93de97dc')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor39a4f304af2c6998fcffd62b1fc914bb5041eb88_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor39a4f304af2c6998fcffd62b1fc914bb5041eb88_clean.udb
+37 tailor ('cd967b36edbc1b52d33420ab1d0807a497059d11', 'c632510012beb95a3835f1a756465bb08e74461c')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorcd967b36edbc1b52d33420ab1d0807a497059d11_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorcd967b36edbc1b52d33420ab1d0807a497059d11_clean.udb
+38 tailor ('b06d51709d1ba013e654f11660bf2f0aa39c57c5', 'cd967b36edbc1b52d33420ab1d0807a497059d11')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorb06d51709d1ba013e654f11660bf2f0aa39c57c5_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorb06d51709d1ba013e654f11660bf2f0aa39c57c5_clean.udb
+39 tailor ('c95464041210335c31af9cdb3ed1f1552a0a2ff2', '02cdbd24d608e44073ad7fdd071b2b0480ab54b4')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorc95464041210335c31af9cdb3ed1f1552a0a2ff2_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorc95464041210335c31af9cdb3ed1f1552a0a2ff2_clean.udb
+40 tailor ('4c4ea5aa7d6bb201a0f4dde5922dfaea343942ce', 'c95464041210335c31af9cdb3ed1f1552a0a2ff2')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor4c4ea5aa7d6bb201a0f4dde5922dfaea343942ce_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor4c4ea5aa7d6bb201a0f4dde5922dfaea343942ce_clean.udb
+41 tailor ('1eb63828113abea38af1ab0aa6a8c1fbaf1e4814', '4c4ea5aa7d6bb201a0f4dde5922dfaea343942ce')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor1eb63828113abea38af1ab0aa6a8c1fbaf1e4814_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor1eb63828113abea38af1ab0aa6a8c1fbaf1e4814_clean.udb
+42 tailor ('f4cbc1fee7bb0dcec4b883b0c263e69012955534', '75a29df9adf74202361c9f49e67eea441f79dc61')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf4cbc1fee7bb0dcec4b883b0c263e69012955534_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf4cbc1fee7bb0dcec4b883b0c263e69012955534_clean.udb
+43 tailor ('2b427dd56948508a396c6414d1d1da9cb92e759d', 'f4cbc1fee7bb0dcec4b883b0c263e69012955534')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor2b427dd56948508a396c6414d1d1da9cb92e759d_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor2b427dd56948508a396c6414d1d1da9cb92e759d_clean.udb
+44 tailor ('d9504e32079b2c16b99ee94a75667b4d52541b5b', '2b427dd56948508a396c6414d1d1da9cb92e759d')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailord9504e32079b2c16b99ee94a75667b4d52541b5b_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailord9504e32079b2c16b99ee94a75667b4d52541b5b_clean.udb
+45 tailor ('f5bfe2ccc45f7e862cb9b167ca042d0df63a9d36', '9b7369b3d3e9108875c4539b3e96463edbcef7dc')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf5bfe2ccc45f7e862cb9b167ca042d0df63a9d36_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf5bfe2ccc45f7e862cb9b167ca042d0df63a9d36_clean.udb
+46 tailor ('12d9b3ac4259cdbb773d851ae7ab11c62dfaf035', 'df5a0ce6d5ccda3234ec2e3b893c8dd265b38826')Exception in thread Thread-9:
+Traceback (most recent call last):
+  File "/home/smajumd3/anaconda3/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "run.py", line 44, in run
+    **self._kwargs)
+  File "run.py", line 72, in mine
+    cas_manager.run()
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 67, in run
+    self.checkAnalyzation()
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 60, in checkAnalyzation
+    analyze(repo)
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 31, in analyze
+    analyzeRepo(repo_id)
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 54, in analyzeRepo
+    final_commits.to_csv(up(up(up(up(up(up(os.getcwd())))))) + '/data/commit_guru/' + repo_name + '.csv',index=False)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py", line 3020, in to_csv
+    formatter.save()
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 157, in save
+    compression=self.compression)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/common.py", line 424, in _get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: '//data/commit_guru/phimpme-android-v1.csv'
+
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-04 11:57:28 ERROR: Got an exception linking bug fixing changes to bug inducing changes for repo loklak_jlib_api
+Traceback (most recent call last):
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 54, in analyzeRepo
+    final_commits.to_csv(up(up(up(up(up(up(os.getcwd())))))) + '/data/commit_guru/' + repo_name + '.csv',index=False)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py", line 3020, in to_csv
+    formatter.save()
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 157, in save
+    compression=self.compression)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/common.py", line 424, in _get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: '//data/commit_guru/loklak_jlib_api.csv'
+
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor12d9b3ac4259cdbb773d851ae7ab11c62dfaf035_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor12d9b3ac4259cdbb773d851ae7ab11c62dfaf035_clean.udb
+47 tailor ('66a23672114981a9c68cf458999fe82cf6463b4c', '962c85bb7dc0c995e85a8a38b2c32be368b2dd46')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor66a23672114981a9c68cf458999fe82cf6463b4c_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor66a23672114981a9c68cf458999fe82cf6463b4c_clean.udb
+48 tailor ('ef790de7338e3148d819984d4e2da1f551faa710', '66a23672114981a9c68cf458999fe82cf6463b4c')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailoref790de7338e3148d819984d4e2da1f551faa710_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailoref790de7338e3148d819984d4e2da1f551faa710_clean.udb
+49 tailor ('94eb261e22b45c962615953531472db5bc7f0e30', 'df5a0ce6d5ccda3234ec2e3b893c8dd265b38826')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor94eb261e22b45c962615953531472db5bc7f0e30_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor94eb261e22b45c962615953531472db5bc7f0e30_clean.udb
+50 tailor ('a55ab4cff13eb609a6de5d58d70941cc665c6336', 'fa4c0cdd0cb556c017299e668c7a6bdef695e423')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailora55ab4cff13eb609a6de5d58d70941cc665c6336_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailora55ab4cff13eb609a6de5d58d70941cc665c6336_clean.udb
+51 tailor ('69d3579c59fbea68b718099d26b2fb54f07cbb93', 'df5a0ce6d5ccda3234ec2e3b893c8dd265b38826')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor69d3579c59fbea68b718099d26b2fb54f07cbb93_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor69d3579c59fbea68b718099d26b2fb54f07cbb93_clean.udb
+52 tailor ('573410ab708154dab06857e61b011e392ead05e0', '3a84f3183bce5e4c0ca22ed15880347db1341513')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor573410ab708154dab06857e61b011e392ead05e0_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor573410ab708154dab06857e61b011e392ead05e0_clean.udb
+53 tailor ('8f0bcb8254e496cc053f5383e50f7efba6268930', '573410ab708154dab06857e61b011e392ead05e0')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor8f0bcb8254e496cc053f5383e50f7efba6268930_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor8f0bcb8254e496cc053f5383e50f7efba6268930_clean.udb
+54 tailor ('ae5c86a7f163783b56820d18f3b6567d0701a0dc', '0cdec35fbdd36722b23d4b980c7d0fb98b255b28')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorae5c86a7f163783b56820d18f3b6567d0701a0dc_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorae5c86a7f163783b56820d18f3b6567d0701a0dc_clean.udb
+55 tailor ('bfb0ba6d9c2b8d191ad85fd5268d94bcdf8f7a71', 'ae5c86a7f163783b56820d18f3b6567d0701a0dc')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorbfb0ba6d9c2b8d191ad85fd5268d94bcdf8f7a71_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorbfb0ba6d9c2b8d191ad85fd5268d94bcdf8f7a71_clean.udb
+56 tailor ('f6c6215a48339bbca0ec2f00cf54644e76182a5a', 'bfb0ba6d9c2b8d191ad85fd5268d94bcdf8f7a71')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf6c6215a48339bbca0ec2f00cf54644e76182a5a_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf6c6215a48339bbca0ec2f00cf54644e76182a5a_clean.udb
+57 tailor ('edef99bb1a5870ccfd78b9c77d662dcf1b6f1415', '63ecf1b5e6d60e0819e1488bdef6b76f7c31be29')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailoredef99bb1a5870ccfd78b9c77d662dcf1b6f1415_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailoredef99bb1a5870ccfd78b9c77d662dcf1b6f1415_clean.udb
+58 tailor ('a87f5517ea986f6ddc12d88214e6b5a3964ef66a', 'edef99bb1a5870ccfd78b9c77d662dcf1b6f1415')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailora87f5517ea986f6ddc12d88214e6b5a3964ef66a_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailora87f5517ea986f6ddc12d88214e6b5a3964ef66a_clean.udb
+59 tailor ('b00e4ea882b2ad9e14ded8af7a34b09b9f1f7a2a', '7e9833a0695fd667f58e623b5356518037ae068f')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorb00e4ea882b2ad9e14ded8af7a34b09b9f1f7a2a_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorb00e4ea882b2ad9e14ded8af7a34b09b9f1f7a2a_clean.udb
+60 tailor ('85eb8275835aa2e09c2bd4e4b9a09f4aa678911a', 'c9b98b292db62765114a2a21387f5a7ef7560072')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor85eb8275835aa2e09c2bd4e4b9a09f4aa678911a_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor85eb8275835aa2e09c2bd4e4b9a09f4aa678911a_clean.udb
+61 tailor ('194d910d71217657d17c0aebd490033fb51d2814', '5850d19de84863b299854aa64e69620aeed7c08a')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor194d910d71217657d17c0aebd490033fb51d2814_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor194d910d71217657d17c0aebd490033fb51d2814_clean.udb
+62 tailor ('eb0b813b0c1f2f7fb7912183b75cde5fc40494f0', '18dff9cbe47f71a63e712b5c039ccbae6a399431')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailoreb0b813b0c1f2f7fb7912183b75cde5fc40494f0_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailoreb0b813b0c1f2f7fb7912183b75cde5fc40494f0_clean.udb
+63 tailor ('26def5a9e1a503b3c95a27cc67a9812c329ac284', '617743fada653d9a86cd5ef98d5f256264be3da2')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor26def5a9e1a503b3c95a27cc67a9812c329ac284_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor26def5a9e1a503b3c95a27cc67a9812c329ac284_clean.udb
+64 tailor ('ef2b2ab9f5992f28067eeb3622fa32b1d09fce24', '41fafa45cbc8adc73ca3a3f7dbc7f86376754c4e')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailoref2b2ab9f5992f28067eeb3622fa32b1d09fce24_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailoref2b2ab9f5992f28067eeb3622fa32b1d09fce24_clean.udb
+65 tailor ('35b0d1b8d393e3a7b9b7cfd4781bddf8db3f56ca', 'ef2b2ab9f5992f28067eeb3622fa32b1d09fce24')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor35b0d1b8d393e3a7b9b7cfd4781bddf8db3f56ca_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor35b0d1b8d393e3a7b9b7cfd4781bddf8db3f56ca_clean.udb
+66 tailor ('d0f0eec13cfcb8245cf2577cccc78d0914813c38', '9fe552d3a47f1f346cc65081ba8031db574c6e8b')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailord0f0eec13cfcb8245cf2577cccc78d0914813c38_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailord0f0eec13cfcb8245cf2577cccc78d0914813c38_clean.udb
+67 tailor ('0b0fb287f9ac25fc6e54564b8e63217169e38bb8', '35b0d1b8d393e3a7b9b7cfd4781bddf8db3f56ca')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor0b0fb287f9ac25fc6e54564b8e63217169e38bb8_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor0b0fb287f9ac25fc6e54564b8e63217169e38bb8_clean.udb
+68 tailor ('463e69d9d03c3faf3e58be1c236abf6f48a7bf7f', 'f8463e388992b57e153d03d85c3b63c725080794')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor463e69d9d03c3faf3e58be1c236abf6f48a7bf7f_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor463e69d9d03c3faf3e58be1c236abf6f48a7bf7f_clean.udb
+69 tailor ('07354c59c7e0b0c4b0bcbcff65766676a4fd1668', 'fbef437d205f120c9b03c8b3fec761335e63405c 6e937d3a3055b61839764e9cb27f9abdf5cba3be')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor07354c59c7e0b0c4b0bcbcff65766676a4fd1668_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor07354c59c7e0b0c4b0bcbcff65766676a4fd1668_clean.udb
+70 tailor ('00a6087892b0cba66c48278832988bd69e9e07d5', '44e1796f9c046ad181991c2a4acf7b80cf3c778f')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor00a6087892b0cba66c48278832988bd69e9e07d5_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor00a6087892b0cba66c48278832988bd69e9e07d5_clean.udb
+71 tailor ('27eec2ab9bded58b8c73d5059e1f4141c2bef718', '00a6087892b0cba66c48278832988bd69e9e07d5')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor27eec2ab9bded58b8c73d5059e1f4141c2bef718_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor27eec2ab9bded58b8c73d5059e1f4141c2bef718_clean.udb
+72 tailor ('55130ddcc8227dd2db1cd7ac451032a9f6ccc7e0', '27eec2ab9bded58b8c73d5059e1f4141c2bef718')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor55130ddcc8227dd2db1cd7ac451032a9f6ccc7e0_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor55130ddcc8227dd2db1cd7ac451032a9f6ccc7e0_clean.udb
+73 tailor ('dc4e5a7708efe077846e22e200b41d776e179770', '28f39560471152826f1b853ff678fa286bcccb3f')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailordc4e5a7708efe077846e22e200b41d776e179770_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailordc4e5a7708efe077846e22e200b41d776e179770_clean.udb
+74 tailor ('d227bc0b6edb7a0f7d4081ff48674267cb66a32e', '44e1796f9c046ad181991c2a4acf7b80cf3c778f')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailord227bc0b6edb7a0f7d4081ff48674267cb66a32e_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailord227bc0b6edb7a0f7d4081ff48674267cb66a32e_clean.udb
+75 tailor ('8d55f490b96e0be17825163a2a481c8a64d50126', '50b01292def9a7215d437f4b81ae4d46fd996fc6')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor8d55f490b96e0be17825163a2a481c8a64d50126_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor8d55f490b96e0be17825163a2a481c8a64d50126_clean.udb
+76 tailor ('129c722b51868be4b8f36f863552771c13325f5f', 'dc4e5a7708efe077846e22e200b41d776e179770')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor129c722b51868be4b8f36f863552771c13325f5f_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor129c722b51868be4b8f36f863552771c13325f5f_clean.udb
+77 tailor ('bfb5b3348e18673a155716a684905480e31b69c2', 'bc7435e14852460f448b411719325b1911dfafdc')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorbfb5b3348e18673a155716a684905480e31b69c2_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorbfb5b3348e18673a155716a684905480e31b69c2_clean.udb
+78 tailor ('5f2ba9af18adf02b5b9989a7bc240e3434fd7334', 'feb2570b1ad7d6a06c63f0385a84d8e8f5563cf1')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor5f2ba9af18adf02b5b9989a7bc240e3434fd7334_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor5f2ba9af18adf02b5b9989a7bc240e3434fd7334_clean.udb
+79 tailor ('f341dd7fd3a4478abf0493a827be159604517423', '8ab4bf6e7cb2bbf0c184bb7f172060bce4d3c0b1')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf341dd7fd3a4478abf0493a827be159604517423_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf341dd7fd3a4478abf0493a827be159604517423_clean.udb
+80 tailor ('1048e2a6eba61c6636e40f239307063615144b08', 'c02c26f74e7e60406d0f92e7f00c4eccc5543533')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor1048e2a6eba61c6636e40f239307063615144b08_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor1048e2a6eba61c6636e40f239307063615144b08_clean.udb
+81 tailor ('96ae21db33b29660ff99f47a7ce87faf96de681f', '96f4f71804eb2f852d3abd740aca53c0a6d5d545')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor96ae21db33b29660ff99f47a7ce87faf96de681f_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor96ae21db33b29660ff99f47a7ce87faf96de681f_clean.udb
+82 tailor ('1967d01b0f3ecada3b7729ce98ebdbc3063f6ebd', 'a910bd1fbaf839829c57a85a27365a9bc0955a30')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor1967d01b0f3ecada3b7729ce98ebdbc3063f6ebd_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor1967d01b0f3ecada3b7729ce98ebdbc3063f6ebd_clean.udb
+83 tailor ('67eb932cdacafb89f35d9748ac743921cb5341b9', '095991716d23943691e1311c2840a7a2697c0abc 6b22d7e009582c8f25575b63f2c9527b7ec8c1a4')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor67eb932cdacafb89f35d9748ac743921cb5341b9_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor67eb932cdacafb89f35d9748ac743921cb5341b9_clean.udb
+84 tailor ('66592edb1a94dabb9752095e7426922675eb1747', 'db93f4ab08ba7686be1b3c8b82a6977cfbe89346 6b22d7e009582c8f25575b63f2c9527b7ec8c1a4')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor66592edb1a94dabb9752095e7426922675eb1747_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor66592edb1a94dabb9752095e7426922675eb1747_clean.udb
+85 tailor ('34a8564cfd70978de50afa7d95910d37f42d0548', '66592edb1a94dabb9752095e7426922675eb1747')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor34a8564cfd70978de50afa7d95910d37f42d0548_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor34a8564cfd70978de50afa7d95910d37f42d0548_clean.udb
+86 tailor ('a3d5b3a925f5eb5a57685836741d2787014f06c6', 'ddc1c0f767cd31325d49818c5a94ca2a22f4fc44')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailora3d5b3a925f5eb5a57685836741d2787014f06c6_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailora3d5b3a925f5eb5a57685836741d2787014f06c6_clean.udb
+87 tailor ('e8d9fe0fa32b0e1aeade22f5fce99c7a1cec29a6', '95da7dda84d1255b752573cc8d8d4fd95d74e1bc')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore8d9fe0fa32b0e1aeade22f5fce99c7a1cec29a6_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore8d9fe0fa32b0e1aeade22f5fce99c7a1cec29a6_clean.udb
+88 tailor ('9818317820993ec542e04c9a6df3d2138d204a29', '1a55f38342c97d4d6356c4a3530758dda05e80e0')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor9818317820993ec542e04c9a6df3d2138d204a29_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor9818317820993ec542e04c9a6df3d2138d204a29_clean.udb
+89 tailor ('aab1347186ae064691ebeb34936bd9c349ba302e', 'f31c9488374580edfd9e12de5f4feb01d4bb413a')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailoraab1347186ae064691ebeb34936bd9c349ba302e_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailoraab1347186ae064691ebeb34936bd9c349ba302e_clean.udb
+90 tailor ('f2d02b42c341cd400cfdf2fd56d1f30ec19fae5c', 'aab1347186ae064691ebeb34936bd9c349ba302e')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf2d02b42c341cd400cfdf2fd56d1f30ec19fae5c_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf2d02b42c341cd400cfdf2fd56d1f30ec19fae5c_clean.udb
+91 tailor ('80ba298229b279c2cd80d20224f8175e89ef6835', 'f2d02b42c341cd400cfdf2fd56d1f30ec19fae5c')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor80ba298229b279c2cd80d20224f8175e89ef6835_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor80ba298229b279c2cd80d20224f8175e89ef6835_clean.udb
+92 tailor ('0b8117bc6930727847bafacd08ea093436a753fd', 'f31c9488374580edfd9e12de5f4feb01d4bb413a')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor0b8117bc6930727847bafacd08ea093436a753fd_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor0b8117bc6930727847bafacd08ea093436a753fd_clean.udb
+93 tailor ('2664ef1e864dfbc7e1b0f3e5a7471510a742e77c', 'be625e2e56a749d5652d19aaba41cc442eef262e')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor2664ef1e864dfbc7e1b0f3e5a7471510a742e77c_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor2664ef1e864dfbc7e1b0f3e5a7471510a742e77c_clean.udb
+94 tailor ('919987abe0197f0d91c20379381f0046e229bbc1', '2664ef1e864dfbc7e1b0f3e5a7471510a742e77c')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor919987abe0197f0d91c20379381f0046e229bbc1_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor919987abe0197f0d91c20379381f0046e229bbc1_clean.udb
+95 tailor ('fd8695ffd763458f799be4fce242de488238d79b', '919987abe0197f0d91c20379381f0046e229bbc1')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorfd8695ffd763458f799be4fce242de488238d79b_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorfd8695ffd763458f799be4fce242de488238d79b_clean.udb
+96 tailor ('d26238ab4fd3c1851cdeb601e659aafbd809421e', 'fd8695ffd763458f799be4fce242de488238d79b')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailord26238ab4fd3c1851cdeb601e659aafbd809421e_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailord26238ab4fd3c1851cdeb601e659aafbd809421e_clean.udb
+97 tailor ('d34b15a0db093458937cd37e2c1a4261d4f1c49a', 'be625e2e56a749d5652d19aaba41cc442eef262e')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailord34b15a0db093458937cd37e2c1a4261d4f1c49a_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailord34b15a0db093458937cd37e2c1a4261d4f1c49a_clean.udb
+98 tailor ('5995b1deba5c8acbe5588f4c8d7b46eed34f900c', 'd34b15a0db093458937cd37e2c1a4261d4f1c49a')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor5995b1deba5c8acbe5588f4c8d7b46eed34f900c_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor5995b1deba5c8acbe5588f4c8d7b46eed34f900c_clean.udb
+99 tailor ('a468bbef1ef763ca20a6f0351ff89e236efdbde7', '5995b1deba5c8acbe5588f4c8d7b46eed34f900c 76ec8fed2f4d27ae50269e87326facfafac03195')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailora468bbef1ef763ca20a6f0351ff89e236efdbde7_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailora468bbef1ef763ca20a6f0351ff89e236efdbde7_clean.udb
+100 tailor ('173c3c1d61562c7be9b23f78cbd59a693e1b1988', 'a468bbef1ef763ca20a6f0351ff89e236efdbde7')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor173c3c1d61562c7be9b23f78cbd59a693e1b1988_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor173c3c1d61562c7be9b23f78cbd59a693e1b1988_clean.udb
+101 tailor ('a0825c050bf677989d10122259dd3eae2f5a7cd6', '173c3c1d61562c7be9b23f78cbd59a693e1b1988')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailora0825c050bf677989d10122259dd3eae2f5a7cd6_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailora0825c050bf677989d10122259dd3eae2f5a7cd6_clean.udb
+102 tailor ('34214365deabca4a0f9a7959e588e5c70eccf40a', '8f237b2770430073a9a97a493add478c7e587066')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor34214365deabca4a0f9a7959e588e5c70eccf40a_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor34214365deabca4a0f9a7959e588e5c70eccf40a_clean.udb
+103 tailor ('0766c5304b03951adb424d73e545724b9c0b550f', '34214365deabca4a0f9a7959e588e5c70eccf40a')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor0766c5304b03951adb424d73e545724b9c0b550f_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor0766c5304b03951adb424d73e545724b9c0b550f_clean.udb
+104 tailor ('bc15047502afb33d90c703ddad1f479bd59664b1', 'cd0b106c96ffd459a7a357f15146b6c88425aac5')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorbc15047502afb33d90c703ddad1f479bd59664b1_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorbc15047502afb33d90c703ddad1f479bd59664b1_clean.udb
+105 tailor ('fe1ac78e7de9262f278c3ceb6477341548597bdb', '278f9266507ae1fecd1a675efbf49d4cf8e58b4c')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorfe1ac78e7de9262f278c3ceb6477341548597bdb_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorfe1ac78e7de9262f278c3ceb6477341548597bdb_clean.udb
+106 tailor ('e46bbc2c876f55da2e9f417782f3cfd004481453', '980bade977ed0a0cec8178938b5940cf598cea75')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore46bbc2c876f55da2e9f417782f3cfd004481453_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore46bbc2c876f55da2e9f417782f3cfd004481453_clean.udb
+107 tailor ('15ffd209770a9cab357f2218799156bf73360d1f', '06adc5ca94bffd4a9d9d6731fa59456ae51235ee')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor15ffd209770a9cab357f2218799156bf73360d1f_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor15ffd209770a9cab357f2218799156bf73360d1f_clean.udb
+108 tailor ('47706bc02249e1d2ca0dece5735b0281f3f85e49', '15ffd209770a9cab357f2218799156bf73360d1f')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor47706bc02249e1d2ca0dece5735b0281f3f85e49_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor47706bc02249e1d2ca0dece5735b0281f3f85e49_clean.udb
+109 tailor ('56352864ff0c584ea2af9ae755680c85c0e7ea32', '47706bc02249e1d2ca0dece5735b0281f3f85e49')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor56352864ff0c584ea2af9ae755680c85c0e7ea32_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor56352864ff0c584ea2af9ae755680c85c0e7ea32_clean.udb
+110 tailor ('b75f382d911814118c65f0de4cf634076ee6df91', '56352864ff0c584ea2af9ae755680c85c0e7ea32')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorb75f382d911814118c65f0de4cf634076ee6df91_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorb75f382d911814118c65f0de4cf634076ee6df91_clean.udb
+111 tailor ('274cccbaeb85c8c604f2bdbdc3523f8ed5304931', 'b75f382d911814118c65f0de4cf634076ee6df91')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor274cccbaeb85c8c604f2bdbdc3523f8ed5304931_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor274cccbaeb85c8c604f2bdbdc3523f8ed5304931_clean.udb
+112 tailor ('1265eeffff56dc06de657a1b27e4f908ef212244', '274cccbaeb85c8c604f2bdbdc3523f8ed5304931')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor1265eeffff56dc06de657a1b27e4f908ef212244_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor1265eeffff56dc06de657a1b27e4f908ef212244_clean.udb
+113 tailor ('e58e7a46800cfd87fc6ad508efa1108f4a2fe8fd', 'ac10fc75b83871f69de9ee41ef706f507052e1a8')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore58e7a46800cfd87fc6ad508efa1108f4a2fe8fd_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore58e7a46800cfd87fc6ad508efa1108f4a2fe8fd_clean.udb
+114 tailor ('84d14cca1eb53ee4452953afafaf2bfc56da2015', '7a16b9a6feb41e87ece814d47d2d63068bc175a0')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor84d14cca1eb53ee4452953afafaf2bfc56da2015_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor84d14cca1eb53ee4452953afafaf2bfc56da2015_clean.udb
+115 tailor ('4c11e7579c4a0723d8d5fcdc85351c2e1774cbfe', 'de060166273707162553c08319a5920a4819820c')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor4c11e7579c4a0723d8d5fcdc85351c2e1774cbfe_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor4c11e7579c4a0723d8d5fcdc85351c2e1774cbfe_clean.udb
+116 tailor ('0547bf1795a46a8791c887d505c27c5f07ccc586', '4c11e7579c4a0723d8d5fcdc85351c2e1774cbfe')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor0547bf1795a46a8791c887d505c27c5f07ccc586_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor0547bf1795a46a8791c887d505c27c5f07ccc586_clean.udb
+117 tailor ('3bfe2e47885658b063c9ab2a9283774fcaa721ef', '841cb25e5acb14d02696eb520eeac65cd2fc6581')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor3bfe2e47885658b063c9ab2a9283774fcaa721ef_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor3bfe2e47885658b063c9ab2a9283774fcaa721ef_clean.udb
+118 tailor ('fa121e3d1cec33bd4809120930de654f7822f70a', '6b2a8ab770d3eed76e01413e0d2117ad6b0419e7')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorfa121e3d1cec33bd4809120930de654f7822f70a_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorfa121e3d1cec33bd4809120930de654f7822f70a_clean.udb
+119 tailor ('dbcad6534287d9783122c23da473fc7e27a3b54f', '0302509dced78cf34af03721421a8d9f0ec6dc64')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailordbcad6534287d9783122c23da473fc7e27a3b54f_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailordbcad6534287d9783122c23da473fc7e27a3b54f_clean.udb
+120 tailor ('d508e03568363adae939ebea570d13869d377809', 'da0dd13856760649cc30cf7dbd18caa0672b052a')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailord508e03568363adae939ebea570d13869d377809_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailord508e03568363adae939ebea570d13869d377809_clean.udb
+121 tailor ('404e54a103cafbc39c96fc6675dc4f4d469e4ba3', 'd508e03568363adae939ebea570d13869d377809')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor404e54a103cafbc39c96fc6675dc4f4d469e4ba3_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor404e54a103cafbc39c96fc6675dc4f4d469e4ba3_clean.udb
+122 tailor ('30ddd22ee2510b7770c1b23a4ee0ac30db9bf586', '404e54a103cafbc39c96fc6675dc4f4d469e4ba3')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor30ddd22ee2510b7770c1b23a4ee0ac30db9bf586_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor30ddd22ee2510b7770c1b23a4ee0ac30db9bf586_clean.udb
+123 tailor ('8aee17817d6996a5c7bd2f2ba6f5fa362101bedb', 'a170fb8925574b4174a51cea71bf37e4d3e39407')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor8aee17817d6996a5c7bd2f2ba6f5fa362101bedb_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor8aee17817d6996a5c7bd2f2ba6f5fa362101bedb_clean.udb
+124 tailor ('aede55dd1a83774ff6cc3723325bb5182b13dfcf', '30ddd22ee2510b7770c1b23a4ee0ac30db9bf586')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailoraede55dd1a83774ff6cc3723325bb5182b13dfcf_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailoraede55dd1a83774ff6cc3723325bb5182b13dfcf_clean.udb
+125 tailor ('b440a191825037ffad988755ff7d6b40f155d703', '0e5e86050c30ebc4bfd3151c02d2cd41dc7c01ee')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorb440a191825037ffad988755ff7d6b40f155d703_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorb440a191825037ffad988755ff7d6b40f155d703_clean.udb
+126 tailor ('cf509a48fea90002d6f65f3c8a832660170e5303', 'a20c9d3ad04ffa24a1babf6c8d80523487f87ee3')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorcf509a48fea90002d6f65f3c8a832660170e5303_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorcf509a48fea90002d6f65f3c8a832660170e5303_clean.udb
+127 tailor ('640d4f3c4ab2f6179962472b55dfadf2dd936a3a', 'a4b76d652b0d7c1c667d1c2447364f6a8e3009f4')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor640d4f3c4ab2f6179962472b55dfadf2dd936a3a_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor640d4f3c4ab2f6179962472b55dfadf2dd936a3a_clean.udb
+128 tailor ('51d2b02b46af6ecf720b606322123cfc72b0d483', '06fa3e745e1e1429ede42b8d275c71a28d70db1c')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor51d2b02b46af6ecf720b606322123cfc72b0d483_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor51d2b02b46af6ecf720b606322123cfc72b0d483_clean.udb
+129 tailor ('664a76be960bbb6670ed6c9b2a0d64ec232bd26b', '91796f8dd4a1bbf2cb4919976f80ecd151288be6')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor664a76be960bbb6670ed6c9b2a0d64ec232bd26b_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor664a76be960bbb6670ed6c9b2a0d64ec232bd26b_clean.udb
+130 tailor ('85b1037084ed0d9fdbd34c8439cb1b6aa81ec620', '664a76be960bbb6670ed6c9b2a0d64ec232bd26b')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor85b1037084ed0d9fdbd34c8439cb1b6aa81ec620_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor85b1037084ed0d9fdbd34c8439cb1b6aa81ec620_clean.udb
+131 tailor ('91dbf98a5f14c8f0e3942bb28aad0b7506776fed', '6dc1f113868e223eb42917497b194b219829f69d')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor91dbf98a5f14c8f0e3942bb28aad0b7506776fed_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor91dbf98a5f14c8f0e3942bb28aad0b7506776fed_clean.udb
+132 tailor ('73f19a8dc33fcff713551f047558330dc792b2be', '2613315caa13888b174ffb7a9429422b3dad7abe')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor73f19a8dc33fcff713551f047558330dc792b2be_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor73f19a8dc33fcff713551f047558330dc792b2be_clean.udb
+133 tailor ('04029f8c8a94a48d5df83369bfddb79c7fe2d7e0', '468b96854f41d6a3eb52c02237197f5cf1176466')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor04029f8c8a94a48d5df83369bfddb79c7fe2d7e0_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor04029f8c8a94a48d5df83369bfddb79c7fe2d7e0_clean.udb
+134 tailor ('4a92d8ee9a43bf4bd3b3c3350f494e62ae60f957', '2fd0cb834c68799df1ae933c4cf5db406f8da5fa')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor4a92d8ee9a43bf4bd3b3c3350f494e62ae60f957_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor4a92d8ee9a43bf4bd3b3c3350f494e62ae60f957_clean.udb
+135 tailor ('e9a669b951f9867a66480671d956b4d927a817d7', '4f4e69a23ba4b35b4409d26e1e21d8af3452c29e')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore9a669b951f9867a66480671d956b4d927a817d7_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore9a669b951f9867a66480671d956b4d927a817d7_clean.udb
+136 tailor ('918810389cd5560470852048b8279cf4b3bf06e4', 'c86f38805f5ee2bd6b0ac641c7975d68f2d5d742')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor918810389cd5560470852048b8279cf4b3bf06e4_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor918810389cd5560470852048b8279cf4b3bf06e4_clean.udb
+137 tailor ('f64a404cb53f9256f883510616db712fcca0d9f2', 'b12f4d4e96fa47f3710ad86f79ee6558f699127b')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf64a404cb53f9256f883510616db712fcca0d9f2_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf64a404cb53f9256f883510616db712fcca0d9f2_clean.udb
+138 tailor ('bf10f580e3724a8697404dd6395f9606d9d3030b', 'f64a404cb53f9256f883510616db712fcca0d9f2')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorbf10f580e3724a8697404dd6395f9606d9d3030b_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorbf10f580e3724a8697404dd6395f9606d9d3030b_clean.udb
+139 tailor ('8b5ee7fe041df58a470ebfa5823e80b02f472ba0', '58138d6224057d2a27f4df803746f9e23266b4dc')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor8b5ee7fe041df58a470ebfa5823e80b02f472ba0_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor8b5ee7fe041df58a470ebfa5823e80b02f472ba0_clean.udb
+140 tailor ('3d32e4d4196b7eea32dd462f1af5c76d33aceec2', '6b39cd160cc2dd80b706b6323523e74e31c64216')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor3d32e4d4196b7eea32dd462f1af5c76d33aceec2_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor3d32e4d4196b7eea32dd462f1af5c76d33aceec2_clean.udb
+141 tailor ('fcf641ca7b4e779612e5d0a8d50318791e7fe742', '3d32e4d4196b7eea32dd462f1af5c76d33aceec2')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorfcf641ca7b4e779612e5d0a8d50318791e7fe742_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorfcf641ca7b4e779612e5d0a8d50318791e7fe742_clean.udb
+142 tailor ('bb4ac2cd8218de60b4e866edd4441f9dd7a2f2ca', '8b5ee7fe041df58a470ebfa5823e80b02f472ba0')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorbb4ac2cd8218de60b4e866edd4441f9dd7a2f2ca_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorbb4ac2cd8218de60b4e866edd4441f9dd7a2f2ca_clean.udb
+143 tailor ('be817ff441b1445fd410942bf18a30ab4e28679c', 'ba2f642e7eeb4d2d9cb904963f203c2aab42fb58')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorbe817ff441b1445fd410942bf18a30ab4e28679c_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorbe817ff441b1445fd410942bf18a30ab4e28679c_clean.udb
+144 tailor ('233dafa9145925834b318a57b5c061ffb637de8e', 'eaa4d6f9c70a3a0b56ecd08fd8f9ab7683342c88')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor233dafa9145925834b318a57b5c061ffb637de8e_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor233dafa9145925834b318a57b5c061ffb637de8e_clean.udb
+145 tailor ('5e5a2b8ebcc53978582737216849d646fc73bc5c', 'f79b2983afbf5f0d75fe62ee1a824defca605bbf 7932aead83640ff3edf786e09dea07aafc69a7ed')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor5e5a2b8ebcc53978582737216849d646fc73bc5c_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor5e5a2b8ebcc53978582737216849d646fc73bc5c_clean.udb
+146 tailor ('4dc4d0b62194715673682976678d249063af6a83', '8ab3dbd825fb61828f5936252684bfc0f8cf0655')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor4dc4d0b62194715673682976678d249063af6a83_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor4dc4d0b62194715673682976678d249063af6a83_clean.udb
+147 tailor ('9d6f9ab83f1af4c7432de57acd2734b529b07833', '26c133400271bb371ae7f58364f3e04004d3d559')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor9d6f9ab83f1af4c7432de57acd2734b529b07833_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor9d6f9ab83f1af4c7432de57acd2734b529b07833_clean.udb
+148 tailor ('f893eeda56dcf44992a508d2546e2479ea4b9202', '9d6f9ab83f1af4c7432de57acd2734b529b07833')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf893eeda56dcf44992a508d2546e2479ea4b9202_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf893eeda56dcf44992a508d2546e2479ea4b9202_clean.udb
+149 tailor ('b1cdb31529a7874159d295e4a5a914ebcd3ed8d6', '791f18c72ec7bd6c234b1a2f7aae1a4ebf58b6ea')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorb1cdb31529a7874159d295e4a5a914ebcd3ed8d6_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorb1cdb31529a7874159d295e4a5a914ebcd3ed8d6_clean.udb
+150 tailor ('a7b0086ea89fa60289c4333d09b4659398748dc7', '791f18c72ec7bd6c234b1a2f7aae1a4ebf58b6ea')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailora7b0086ea89fa60289c4333d09b4659398748dc7_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailora7b0086ea89fa60289c4333d09b4659398748dc7_clean.udb
+151 tailor ('cc839d07a6f919ae70fe3bd575dd867d264a6e8f', '8562812ee1d7235705a762c19b01ba84d11e72d4')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorcc839d07a6f919ae70fe3bd575dd867d264a6e8f_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorcc839d07a6f919ae70fe3bd575dd867d264a6e8f_clean.udb
+152 tailor ('e4ce364552bda30f560d368213717fd3230c1ca4', '791f18c72ec7bd6c234b1a2f7aae1a4ebf58b6ea')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore4ce364552bda30f560d368213717fd3230c1ca4_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore4ce364552bda30f560d368213717fd3230c1ca4_clean.udb
+153 tailor ('b70084b9717194595f69289b860792ddfafd193f', 'f893eeda56dcf44992a508d2546e2479ea4b9202')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorb70084b9717194595f69289b860792ddfafd193f_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorb70084b9717194595f69289b860792ddfafd193f_clean.udb
+154 tailor ('4462ae9be029d3c4d68729fa7e51d9f65ec165cb', 'b70084b9717194595f69289b860792ddfafd193f')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor4462ae9be029d3c4d68729fa7e51d9f65ec165cb_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor4462ae9be029d3c4d68729fa7e51d9f65ec165cb_clean.udb
+155 tailor ('85646f053f23f1c65b00c2b7594077b9a1e43de2', '791f18c72ec7bd6c234b1a2f7aae1a4ebf58b6ea')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor85646f053f23f1c65b00c2b7594077b9a1e43de2_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor85646f053f23f1c65b00c2b7594077b9a1e43de2_clean.udb
+156 tailor ('ee2d0b85e191e9bc5dcaef1323d443ddcac4b6d1', '99c99dee24f57aba865404f61f69ebaaefaa0696')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailoree2d0b85e191e9bc5dcaef1323d443ddcac4b6d1_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailoree2d0b85e191e9bc5dcaef1323d443ddcac4b6d1_clean.udb
+157 tailor ('672462eef05900cd8826524d2b2ca6c23696b749', '02864c0b3788a11d53c773610e467f1e30f358f8')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor672462eef05900cd8826524d2b2ca6c23696b749_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor672462eef05900cd8826524d2b2ca6c23696b749_clean.udb
+158 tailor ('e135dc9916f807f44031c099d48b438b23765905', '68a7e95cd37ddec61245cd705baf1e83feea5978')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore135dc9916f807f44031c099d48b438b23765905_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore135dc9916f807f44031c099d48b438b23765905_clean.udb
+159 tailor ('8802ef384c289ec9dbe2ac70b300131014274a27', '4dbababaf1c2d2308f4199de77cf95edeae0a4f3')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor8802ef384c289ec9dbe2ac70b300131014274a27_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor8802ef384c289ec9dbe2ac70b300131014274a27_clean.udb
+160 tailor ('76752c4b9217d72fafa6ac34c82f46e648095cd5', '8802ef384c289ec9dbe2ac70b300131014274a27')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor76752c4b9217d72fafa6ac34c82f46e648095cd5_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor76752c4b9217d72fafa6ac34c82f46e648095cd5_clean.udb
+161 tailor ('b68d0a446e2ad2df17dc018ef074071ccf47fcc9', '76752c4b9217d72fafa6ac34c82f46e648095cd5')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorb68d0a446e2ad2df17dc018ef074071ccf47fcc9_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorb68d0a446e2ad2df17dc018ef074071ccf47fcc9_clean.udb
+162 tailor ('f76656e9f87a72e638b5576fd588da2e1a6126d5', '71cb1920fe409a652ede9ab475454a6d294b8094')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf76656e9f87a72e638b5576fd588da2e1a6126d5_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf76656e9f87a72e638b5576fd588da2e1a6126d5_clean.udb
+163 tailor ('d9a08a11d5ac916fd30453ad91c7abbc5931eb4d', 'aad653d1f79497e14cda49ade0a3f242631f6366')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailord9a08a11d5ac916fd30453ad91c7abbc5931eb4d_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailord9a08a11d5ac916fd30453ad91c7abbc5931eb4d_clean.udb
+164 tailor ('82093a2e398c09892aae2f2feddfc49f7040724b', 'c173eb5ec19337821689e39e43f180c30b729aeb')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor82093a2e398c09892aae2f2feddfc49f7040724b_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor82093a2e398c09892aae2f2feddfc49f7040724b_clean.udb
+165 tailor ('8b4b0d70ab37c03859a7fd64cf67ccc1b21f0982', 'c388da949d9d3e575f33943c9c7d31c49f9efc5b')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor8b4b0d70ab37c03859a7fd64cf67ccc1b21f0982_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor8b4b0d70ab37c03859a7fd64cf67ccc1b21f0982_clean.udb
+166 tailor ('dbc82339d9808755ea05a49d3e46b111b4c719f6', '9ba680803697271c58378f5f39181ab5f30b7c22')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailordbc82339d9808755ea05a49d3e46b111b4c719f6_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailordbc82339d9808755ea05a49d3e46b111b4c719f6_clean.udb
+167 tailor ('9823101f905302333ad441f45ef29fb312f83159', 'ccea7be1d68ca801746cb594bdf1a717de70f192')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor9823101f905302333ad441f45ef29fb312f83159_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor9823101f905302333ad441f45ef29fb312f83159_clean.udb
+168 tailor ('c716167cd9dfe5350f0aa374e8aceb8c0c0b6afe', '9823101f905302333ad441f45ef29fb312f83159')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorc716167cd9dfe5350f0aa374e8aceb8c0c0b6afe_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorc716167cd9dfe5350f0aa374e8aceb8c0c0b6afe_clean.udb
+169 tailor ('db1832d5529833ba2a08453511437ad8ea3df2b4', 'bc7533e6ae6f289a865a1104c948720bc7ce91bb')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailordb1832d5529833ba2a08453511437ad8ea3df2b4_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailordb1832d5529833ba2a08453511437ad8ea3df2b4_clean.udb
+170 tailor ('a5877712edce5f022b17cff02ca611a249aa2a53', 'c5470984bbfd2168c8762efee40192cee07c1ba9')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailora5877712edce5f022b17cff02ca611a249aa2a53_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailora5877712edce5f022b17cff02ca611a249aa2a53_clean.udb
+171 tailor ('a041cf28fdcfe9872f3393fd9e10a1385029fa15', '8ee495a081b4de4174a22f3ed7105723ddd1b20b')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailora041cf28fdcfe9872f3393fd9e10a1385029fa15_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailora041cf28fdcfe9872f3393fd9e10a1385029fa15_clean.udb
+172 tailor ('e49e48f6ededc8611ab5ec888c861412071cdaff', '0bf6b2e1b54b726cd9dbd87343f383af63ed9dff')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore49e48f6ededc8611ab5ec888c861412071cdaff_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore49e48f6ededc8611ab5ec888c861412071cdaff_clean.udb
+173 tailor ('72c4a2dd00865b95100c83bed7720280c4d48c76', 'f94d66917ccb4951ab245157a2b61be672481d7f')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor72c4a2dd00865b95100c83bed7720280c4d48c76_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor72c4a2dd00865b95100c83bed7720280c4d48c76_clean.udb
+174 tailor ('6509f3ee5ec356c3c9b7361db512b93a804c384a', '72c4a2dd00865b95100c83bed7720280c4d48c76')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor6509f3ee5ec356c3c9b7361db512b93a804c384a_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor6509f3ee5ec356c3c9b7361db512b93a804c384a_clean.udb
+175 tailor ('097eda40817122cf7276970a27c3d18c6bdf89d9', '29fc8f4a534cf9d833fd20f1c9637de11240a317')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor097eda40817122cf7276970a27c3d18c6bdf89d9_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor097eda40817122cf7276970a27c3d18c6bdf89d9_clean.udb
+176 tailor ('a1830485629f37f376275c7083687cb76eadcea7', '38ce2743e557c9adf1cb4ac0514235c053fb25dc')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailora1830485629f37f376275c7083687cb76eadcea7_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailora1830485629f37f376275c7083687cb76eadcea7_clean.udb
+177 tailor ('47a5796e18dc99809d4880a556d75e92bcbe8871', '38ce2743e557c9adf1cb4ac0514235c053fb25dc')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor47a5796e18dc99809d4880a556d75e92bcbe8871_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor47a5796e18dc99809d4880a556d75e92bcbe8871_clean.udb
+178 tailor ('69019b7484df90c9303c78fca627d7ec5b1078fa', '1d8e2d9615caccec2455b53980cb9713a7d45b51')
+at und fileException in thread Thread-8:
+Traceback (most recent call last):
+  File "/home/smajumd3/anaconda3/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "run.py", line 44, in run
+    **self._kwargs)
+  File "run.py", line 72, in mine
+    cas_manager.run()
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 67, in run
+    self.checkAnalyzation()
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 60, in checkAnalyzation
+    analyze(repo)
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 31, in analyze
+    analyzeRepo(repo_id)
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 54, in analyzeRepo
+    final_commits.to_csv(up(up(up(up(up(up(os.getcwd())))))) + '/data/commit_guru/' + repo_name + '.csv',index=False)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py", line 3020, in to_csv
+    formatter.save()
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 157, in save
+    compression=self.compression)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/common.py", line 424, in _get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: '//data/commit_guru/loklak_jlib_api.csv'
+
+ tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor69019b7484df90c9303c78fca627d7ec5b1078fa_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor69019b7484df90c9303c78fca627d7ec5b1078fa_clean.udb
+179 tailor ('e1e05b18b4067d10298fcbb48dd6035ce694d6a1', '69019b7484df90c9303c78fca627d7ec5b1078fa')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore1e05b18b4067d10298fcbb48dd6035ce694d6a1_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore1e05b18b4067d10298fcbb48dd6035ce694d6a1_clean.udb
+180 tailor ('919ece75b12dc1b4bae922e037221a6212b8c80c', '96438f910077b8fb1b453c8999dcf83cf7433691')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor919ece75b12dc1b4bae922e037221a6212b8c80c_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor919ece75b12dc1b4bae922e037221a6212b8c80c_clean.udb
+181 tailor ('116c1da98fa0b06897a42274af6f95cc0b6e398d', 'cc25a35c35e66463ad06317f35a7ab72132f38c6')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor116c1da98fa0b06897a42274af6f95cc0b6e398d_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor116c1da98fa0b06897a42274af6f95cc0b6e398d_clean.udb
+182 tailor ('fc509c7b6d83a2533f811bd1aec17e979e9f98d8', '3d7299cb04e7934c1fe65d445191820e41d19883')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorfc509c7b6d83a2533f811bd1aec17e979e9f98d8_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorfc509c7b6d83a2533f811bd1aec17e979e9f98d8_clean.udb
+183 tailor ('bf06733b9b8ed31bd76baf2a2b79b1c8eece67cc', '1f044e20664c10c130523f42f4c4ce15b34a5bb7')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorbf06733b9b8ed31bd76baf2a2b79b1c8eece67cc_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorbf06733b9b8ed31bd76baf2a2b79b1c8eece67cc_clean.udb
+184 tailor ('f50602e158006f5a1673796aa55d93c63e5fb505', 'a67d17b346e28416716cdf76f6337386ed74fa68')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf50602e158006f5a1673796aa55d93c63e5fb505_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf50602e158006f5a1673796aa55d93c63e5fb505_clean.udb
+185 tailor ('73d9a950283d1fe44911641d318aae1869ac4adc', 'f50602e158006f5a1673796aa55d93c63e5fb505')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor73d9a950283d1fe44911641d318aae1869ac4adc_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor73d9a950283d1fe44911641d318aae1869ac4adc_clean.udb
+186 tailor ('5c88f40e5a5ca6f1ab8718c21b706ef8676078ca', 'f9c12eb824a1a93dd1e0b8faaff418f0bb151270')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor5c88f40e5a5ca6f1ab8718c21b706ef8676078ca_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor5c88f40e5a5ca6f1ab8718c21b706ef8676078ca_clean.udb
+187 tailor ('91ed78bbc256b1cb36e733d28bc619c1bb802f1c', 'd48da650a0a767f534c3d83edc14224c9840e47e')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor91ed78bbc256b1cb36e733d28bc619c1bb802f1c_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor91ed78bbc256b1cb36e733d28bc619c1bb802f1c_clean.udb
+188 tailor ('f5ea0f082e480542cc94bb3c834517dc1c0da869', '770560b712e1ec891fbf5f5faa168ce93df24538')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf5ea0f082e480542cc94bb3c834517dc1c0da869_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorf5ea0f082e480542cc94bb3c834517dc1c0da869_clean.udb
+189 tailor ('ad04676d63a615b49dbd3c6ce374060ca9c967ff', '90fa768e121199270070b11a17efbf9ca780a81d')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorad04676d63a615b49dbd3c6ce374060ca9c967ff_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorad04676d63a615b49dbd3c6ce374060ca9c967ff_clean.udb
+190 tailor ('0a808bdb02a097c40796c92d29073ffd103597ce', 'd996a3d472af17c606379aa5672b48a1e36be34e')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor0a808bdb02a097c40796c92d29073ffd103597ce_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor0a808bdb02a097c40796c92d29073ffd103597ce_clean.udb
+191 tailor ('05afd9848bcfedec63d1f76239ce79a7b87c295c', '42bf6eae0e5620c34f6cd6e87c289a032fb01f76')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor05afd9848bcfedec63d1f76239ce79a7b87c295c_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor05afd9848bcfedec63d1f76239ce79a7b87c295c_clean.udb
+192 tailor ('2b6961dee5176d315242014f41187da3c7fb69b9', '65e823737f3e8fc3284fbd97e230b77167307769')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor2b6961dee5176d315242014f41187da3c7fb69b9_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor2b6961dee5176d315242014f41187da3c7fb69b9_clean.udb
+193 tailor ('c347108f67d5498a862978b1da6854c542dec516', 'f61536b84460164fc2fd1307edd9e0d41a3f40fc')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorc347108f67d5498a862978b1da6854c542dec516_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorc347108f67d5498a862978b1da6854c542dec516_clean.udb
+194 tailor ('e43c20140f425e1dfa75a7dae582965d0db262c4', 'dfeb17dfbb4afcc5731e4cd1b6fb24c644ac08ac')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore43c20140f425e1dfa75a7dae582965d0db262c4_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailore43c20140f425e1dfa75a7dae582965d0db262c4_clean.udb
+195 tailor ('0d7587551e90e91d00ca88393577f1511c486572', '3bbaf87e8818c4426d3e1cf33fea41653d65db44')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor0d7587551e90e91d00ca88393577f1511c486572_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor0d7587551e90e91d00ca88393577f1511c486572_clean.udb
+196 tailor ('1612cb72584478b7fea7756a8591b1ae80295122', '7911d02f5bd976f071cb6de7a6c73a114694aa00')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor1612cb72584478b7fea7756a8591b1ae80295122_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor1612cb72584478b7fea7756a8591b1ae80295122_clean.udb
+197 tailor ('62c8d0514ea50d24d8d1cccb2b7a20a1b86bc3f4', 'b26e5cb1c07c43f2121f164e708cd4089bc4a7b2')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor62c8d0514ea50d24d8d1cccb2b7a20a1b86bc3f4_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailor62c8d0514ea50d24d8d1cccb2b7a20a1b86bc3f4_clean.udb
+198 tailor ('ecdd3cc13cc9eaa09f9034aabd84e5cab7080961', '922652eae313726078bbd79e5c2915d8447b62eb')
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorecdd3cc13cc9eaa09f9034aabd84e5cab7080961_buggy.udb
+at und file tailor /tmp/smajumd3/temp/udb/tailor /tmp/smajumd3/temp/udb/tailor/tailorecdd3cc13cc9eaa09f9034aabd84e5cab7080961_clean.udb
+Done
