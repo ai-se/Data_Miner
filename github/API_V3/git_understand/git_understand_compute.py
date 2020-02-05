@@ -112,7 +112,8 @@ class MetricsGetter(object):
                 files_changed = files_changed.split(',')
                 files_changed = list(filter(('CAS_DELIMITER').__ne__, files_changed))
                 self.commits.append(bug_existing_commit)
-                language = "Python"
+                #language = "Python"
+                language = self.repo_lang
                 if bug_fixing_commit == None:
                     print(df.iloc[i,0])
                     continue
@@ -165,7 +166,8 @@ class MetricsGetter(object):
                 for file in db_buggy.ents("Class"):
                     # print directory name
                     # print(file,file.longname(), file.kind())
-                    language = "Python"
+                    #language = "Python"
+                    language = self.repo_lang
                     if language == "Java" or language == "C++" or language "C":
                         r = re.compile(str(file.longname()))
                         newlist = list(filter(r.search, list(set(files_changed))))
@@ -210,7 +212,8 @@ class MetricsGetter(object):
                 db_clean = und.open(str(clean_und_file))
                 for file in db_clean.ents("class"):
                     # print directory name
-                    language = "Python"
+                    #language = "Python"
+                    language = self.repo_lang
                     if language == "Java" or language == "C++" or language "C":
                         r = re.compile(str(file.longname()))
                         newlist = list(filter(r.search, list(set(files_changed))))
