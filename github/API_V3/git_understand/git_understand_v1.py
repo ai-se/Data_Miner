@@ -227,6 +227,8 @@ class MetricsGetter(object):
         # Create a handle for storing *.udb file for the project
         und_file = self.udb_path.joinpath(
             "{}_{}.udb".format(self.repo_name+buggy_hash, file_name_suffix))
+        und_file_csv = self.udb_path.joinpath(
+            "{}_{}.csv".format(self.repo_name+buggy_hash, file_name_suffix))
         # Go to the udb path
         print("at und file",self.repo_name,self.udb_path,und_file)
         os.chdir(self.udb_path)
@@ -249,8 +251,8 @@ class MetricsGetter(object):
             cmd = "und create -languages C++ add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         elif self.repo_lang == "Java":
-            cmd = "und create -languages Java add {} analyze {}".format(
-                str(self.repo_path), str(und_file))
+            cmd = "und create -languages Java add {} -metrics all -metricsOutputFile {} analyze {} metrics".format(
+                str(self.repo_path),str(und_file_csv) ,str(und_file))
         elif self.repo_lang == "C#":
             cmd = "und create -languages C# add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
