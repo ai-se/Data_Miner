@@ -162,6 +162,8 @@ class MetricsGetter(object):
                 buggy_und_file = self.udb_path.joinpath("{}_{}.udb".format(self.repo_name+buggy_hash, "buggy"))
                 #print(self.buggy_und_file)
                 db_buggy = und.open(str(buggy_und_file))
+                metrics = db_buggy.metric(db_buggy.metrics())
+                
                 #print("Files",set(files_changed))
                 for file in db_buggy.ents("Class"):
                     # print directory name
