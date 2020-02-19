@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "run.py", line 89, in <module>
+    i#project_list = project_list[project_list['lang'] == 'Java']
+NameError: name 'i' is not defined

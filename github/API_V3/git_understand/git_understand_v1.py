@@ -251,7 +251,7 @@ class MetricsGetter(object):
             cmd = "und create -languages C++ add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         elif self.repo_lang == "Java":
-            cmd = "und create -languages Java add {} -metrics all -metricsOutputFile {} analyze {} metrics".format(
+            cmd = "und create -languages Java add {} settings -metrics all -metricsOutputFile {} analyze {} metrics".format(
                 str(self.repo_path),str(und_file_csv) ,str(und_file))
         elif self.repo_lang == "C#":
             cmd = "und create -languages C# add {} analyze {}".format(
@@ -259,6 +259,7 @@ class MetricsGetter(object):
         elif self.repo_lang == "JavaScript":
             cmd = "und create -languages JavaScript add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
+        print(cmd)
         out, err = self._os_cmd(cmd)
         #print("runnung command")
         out, err = self._os_cmd(cmd)
