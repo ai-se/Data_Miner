@@ -31,8 +31,8 @@ if __name__ == "__main__":
     data_path = os.getcwd() + '\\Test_projects.csv'
     code_path = os.getcwd()
   project_list = pd.read_csv(data_path)
-  # project_list = project_list[project_list['lang'] == 'C++']
-  # project_list = project_list[0:1]
+  project_list = project_list[project_list['lang'] != 'C#']
+  project_list = project_list[18:26]
   project_list.reset_index(drop=True,inplace=True)
   code_path = os.getcwd()
   #project_list = project_list[0:1]
@@ -54,6 +54,9 @@ if __name__ == "__main__":
       os.chdir(code_path)
       get_matrix = compute_metrics.MetricsGetter(git_url,repo_name,repo_lang,code_path)
       matrix = get_matrix.get_defective_pair_metrics()
+      project_list.loc[i,'done'] = 1
+      project_list.to_csv('completed_projects.csv')
+      print(project_list)
       #if i == 0:
       #  break
     except ValueError as e:

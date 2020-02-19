@@ -83,7 +83,7 @@ class MetricsGetter(object):
         self.buggy_clean_pairs = self.read_commits()
         #self.buggy_clean_pairs = self.buggy_clean_pairs[0:5]
         # Reference current directory, so we can go back after we are done.
-        self.cwd = Path(self.root_dir)
+        self.cwd = Path('/tmp/smajumd3/')
         #self.repo = self.clone_repo()
         # Generate path to store udb files
         #self.udb_path = self.cwd.joinpath(".temp", "udb")
@@ -162,6 +162,11 @@ class MetricsGetter(object):
                 buggy_und_file = self.udb_path.joinpath("{}_{}.udb".format(self.repo_name+buggy_hash, "buggy"))
                 #print(self.buggy_und_file)
                 db_buggy = und.open(str(buggy_und_file))
+                #continue
+                print((db_buggy.metrics()))
+                metrics = db_buggy.metric(db_buggy.metrics())
+                print(metrics)
+                break
                 #print("Files",set(files_changed))
                 for file in db_buggy.ents("Class"):
                     # print directory name
@@ -194,6 +199,7 @@ class MetricsGetter(object):
                         print("Language under construction")
                     if len(newlist) > 0:
                         metrics = file.metric(file.metrics())
+                        print(len(file.metrics()))
                         metrics["commit_hash"] = buggy_hash
                         metrics["Name"] = file.longname()
                         metrics["Bugs"] = 1
@@ -201,6 +207,7 @@ class MetricsGetter(object):
                             pd.Series(metrics), ignore_index=True)
                     else:
                         metrics = file.metric(file.metrics())
+                        print(len(file.metrics()))
                         metrics["commit_hash"] = buggy_hash
                         metrics["Name"] = file.longname()
                         metrics["Bugs"] = 0
