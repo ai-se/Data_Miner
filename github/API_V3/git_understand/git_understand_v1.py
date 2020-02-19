@@ -239,26 +239,26 @@ class MetricsGetter(object):
 
         # Generate udb file
         if self.repo_lang == "fortran":
-            cmd = "und create -languages Fortran add {} analyze {}".format(
-                str(self.repo_path), str(und_file))
+            cmd = "und create -languages Fortran add {} -metrics all -metricsOutputFile {} analyze {} metrics".format(
+                str(self.repo_path),str(und_file_csv) ,str(und_file))
         elif self.repo_lang == "Python":
-            cmd = "und create -languages python add {} analyze {}".format(
-                str(self.repo_path), str(und_file))
+            cmd = "und create -languages python add {} -metrics all -metricsOutputFile {} analyze {} metrics".format(
+                str(self.repo_path),str(und_file_csv) ,str(und_file))
         elif self.repo_lang == "C":
-            cmd = "und create -languages C++ add {} analyze {}".format(
-                str(self.repo_path), str(und_file))
+            cmd = "und create -languages C++ add {} -metrics all -metricsOutputFile {} analyze {} metrics".format(
+                str(self.repo_path),str(und_file_csv) ,str(und_file))
         elif self.repo_lang == "C++":
-            cmd = "und create -languages C++ add {} analyze {}".format(
-                str(self.repo_path), str(und_file))
+            cmd = "und create -languages C++ add {} -metrics all -metricsOutputFile {} analyze {} metrics".format(
+                str(self.repo_path),str(und_file_csv) ,str(und_file))
         elif self.repo_lang == "Java":
             cmd = "und create -languages Java add {} -metrics all -metricsOutputFile {} analyze {} metrics".format(
                 str(self.repo_path),str(und_file_csv) ,str(und_file))
         elif self.repo_lang == "C#":
-            cmd = "und create -languages C# add {} analyze {}".format(
-                str(self.repo_path), str(und_file))
+            cmd = "und create -languages C# add {} -metrics all -metricsOutputFile {} analyze {} metrics".format(
+                str(self.repo_path),str(und_file_csv) ,str(und_file))
         elif self.repo_lang == "JavaScript":
-            cmd = "und create -languages JavaScript add {} analyze {}".format(
-                str(self.repo_path), str(und_file))
+            cmd = "und create -languages JavaScript add {} -metrics all -metricsOutputFile {} analyze {} metrics".format(
+                str(self.repo_path),str(und_file_csv) ,str(und_file))
         out, err = self._os_cmd(cmd)
         #print("runnung command")
         out, err = self._os_cmd(cmd)
