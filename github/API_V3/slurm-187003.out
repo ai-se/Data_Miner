@@ -1,0 +1,915 @@
+2020-02-20 10:49:15 INFO: Adding repo derive4j to work queue for ingesting
+2020-02-20 10:49:15 INFO: Adding repo polyglot to work queue for ingesting
+2020-02-20 10:49:15 INFO: A worker is starting scan repository: derive4j
+2020-02-20 10:49:15 INFO: Adding repo apollo to work queue for ingesting
+2020-02-20 10:49:15 INFO: A worker is starting scan repository: polyglot
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+HEAD is now at 43e3174 Allow colons in metadata values
+2020-02-20 10:49:15 INFO: A worker is starting scan repository: apollo
+2020-02-20 10:49:15 INFO: Adding repo manifold to work queue for ingesting
+2020-02-20 10:49:15 INFO: Pulling latest changes from repo: derive4j
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-02-20 10:49:15 INFO: A worker is starting scan repository: manifold
+2020-02-20 10:49:15 INFO: Adding repo t-vault to work queue for ingesting
+2020-02-20 10:49:15 INFO: Adding repo WorkbenchFX to work queue for ingesting
+2020-02-20 10:49:15 INFO: Pulling latest changes from repo: polyglot
+HEAD is now at 2790d37 Merge pull request #382 from logzio/DEV-17633-add_region_to_description
+2020-02-20 10:49:15 INFO: Adding repo eo to work queue for ingesting
+2020-02-20 10:49:15 INFO: Adding repo huntbugs to work queue for ingesting
+2020-02-20 10:49:15 INFO: A worker is starting scan repository: huntbugs
+2020-02-20 10:49:15 INFO: A worker is starting scan repository: t-vault
+2020-02-20 10:49:15 INFO: Adding repo fastr to work queue for ingesting
+2020-02-20 10:49:15 INFO: Adding repo stag-java to work queue for ingesting
+2020-02-20 10:49:15 INFO: A worker is starting scan repository: eo
+2020-02-20 10:49:15 INFO: Adding repo Jukito to work queue for ingesting
+2020-02-20 10:49:15 INFO: Adding repo RxJavaFX to work queue for ingesting
+2020-02-20 10:49:15 INFO: Adding repo easygcm to work queue for ingesting
+2020-02-20 10:49:15 INFO: A worker is starting scan repository: WorkbenchFX
+2020-02-20 10:49:15 INFO: Adding repo moditect to work queue for ingesting
+2020-02-20 10:49:15 INFO: Adding repo SquidLib to work queue for ingesting
+2020-02-20 10:49:15 INFO: A worker is starting scan repository: fastr
+2020-02-20 10:49:15 INFO: Adding repo PreferencesFX to work queue for ingesting
+2020-02-20 10:49:15 INFO: Pulling latest changes from repo: apollo
+2020-02-20 10:49:15 INFO: A worker is starting scan repository: stag-java
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-02-20 10:49:15 INFO: A worker is starting scan repository: Jukito
+2020-02-20 10:49:15 INFO: A worker is starting scan repository: RxJavaFX
+2020-02-20 10:49:15 INFO: A worker is starting scan repository: easygcm
+2020-02-20 10:49:15 INFO: A worker is starting scan repository: moditect
+2020-02-20 10:49:15 INFO: A worker is starting scan repository: SquidLib
+2020-02-20 10:49:15 INFO: A worker is starting scan repository: PreferencesFX
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-02-20 10:49:16 INFO: Pulling latest changes from repo: RxJavaFX
+2020-02-20 10:49:16 INFO: Pulling latest changes from repo: eo
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+HEAD is now at 05e7ebd Note about abandoned project
+HEAD is now at 340534d Merge pull request #79 from The-Alchemist/patch-1
+HEAD is now at d06bbff Created a correct google services json file, minor log fix
+HEAD is now at 70256af Upgrade JP
+2020-02-20 10:49:16 INFO: Pulling latest changes from repo: Jukito
+2020-02-20 10:49:16 INFO: Pulling latest changes from repo: easygcm
+2020-02-20 10:49:16 INFO: Done fetching.
+2020-02-20 10:49:16 INFO: Getting/parsing git commits: polyglot
+2020-02-20 10:49:16 INFO: Done fetching.
+2020-02-20 10:49:16 INFO: Getting/parsing git commits: derive4j
+2020-02-20 10:49:16 INFO: Pulling latest changes from repo: moditect
+HEAD is now at 0aac518 Merge pull request #141 from dlsc-software-consulting-gmbh/dependabot/maven/com.google.code.gson-gson-2.8.6
+2020-02-20 10:49:16 INFO: Pulling latest changes from repo: huntbugs
+2020-02-20 10:49:16 INFO: Done fetching.
+2020-02-20 10:49:16 INFO: Getting/parsing git commits: apollo
+HEAD is now at 86aec38 Merge pull request #189 from vimeo/va-xxx-upgrade-fastlane
+2020-02-20 10:49:16 INFO: Pulling latest changes from repo: PreferencesFX
+HEAD is now at 2e4fbe9 Merge pull request #99 from dlsc-software-consulting-gmbh/dependabot/maven/net.bytebuddy-byte-buddy-1.10.2
+2020-02-20 10:49:16 INFO: Done fetching.
+2020-02-20 10:49:16 INFO: Getting/parsing git commits: RxJavaFX
+2020-02-20 10:49:17 INFO: Done fetching.
+2020-02-20 10:49:17 INFO: Getting/parsing git commits: eo
+HEAD is now at 0d166de bump version
+2020-02-20 10:49:17 INFO: Done getting/parsing git commits.
+HEAD is now at f278d55 Merge pull request #237 from sivanag1974/dev
+2020-02-20 10:49:17 INFO: Saving commits to the csv...
+2020-02-20 10:49:17 INFO: Done fetching.
+2020-02-20 10:49:17 INFO: Getting/parsing git commits: easygcm
+2020-02-20 10:49:17 INFO: Done saving commits to the csv.
+2020-02-20 10:49:17 INFO: A worker finished ingesting repo polyglot
+2020-02-20 10:49:17 INFO: Adding repo polyglot to work queue for analyzing.
+2020-02-20 10:49:17 INFO: Worker analyzing repository  polyglot
+2020-02-20 10:49:17 INFO: Done fetching.
+2020-02-20 10:49:17 INFO: Getting/parsing git commits: Jukito
+2020-02-20 10:49:17 INFO: Pulling latest changes from repo: stag-java
+2020-02-20 10:49:17 INFO: Pulling latest changes from repo: WorkbenchFX
+2020-02-20 10:49:17 INFO: Done fetching.
+2020-02-20 10:49:17 INFO: Done fetching.
+2020-02-20 10:49:17 INFO: Getting/parsing git commits: huntbugs
+2020-02-20 10:49:17 INFO: Getting/parsing git commits: moditect
+2020-02-20 10:49:17 INFO: Done getting/parsing git commits.
+2020-02-20 10:49:17 INFO: Done getting/parsing git commits.
+2020-02-20 10:49:17 INFO: Pulling latest changes from repo: t-vault
+2020-02-20 10:49:17 INFO: Done getting/parsing git commits.
+2020-02-20 10:49:17 INFO: Done getting/parsing git commits.
+2020-02-20 10:49:17 INFO: Done fetching.
+2020-02-20 10:49:17 INFO: Linking 37 new corrective commits for repo polyglot
+2020-02-20 10:49:17 INFO: Saving commits to the csv...
+2020-02-20 10:49:17 INFO: Saving commits to the csv...
+2020-02-20 10:49:17 INFO: Getting/parsing git commits: PreferencesFX
+2020-02-20 10:49:17 INFO: Saving commits to the csv...
+2020-02-20 10:49:17 INFO: Saving commits to the csv...
+2020-02-20 10:49:17 INFO: Done saving commits to the csv.
+2020-02-20 10:49:17 INFO: A worker finished ingesting repo eo
+2020-02-20 10:49:17 INFO: Done saving commits to the csv.
+2020-02-20 10:49:17 INFO: A worker finished ingesting repo derive4j
+2020-02-20 10:49:17 INFO: Adding repo derive4j to work queue for analyzing.
+2020-02-20 10:49:17 INFO: Done saving commits to the csv.
+2020-02-20 10:49:17 INFO: Worker analyzing repository  derive4j
+2020-02-20 10:49:17 INFO: Linkage for commit deb7be95475bc287cefa277e87508a60cd255865
+2020-02-20 10:49:17 INFO: A worker finished ingesting repo easygcm
+2020-02-20 10:49:17 INFO: Done getting/parsing git commits.
+2020-02-20 10:49:18 INFO: Pulling latest changes from repo: manifold
+16
+     repo_name        repo_owner  ... defective done
+0     manifold  manifold-systems  ...       NaN    0
+1      consulo           consulo  ...       NaN    0
+2  BashSupport       BashSupport  ...       NaN    0
+
+[3 rows x 10 columns]
+     repo_name repo_owner  ... defective done
+0     derive4j   derive4j  ...       NaN    0
+1  servicetalk      apple  ...       NaN    0
+2    nzbhydra2  theotherp  ...       NaN    0
+
+[3 rows x 10 columns]
+             repo_name      repo_owner  ... defective done
+0             polyglot  grpc-ecosystem  ...       NaN    0
+1          progressbar        ctongfei  ...       NaN    0
+2  cyclops-integration             aol  ...       NaN    0
+
+[3 rows x 10 columns]
+      repo_name repo_owner  ... defective done
+0      RxJavaFX  ReactiveX  ...       NaN    0
+1  Android-Orma  maskarade  ...       NaN    0
+2      app-icon    dwmkerr  ...       NaN    0
+
+[3 rows x 10 columns]
+          repo_name         repo_owner  ... defective done
+0             fastr             oracle  ...       NaN    0
+1  fdb-record-layer       FoundationDB  ...       NaN    0
+2           Sudachi  WorksApplications  ...       NaN    0
+
+[3 rows x 10 columns]
+   repo_name    repo_owner  ... defective done
+0         eo      yegor256  ...       NaN    0
+1       es4x   reactiverse  ...       NaN    0
+2  phoenicis  PhoenicisOrg  ...       NaN    0
+
+[3 rows x 10 columns]
+   repo_name  repo_owner  ... defective done
+0  stag-java       vimeo  ...       NaN    0
+1      Easer  renyuneyun  ...       NaN    0
+2    iceberg     Netflix  ...       NaN    0
+
+[3 rows x 10 columns]
+       repo_name                     repo_owner  ... defective done
+0  PreferencesFX  dlsc-software-consulting-gmbh  ...       NaN    0
+1    pojobuilder                       mkarneim  ...       NaN    0
+2         tikxml                       Tickaroo  ...       NaN    0
+
+[3 rows x 10 columns]
+              repo_name  repo_owner  ... defective done
+0              huntbugs     amaembo  ...       NaN    0
+1  org.alloytools.alloy  AlloyTools  ...       NaN    0
+
+[2 rows x 10 columns]
+  repo_name repo_owner  ... defective done
+0  SquidLib  SquidPony  ...       NaN    0
+1    chunky      llbit  ...       NaN    0
+
+[2 rows x 10 columns]
+  repo_name repo_owner  ... defective done
+0    apollo     logzio  ...       NaN    0
+1   mini2Dx    mini2Dx  ...       NaN    0
+
+[2 rows x 10 columns]
+               repo_name                     repo_owner  ... defective done
+0            WorkbenchFX  dlsc-software-consulting-gmbh  ...       NaN    0
+1  postgres-async-driver                         alaisi  ...       NaN    0
+
+[2 rows x 10 columns]
+           repo_name repo_owner  ... defective done
+0            t-vault    tmobile  ...       NaN    0
+1  spring-javaformat  spring-io  ...       NaN    0
+
+[2 rows x 10 columns]
+  repo_name repo_owner  ... defective done
+0   easygcm     inloop  ...       NaN    0
+1     arara     cereda  ...       NaN    0
+
+[2 rows x 10 columns]
+  repo_name repo_owner  ... defective done
+0    Jukito    ArcBees  ...       NaN    0
+1  Elephant       jusu  ...       NaN    0
+
+[2 rows x 10 columns]
+            repo_name repo_owner  ... defective done
+0            moditect   moditect  ...       NaN    0
+1  wix-embedded-mysql        wix  ...       NaN    0
+
+[2 rows x 10 columns]
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+   id      name                                   url last_analyzed
+0   1  derive4j  https://github.com/derive4j/derive4j          None
+   id      name                                         url last_analyzed
+0   1  polyglot  https://github.com/grpc-ecosystem/polyglot          None
+   id    name                               url last_analyzed
+0   1  apollo  https://github.com/logzio/apollo          None
+   id      name                                           url last_analyzed
+0   1  manifold  https://github.com/manifold-systems/manifold          None
+The repo is: derive4j
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/derive4j
+working on pulling
+The repo is: polyglot
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/polyglot
+working on pulling
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id     name                                 url last_analyzed
+0   1  t-vault  https://github.com/tmobile/t-vault          None
+The repo is: apollo
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/apollo
+file exist
+working on pulling
+The repo is: manifold
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/manifold
+working on pulling
+   id      name                                  url last_analyzed
+0   1  huntbugs  https://github.com/amaembo/huntbugs          None
+   id name                             url last_analyzed
+0   1   eo  https://github.com/yegor256/eo          None
+file exist
+   id       name                                 url last_analyzed
+0   1  stag-java  https://github.com/vimeo/stag-java          None
+   id   name                              url last_analyzed
+0   1  fastr  https://github.com/oracle/fastr          None
+file exist
+   id      name                                   url last_analyzed
+0   1  moditect  https://github.com/moditect/moditect          None
+   id    name                                url last_analyzed
+0   1  Jukito  https://github.com/ArcBees/Jukito          None
+file exist
+   id      name                                    url last_analyzed
+0   1  RxJavaFX  https://github.com/ReactiveX/RxJavaFX          None
+   id     name                                url last_analyzed
+0   1  easygcm  https://github.com/inloop/easygcm          None
+file exist
+The repo is: huntbugs
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/huntbugs
+The repo is: t-vault
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/t-vault
+   id      name                                    url last_analyzed
+0   1  SquidLib  https://github.com/SquidPony/SquidLib          None
+file exist
+working on pulling
+working on pulling
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+The repo is: eo
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/eo
+working on pulling
+The repo is: WorkbenchFX
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/WorkbenchFX
+working on pulling
+The repo is: fastr
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/fastr
+working on pulling
+The repo is: stag-java
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/stag-java
+The repo is: Jukito
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Jukito
+The repo is: RxJavaFX
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/RxJavaFX
+working on pulling
+working on pulling
+The repo is: easygcm
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/easygcm
+working on pulling
+working on pulling
+The repo is: moditect
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/moditect
+The repo is: SquidLib
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/SquidLib
+working on pulling
+The repo is: PreferencesFX
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/PreferencesFX
+working on pulling
+working on pulling
+======================== 2020-02-20 10:49:17.251397 2020-01-21 10:49:17.251367
+/home/smajumd3/Data_Miner/github/API_V3
+I am here
+======================== 2020-02-20 10:49:17.937695 2020-01-21 10:49:17.937667
+/home/smajumd3/Data_Miner/github/API_V3
+I am here
+   id  name                                  url last_analyzed
+0   1  es4x  https://github.com/reactiverse/es4x          None2020-02-20 10:49:18 INFO: Done fetching.
+2020-02-20 10:49:18 INFO: Done fetching.
+2020-02-20 10:49:18 INFO: Getting/parsing git commits: WorkbenchFX
+2020-02-20 10:49:18 INFO: Adding repo es4x to work queue for ingesting
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+2020-02-20 10:49:18 INFO: Getting/parsing git commits: stag-java
+2020-02-20 10:49:18 INFO: Done saving commits to the csv.
+2020-02-20 10:49:18 INFO: A worker is starting scan repository: es4x
+2020-02-20 10:49:18 INFO: A worker finished ingesting repo RxJavaFX
+2020-02-20 10:49:18 INFO: Done fetching.
+2020-02-20 10:49:18 INFO: Adding repo RxJavaFX to work queue for analyzing.
+2020-02-20 10:49:18 INFO: Getting/parsing git commits: t-vault
+2020-02-20 10:49:18 INFO: Worker analyzing repository  RxJavaFX
+2020-02-20 10:49:18 INFO: Linking 87 new corrective commits for repo derive4j
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-02-20 10:49:18 INFO: Adding repo arara to work queue for ingesting
+2020-02-20 10:49:18 INFO: Saving commits to the csv...
+2020-02-20 10:49:18 INFO: A worker is starting scan repository: arara
+HEAD is now at 4a0c6fe Some small but possibly significant improvements to LowStorageShuffler
+2020-02-20 10:49:18 INFO: Linking 30 new corrective commits for repo RxJavaFX
+2020-02-20 10:49:18 INFO: Done saving commits to the csv.
+2020-02-20 10:49:18 INFO: Linkage for commit 7e38628997cd9a0ca2f17efdb4ea77ea9cf1edc8
+HEAD is now at 7405ae1 Fixed working directory in method.
+2020-02-20 10:49:18 INFO: Linkage for commit 1444439c35412db32233165e19e5f525eedae1e3
+2020-02-20 10:49:18 INFO: A worker finished ingesting repo Jukito
+2020-02-20 10:49:19 INFO: Done fetching.
+2020-02-20 10:49:19 INFO: Pulling latest changes from repo: arara
+2020-02-20 10:49:19 INFO: Getting/parsing git commits: manifold
+2020-02-20 10:49:19 INFO: Pulling latest changes from repo: SquidLib
+2020-02-20 10:49:19 INFO: Linkage for commit d821cd06d5cac4925062dca7c70afd1d22fddeda
+HEAD is now at 2cb29b2 [GR-19517] MRAN mirror upgraded to 03/11/2019.
+2020-02-20 10:49:19 INFO: Adding repo Elephant to work queue for ingesting
+2020-02-20 10:49:20 INFO: A worker is starting scan repository: Elephant
+2020-02-20 10:49:20 INFO: Done fetching.
+2020-02-20 10:49:20 INFO: Getting/parsing git commits: arara
+2020-02-20 10:49:20 INFO: Linkage for commit 39dafb0a009acd9aff7f38a6d556643c3263e008
+HEAD is now at c51e265 add new 20.0.0 graalvm release to travis
+2020-02-20 10:49:20 INFO: Linkage for commit 4a156d2e308c4a3d5986bd9aa82f8e668e44477e
+2020-02-20 10:49:20 INFO: Done fetching.
+2020-02-20 10:49:20 INFO: Done getting/parsing git commits.
+2020-02-20 10:49:20 INFO: Getting/parsing git commits: SquidLib
+2020-02-20 10:49:20 INFO: Done getting/parsing git commits.
+2020-02-20 10:49:20 INFO: Linkage for commit 00ffe2b6eb7b14daca9eeec6d5d9b3a7952c6064
+2020-02-20 10:49:20 INFO: Saving commits to the csv...
+2020-02-20 10:49:20 INFO: Linkage for commit 673d02941f6e1e065c07e91aa0c74c2b7d7b7a9c
+2020-02-20 10:49:21 INFO: Saving commits to the csv...
+2020-02-20 10:49:21 INFO: Pulling latest changes from repo: fastr
+2020-02-20 10:49:21 INFO: Done saving commits to the csv.
+2020-02-20 10:49:21 INFO: A worker finished ingesting repo huntbugs
+2020-02-20 10:49:21 INFO: Adding repo huntbugs to work queue for analyzing.
+2020-02-20 10:49:21 INFO: Worker analyzing repository  huntbugs
+2020-02-20 10:49:21 INFO: Linkage for commit 24bed500d4f782a9de302f7c0c1c7e8760e6334d
+2020-02-20 10:49:22 INFO: Done saving commits to the csv.
+2020-02-20 10:49:22 INFO: A worker finished ingesting repo moditect
+2020-02-20 10:49:22 INFO: Pulling latest changes from repo: es4x
+2020-02-20 10:49:22 INFO: Adding repo wix-embedded-mysql to work queue for ingesting
+2020-02-20 10:49:22 INFO: A worker is starting scan repository: wix-embedded-mysql
+2020-02-20 10:49:22 INFO: Done fetching.
+2020-02-20 10:49:22 INFO: Getting/parsing git commits: fastr
+HEAD is now at b6ffb83 [maven-release-plugin] prepare for next development iteration
+2020-02-20 10:49:22 INFO: Linking 87 new corrective commits for repo huntbugs
+2020-02-20 10:49:23 INFO: Pulling latest changes from repo: wix-embedded-mysql
+2020-02-20 10:49:23 INFO: Linkage for commit 243daac8b21c0d42857e377be360dd93da52a19c
+2020-02-20 10:49:23 INFO: Done fetching.
+2020-02-20 10:49:23 INFO: Getting/parsing git commits: es4x
+2020-02-20 10:49:23 INFO: Done getting/parsing git commits.
+2020-02-20 10:49:23 INFO: Saving commits to the csv...
+2020-02-20 10:49:24 INFO: Done fetching.
+2020-02-20 10:49:24 INFO: Getting/parsing git commits: wix-embedded-mysql
+2020-02-20 10:49:24 INFO: Done getting/parsing git commits.
+2020-02-20 10:49:24 INFO: Done getting/parsing git commits.
+2020-02-20 10:49:24 INFO: Saving commits to the csv...
+2020-02-20 10:49:24 INFO: Saving commits to the csv...
+HEAD is now at 6503b54 Can now copy+paste images and files from Finder / File Explorer.
+2020-02-20 10:49:25 INFO: Done saving commits to the csv.
+2020-02-20 10:49:25 INFO: Pulling latest changes from repo: Elephant
+2020-02-20 10:49:25 INFO: A worker finished ingesting repo stag-java
+2020-02-20 10:49:25 INFO: Adding repo stag-java to work queue for analyzing.
+2020-02-20 10:49:25 INFO: Worker analyzing repository  stag-java
+2020-02-20 10:49:25 INFO: Linkage for commit 9ac81c8ba914c60c7d86b74961600148cc691b51
+2020-02-20 10:49:25 INFO: Done saving commits to the csv.
+2020-02-20 10:49:26 INFO: Done fetching.
+2020-02-20 10:49:26 INFO: Getting/parsing git commits: Elephant
+2020-02-20 10:49:26 INFO: Done saving commits to the csv.
+2020-02-20 10:49:26 INFO: A worker finished ingesting repo PreferencesFX
+2020-02-20 10:49:26 INFO: A worker finished ingesting repo WorkbenchFX
+2020-02-20 10:49:26 INFO: Done getting/parsing git commits.
+2020-02-20 10:49:26 INFO: Adding repo PreferencesFX to work queue for analyzing.
+2020-02-20 10:49:26 INFO: Worker analyzing repository  PreferencesFX
+2020-02-20 10:49:26 INFO: Linkage for commit 84a04ba096265d3973c7e3ac3184a69bd6456fa8
+2020-02-20 10:49:26 INFO: Linkage for commit b550615e0739afb93df448b9b479b9c630743fe9
+2020-02-20 10:49:26 INFO: Adding repo postgres-async-driver to work queue for ingesting
+2020-02-20 10:49:27 INFO: A worker is starting scan repository: postgres-async-driver
+HEAD is now at efd7f1f Merge pull request #64 from marat-gainullin/java-11
+2020-02-20 10:49:27 INFO: Pulling latest changes from repo: postgres-async-driver
+2020-02-20 10:49:27 INFO: Linkage for commit 1094bf778949af7d4c84124003226d7e4c2daa5f
+2020-02-20 10:49:27 INFO: Saving commits to the csv...
+2020-02-20 10:49:27 INFO: Linkage for commit b1a056979e911e366bb083a8d704d451f9c15ecf
+2020-02-20 10:49:28 INFO: Linking 100 new corrective commits for repo stag-java
+2020-02-20 10:49:28 INFO: Done fetching.
+2020-02-20 10:49:28 INFO: Getting/parsing git commits: postgres-async-driver
+2020-02-20 10:49:28 INFO: Done getting/parsing git commits.
+2020-02-20 10:49:28 INFO: Linkage for commit 2455421c811f32fda3c06b1f1c728b632e0add48
+2020-02-20 10:49:28 INFO: Linking 86 new corrective commits for repo PreferencesFX
+2020-02-20 10:49:28 INFO: Linkage for commit c6973f64fa82277d79d8d83b167ae330c7ccd377
+2020-02-20 10:49:29 INFO: Linkage for commit 946149aaa5afbf3569192e33e5ae3f7c4d874999
+2020-02-20 10:49:29 INFO: Linkage for commit 183bf5b904cedcd2029240eca6f46299ffd28b5a
+2020-02-20 10:49:30 INFO: Saving commits to the csv...
+2020-02-20 10:49:30 INFO: Linkage for commit f2e4b15d5c50de88200e5d20694da591f2959520
+2020-02-20 10:49:30 INFO: Done saving commits to the csv.
+2020-02-20 10:49:30 INFO: A worker finished ingesting repo arara
+2020-02-20 10:49:30 INFO: Adding repo arara to work queue for analyzing.
+2020-02-20 10:49:30 INFO: Worker analyzing repository  arara
+2020-02-20 10:49:30 INFO: Linkage for commit c1c161cafabcb05f52bfbf60fbe5dc90c26a2839
+2020-02-20 10:49:30 INFO: Linkage for commit c5cee636a1cc94d60e01a53f6ebfa9390b93bbbc
+2020-02-20 10:49:31 INFO: Done getting/parsing git commits.
+2020-02-20 10:49:32 INFO: Saving commits to the csv...
+2020-02-20 10:49:32 INFO: Done saving commits to the csv.
+2020-02-20 10:49:32 INFO: Linkage for commit e7c97a711a11504589c8f512cc08a55dcf38fc1a
+2020-02-20 10:49:32 INFO: A worker finished ingesting repo wix-embedded-mysql
+2020-02-20 10:49:32 INFO: Adding repo wix-embedded-mysql to work queue for analyzing.
+2020-02-20 10:49:32 INFO: Linkage for commit dfd8aaf12c801aeb9ca479e8c209ba7eadac7db6
+2020-02-20 10:49:32 INFO: Worker analyzing repository  wix-embedded-mysql
+2020-02-20 10:49:32 INFO: Linkage for commit a0933319ce6aae0a0bcb45c9a8068958b9567c61
+2020-02-20 10:49:33 INFO: Linking 37 new corrective commits for repo wix-embedded-mysql
+2020-02-20 10:49:33 INFO: Done saving commits to the csv.
+2020-02-20 10:49:33 INFO: Linking 105 new corrective commits for repo arara
+2020-02-20 10:49:33 INFO: A worker finished ingesting repo postgres-async-driver
+2020-02-20 10:49:33 INFO: Adding repo postgres-async-driver to work queue for analyzing.
+2020-02-20 10:49:33 INFO: Worker analyzing repository  postgres-async-driver
+2020-02-20 10:49:34 INFO: Linkage for commit 564c0f9d9766e4fbb5f9a109d5f0f889031e0960
+2020-02-20 10:49:34 INFO: Linkage for commit 9e8d12556fafaf9d16da38a2aeff7e3324447a86
+2020-02-20 10:49:34 INFO: Linkage for commit 0d977400e780ec266a7d79ffec4f406bf7d26efb
+2020-02-20 10:49:35 INFO: Linkage for commit 5a8e70c8135d4ed2c5fcb7c17e13a49e09e0acb0
+2020-02-20 10:49:35 INFO: Linking 19 new corrective commits for repo postgres-async-driver
+2020-02-20 10:49:35 INFO: Linkage for commit ca6942f4281ee158040a65ca9e513d34f7b728e0
+2020-02-20 10:49:36 INFO: Linkage for commit ab720ad45bd6ede9efa7d8a5c1d776b486bbe917
+2020-02-20 10:49:38 INFO: Linkage for commit fa2ec969ceff8b7baf0bf9407bfa155c346f3a68
+2020-02-20 10:49:39 INFO: Linkage for commit 46bd66d1833b4e044dd26a315e752d76b6bc8e7e
+2020-02-20 10:49:39 INFO: Linkage for commit bec2b81deaa9d80ce4c89ddb157a9c038ac05388
+2020-02-20 10:49:41 INFO: Linkage for commit f511b1886074985346ad9af4cab3ff0e34865136
+2020-02-20 10:49:43 INFO: Linkage for commit 4c595389c7e6ec9acc2518550482f7d1ea354108
+2020-02-20 10:49:44 INFO: Linkage for commit e70a0ba0e4b9ed0d000f081952c3d2c03a6bc691
+2020-02-20 10:49:45 INFO: Linkage for commit 1d4f3f2b6f3141d9a4340510148b53f58e351326
+2020-02-20 10:49:47 INFO: Linkage for commit 5467cad34b27a5187e97e47efd3c19156f47f45c
+2020-02-20 10:49:47 INFO: Done getting/parsing git commits.
+2020-02-20 10:49:48 INFO: Saving commits to the csv...
+2020-02-20 10:49:48 INFO: Linkage for commit 7f0ea6890913408f8570960e4ee4bebb035b6880
+2020-02-20 10:49:48 INFO: Done getting/parsing git commits.
+2020-02-20 10:49:49 INFO: Linkage for commit 70360096bfe83c38d9a31493fcdb1ea2c996bd90
+2020-02-20 10:49:49 INFO: Done saving commits to the csv.
+2020-02-20 10:49:49 INFO: A worker finished ingesting repo Elephant
+2020-02-20 10:49:50 INFO: Saving commits to the csv...
+2020-02-20 10:49:51 INFO: Linkage for commit 83de40ca1b4f43598abfdff4b9596361b3ddcec2
+2020-02-20 10:49:52 INFO: Done getting/parsing git commits.
+2020-02-20 10:49:53 INFO: Linkage for commit 436ff1290f7a1f204fc43c6ed71f2ab9061391f5
+2020-02-20 10:49:53 INFO: Linkage for commit 58c5590dea60457b795156104224426958803ac7
+2020-02-20 10:49:54 INFO: Saving commits to the csv...
+2020-02-20 10:49:54 INFO: Done saving commits to the csv.
+2020-02-20 10:49:54 INFO: A worker finished ingesting repo t-vault
+2020-02-20 10:49:54 INFO: Linkage for commit 877e686618253c8d5e4b8d32fdec76214a56f64b
+2020-02-20 10:49:54 INFO: Adding repo t-vault to work queue for analyzing.
+2020-02-20 10:49:54 INFO: Worker analyzing repository  t-vault
+2020-02-20 10:49:56 INFO: Linkage for commit 9562973a569dd7a3c053e10b5b5ece79d0dac19d
+2020-02-20 10:49:57 INFO: Linkage for commit dd36123fe7b7898ded860d56fcfdea0cd147f1b7
+2020-02-20 10:49:57 INFO: Linkage for commit daf8a0536be5a61d6e5d83d9214435fa42bf174a
+2020-02-20 10:49:58 INFO: Linkage for commit f8d563b48f8111882cdec9276c6156c54d2dbf68
+2020-02-20 10:49:59 INFO: Linkage for commit 8b452d8d67c7d0d02d587f50907b2685b0b85dd5
+2020-02-20 10:49:59 INFO: Linking 83 new corrective commits for repo t-vault
+2020-02-20 10:50:00 INFO: Linkage for commit f5f48767e07dc20a763610b27ac65d18db007c96
+2020-02-20 10:50:00 INFO: Done saving commits to the csv.
+2020-02-20 10:50:00 INFO: A worker finished ingesting repo manifold
+2020-02-20 10:50:00 INFO: Adding repo manifold to work queue for analyzing.
+2020-02-20 10:50:00 INFO: Worker analyzing repository  manifold
+2020-02-20 10:50:01 INFO: Linkage for commit 4c2512e2432d23c55ddcacb39dc6fb45237390b0
+2020-02-20 10:50:01 INFO: Linkage for commit 338f85c3ddaeb945dd924d49d29212695ca1e53c
+2020-02-20 10:50:01 INFO: Linkage for commit c252e89b82ba094c98aabb77bdccd74555cdfa34
+2020-02-20 10:50:03 INFO: Linkage for commit 286ac878616fd8cfffc1c468687c330fb8f2b1b8
+2020-02-20 10:50:03 INFO: Linkage for commit 3ff371d0462639c2c6d48900a0171df0862ac751
+2020-02-20 10:50:03 INFO: Linkage for commit e79218452566becaa67f30f4fa93268fcbe66cd9
+2020-02-20 10:50:04 INFO: Linking 109 new corrective commits for repo manifold
+2020-02-20 10:50:05 INFO: Linkage for commit a1f5575c0d525094c81e5ddb0d67247292cbff06
+2020-02-20 10:50:05 INFO: Linkage for commit 4735211ddd4fbbd48650e07978653ca0d3910656
+2020-02-20 10:50:05 INFO: Linkage for commit 4b5990ac060f7967a866898f033e08488158a790
+2020-02-20 10:50:08 INFO: Linkage for commit b1c361d482b144853ba9244decfd7365249c82cf
+2020-02-20 10:50:08 INFO: Linkage for commit 61e98ae06b9c68dd8250c4190819bea742759957
+2020-02-20 10:50:12 INFO: Linkage for commit 92e0aa9aad7eb2aae79c9b9f6e7390740e81d443
+2020-02-20 10:50:18 INFO: Linkage for commit 1cac1ccb8ebeb1ed7c67875acd9f8947ad598277
+2020-02-20 10:50:19 INFO: Linkage for commit d2e1e8bd68e9476cad764fa7c60d0ccf9f681178
+2020-02-20 10:50:19 INFO: Linkage for commit 8c7456bba7142b054774638113d68c329028fb19
+2020-02-20 10:50:22 INFO: Linkage for commit 482a95f2079263b84a3c6fb611a38061d19edb59
+2020-02-20 10:50:22 INFO: Linkage for commit e6e93e33d94907439a3b41d501a4cbdf02f895bf
+2020-02-20 10:50:23 INFO: Linkage for commit 0ced7fab251f00829e6e74a95cfd8c556c062c7c
+2020-02-20 10:50:23 INFO: Linkage for commit dc2c811e0163e391d13c212c88ddca13143516fc
+2020-02-20 10:50:25 INFO: Linkage for commit ddf26d068cd9a64190e9b8201bcc63e2727155f9
+2020-02-20 10:50:25 INFO: Done getting/parsing git commits.
+2020-02-20 10:50:26 INFO: Linkage for commit 653426d80ea4b988b26250590ce0ebd942f797e9
+2020-02-20 10:50:26 INFO: Linkage for commit 5ff2c6a54099fb725ff57dc0da99f5cffa4c6e9b
+2020-02-20 10:50:26 INFO: Saving commits to the csv...
+2020-02-20 10:50:27 INFO: Linkage for commit 8d544a0d800195de668cfea87bab5a48e458c689
+2020-02-20 10:50:30 INFO: Linkage for commit 59ee70a3517dd3aa7558193ab90064d7b525bead
+2020-02-20 10:50:30 INFO: Linkage for commit f355305b64fe0444bb77bedecee54f06030143d3
+2020-02-20 10:50:31 INFO: Done saving commits to the csv.
+2020-02-20 10:50:31 INFO: A worker finished ingesting repo es4x
+2020-02-20 10:50:31 INFO: Adding repo es4x to work queue for analyzing.
+2020-02-20 10:50:31 INFO: Worker analyzing repository  es4x
+2020-02-20 10:50:32 INFO: Linkage for commit 14a04f50a6ef33600729b117f1889b5d4d448530
+2020-02-20 10:50:33 INFO: Linkage for commit 6d1a6291d6765847706c1f6f327eef97fdcda512
+2020-02-20 10:50:34 INFO: Linkage for commit db3fc91d6d55f2492d21c6b92b72b218424e85c8
+2020-02-20 10:50:35 INFO: Linkage for commit f09b9f622f67aa8f444aa034320a4dc947433bfb
+2020-02-20 10:50:37 INFO: Linkage for commit 70b3ba2d43d8cde6b934c4eba95de133cb5e2285
+2020-02-20 10:50:38 INFO: Linkage for commit 834814c23cb511e3b214cdbb5c9487500b40db86
+2020-02-20 10:50:38 INFO: Linking 95 new corrective commits for repo es4x
+2020-02-20 10:50:39 INFO: Linkage for commit 705dfbde9fb39fce03486d958bf272381ddc1ee5
+2020-02-20 10:50:39 INFO: Linkage for commit b6873e3efc0db60e6b99d629197fe8c7582b4bb3
+2020-02-20 10:50:39 INFO: Linkage for commit d062b4ae2197796b1cd7b05200d73490a9e677a3
+2020-02-20 10:50:39 INFO: Linkage for commit 394ca540266639aa39e0559dd1a0a4007f18dcf4
+2020-02-20 10:50:41 INFO: Linkage for commit 656252766c8d8a32f2228ceade0ad6134ff4e6e5
+2020-02-20 10:50:43 INFO: Linkage for commit 500da320348849d3484bb97a7585fbfdcb65dd1f
+2020-02-20 10:50:44 INFO: Linkage for commit 510947e8724c375d3edddd1516f7342617a36119
+2020-02-20 10:50:45 INFO: Linkage for commit 633e0bfe8142eaadf61e40bb7324d4c4a3a7fc47
+2020-02-20 10:50:47 INFO: Linkage for commit 525eb3cf3055b7e34c58c5ca7bb13aad66be0005
+2020-02-20 10:50:48 INFO: Linkage for commit 3519c81b1ca571f84f68ae42cbd5c0783a3d0c21
+2020-02-20 10:50:50 INFO: Linkage for commit dffc9b28c1485babb6cb1e3fd74e9e33d65aa7a7
+2020-02-20 10:50:51 INFO: Linkage for commit eace4558aac78eeb1fd7f6e67ef229d525d2649e
+2020-02-20 10:50:51 INFO: Linkage for commit 086a13c916380a07ae4d4b424d648ab668814428
+2020-02-20 10:50:53 INFO: Linkage for commit 11bbd5baaac69afb6de99c0040bf7f68e3f60504
+2020-02-20 10:50:53 INFO: Linkage for commit b5a5398b0dede055f1c1db139ad8a90d8279b7fb
+2020-02-20 10:50:54 INFO: Linkage for commit 8aa31e6606ecb543c648fefac786abdf23cd9120
+2020-02-20 10:50:56 INFO: Linkage for commit 20b89ff727f87ebdbbdb5d16271119cc2eaa1f0e
+2020-02-20 10:50:57 INFO: Linkage for commit edf3da4898fef678b103870bcc111c0b12e18099
+2020-02-20 10:50:58 INFO: Linkage for commit fed759e12a079bf0003501dff570673dede71b66
+2020-02-20 10:50:59 INFO: Linkage for commit 3f0c92ffdf06de77aaa3b6dd232366f7af6f902f
+2020-02-20 10:51:01 INFO: Linkage for commit 8631ff38e08854d4dfe1181e40ec04d32a22a66f
+2020-02-20 10:51:01 INFO: Linkage for commit 2d613bc30b84502d5dd7c97ca9de7c8a2f31c3f3
+2020-02-20 10:51:03 INFO: Linkage for commit 71f4658fd6efb8a449c8897b30ecade238b318dc
+2020-02-20 10:51:04 INFO: Linkage for commit 95d704e93e0d87a1c80ff38dea91ae1e91917abf
+2020-02-20 10:51:05 INFO: Linkage for commit ef1d067dda7029b40e25c6ecc443329ada7c9e65
+2020-02-20 10:51:07 INFO: Linkage for commit 8661b602d227c64b0c4ceec219cf6f5e371d9559
+2020-02-20 10:51:07 INFO: Linkage for commit 03b4c144738b8f350a2fa38efc93232269a0c343
+2020-02-20 10:51:07 INFO: Linkage for commit 0f8855a25982291292f81a734b5d0089d8c6db03
+2020-02-20 10:51:09 INFO: Linkage for commit 6f1e480d02778b768a17746d5e6e17f905efce20
+2020-02-20 10:51:11 INFO: Linkage for commit b50ca3f0614e0664ab0f8edc6a7b160a25062461
+2020-02-20 10:51:16 INFO: Linkage for commit 9e47b2f98be0b69fe3028976f2f5ecad236bc292
+2020-02-20 10:51:17 INFO: Linkage for commit a578f280eb081a0e92381e242830497f1e1b4878
+2020-02-20 10:51:20 INFO: Linkage for commit cf320478e7e7e5f0ca49234e12e3e76ba4ee5736
+2020-02-20 10:51:20 INFO: Linkage for commit 6b249f4c9d49cc994dc5294ac92d4682b8dd007f
+2020-02-20 10:51:20 INFO: Linkage for commit 535de163bd00579e78323af9fbb740ce59d03ae7
+2020-02-20 10:51:22 INFO: Linkage for commit 0e8a2bdac2c15e914f048165e099a0dabd08bd44
+2020-02-20 10:51:22 INFO: Linkage for commit 5cf449a8fd1f31709c4e2c7c91869af5e4a2dc5f
+2020-02-20 10:51:22 INFO: Linkage for commit e6c8bd88df04135746d7f176d1946e8dcddbe01a
+2020-02-20 10:51:25 INFO: Linkage for commit bc27fbf340f048c769b4905e34cdef6831fe946c
+2020-02-20 10:51:26 INFO: Linkage for commit 7209eb7735b856c3fb65b8c2ab2102df96592057
+2020-02-20 10:51:28 INFO: Linkage for commit 6d2b056b80fda899e5ae5ef2ebbbc8e3c6ec63c6
+2020-02-20 10:51:28 INFO: Linkage for commit 8c420b50f7ec60f318ae82232dfb3d733a2c1c98
+2020-02-20 10:51:31 INFO: Linkage for commit 33b044d7f1ed47bbe85883a6326f8b84bc159628
+2020-02-20 10:51:31 INFO: Linkage for commit 46d4543c73c87ab649a5c29a1ba36d7f885e5a31
+2020-02-20 10:51:31 INFO: Linkage for commit 699e9082353e8f774a9f06468e0a789729f2d1c6
+2020-02-20 10:51:34 INFO: Linkage for commit 33fd5b1c8726e1edd8dfb806e0a54ee2c82d8366
+2020-02-20 10:51:35 INFO: Linkage for commit c6f17b58baf25dc0b1fd9b7990946a89b4b063b0
+2020-02-20 10:51:36 INFO: Linkage for commit 31d3542d11de726bda82bcace2060b5e85eb2582
+2020-02-20 10:51:38 INFO: Linkage for commit c99a3bd3b553ef5e4c8b6fac300b5872eca8b683
+2020-02-20 10:51:41 INFO: Linkage for commit e14d469cf48aed1b1d1719e9afe0a98585a0656d
+2020-02-20 10:51:42 INFO: Linkage for commit 21d42d068066b92e91da83676b571451975a0f72
+2020-02-20 10:51:44 INFO: Linkage for commit 829bfce6ae267f669e49d2f6e5e0a9f519fcd66f
+2020-02-20 10:51:48 INFO: Linkage for commit 1250412c9b8e680cc763d267397508336817b224
+2020-02-20 10:51:51 INFO: Linkage for commit 1ead9623b575409f84c57177debc8f51de5c90db
+2020-02-20 10:51:51 INFO: Linkage for commit 51aba6c97a543f9609a0de6427f1a013af60c292
+2020-02-20 10:51:54 INFO: Linkage for commit 1e222f6a9839459c2c61892991055f4b4e5b87a8
+2020-02-20 10:51:54 INFO: Linkage for commit e7b56c99390b803ac1cdc1e196dc65c73ebb0592
+2020-02-20 10:51:58 INFO: Linkage for commit 77b512ebd62e5fabfcaa96cdefc503968d8eb615
+2020-02-20 10:51:59 INFO: Linkage for commit ad13ee1d73c3b59ec5751e202ad357229acddfbc
+2020-02-20 10:51:59 INFO: Linkage for commit edf5950aa93bbe65da3a55805e4da44a240e23a4
+2020-02-20 10:52:01 INFO: Linkage for commit 764ca70fd6e582f6f05491f009c116b79c427ae0
+2020-02-20 10:52:04 INFO: Linkage for commit b493bb9a41b26e49ee2dbf41c3d5595f47adc0b9
+2020-02-20 10:52:04 INFO: Linkage for commit 62f61858579cff77320f629522684e683a2ace93
+2020-02-20 10:52:05 INFO: Linkage for commit a026f7273e569047f68e0d72dc01c4b420852b11
+2020-02-20 10:52:05 INFO: Linkage for commit 7f82e6ffca7ba758dc4aaebe02dd03a60a272d41
+2020-02-20 10:52:07 INFO: Linkage for commit ff789835a2b908aabc0b46ff9f85ec2e620c2554
+2020-02-20 10:52:08 INFO: Linkage for commit f1b1f19472ae9c29b970ecd4648dc280701c47fc
+2020-02-20 10:52:09 INFO: Linkage for commit 8f324a963047f5793fd23983462be3682d318124
+2020-02-20 10:52:11 INFO: Linkage for commit 0ecd40f2c5e1d534cd6b79cd3379fe0e2af92fa1
+2020-02-20 10:52:12 INFO: Linkage for commit b15e3e44f54461c90d092beb5e3e626341522a13
+2020-02-20 10:52:13 INFO: Linkage for commit 919f8cc00fdf21451fc74e5415508b5b34f55df0
+2020-02-20 10:52:15 INFO: Linkage for commit 561eee8c371b669ea14138d4fc0e401eec0f4e6c
+2020-02-20 10:52:15 INFO: Linkage for commit 142fd754bddfd7751bd82619f16867dd91b9964e
+2020-02-20 10:52:17 INFO: Linkage for commit cd0489aa4d08d1d9e4899d64cd4337987051f703
+2020-02-20 10:52:19 INFO: Linkage for commit e0fa44102ac0dd7a41aac99d3ccbbc486d3fe921
+2020-02-20 10:52:21 INFO: Linkage for commit b896d4cfa4bc762188bd9ccfce6acd1833746bf5
+2020-02-20 10:52:21 INFO: Linkage for commit 8bc9d5ef872a2d2c9d2ce6968f416e7fb7c08896
+2020-02-20 10:52:26 INFO: Linkage for commit 1d3a04fe2376fd5e43faf30c258d20fd40299786
+2020-02-20 10:52:27 INFO: Linkage for commit c7a74304b134d5420786713f01822b1734b755e0
+2020-02-20 10:52:28 INFO: Linkage for commit 23087ae5c5d4e2602f31e9b5f9c5114afb05c8f8
+2020-02-20 10:52:31 INFO: Linkage for commit e6f9f863c562f08f78dd6e9c5ee8206d365aec01
+2020-02-20 10:52:32 INFO: Linkage for commit 219cc671263df15689f945fe3a95efd4f2795d58
+2020-02-20 10:52:34 INFO: Linkage for commit 2540969f2aedf030e6da76b42c64ad3b1d0f6b2c
+2020-02-20 10:52:39 INFO: Linkage for commit f7ecb07e2f6695393725e48dd7179514f55cdcfc
+2020-02-20 10:52:43 ERROR: Got an exception linking bug fixing changes to bug inducing changes for repo RxJavaFX
+Traceback (most recent call last):
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 54, in analyzeRepo
+    final_commits.to_csv(up(up(up(up(up(up(os.getcwd())))))) + '/data/commit_guru/' + repo_name + '.csv',index=False)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py", line 3020, in to_csv
+    formatter.save()
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 157, in save
+    compression=self.compression)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/common.py", line 424, in _get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: '//data/commit_guru/RxJavaFX.csv'
+2020-02-20 10:52:45 INFO: Linkage for commit a0d076ec0c77ec70f2c96ed0660d495e67d3b392
+2020-02-20 10:52:46 INFO: Linkage for commit 5f8776247ae5a885e1df6e2da70995cef2fc31a9
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/home/smajumd3/anaconda3/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "commit_mine.py", line 44, in run
+    **self._kwargs)
+  File "commit_mine.py", line 72, in mine
+    cas_manager.run()
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 67, in run
+    self.checkAnalyzation()
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 60, in checkAnalyzation
+    analyze(repo)
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 31, in analyze
+    analyzeRepo(repo_id)
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 54, in analyzeRepo
+    final_commits.to_csv(up(up(up(up(up(up(os.getcwd())))))) + '/data/commit_guru/' + repo_name + '.csv',index=False)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py", line 3020, in to_csv
+    formatter.save()
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 157, in save
+    compression=self.compression)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/common.py", line 424, in _get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: '//data/commit_guru/RxJavaFX.csv'
+
+2020-02-20 10:52:49 INFO: Linkage for commit 7357c0942a912846d207ba281b90c05e84fe58ef
+2020-02-20 10:52:50 INFO: Linkage for commit f4f21994f13a4eb5888dc2b744a9f3890c282d0b
+2020-02-20 10:52:50 INFO: Done getting/parsing git commits.
+2020-02-20 10:52:53 INFO: Saving commits to the csv...
+2020-02-20 10:53:04 INFO: Linkage for commit 358b2ac871e4b3627b490cf66a53841455f0316d
+2020-02-20 10:53:05 INFO: Linkage for commit 380ae0e56c64491686e0b69714821febcbd9d76b
+2020-02-20 10:53:07 INFO: Linkage for commit 2fe9402b222dd1fa98f839a798a3c03406d1fb6a
+2020-02-20 10:53:11 INFO: Linkage for commit 5ecad1bff65ac9d509f23ca4bb3d29c34e7960bc
+2020-02-20 10:53:11 INFO: Linkage for commit 830a217bec204ca23aff2d4bb15cd0a20a8429fb
+2020-02-20 10:53:13 INFO: Linkage for commit 263500d5a89142bc4a9cca3d7069e2465ebd1c0f
+2020-02-20 10:53:13 INFO: Done saving commits to the csv.
+2020-02-20 10:53:13 INFO: A worker finished ingesting repo SquidLib
+2020-02-20 10:53:14 INFO: Adding repo SquidLib to work queue for analyzing.
+2020-02-20 10:53:14 INFO: Worker analyzing repository  SquidLib
+2020-02-20 10:53:16 INFO: Linkage for commit 4059e4d58130462ff93164d15212bd7fc2f3cbd6
+2020-02-20 10:53:17 INFO: Linkage for commit 9c36fe676eef95ba4f70647dc40859681d86c7b3
+2020-02-20 10:53:22 INFO: Linking 506 new corrective commits for repo SquidLib
+2020-02-20 10:53:23 INFO: Linkage for commit 0396b57edbf955cde712800be4985e8c53ba4617
+2020-02-20 10:53:24 INFO: Linkage for commit 52b507fde4be47d651e9acaf3fdda17d776b8b05
+2020-02-20 10:53:26 INFO: Linkage for commit dbea0fafdf8ab3d83fcf466cecc49c956f5b689e
+2020-02-20 10:53:27 INFO: Linkage for commit 59978e1ca41841fa7c36cf989155b1140d53f0a6
+2020-02-20 10:53:28 INFO: Linkage for commit 95773cf8e0bf5674dd4cd533cc3e58e9ccea5d3a
+2020-02-20 10:53:28 INFO: Linkage for commit 1ddc134beca45dd98ee153b3b74cc02a252e28df
+2020-02-20 10:53:32 INFO: Linkage for commit ddac24c2b1477ef3bfd41d39683904978eccac09
+2020-02-20 10:53:42 INFO: Linkage for commit d920419a2d483b9e6663b5f912fe9cc943044fc4
+2020-02-20 10:53:50 INFO: Linkage for commit 1824c906fafc159945d734c89ac431b7a664619f
+2020-02-20 10:53:51 INFO: Linkage for commit 7240923db58cb06bb6d6a81a5c5d14ddbb33af51
+2020-02-20 10:54:14 INFO: Linkage for commit 7ed4458ee858514c3fd3006aba878c7999756666
+2020-02-20 10:54:18 INFO: Linkage for commit 9d8c98a2e0fde6e6b134e427ce65111a79ec070e
+2020-02-20 10:54:18 INFO: Linkage for commit 00e0edba5e1a2e05256b2ad1d67b67f09c8b83ea
+2020-02-20 10:54:26 INFO: Linkage for commit b911e025e27a25c01a8a6717160a715d823cb392
+2020-02-20 10:54:29 INFO: Linkage for commit f6eac9321eb731d6a8ad842fbe41590f8a5c794d
+2020-02-20 10:54:33 INFO: Linkage for commit 7cb120f5605478ddc0ad3659e55f863ca8034c0f
+2020-02-20 10:54:34 INFO: Linkage for commit 9a02c4de60f60adc5e8b77ed7f52a559e5a0a984
+2020-02-20 10:54:35 INFO: Linkage for commit f90dd6cde288b75bc73eb23c9034b96f65cc0e75
+2020-02-20 10:54:36 INFO: Linkage for commit 3b9bea9a7b38a52949e756c168697f8bba4d761c
+2020-02-20 10:54:38 INFO: Linkage for commit c6f72c2a36d0dac658aa6149947c2e4788f11399
+2020-02-20 10:54:39 INFO: Linkage for commit 618ee11e5d21f72c8a86f632506ac630a202a5f4
+2020-02-20 10:54:40 INFO: Linkage for commit c53d9d6ce70dddefe61d3ee8b831f920a41aeb59
+2020-02-20 10:54:41 INFO: Linkage for commit 5e68b387318ca8504eec1fd7d2d2968b64b44389
+2020-02-20 10:54:43 INFO: Linkage for commit 07bf03b5e49012a2aa4174a41146d756a17a83a6
+2020-02-20 10:54:45 INFO: Linkage for commit 59897cfe847542fbee108e075ef0eb85946716f3
+2020-02-20 10:54:46 INFO: Linkage for commit 0ddb85a3d40c59ee2f14e4951865205268bdd339
+2020-02-20 10:54:50 INFO: Linkage for commit 9c9cf4c308e2c1001bdc45105d2553b44c9a0aa4
+2020-02-20 10:54:53 INFO: Linkage for commit 0367833309d714297cef1ed8b3f1b181b02c2b55
+2020-02-20 10:54:55 INFO: Linkage for commit 7ad38ba48917c1981cec7bb921f217159167b2a3
+2020-02-20 10:54:57 INFO: Linkage for commit fdfda7e1d012c0cb2eab38ba47f42717e7353b2f
+2020-02-20 10:54:59 INFO: Linkage for commit 65737352b5aa1c8cceca25a2e6cb354833b0aa65
+2020-02-20 10:55:03 INFO: Linkage for commit 3ae783c91fc33753f3472ab6ec2499e060678db2
+2020-02-20 10:55:11 INFO: Linkage for commit 527d89630d93caad0a27e30dda9151e9906c9452
+2020-02-20 10:55:12 INFO: Linkage for commit 730e750ac9e08b2e3958c7477773d3d332005ee9
+2020-02-20 10:55:12 INFO: Linkage for commit 3e31ed1194f518b7771f73f1164fb3ad932925c8
+2020-02-20 10:55:15 INFO: Linkage for commit 6013e88f72c9c2af581e8afaba22ddf23bf2c136
+2020-02-20 10:55:20 INFO: Linkage for commit aa243f3c7ae50f0d6dae9f86ccd607719d6a6490
+2020-02-20 10:55:21 INFO: Linkage for commit 6c407f26c3a35f3b1b35e4e132c6ca0f3ebdec82
+2020-02-20 10:55:26 INFO: Linkage for commit 09ed1d4e0aae62121aae313043d80a69133b51c4
+2020-02-20 10:55:30 INFO: Linkage for commit fbc55dc102bed93ed2f70cc5616b0391ddb20a7e
+2020-02-20 10:55:33 INFO: Linkage for commit 8c80401d5d40503c7edddf2acadcd825b1280570
+2020-02-20 10:55:34 INFO: Linkage for commit 8cba832a0cf3b08a10cc4c13d3c36ef841af9d08
+2020-02-20 10:55:36 INFO: Linkage for commit 1cd062be1d497cdfa64e74d28d5b7e40e3610101
+2020-02-20 10:55:39 INFO: Linkage for commit e6eb7d4a5dcd6d5513da2c5e888e62899c0f552b
+2020-02-20 10:55:40 INFO: Linkage for commit db53ff1202bbeb9cb564d15c0437f01a8fd44c1e
+2020-02-20 10:55:41 INFO: Linkage for commit 42913060f426f22bb7531ac1e5c580e997db9326
+2020-02-20 10:55:50 INFO: Linkage for commit a7792c182f06f960186f6503e51fda2ec12bd14e
+2020-02-20 10:55:52 INFO: Linkage for commit d7cc61ce0cdb9c30ca01ebbd31e01d945abc9f4e
+2020-02-20 10:55:56 INFO: Linkage for commit 91efd05362c26c65a55e3fe7b7faaceae03f0bd8
+2020-02-20 10:55:56 INFO: Linkage for commit a7316e004b013b0ae297305b573e655918c8bcf6
+2020-02-20 10:55:59 INFO: Linkage for commit 769f5693c9af29544bf6b83bfe32537682e6b683
+2020-02-20 10:56:02 INFO: Linkage for commit f1e99b18e0a2350e187cedd5033abdfaa4c91b88
+2020-02-20 10:56:06 INFO: Linkage for commit 070aac18d147cd4e226dbfd13e7891b08bdc8de0
+2020-02-20 10:56:06 INFO: Linkage for commit f53f597ea77c9b1e5fab3cb7ba8798438154a0f3
+2020-02-20 10:56:07 INFO: Linkage for commit f0c1088fb5d67d20dcdf18c6de8d7256216d6d05
+2020-02-20 10:56:09 INFO: Linkage for commit 832d8ef40b57a36abbe9d40a64809014da66c54f
+2020-02-20 10:56:12 INFO: Linkage for commit e996da25869dfdf44901f0d960e9e4d060d1025f
+2020-02-20 10:56:14 INFO: Linkage for commit 60ef16903d966cb1fbfa0f9cdea6f3f166a5cfd0
+2020-02-20 10:56:16 INFO: Linkage for commit 20f2e3eb608ad1a8a068ea45748234478fe59e16
+2020-02-20 10:56:17 INFO: Linkage for commit 974418c135257fbe748e49a9f477809cf3d213ac
+2020-02-20 10:56:20 INFO: Linkage for commit 59480011a75ed3942e7c65c9d5a3c3ec7630577e
+2020-02-20 10:56:23 INFO: Linkage for commit a742189fcffc9ea5fbae8edb9aef60deb3829838
+2020-02-20 10:56:26 INFO: Linkage for commit d66fcfbd01a39ccba1134f242e8a07f89fe1875b
+2020-02-20 10:56:29 INFO: Linkage for commit 75654af7e1f3e5b7ebaaf5b2684c46cc93581144
+2020-02-20 10:56:31 INFO: Linkage for commit 17be4d547bee0c8dfeeb8ce818390bd90a01d917
+2020-02-20 10:56:33 INFO: Linkage for commit 0202cc3c1f8ece60d14a793925425fd005db7962
+2020-02-20 10:56:35 INFO: Linkage for commit 290cadd292beb8260126a02174c88dcfc7aeaf24
+2020-02-20 10:56:37 INFO: Linkage for commit c23a22e6a8104b47d9d3abe74e3eb3ac30c63e8c
+2020-02-20 10:56:40 INFO: Linkage for commit 5879154ec2f583050e19b8d67afd10aa7abbb863
+2020-02-20 10:56:42 INFO: Linkage for commit 9ed77e9891850c5a7bec3cae8e24b4176be1e87e
+2020-02-20 10:56:45 INFO: Linkage for commit a20ac998259adb5aba90f1894aaf9b569bf5796e
+2020-02-20 10:56:47 INFO: Linkage for commit 82aa78aeaa6f53dc08aac57949b3437d6bee0d5e
+2020-02-20 10:56:50 INFO: Linkage for commit 93149bfe82f399fc7b3193721f444b470efa92f5
+2020-02-20 10:56:50 INFO: Linkage for commit 7440d404a7462f5c719e41465196674d2e419265
+2020-02-20 10:56:52 INFO: Linkage for commit 812bf3196d1e98af14304c8892e24086624642a3
+2020-02-20 10:56:53 INFO: Linkage for commit da9cad12b5f27f7d4ba44f6c1f35f193320d7693
+2020-02-20 10:56:53 INFO: Linkage for commit 68d781625d00c1645056307bbb35dba56c2c4d33
+2020-02-20 10:57:02 INFO: Linkage for commit 67b0832cfea76063ad52c5198996fd4e3264357c
+2020-02-20 10:57:05 INFO: Linkage for commit a4661f929086f749553c89964c2c1f3da3702719
+2020-02-20 10:57:11 INFO: Linkage for commit 17f3f6635117289d144d46e9af42a303ad5dc981
+2020-02-20 10:57:11 INFO: Linkage for commit 599d3b084c9a48a78ad1cb27d1a9fcc42d935065
+2020-02-20 10:57:11 INFO: Linkage for commit fea6d51d92bd326383298461381691ac5da12938
+2020-02-20 10:57:13 INFO: Done getting/parsing git commits.
+2020-02-20 10:57:14 INFO: Linkage for commit 77dec2ba067114dd9f488d21e91eff8c30fafb1d
+2020-02-20 10:57:14 INFO: Linkage for commit 0c88da007160a0213589c10ecccb9eb943d45a12
+2020-02-20 10:57:14 INFO: Saving commits to the csv...
+2020-02-20 10:57:16 INFO: Linkage for commit adc7188974e4dd32c7d92d0feff86fe437b4b561
+2020-02-20 10:57:17 INFO: Linkage for commit f64fe9ea3cac0804b5d7eaf0057338648d82e233
+2020-02-20 10:57:19 INFO: Done saving commits to the csv.
+2020-02-20 10:57:20 INFO: Linkage for commit db6e7fa8138f8974e6c06c197c558695dacaae01
+2020-02-20 10:57:20 INFO: A worker finished ingesting repo apollo
+2020-02-20 10:57:21 INFO: Adding repo apollo to work queue for analyzing.
+2020-02-20 10:57:21 INFO: Worker analyzing repository  apollo
+2020-02-20 10:57:22 INFO: Linkage for commit 7b865f158a52a640d3fb1036b9d0c13d635d41b4
+2020-02-20 10:57:23 INFO: Linkage for commit 52856f953d8a29ca6c8ad39ba5134629727e3056
+2020-02-20 10:57:24 INFO: Linkage for commit ece441d158e7ed3d6929256ef4b4b1d62b98f48b
+2020-02-20 10:57:25 INFO: Linkage for commit b5f0aa20c54458920fadbccd08e8cc651cb6d193
+2020-02-20 10:57:26 INFO: Linkage for commit a2eb5adbff2d3d23dc06e377801b45ec9bc9fad0
+2020-02-20 10:57:26 INFO: Linking 181 new corrective commits for repo apollo
+2020-02-20 10:57:27 INFO: Linkage for commit cf81d168e755502df702f2f068904a7003773be8
+2020-02-20 10:57:28 INFO: Linkage for commit 0d35c12e48e1fbc0f9dd9b55bd5bca51cd3c2dc3
+2020-02-20 10:57:28 INFO: Linkage for commit 732c05588d2391c79adca2258ec6a815e081d5b5
+2020-02-20 10:57:29 INFO: Linkage for commit cf9309499df2742e32a9eb5909551aea07e4d5a4
+2020-02-20 10:57:30 INFO: Linkage for commit cae9d4545bc235ef1c3501dc27a4105d9fa5871e
+2020-02-20 10:57:30 INFO: Linkage for commit add4a53de69235edbcffa7b5cdf3788efc911eff
+2020-02-20 10:57:31 INFO: Linkage for commit 31b9546f45a1f07dd3719545629a3bc7d6a515c1
+2020-02-20 10:57:32 INFO: Linkage for commit cdd0fc85500f09e442c75782eaebababb4092cb8
+2020-02-20 10:57:32 INFO: Linkage for commit a2ac7054d1983639717686b62ee949a8cee6a4a5
+2020-02-20 10:57:35 INFO: Linkage for commit af02d06ef617b8301b84286a9b136d859af23447
+2020-02-20 10:57:36 INFO: Linkage for commit 4b6f18b0170c60ae99718062e2f407a0904551cc
+2020-02-20 10:57:37 INFO: Linkage for commit 37a01485d15ade9de6aa7cbbe8185435be1c05e6
+2020-02-20 10:57:37 INFO: Linkage for commit f5fd4d1e7cdde16e92ed0ba4de24ee2a53a9c0c4
+2020-02-20 10:57:41 INFO: Linkage for commit 61ba789744c25ff6f8f8530bcc7b65747ed04c3d
+2020-02-20 10:57:42 INFO: Linkage for commit 3cb17cd72046654dba1f9286396d0219a1cf6034
+2020-02-20 10:57:43 INFO: Linkage for commit 18ffa94dec7a217fa7ad270270851ab01da739a4
+2020-02-20 10:57:43 INFO: Linkage for commit e8a42346edce94be17bdcad2afe903a91c4d725b
+2020-02-20 10:57:44 INFO: Linkage for commit b313497923651a9a3d0dd0790b104eaa7cb5de7c
+2020-02-20 10:57:45 INFO: Linkage for commit d093a6e36c72ad45e7407cae0bed97bd6f6b675f
+2020-02-20 10:57:47 INFO: Linkage for commit 4cd0a2d208dc5d4f913d719730878292f7fc7616
+2020-02-20 10:57:48 INFO: Linkage for commit 835344f173fc20e03bbfa4065dc84d4f69ffe11e
+2020-02-20 10:57:48 INFO: Linkage for commit ca5ed549db6d5779d73ac48ef32d026d662dcfa2
+2020-02-20 10:57:49 INFO: Linkage for commit 2db5d51a72b3dbafac8622711f487c1a063c3480
+2020-02-20 10:57:49 INFO: Linkage for commit b392fa9b19d968c1ac61ee5ffd85ec759d72dd46
+2020-02-20 10:57:51 INFO: Linkage for commit 02667dd2d70013e99a695b835bcccba2b90e408f
+2020-02-20 10:57:52 INFO: Linkage for commit 143edec794c7102cd13d6ecdd3e037297d0cf2cb
+2020-02-20 10:57:53 INFO: Linkage for commit 187603cfd042d236b2985b25e69a1f2d39596e4a
+2020-02-20 10:57:54 INFO: Linkage for commit 86e72c62d9a89d6dd017f2936bf0e492d7a3d882
+2020-02-20 10:57:56 INFO: Linkage for commit 76590eeade6552727e00cf6ed80affafe4d1c11d
+2020-02-20 10:57:56 INFO: Linkage for commit 97ed1f6517c3c9c599cbce889f32f468e541f040
+2020-02-20 10:57:59 INFO: Linkage for commit 6db7c4054ab32b610f84a70e6cc28a4e2851f278
+2020-02-20 10:58:01 INFO: Linkage for commit bb3d5584ea1688b44d94f29143ff628d66448c6e
+2020-02-20 10:58:02 INFO: Linkage for commit 5553f3ab2ca92289f1cf3027401e19bd2bd40145
+2020-02-20 10:58:04 INFO: Linkage for commit bddd1d4f9cdc4a18b85e57f4bf800da3e9ab734c
+2020-02-20 10:58:06 INFO: Linkage for commit 309a1d4527a74d4ca6888640e57240df9ef3b47a
+2020-02-20 10:58:06 INFO: Linkage for commit cb80bd168ead3da950e675a6cb9b0291825405e7
+2020-02-20 10:58:08 INFO: Linkage for commit b36d2b3a7186f425c3b4aa99c3be37805fd809f9
+2020-02-20 10:58:11 INFO: Linkage for commit fc49843e61b7e68be8f6eec90f8268d7b408a1c4
+2020-02-20 10:58:12 INFO: Linkage for commit 266d2efb8b0b62df44d7f95fd052edc6c13da43e
+2020-02-20 10:58:13 INFO: Linkage for commit afd70889d58bdbe7e769b086372c520930b95681
+2020-02-20 10:58:14 INFO: Linkage for commit 765b6212a2e3ffa7032cb1ff8607e7212ef837c5
+2020-02-20 10:58:15 INFO: Linkage for commit 248256197b3786c59314c744751658d528f6b6d4
+2020-02-20 10:58:17 INFO: Linkage for commit 8c7e6d5b6d10840756b8f6c2909286ae939c59a9
+2020-02-20 10:58:18 INFO: Linkage for commit 91b81a344a9f319f9ed70b6254acf38b5dea2d72
+2020-02-20 10:58:20 INFO: Linkage for commit 3117da8e50b04b1bdbfe02e1856f3c1414108a12
+2020-02-20 10:58:21 INFO: Linkage for commit ca2cc847e377faf161fac30818f2c973616f8a50
+2020-02-20 10:58:23 INFO: Linkage for commit 650298ef3f3b9ecad41796358d811a273f97601c
+2020-02-20 10:58:24 INFO: Linkage for commit 8ebbe3f2a9eb756f5bc588369b7217ad11bf5d13
+2020-02-20 10:58:27 INFO: Linkage for commit 9289ab4ed8d0b9d08104a4a384df592a20abaa67
+2020-02-20 10:58:28 INFO: Linkage for commit 354a546f93ed0437a4b751c59a2d50255d96f1cd
+2020-02-20 10:58:30 INFO: Linkage for commit d91c663ec96deaed60633d849d71a1748f3b9d0c
+2020-02-20 10:58:32 INFO: Linkage for commit bcca6a75ec2439c5acbab7bbb6da27b163b86629
+2020-02-20 10:58:35 INFO: Linkage for commit 0017e2ab1d7e796a04d5db09dac4792063c37d11
+2020-02-20 10:58:36 INFO: Linkage for commit e90dc9bf9130492bb9b02f2a11031d18724e6ee8
+2020-02-20 10:58:38 ERROR: Got an exception linking bug fixing changes to bug inducing changes for repo wix-embedded-mysql
+Traceback (most recent call last):
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 54, in analyzeRepo
+    final_commits.to_csv(up(up(up(up(up(up(os.getcwd())))))) + '/data/commit_guru/' + repo_name + '.csv',index=False)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py", line 3020, in to_csv
+    formatter.save()
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 157, in save
+    compression=self.compression)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/common.py", line 424, in _get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: '//data/commit_guru/wix-embedded-mysql.csv'
+2020-02-20 10:58:38 INFO: Linkage for commit 82b87c62cc0d10475e712fdb737a4e459150abd8
+Exception in thread Thread-16:
+Traceback (most recent call last):
+  File "/home/smajumd3/anaconda3/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "commit_mine.py", line 44, in run
+    **self._kwargs)
+  File "commit_mine.py", line 72, in mine
+    cas_manager.run()
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 67, in run
+    self.checkAnalyzation()
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 60, in checkAnalyzation
+    analyze(repo)
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 31, in analyze
+    analyzeRepo(repo_id)
+  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 54, in analyzeRepo
+    final_commits.to_csv(up(up(up(up(up(up(os.getcwd())))))) + '/data/commit_guru/' + repo_name + '.csv',index=False)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py", line 3020, in to_csv
+    formatter.save()
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 157, in save
+    compression=self.compression)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/common.py", line 424, in _get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: '//data/commit_guru/wix-embedded-mysql.csv'
+
+2020-02-20 10:58:39 INFO: Linkage for commit 8d3ef7642e2a62c8618603eb0e065f55da25b416
+2020-02-20 10:58:39 INFO: Linkage for commit a91adcebd4c336758530347eedd087b51918ffda
+2020-02-20 10:58:42 INFO: Linkage for commit 6863f43d4b2ef25b7cd016144f97aad63d042a3b
+2020-02-20 10:58:42 INFO: Linkage for commit 431412b1322aceabb19cc817491d322650b1bd58
+2020-02-20 10:58:47 INFO: Linkage for commit 6edfe2f7ad3ecc6935f620dede3757a6c56d19f3
+2020-02-20 10:58:52 INFO: Linkage for commit b32464dabf048f0de1900cb3ce094c4d69fc3144
+2020-02-20 10:58:53 INFO: Linkage for commit 82da89fd9ea75a222c468107cf5b7aecdda2ad17
+2020-02-20 10:58:56 INFO: Linkage for commit ca9fa51e03b2b968ade307bcd57b4c5627596b83
+2020-02-20 10:58:57 INFO: Linkage for commit 3318542c8f702b55e09c1ca055b9ce4aeb71914a
+2020-02-20 10:59:04 INFO: Linkage for commit 20588ec59542595fb9e47bf8d86ced79234850f5
+2020-02-20 10:59:06 INFO: Linkage for commit 2eebf3b759768510c9740bcbfd4d53d301362d8b
+2020-02-20 10:59:09 INFO: Linkage for commit 7f73f4a448bc789ae8558c320c7148e5975ad31c
+2020-02-20 10:59:10 INFO: Linkage for commit ee8d038ac70effaf3d91068b0cb7ec3293e5a1ff
+2020-02-20 10:59:12 INFO: Linkage for commit b1c9cfce08a45838c8788cbe5f53c9a58135f05a
+2020-02-20 10:59:12 INFO: Linkage for commit 5afa991bcf75cfff931c9c05dbfcc0877ebc7d70
+2020-02-20 10:59:15 INFO: Linkage for commit d2ff7d73c1ab9b503b419a293bcc942f3e1ab453
+2020-02-20 10:59:26 INFO: Linkage for commit 749eb826a125d022d396f715f7ae67f814d05ae6
+2020-02-20 10:59:31 INFO: Linkage for commit 982de30e59b33b33ed592077ab7a17f608d64771
+2020-02-20 10:59:31 INFO: Linkage for commit 71901a546865caa11fd96044eb0ad92cae06c5ef
+2020-02-20 10:59:33 INFO: Linkage for commit 1197347d3a9484cafdcfcf13058f1b4ded8686f2
+2020-02-20 10:59:38 INFO: Linkage for commit 076fe5c51aaaacec36414e2ad61f4313f26980c1
+2020-02-20 10:59:40 INFO: Linkage for commit 397cd967b2342b57f9da1801e0510eb6058df27f
+2020-02-20 10:59:50 INFO: Linkage for commit 9e5ebe7ee749bf8350ded5299fa9086acc7a5622
+2020-02-20 10:59:54 INFO: Linkage for commit 721c23416940a46de9fe66519d569f245d4487eb
+2020-02-20 10:59:55 INFO: Linkage for commit f59ad1eed460c908744e22db6e86f5c5db9272c3
+2020-02-20 10:59:57 INFO: Linkage for commit ec2b4bbedabdcc80199c5d10b1a3f69a095451d5
+2020-02-20 10:59:59 INFO: Linkage for commit 7bc654bb2067dd32d56a1a4d390eaf98c8aa289c
+2020-02-20 11:00:01 INFO: Linkage for commit 28f70ff047e39c804605c7c713e8de4530d357c8
+2020-02-20 11:00:03 INFO: Linkage for commit 55b7c67835dc91d18b973a5035d89918565965f4
+2020-02-20 11:00:06 INFO: Linkage for commit 433fb517c6a4dddcafec90a5485f185de46f84a0
+2020-02-20 11:00:06 INFO: Linkage for commit e713ce3309eaa9ed0d6095338b2d39fea44baa8f
+2020-02-20 11:00:07 INFO: Linkage for commit e007d50ef6cd37395a2a3ab521bb5081cfd8820a
+2020-02-20 11:00:08 INFO: Linkage for commit 20bdbddf9d1e72935766386524484aa3b0db3e35
+2020-02-20 11:00:11 INFO: Linkage for commit b2a468e3c3f3567a1570bb777574675fd1056c98
+2020-02-20 11:00:12 INFO: Linkage for commit cef86faeb776135ead7a3c41df0a78cb2c7b2000
+2020-02-20 11:00:12 INFO: Linkage for commit a6cbc1a1f8fa0823551130ca682e22312da052a6
+2020-02-20 11:00:14 INFO: Linkage for commit 3ec9d02fe12020f20d9a9ca2f2f146a33f1cb1fd
+2020-02-20 11:00:16 INFO: Linkage for commit f381027b0dbadcc60a55d52ce22e32fa5c9de7d5
+2020-02-20 11:00:16 INFO: Linkage for commit f7303d40b23190379184d711ca0640f327958f98
+2020-02-20 11:00:18 INFO: Linkage for commit dfb976a89cd5bcdf7a92186a17b47434aba59df1
+2020-02-20 11:00:19 INFO: Linkage for commit 7aa36d57a4ef3b8a9e00310f93b8b1323eb17dd9
+2020-02-20 11:00:20 INFO: Linkage for commit 7ac56efaf2b1a6b2b84ccefa527e183865278b26
+2020-02-20 11:00:21 INFO: Linkage for commit e318d0797181fbb71abfad3bfa9b0b61d1605f95
+2020-02-20 11:00:22 INFO: Linkage for commit f718535749f08660357d89a9f105d5838c70a89d
+slurmstepd: error: *** JOB 187003 ON c31 CANCELLED AT 2020-02-20T11:00:25 ***
