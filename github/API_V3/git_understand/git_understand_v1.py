@@ -242,7 +242,7 @@ class MetricsGetter(object):
             cmd = "und create -languages Fortran add {} -metrics all -metricsOutputFile {} analyze {} metrics".format(
                 str(self.repo_path),str(und_file_csv) ,str(und_file))
         elif self.repo_lang == "Python":
-            cmd = "und create -languages python add {} -metrics all -metricsOutputFile {} analyze {} metrics".format(
+            cmd = "und create -languages python add {} settings -metrics all -metricsOutputFile {} analyze {} metrics".format(
                 str(self.repo_path),str(und_file_csv) ,str(und_file))
         elif self.repo_lang == "C":
             cmd = "und create -languages C++ add {} -metrics all -metricsOutputFile {} analyze {} metrics".format(
