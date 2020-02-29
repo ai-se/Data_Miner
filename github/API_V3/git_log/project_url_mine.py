@@ -32,13 +32,14 @@ class git2data(object):
         if not os.path.exists(self.data_path):
             os.makedirs(self.data_path)
         self.git_client = api_access.git_api_access(access_token,repo_owner,source_type,git_url,api_base_url,repo_name)
-        self.git_repo = git2repo.git2repo(git_url,repo_name)
+        #self.git_repo = git2repo.git2repo(git_url,repo_name)
         #self.repo = self.git_repo.clone_repo()
         
     def get_api_data(self):
         # self.git_issues = self.git_client.get_issues(url_type = 'issues',url_details = '')
         #self.git_releases = self.git_client.get_releases(url_type = 'releases',url_details = '')
         langs = ['Java','C','C++','C#','Python','FORTRAN','JavaScript']
+        langs = ['Python']
         for lang in langs:
             self.projects = self.git_client.get_projects(lang,0,50)
             projects = pd.DataFrame(self.projects, columns = ['name','owner','project_url','description','size','watchers_count','forks_count','open_issues'])
