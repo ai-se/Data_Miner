@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "commit_mine.py", line 88, in <module>
+    project_list = pd.read_csv(data_path)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/parsers.py", line 702, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/parsers.py", line 429, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/parsers.py", line 895, in __init__
+    self._make_engine(self.engine)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/parsers.py", line 1122, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/io/parsers.py", line 1853, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 387, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 705, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] File b'/home/smajumd3/Data_Miner/github/API_V3/git_list_1.csv' does not exist: b'/home/smajumd3/Data_Miner/github/API_V3/git_list_1.csv'
