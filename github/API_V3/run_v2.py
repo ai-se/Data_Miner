@@ -29,7 +29,7 @@ import re
 import shlex
 from multiprocessing import Pool, cpu_count
 from os.path import dirname as up
-from commit_guru.cas_manager_v1 import *
+#from commit_guru.cas_manager_v1 import *
 import subprocess as sp
 
 class ThreadWithReturnValue(Thread):
@@ -51,7 +51,7 @@ class ThreadWithReturnValue(Thread):
 def mine(projects,code_path):
   for i in range(projects.shape[0]):
     try:
-      print("I am here")
+      #print("I am here")
       understand_source = []
       last_analyzed = None
       #access_token = projects.loc[i,'access_token']
@@ -64,18 +64,18 @@ def mine(projects,code_path):
       understand_source.append([1,repo_name,git_url,last_analyzed])
       understand_source_df = pd.DataFrame(understand_source,columns = ['id','name','url','last_analyzed'])
       file_path = up(code_path) + '/data/commit_guru/' + repo_name + '.csv'
-      cas_manager = CAS_Manager(understand_source_df)
-      if os.path.isfile(file_path):
-        print('file exist')
-        cas_manager.run_ingestion()
-      else:
-        cas_manager.run()
-      os.chdir(code_path)
-      print(code_path)
+#      cas_manager = CAS_Manager(understand_source_df)
+#      if os.path.isfile(file_path):
+#        print('file exist')
+#        cas_manager.run_ingestion()
+##      else:
+ #       cas_manager.run()
+ #     os.chdir(code_path)
+ #     print(code_path)
       get_matrix = git_understand.MetricsGetter(git_url,repo_name,repo_lang,code_path)
-      matrix = get_matrix.get_defective_pair_udb_files()
-      matrix.to_csv(str(repo_name)+"_final_metrics")
-      print('Done')
+      matrix = get_matrix.get_defective_pair_metrics()
+      #matrix.to_csv(str(repo_name)+"_final_metrics")
+      #print('Done')
     except ValueError as e:
       print("error",e)
       continue
@@ -87,19 +87,20 @@ if __name__ == "__main__":
     data_path = os.getcwd() + '\\Test_projects.csv'
     code_path = os.getcwd()
   project_list = pd.read_csv(data_path)
+  l = len(project_list)
   # project_list = project_list[project_list['lang'] == 'C++']
-  project_list = project_list[10:26]
+  project_list = project_list[0:1]
   # miner = data_mine(project_list)
   # miner.start()
   code_path = os.getcwd()
   cores = cpu_count()
   threads = []
-  print(cores)
+  #print(cores)
   projects = np.array_split(project_list.index.tolist(), cores)
   for i in range(len(projects)):
     _sub_group = project_list.loc[list(projects[i])]
     _sub_group.reset_index(inplace = True, drop = True)
-    print(_sub_group)
+    #print(_sub_group)
     t = ThreadWithReturnValue(target = mine, args = [_sub_group,code_path])
     # t = ThreadWithReturnValue(target = check, args = [i])
     threads.append(t)
