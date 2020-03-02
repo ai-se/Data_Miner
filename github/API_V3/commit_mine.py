@@ -81,13 +81,13 @@ def mine(projects,code_path):
 
 if __name__ == "__main__":
   if platform.system() == 'Darwin' or platform.system() == 'Linux':
-    data_path = os.getcwd() + '/git_list.csv'
+    data_path = os.getcwd() + '/python_project_list.csv'
   else:
     data_path = os.getcwd() + '\\Test_projects.csv'
     code_path = os.getcwd()
   project_list = pd.read_csv(data_path)
-  project_list = project_list[project_list['lang'] == 'Java']
-  project_list = project_list[40:]
+  #project_list = project_list[project_list['lang'] == 'Java']
+  project_list = project_list[1600:]
   # miner = data_mine(project_list)
   # miner.start()
   code_path = os.getcwd()
