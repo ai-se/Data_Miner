@@ -82,7 +82,7 @@ class MetricsGetter(object):
             #self.committed_file = up(os.getcwd()) + '\\data\\committed_files\\' + self.repo_name + '_committed_file.pkl'
         self.buggy_clean_pairs = self.read_commits()
         # Reference current directory, so we can go back after we are done.
-        self.cwd = Path('/tmp/smajumd3/')
+        self.cwd = Path('/tmp/hqtu/')
         self.cores = cpu_count()
         #self.repo = self.clone_repo()
         # if self.repo == None:
@@ -239,22 +239,22 @@ class MetricsGetter(object):
 
         # Generate udb file
         if self.repo_lang == "fortran":
-            cmd = "und create -languages Fortran add {} -metrics all -metricsOutputFile {} analyze {} metrics".format(
+            cmd = "und create -languages Fortran add {} settings -metrics all -metricsOutputFile {} analyze {} metrics".format(
                 str(self.repo_path),str(und_file_csv) ,str(und_file))
         elif self.repo_lang == "Python":
             cmd = "und create -languages python add {} settings -metrics all -metricsOutputFile {} analyze {} metrics".format(
                 str(self.repo_path),str(und_file_csv) ,str(und_file))
         elif self.repo_lang == "C":
-            cmd = "und create -languages C++ add {} -metrics all -metricsOutputFile {} analyze {} metrics".format(
+            cmd = "und create -languages C++ add {} settings -metrics all -metricsOutputFile {} analyze {} metrics".format(
                 str(self.repo_path),str(und_file_csv) ,str(und_file))
         elif self.repo_lang == "C++":
-            cmd = "und create -languages C++ add {} -metrics all -metricsOutputFile {} analyze {} metrics".format(
+            cmd = "und create -languages C++ add {} settings -metrics all -metricsOutputFile {} analyze {} metrics".format(
                 str(self.repo_path),str(und_file_csv) ,str(und_file))
         elif self.repo_lang == "Java":
             cmd = "und create -languages Java add {} settings -metrics all -metricsOutputFile {} analyze {} metrics".format(
                 str(self.repo_path),str(und_file_csv) ,str(und_file))
         elif self.repo_lang == "C#":
-            cmd = "und create -languages C# add {} -metrics all -metricsOutputFile {} analyze {} metrics".format(
+            cmd = "und create -languages C# add {} settings -metrics all -metricsOutputFile {} analyze {} metrics".format(
                 str(self.repo_path),str(und_file_csv) ,str(und_file))
         elif self.repo_lang == "JavaScript":
             cmd = "und create -languages JavaScript add {} -metrics all -metricsOutputFile {} analyze {} metrics".format(
