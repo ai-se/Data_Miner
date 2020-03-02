@@ -77,7 +77,7 @@ def mine(projects,code_path,th_num):
       projects.loc[i,'done'] = 1
       projects.to_csv('Test_projects_' + str(th_num) + '.csv') 
       print('Done')
-    except ValueError as e:
+    except Exception as e:
       print("error",e)
       continue
 
