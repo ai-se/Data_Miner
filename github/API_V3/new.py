@@ -2,7 +2,7 @@ import understand as und
 import numpy
 from git_understand import git_understand
 from api import git_access,api_access
-from git_understand import compute_metrics
+from git_understand import compute_metrics_final
 from git_log import git2repo
 import json
 import pandas as pd
@@ -26,13 +26,13 @@ print("its working")
 
 if __name__ == "__main__":
   if platform.system() == 'Darwin' or platform.system() == 'Linux':
-    data_path = os.getcwd() + '/Test_projects.csv'
+    data_path = os.getcwd() + '/understand_done.csv'
   else:
     data_path = os.getcwd() + '\\Test_projects.csv'
     code_path = os.getcwd()
   project_list = pd.read_csv(data_path)
-  project_list = project_list[project_list['lang'] != 'C#']
-  project_list = project_list[18:26]
+  #project_list = project_list[project_list['lang'] != 'C#']
+  project_list = project_list[1:2]
   project_list.reset_index(drop=True,inplace=True)
   code_path = os.getcwd()
   #project_list = project_list[0:1]
@@ -52,7 +52,7 @@ if __name__ == "__main__":
       understand_source.append([1,repo_name,git_url,last_analyzed])
       understand_source_df = pd.DataFrame(understand_source,columns = ['id','name','url','last_analyzed'])
       os.chdir(code_path)
-      get_matrix = compute_metrics.MetricsGetter(git_url,repo_name,repo_lang,code_path)
+      get_matrix = compute_metrics_final.MetricsGetter(git_url,repo_name,repo_lang,code_path)
       matrix = get_matrix.get_defective_pair_metrics()
       project_list.loc[i,'done'] = 1
       project_list.to_csv('completed_projects.csv')
