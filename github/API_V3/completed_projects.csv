@@ -1,9 +1,0 @@
-,repo_name,repo_owner,git_url,api_base_url,source_type,access_token,lang,commits,defective,done
-0,facebook-android-sdk,facebook,https://github.com/facebook/facebook-android-sdk.git,http://api.github.com,github_repo,6ff783294993b2f3c1d44506883d62f52ff91f80,Java,1355,250,1.0
-1,micropython,micropython,https://github.com/micropython/micropython.git,http://api.github.com,github_repo,6ff783294993b2f3c1d44506883d62f52ff91f80,C,10990,253,1.0
-2,tweepy,tweepy,https://github.com/tweepy/tweepy.git,http://api.github.com,github_repo,6ff783294993b2f3c1d44506883d62f52ff91f80,Python,1495,261,1.0
-3,brotli,google,https://github.com/google/brotli.git,http://api.github.com,github_repo,6ff783294993b2f3c1d44506883d62f52ff91f80,C,986,284,1.0
-4,mosh,keithw,https://github.com/keithw/mosh.git,http://api.github.com,github_repo,6ff783294993b2f3c1d44506883d62f52ff91f80,C++,1373,286,1.0
-5,proxygen,facebook,https://github.com/facebook/proxygen.git,http://api.github.com,github_repo,6ff783294993b2f3c1d44506883d62f52ff91f80,C++,5419,292,
-6,jq,stedolan,https://github.com/stedolan/jq.git,http://api.github.com,github_repo,6ff783294993b2f3c1d44506883d62f52ff91f80,C,1310,340,
-7,seaborn,mwaskom,https://github.com/mwaskom/seaborn.git,http://api.github.com,github_repo,6ff783294993b2f3c1d44506883d62f52ff91f80,Python,2450,341,

@@ -1,0 +1,2 @@
+repo_name,repo_owner,git_url,api_base_url,source_type,access_token,lang,commits,defective,done
+dagger,square,https://github.com/square/dagger.git,http://api.github.com,github_repo,,Java,701,144,

@@ -144,14 +144,17 @@ class git_api_access(object):
         self.create_base_url(url_type)
         url = self.base_url
         langs = []
+        sizes = []
         paged_url = url
         print(paged_url)
         res = self.client.get(paged_url)
         x = json.loads(res.content)
         for i in x.keys():
             lang = i
-            langs.append(lang)  
-        return langs
+            size = x[i]
+            langs.append(lang)
+            sizes.append(size)
+        return [langs,sizes]
     
     def get_issues(self,url_type,url_details = ''):
         self.create_base_url(url_type)
