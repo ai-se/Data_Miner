@@ -126,14 +126,14 @@ class MetricsGetter(object):
                         #committed_files.append(row.split('src/')[1].replace('/','.').rsplit('.',1)[0])
                         committed_files.append(row.replace('/', '.').rsplit('.', 1)[0])
                     elif language == "Python" :
-                        committed_files.append(row['file_path'].replace('/', '.').rsplit('.', 1)[0])
+                        committed_files.append(row.replace('/', '.').rsplit('.', 1)[0])
                     elif language == "Fortran" :
                         committed_files.append(row['file_path'].replace('/', '.').rsplit('.', 1)[0])
                     else:
                         print("Language under construction")
                 commits.append([bug_existing_commit,bug_fixing_commit,committed_files])
             except Exception as e:
-                print(e)
+                print("exception at reading commits",e)
                 continue
         return commits
 
