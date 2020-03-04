@@ -72,8 +72,6 @@ def compute(projects,code_path):
       #  cas_manager.run()
       #os.chdir(code_path)
       #print(code_path)
-      get_matrix = compute_metrics_final.MetricsGetter(git_url,repo_name,repo_lang,code_path)
-      matrix = get_matrix.get_defective_pair_metrics()
       print('Done')
     except ValueError as e:
       print("error",e)

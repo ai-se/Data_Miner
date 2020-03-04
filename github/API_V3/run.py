@@ -48,7 +48,7 @@ class ThreadWithReturnValue(Thread):
 
 
 
-def mine(projects,code_path):
+def mine(projects,code_path,th_num):
   for i in range(projects.shape[0]):
     try:
       print("I am here")
@@ -74,8 +74,10 @@ def mine(projects,code_path):
       print(code_path)
       get_matrix = git_understand.MetricsGetter(git_url,repo_name,repo_lang,code_path)
       matrix = get_matrix.get_defective_pair_udb_files()
+      projects.loc[i,'done'] = 1
+      projects.to_csv('Test_projects_' + str(th_num) + '.csv') 
       print('Done')
-    except ValueError as e:
+    except Exception as e:
       print("error",e)
       continue
 
@@ -86,7 +88,7 @@ if __name__ == "__main__":
     data_path = os.getcwd() + '\\Test_projects.csv'
     code_path = os.getcwd()
   project_list = pd.read_csv(data_path)
-  project_list = project_list[project_list['lang'] == 'Python']
+  #project_list = project_list[project_list['lang'] == 'Python']
   #project_list = project_list[0:1]
   # miner = data_mine(project_list)
   # miner.start()
@@ -99,7 +101,7 @@ if __name__ == "__main__":
     _sub_group = project_list.loc[list(projects[i])]
     _sub_group.reset_index(inplace = True, drop = True)
     print(_sub_group)
-    t = ThreadWithReturnValue(target = mine, args = [_sub_group,code_path])
+    t = ThreadWithReturnValue(target = mine, args = [_sub_group,code_path,i])
     # t = ThreadWithReturnValue(target = check, args = [i])
     threads.append(t)
   for th in threads:
