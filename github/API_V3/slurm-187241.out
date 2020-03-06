@@ -1,9 +1,0 @@
-Traceback (most recent call last):
-  File "commit_mine.py", line 32, in <module>
-    from commit_guru.cas_manager_v1 import *
-  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/cas_manager_v1.py", line 9, in <module>
-    from commit_guru.analyzer.analyzer import *
-  File "/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/analyzer.py", line 55
-    final_commits.to_csv(up(up(up(up(up(os.getcwd())))))) + '/data/commit_guru/' + repo_name + '.csv',index=False)
-                                                                                                                 ^
-SyntaxError: invalid syntax
