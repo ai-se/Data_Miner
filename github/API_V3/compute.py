@@ -48,7 +48,7 @@ class ThreadWithReturnValue(Thread):
 
 
 
-def compute(projects,code_path):
+def compute(projects,code_path,core):
   for i in range(projects.shape[0]):
     try:
       print("I am here")
@@ -64,14 +64,12 @@ def compute(projects,code_path):
       understand_source.append([1,repo_name,git_url,last_analyzed])
       understand_source_df = pd.DataFrame(understand_source,columns = ['id','name','url','last_analyzed'])
       file_path = up(code_path) + '/data/commit_guru/' + repo_name + '.csv'
-      #cas_manager = CAS_Manager(understand_source_df)
-      #if os.path.isfile(file_path):
-      #  print('file exist')
-      #  cas_manager.run_ingestion()
-      #else:
-      #  cas_manager.run()
-      #os.chdir(code_path)
-      #print(code_path)
+      os.chdir(code_path)
+      get_matrix = compute_metrics_final.MetricsGetter(git_url,repo_name,repo_lang,code_path)
+      matrix = get_matrix.get_defective_pair_metrics()
+      project_list.loc[i,'done'] = 1
+      project_list.to_csv('completed_projects_' + str(core) + '.csv')
+      print(project_list)
       print('Done')
     except ValueError as e:
       print("error",e)
@@ -85,18 +83,18 @@ if __name__ == "__main__":
     code_path = os.getcwd()
   project_list = pd.read_csv(data_path)
   # project_list = project_list[project_list['lang'] == 'Python']
-  #project_list = project_list[0:4]
+  project_list = project_list[0:4]
   # miner = data_mine(project_list)
   # miner.start()
   code_path = os.getcwd()
   cores = cpu_count()
   threads = []
-  projects = np.array_split(project_list.index.tolist(), cores)
+  projects = np.array_split(project_list.index.tolist(), 100)
   for i in range(len(projects)):
     _sub_group = project_list.loc[list(projects[i])]
     _sub_group.reset_index(inplace = True, drop = True)
     print(_sub_group)
-    t = ThreadWithReturnValue(target = compute, args = [_sub_group,code_path])
+    t = ThreadWithReturnValue(target = compute, args = [_sub_group,code_path,i])
     # t = ThreadWithReturnValue(target = check, args = [i])
     threads.append(t)
   for th in threads:

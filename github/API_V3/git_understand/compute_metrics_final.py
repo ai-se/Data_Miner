@@ -80,7 +80,7 @@ class MetricsGetter(object):
         self.buggy_clean_pairs = self.read_commits()
         #self.buggy_clean_pairs = self.buggy_clean_pairs[0:5]
         # Reference current directory, so we can go back after we are done.
-        self.cwd = Path('/tmp/smajumd3/')
+        self.cwd = Path('/tmp/hqtu/')
         #self.repo = self.clone_repo()
         # Generate path to store udb files
         #self.udb_path = self.cwd.joinpath(".temp", "udb")
