@@ -64,8 +64,14 @@ def compute(projects,code_path):
       understand_source.append([1,repo_name,git_url,last_analyzed])
       understand_source_df = pd.DataFrame(understand_source,columns = ['id','name','url','last_analyzed'])
       file_path = up(code_path) + '/data/commit_guru/' + repo_name + '.csv'
-      get_matrix = compute_metrics_final.MetricsGetter(git_url,repo_name,repo_lang,code_path)
-      matrix = get_matrix.get_defective_pair_metrics()
+      #cas_manager = CAS_Manager(understand_source_df)
+      #if os.path.isfile(file_path):
+      #  print('file exist')
+      #  cas_manager.run_ingestion()
+      #else:
+      #  cas_manager.run()
+      #os.chdir(code_path)
+      #print(code_path)
       print('Done')
     except ValueError as e:
       print("error",e)
@@ -79,7 +85,7 @@ if __name__ == "__main__":
     code_path = os.getcwd()
   project_list = pd.read_csv(data_path)
   # project_list = project_list[project_list['lang'] == 'Python']
-  project_list = project_list[0:4]
+  #project_list = project_list[0:4]
   # miner = data_mine(project_list)
   # miner.start()
   code_path = os.getcwd()
