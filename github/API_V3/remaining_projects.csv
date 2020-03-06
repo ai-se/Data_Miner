@@ -1,6 +1,0 @@
-,Unnamed: 0,repo_name,repo_owner,git_url,api_base_url,source_type,access_token,lang,commits,defective,done
-0,0,sentry-react-native,getsentry,https://github.com/getsentry/sentry-react-native,http://api.github.com,github_repo,,Java,903,103,0
-0,0,gumtree,GumTreeDiff,https://github.com/GumTreeDiff/gumtree,http://api.github.com,github_repo,,Java,661,116,0
-0,0,flinkStreamSQL,DTStack,https://github.com/DTStack/flinkStreamSQL,http://api.github.com,github_repo,,Java,998,117,0
-0,0,SecurityShepherd,OWASP,https://github.com/OWASP/SecurityShepherd,http://api.github.com,github_repo,,Java,757,176,0
-0,0,influxdb-java,influxdata,https://github.com/influxdata/influxdb-java,http://api.github.com,github_repo,,Java,1040,203,0
