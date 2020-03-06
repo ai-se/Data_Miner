@@ -77,13 +77,13 @@ def compute(projects,code_path,core):
 
 if __name__ == "__main__":
   if platform.system() == 'Darwin' or platform.system() == 'Linux':
-    data_path = os.getcwd() + '/understand_done.csv'
+    data_path = os.getcwd() + '/ken.csv'
   else:
     data_path = os.getcwd() + '\\Test_projects.csv'
     code_path = os.getcwd()
   project_list = pd.read_csv(data_path)
   # project_list = project_list[project_list['lang'] == 'Python']
-  project_list = project_list[0:4]
+  #project_list = project_list[0:4]
   # miner = data_mine(project_list)
   # miner.start()
   code_path = os.getcwd()
