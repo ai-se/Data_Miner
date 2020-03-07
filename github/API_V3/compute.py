@@ -100,4 +100,5 @@ if __name__ == "__main__":
   for th in threads:
     th.start()
   for th in threads:
-    response = th.join()
+    response =:wq
+    th.join()
