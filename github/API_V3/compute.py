@@ -71,13 +71,13 @@ def compute(projects,code_path,core):
       project_list.to_csv('completed_projects_' + str(core) + '.csv')
       print(project_list)
       print('Done')
-    except ValueError as e:
+    except Exception as e:
       print("error",e)
       continue
 
 if __name__ == "__main__":
   if platform.system() == 'Darwin' or platform.system() == 'Linux':
-    data_path = os.getcwd() + '/suvodeep.csv'
+    data_path = os.getcwd() + '/done_projects_suvo.csv'
   else:
     data_path = os.getcwd() + '\\Test_projects.csv'
     code_path = os.getcwd()
@@ -100,5 +100,4 @@ if __name__ == "__main__":
   for th in threads:
     th.start()
   for th in threads:
-    response =:wq
-    th.join()
+    response = th.join()
