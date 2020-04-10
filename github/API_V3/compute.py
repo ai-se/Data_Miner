@@ -77,7 +77,7 @@ def compute(projects,code_path,core):
 
 if __name__ == "__main__":
   if platform.system() == 'Darwin' or platform.system() == 'Linux':
-    data_path = os.getcwd() + '/done_projects_suvo.csv'
+    data_path = os.getcwd() + '/ken_understand.csv'
   else:
     data_path = os.getcwd() + '\\Test_projects.csv'
     code_path = os.getcwd()

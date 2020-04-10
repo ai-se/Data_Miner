@@ -89,7 +89,7 @@ if __name__ == "__main__":
     code_path = os.getcwd()
   project_list = pd.read_csv(data_path)
   #project_list = project_list[project_list['lang'] == 'Python']
-  #project_list = project_list[0:1]
+  #project_list = project_list[0:16]
   # miner = data_mine(project_list)
   # miner.start()
   code_path = os.getcwd()
