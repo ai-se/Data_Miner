@@ -52,7 +52,8 @@ def analyzeRepo(repository_to_analyze):
 		final_commits = git_commit_linker.linkCorrectiveCommits(corrective_commits, all_commits)
 		#final_commits.to_csv(up(os.path.dirname(__file__)) + '/Data/commit_data/' + repo_name + '.csv',index=False)
     #print(os.getcwd())
-		final_commits.to_csv('/home/smajumd3/Data_Miner/github/data/commit_guru/' + repo_name + '.csv',index=False)
+		# final_commits.to_csv('/home/smajumd3/Data_Miner/github/data/commit_guru/' + repo_name + '.csv',index=False)
+		final_commits.to_csv('/Users/suvodeepmajumder/Documents/AI4SE/Data_Miner/github/data/commit_guru/' + repo_name + '.csv',index=False)
     #final_commits.to_csv(up(up(up(up(up(up(os.getcwd())))))) + '/data/commit_guru/' + repo_name + '.csv',index=False)
 	except Exception as e:
 		logging.exception("Got an exception linking bug fixing changes to bug inducing changes for repo " + repo_name)

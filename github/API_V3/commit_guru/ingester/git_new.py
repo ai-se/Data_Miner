@@ -59,6 +59,7 @@ class Git():
         @param author           The author of the commit
         @param unixTimeStamp    Time of the commit
         """
+        all_files = []
 
         statProperties = ""
 
@@ -87,6 +88,10 @@ class Git():
         filesSeen = ""                              # files seen in change/commit
 
         for stat in stats:
+            x = []
+            file_auth = []
+            file_subsystemsSeen = []
+            file_directoriesSeen = []
 
             if( stat == ' ' or stat == '' ):
                 continue
@@ -124,6 +129,8 @@ class Git():
                 for prevAuthor in prevAuthors:
                     if prevAuthor not in authors:
                         authors.append(prevAuthor)
+                    if prevAuthor not in file_auth:
+                        file_auth.append(prevAuthor)
 
                 # Convert age to days instead of seconds
                 age += ( (int(unixTimeStamp) - int(prevChanged)) / 86400 )
@@ -136,6 +143,11 @@ class Git():
                 setattr(prevFileChanged, 'authors', authors)
                 setattr(prevFileChanged, 'lastchanged', unixTimeStamp)
                 setattr(prevFileChanged, 'nuc', file_nuc)
+
+                x.append(fileName)
+                x.append(prevLOC)
+                x.append(( (int(unixTimeStamp) - int(prevChanged)) / 86400 ))
+                x.append(len(file_auth))
 
 
             else:
@@ -163,6 +175,11 @@ class Git():
                 subsystem = fileDirs[0]
                 directory = "/".join(fileDirs[0:-1])
 
+            if( subsystem not in file_subsystemsSeen ):
+                file_subsystemsSeen.append( subsystem ) 
+            
+            x.append(len(file_subsystemsSeen))
+
             if( subsystem not in subsystemsSeen ):
                 subsystemsSeen.append( subsystem )
 
@@ -170,28 +187,40 @@ class Git():
                 experiences = devExperience[author]
                 exp += sum(experiences.values())
 
+                x.append(sum(experiences.values()))
+
                 if( subsystem in experiences ):
                     sexp = experiences[subsystem]
                     experiences[subsystem] += 1
                 else:
                     experiences[subsystem] = 1
 
+                x.append(sexp)
+
                 try:
                     rexp += (1 / (age) + 1)
+                    x.append((1 / (age) + 1))
                 except:
                     rexp += 0
-
+                    x.append(0)
+                
             else:
                 devExperience[author] = {subsystem: 1}
 
             if( directory not in directoriesSeen ):
                 directoriesSeen.append( directory )
+            
+            if( directory not in file_directoriesSeen ):
+                file_directoriesSeen.append( directory)
+            
+            x.append(len(file_directoriesSeen))
 
             # Update file-level metrics
             la += fileLa
             ld += fileLd
             nf += 1
-            filesSeen += fileName + ",CAS_DELIMITER,"  
+            filesSeen += fileName + ",CAS_DELIMITER,"
+            all_files.append(x)    
         # End stats loop
 
         if( nf < 1):
@@ -227,6 +256,7 @@ class Git():
         statProperties += ',"exp":"' + str( exp ) + '\"'
         statProperties += ',"rexp":"' + str( rexp ) + '\"'
         statProperties += ',"sexp":"' + str( sexp ) + '\"'
+        print(all_files)
 
         return statProperties
     # End stats

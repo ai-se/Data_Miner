@@ -2,6 +2,7 @@ import understand as und
 import numpy
 from api import git_access,api_access
 from git_understand import git_understand_v1 as git_understand
+from git_understand import compute_metrics_final as compute_metrics_final
 from git_log import git2repo
 import json
 import pandas as pd
@@ -75,6 +76,8 @@ def mine(projects,code_path,th_num):
       get_matrix = git_understand.MetricsGetter(git_url,repo_name,repo_lang,code_path)
       matrix = get_matrix.get_defective_pair_udb_files()
       projects.loc[i,'done'] = 1
+      get_matrix_computed = compute_metrics_final.MetricsGetter(git_url,repo_name,repo_lang,code_path)
+      matrix_computed = get_matrix_computed.get_defective_pair_metrics()
       projects.to_csv('Test_projects_' + str(th_num) + '.csv') 
       print('Done')
     except Exception as e:
@@ -83,9 +86,9 @@ def mine(projects,code_path,th_num):
 
 if __name__ == "__main__":
   if platform.system() == 'Darwin' or platform.system() == 'Linux':
-    data_path = os.getcwd() + '/Test_projects.csv'
+    data_path = os.getcwd() + '/ken_understand.csv'
   else:
-    data_path = os.getcwd() + '\\Test_projects.csv'
+    data_path = os.getcwd() + '\\ken_understand.csv'
     code_path = os.getcwd()
   project_list = pd.read_csv(data_path)
   #project_list = project_list[project_list['lang'] == 'Python']
@@ -96,7 +99,7 @@ if __name__ == "__main__":
   cores = cpu_count()
   threads = []
   print(cores)
-  projects = np.array_split(project_list.index.tolist(), cores)
+  projects = np.array_split(project_list.index.tolist(), 100)
   for i in range(len(projects)):
     _sub_group = project_list.loc[list(projects[i])]
     _sub_group.reset_index(inplace = True, drop = True)
