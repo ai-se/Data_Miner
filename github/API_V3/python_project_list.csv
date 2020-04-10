@@ -1,0 +1,4 @@
+repo_name,repo_owner,git_url,api_base_url,source_type,access_token,lang,commits,defective,done
+How-to-Make-a-Computer-Operating-System,SamyPesse,https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System.git,http://api.github.com,github_repo,,C,243,1,1
+dotfiles,skwp,https://github.com/skwp/dotfiles.git,http://api.github.com,github_repo,,Ruby,1210,3,1
+sass,sass,https://github.com/sass/sass.git,http://api.github.com,github_repo,,JavaScript,239,6,1

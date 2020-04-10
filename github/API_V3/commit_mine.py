@@ -1,7 +1,5 @@
-import understand as und
 import numpy
 from api import git_access,api_access
-from git_understand import git_understand_v1 as git_understand
 from git_log import git2repo
 import json
 import pandas as pd
@@ -87,7 +85,7 @@ if __name__ == "__main__":
     code_path = os.getcwd()
   project_list = pd.read_csv(data_path)
   #project_list = project_list[project_list['lang'] == 'Java']
-  project_list = project_list[1600:]
+  project_list = project_list[0:1]
   # miner = data_mine(project_list)
   # miner.start()
   code_path = os.getcwd()
