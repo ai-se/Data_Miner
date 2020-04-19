@@ -259,6 +259,7 @@ class MetricsGetter(object):
         elif self.repo_lang == "JavaScript":
             cmd = "und create -languages JavaScript add {} -metrics all -metricsOutputFile {} analyze {} metrics".format(
                 str(self.repo_path),str(und_file_csv) ,str(und_file))
+        print(cmd)
         out, err = self._os_cmd(cmd)
         #print("runnung command")
         out, err = self._os_cmd(cmd)
