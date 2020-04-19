@@ -86,7 +86,7 @@ def mine(projects,code_path,th_num):
 
 if __name__ == "__main__":
   if platform.system() == 'Darwin' or platform.system() == 'Linux':
-    data_path = os.getcwd() + '/ken_understand.csv'
+    data_path = os.getcwd() + '/python.csv'
   else:
     data_path = os.getcwd() + '\\ken_understand.csv'
     code_path = os.getcwd()

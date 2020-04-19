@@ -82,7 +82,7 @@ class MetricsGetter(object):
             #self.committed_file = up(os.getcwd()) + '\\data\\committed_files\\' + self.repo_name + '_committed_file.pkl'
         self.buggy_clean_pairs = self.read_commits()
         # Reference current directory, so we can go back after we are done.
-        self.cwd = Path('/tmp/hqtu/')
+        self.cwd = Path('/home/suvodeep/Documents/AI4SE/Data_Miner/github/API_V3/suvodeep/')
         self.cores = cpu_count()
         #self.repo = self.clone_repo()
         # if self.repo == None:
