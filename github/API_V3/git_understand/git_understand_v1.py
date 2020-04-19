@@ -82,7 +82,7 @@ class MetricsGetter(object):
             #self.committed_file = up(os.getcwd()) + '\\data\\committed_files\\' + self.repo_name + '_committed_file.pkl'
         self.buggy_clean_pairs = self.read_commits()
         # Reference current directory, so we can go back after we are done.
-        self.cwd = Path('/tmp/hqtu/')
+        self.cwd = Path('/home/suvodeep/Documents/AI4SE/Data_Miner/github/API_V3/suvodeep/')
         self.cores = cpu_count()
         #self.repo = self.clone_repo()
         # if self.repo == None:
@@ -169,52 +169,52 @@ class MetricsGetter(object):
         return ukey
     
     
-    def _create_und_files(self, file_name_suffix):
-        """
-        Creates understand project files
-        Parameters
-        ----------
-        file_name_suffix : str
-            A suffix for the understand_filenames
-        """
-        # Create a handle for storing *.udb file for the project
-        und_file = self.udb_path.joinpath(
-            "{}_{}.udb".format(self.repo_name, file_name_suffix))
-        # Go to the udb path
-        os.chdir(self.udb_path)
-        # find and replace all F90 to f90
-        for filename in glob(os.path.join(self.repo_path, '*/**')):
-            if ".F90" in filename:
-                os.rename(filename, filename[:-4] + '.f90')
+    # def _create_und_files(self, file_name_suffix):
+    #     """
+    #     Creates understand project files
+    #     Parameters
+    #     ----------
+    #     file_name_suffix : str
+    #         A suffix for the understand_filenames
+    #     """
+    #     # Create a handle for storing *.udb file for the project
+    #     und_file = self.udb_path.joinpath(
+    #         "{}_{}.udb".format(self.repo_name, file_name_suffix))
+    #     # Go to the udb path
+    #     os.chdir(self.udb_path)
+    #     # find and replace all F90 to f90
+    #     for filename in glob(os.path.join(self.repo_path, '*/**')):
+    #         if ".F90" in filename:
+    #             os.rename(filename, filename[:-4] + '.f90')
 
-        # Generate udb file
-        if self.repo_lang == "fortran":
-            cmd = "und create -languages Fortran add {} analyze {}".format(
-                str(self.repo_path), str(und_file))
-        elif self.repo_lang == "python":
-            cmd = "und create -languages python add {} analyze {}".format(
-                str(self.repo_path), str(und_file))
-        elif self.repo_lang == "C":
-            cmd = "und create -languages C++ add {} analyze {}".format(
-                str(self.repo_path), str(und_file))
-        elif self.repo_lang == "C++":
-            cmd = "und create -languages C++ add {} analyze {}".format(
-                str(self.repo_path), str(und_file))
-        elif self.repo_lang == "Java":
-            cmd = "und create -languages Java add {} analyze {}".format(
-                str(self.repo_path), str(und_file))
-        elif self.repo_lang == "C#":
-            cmd = "und create -languages C# add {} analyze {}".format(
-                str(self.repo_path), str(und_file))
-        elif self.repo_lang == "JavaScript":
-            cmd = "und create -languages JavaScript add {} analyze {}".format(
-                str(self.repo_path), str(und_file))
-        out, err = self._os_cmd(cmd)
+    #     # Generate udb file
+    #     if self.repo_lang == "fortran":
+    #         cmd = "und create -languages Fortran add {} analyze {}".format(
+    #             str(self.repo_path), str(und_file))
+    #     elif self.repo_lang == "python":
+    #         cmd = "und create -languages python add {} analyze {}".format(
+    #             str(self.repo_path), str(und_file))
+    #     elif self.repo_lang == "C":
+    #         cmd = "und create -languages C++ add {} analyze {}".format(
+    #             str(self.repo_path), str(und_file))
+    #     elif self.repo_lang == "C++":
+    #         cmd = "und create -languages C++ add {} analyze {}".format(
+    #             str(self.repo_path), str(und_file))
+    #     elif self.repo_lang == "Java":
+    #         cmd = "und create -languages Java add {} analyze {}".format(
+    #             str(self.repo_path), str(und_file))
+    #     elif self.repo_lang == "C#":
+    #         cmd = "und create -languages C# add {} analyze {}".format(
+    #             str(self.repo_path), str(und_file))
+    #     elif self.repo_lang == "JavaScript":
+    #         cmd = "und create -languages JavaScript add {} analyze {}".format(
+    #             str(self.repo_path), str(und_file))
+    #     out, err = self._os_cmd(cmd)
 
-        if file_name_suffix == "buggy":
-            self.buggy_und_file = und_file
-        elif file_name_suffix == "clean":
-            self.clean_und_file = und_file
+    #     if file_name_suffix == "buggy":
+    #         self.buggy_und_file = und_file
+    #     elif file_name_suffix == "clean":
+    #         self.clean_und_file = und_file
 
     def _create_und_files_v1(self, file_name_suffix,buggy_hash):
         """
@@ -274,38 +274,38 @@ class MetricsGetter(object):
         os.chdir(self.repo_path)
         
     
-    def _files_changed_in_git_diff(self, hash_1, hash_2):
-        """
-        Get a list of all the files changed between two hashes
+    # def _files_changed_in_git_diff(self, hash_1, hash_2):
+    #     """
+    #     Get a list of all the files changed between two hashes
 
-        Parameters
-        ----------
-        hash_1 : str
-            Commit hash 1.
-        hash_2 : bool
-            Commit hash 2.
+    #     Parameters
+    #     ----------
+    #     hash_1 : str
+    #         Commit hash 1.
+    #     hash_2 : bool
+    #         Commit hash 2.
 
-        Returns
-        -------
-        List[str]:
-            A list of all files changed. For simplicity we only include *.py
-            *.F90, *.c, *.cpp, *.java.
-        """
+    #     Returns
+    #     -------
+    #     List[str]:
+    #         A list of all files changed. For simplicity we only include *.py
+    #         *.F90, *.c, *.cpp, *.java.
+    #     """
 
-        os.chdir(self.repo_path)
-        out, __ = self._os_cmd(
-            "git diff {} {} --name-only".format(hash_1.id.hex, hash_2.id.hex))
-        files_changed = []
-        for file in out.splitlines():
-            for wanted in [".py", ".c", ".cpp", ".F90", ".f90", ".java"]:
-                if wanted in str(file) and "__init__.py" not in str(file):
-                    files_changed.append(Path(str(file)).name[:-1])
+    #     os.chdir(self.repo_path)
+    #     out, __ = self._os_cmd(
+    #         "git diff {} {} --name-only".format(hash_1.id.hex, hash_2.id.hex))
+    #     files_changed = []
+    #     for file in out.splitlines():
+    #         for wanted in [".py", ".c", ".cpp", ".F90", ".f90", ".java"]:
+    #             if wanted in str(file) and "__init__.py" not in str(file):
+    #                 files_changed.append(Path(str(file)).name[:-1])
 
-        # A work around for FORTRAN file extensions.
-        if self.repo_lang == "fortran":
-            files_changed = list(map(lambda x: x[:-4]+".f90", files_changed))
+    #     # A work around for FORTRAN file extensions.
+    #     if self.repo_lang == "fortran":
+    #         files_changed = list(map(lambda x: x[:-4]+".f90", files_changed))
 
-        return files_changed
+    #     return files_changed
     
 
     # def get_defective_pair_metrics(self):
@@ -476,7 +476,7 @@ class MetricsGetter(object):
                     "git reset --hard {}".format(clean_hash), verbose=False)
 
                 self._create_und_files_v1("clean",buggy_hash)
-            except ValueError as e:
+            except Exception as e:
                 print("issue with",buggy_hash)
                 print("Error:",e)
                 continue

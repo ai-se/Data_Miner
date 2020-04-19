@@ -6,6 +6,7 @@ import math                               # Required for the math.log function
 from commit_guru.ingester.commitFile import *         # Represents a file
 from commit_guru.classifier.classifier import *       # Used for classifying each commit
 import time
+import pandas as pd
 
 """
 file: repository.py
@@ -46,7 +47,7 @@ class Git():
 
     REPO_DIRECTORY = "/CASRepos/git/"        # directory in which to store repositories
 
-    def getCommitStatsProperties( stats, commitFiles, devExperience, author, unixTimeStamp ):
+    def getCommitStatsProperties( stats, commitFiles, devExperience, author, unixTimeStamp, _commit_hash):
         """
         getCommitStatsProperties
         Helper method for log. Caclulates statistics for each change/commit and
@@ -59,6 +60,7 @@ class Git():
         @param author           The author of the commit
         @param unixTimeStamp    Time of the commit
         """
+        all_files = []
 
         statProperties = ""
 
@@ -70,23 +72,27 @@ class Git():
         fileAges = []                               # List of the ages for each file in a commit
 
         # Stats variables
-        la = 0                                      # lines added
-        ld = 0                                      # lines deleted
+        la = 0                                      # lines added - done
+        ld = 0                                      # lines deleted -done
         nf = 0                                      # Number of modified files
-        ns = 0                                      # Number of modified subsystems
-        nd = 0                                      # number of modified directories
+        ns = 0                                      # Number of modified subsystems - done
+        nd = 0                                      # number of modified directories - done
         entrophy = 0                                # entrophy: distriubtion of modified code across each file
-        lt = 0                                      # lines of code in each file (sum) before the commit
-        ndev = 0                                    # the number of developers that modifed the files in a commit
-        age = 0                                     # the average time interval between the last and current change
-        exp = 0                                     # number of changes made by author previously
-        rexp = 0                                    # experience weighted by age of files ( 1 / (n + 1))
-        sexp = 0                                    # changes made previous by author in same subsystem
+        lt = 0                                      # lines of code in each file (sum) before the commit - done
+        ndev = 0                                    # the number of developers that modifed the files in a commit - done
+        age = 0                                     # the average time interval between the last and current change -done
+        exp = 0                                     # number of changes made by author previously - done
+        rexp = 0                                    # experience weighted by age of files ( 1 / (n + 1)) -done
+        sexp = 0                                    # changes made previous by author in same subsystem - done
         totalLOCModified = 0                        # Total modified LOC across all files
-        nuc = 0                                     # number of unique changes to the files
-        filesSeen = ""                              # files seen in change/commit
+        nuc = 0                                     # number of unique changes to the files - done
+        filesSeen = ""                              # files seen in change/commit 
 
         for stat in stats:
+            x = []
+            file_auth = []
+            file_subsystemsSeen = []
+            file_directoriesSeen = []
 
             if( stat == ' ' or stat == '' ):
                 continue
@@ -110,6 +116,7 @@ class Git():
 
             totalModified = fileLa + fileLd
 
+            x.append(_commit_hash)
             # have we seen this file already?
             if(fileName in commitFiles):
                 prevFileChanged = commitFiles[fileName]
@@ -124,6 +131,8 @@ class Git():
                 for prevAuthor in prevAuthors:
                     if prevAuthor not in authors:
                         authors.append(prevAuthor)
+                    if prevAuthor not in file_auth:
+                        file_auth.append(prevAuthor)
 
                 # Convert age to days instead of seconds
                 age += ( (int(unixTimeStamp) - int(prevChanged)) / 86400 )
@@ -137,18 +146,37 @@ class Git():
                 setattr(prevFileChanged, 'lastchanged', unixTimeStamp)
                 setattr(prevFileChanged, 'nuc', file_nuc)
 
+                x.append(fileName) # file name
+                x.append(fileLa) # lines added
+                x.append(fileLd) # lines deleted
+                x.append(prevLOC) # lines of code before commit
+                x.append(((int(unixTimeStamp) - int(prevChanged)) / 86400 )) # the average time interval between the last and current change
+                x.append(len(file_auth)) # the number of developers that modifed the files in a commit
+                x.append(file_nuc) # number of unique changes to the files
+
 
             else:
 
                 # new file we haven't seen b4, add it to file commit files dict
                 if(author not in authors):
                     authors.append(author)
+                
+                if(author not in file_auth):
+                    file_auth.append(author)
 
                 if(unixTimeStamp not in fileAges):
                     fileAges.append(unixTimeStamp)
 
                 fileObject = CommitFile(fileName, fileLa - fileLd, authors, unixTimeStamp)
                 commitFiles[fileName] = fileObject
+
+                x.append(fileName) # file name
+                x.append(fileLa) # lines added
+                x.append(fileLd) # lines deleted
+                x.append(0) # lines of code before commit
+                x.append(0) # the average time interval between the last and current change
+                x.append(len(file_auth)) # the number of developers that modifed the files in a commit
+                x.append(0) # number of unique changes to the files
 
             # end of stats loop
 
@@ -163,12 +191,19 @@ class Git():
                 subsystem = fileDirs[0]
                 directory = "/".join(fileDirs[0:-1])
 
+            if( subsystem not in file_subsystemsSeen ):
+                file_subsystemsSeen.append( subsystem ) 
+            
+            x.append(len(file_subsystemsSeen)) # number of subsystem
+ 
             if( subsystem not in subsystemsSeen ):
-                subsystemsSeen.append( subsystem )
+                subsystemsSeen.append( subsystem ) 
 
             if( author in devExperience ):
                 experiences = devExperience[author]
                 exp += sum(experiences.values())
+
+                x.append(sum(experiences.values()))  # number of changes made by author previously
 
                 if( subsystem in experiences ):
                     sexp = experiences[subsystem]
@@ -176,26 +211,36 @@ class Git():
                 else:
                     experiences[subsystem] = 1
 
+                x.append(sexp) # changes made previous by author in same subsystem
+
                 try:
                     rexp += (1 / (age) + 1)
+                    x.append((1 / (age) + 1)) # experience weighted by age of files ( 1 / (n + 1))
                 except:
                     rexp += 0
-
+                    x.append(0)
+                
             else:
                 devExperience[author] = {subsystem: 1}
 
             if( directory not in directoriesSeen ):
                 directoriesSeen.append( directory )
+            
+            if( directory not in file_directoriesSeen ):
+                file_directoriesSeen.append( directory)
+            
+            x.append(len(file_directoriesSeen)) # number of directories
 
             # Update file-level metrics
             la += fileLa
             ld += fileLd
             nf += 1
-            filesSeen += fileName + ",CAS_DELIMITER,"  
+            filesSeen += fileName + ",CAS_DELIMITER,"
+            all_files.append(x)    
         # End stats loop
 
         if( nf < 1):
-            return ""
+            return "",""
 
         # Update commit-level metrics
         ns = len(subsystemsSeen)
@@ -227,8 +272,16 @@ class Git():
         statProperties += ',"exp":"' + str( exp ) + '\"'
         statProperties += ',"rexp":"' + str( rexp ) + '\"'
         statProperties += ',"sexp":"' + str( sexp ) + '\"'
-
-        return statProperties
+        # print("+++++++++++++++++++++++++++++++++++++++")
+        # print("+++++++++++++++++++++++++++++++++++++++")
+        # print("+++++++++++++++++++++++++++++++++++++++")
+        # print("+++++++++++++++++++++++++++++++++++++++")
+        # print("+++++++++++++++++++++++++++++++++++++++")
+        # print("+++++++++++++++++++++++++++++++++++++++")
+        # print("+++++++++++++++++++++++++++++++++++++++")
+        # print(all_files)
+        # print(statProperties, all_files)
+        return (statProperties, all_files)
     # End stats
 
     def log(self, repo, firstSync):
@@ -263,14 +316,14 @@ class Git():
         classifier = Classifier()   # classifier for classifying commits (i.e., corrective, feature addition, etc)
 
         commitList = log.split("CAS_READER_STARTPRETTY")
-
+        all_commits = []
         for commit in commitList:
             author = ""                                 # author of commit
             unixTimeStamp = 0                           # timestamp of commit
             fix = False                                 # whether or not the change is a defect fix
             classification = None                       # classification of the commit (i.e., corrective, feature addition, etc)
             isMerge = False                             # whether or not the change is a merge
-
+            _commit_hash = None
             commit = commit.replace('\\x', '\\u00')   # Remove invalid json escape characters
             splitCommitStat = commit.split("CAS_READER_STOPPRETTY")  # split the commit info and its stats
 
@@ -287,6 +340,8 @@ class Git():
             for propValue in prettyInfo:
                 props = propValue.split('"CAS_READER_PROP_DELIMITER: "')
                 propStr = ''
+                if props[0] == 'commit_hash':
+                    _commit_hash = props[1]
                 for prop in props:
                     prop = prop.replace('\\','').replace("\\n", '')  # avoid escapes & newlines for JSON formatting
                     propStr = propStr + '"' + prop.replace('"','') + '":'
@@ -323,10 +378,13 @@ class Git():
                 commitObject += "," + propStr[0:-1]
                 # End property loop
             # End pretty info loop
+            # print(commitObject)
 
             # Get the stat properties
             stats = statCommit.split("\\n")
-            commitObject += self.getCommitStatsProperties(stats, commitFiles, devExperience, author, unixTimeStamp)
+            obj = self.getCommitStatsProperties(stats, commitFiles, devExperience, author, unixTimeStamp,_commit_hash)
+            commitObject += obj[0]
+            all_commits.append(obj[1])
             # Update the classification of the commit
             commitObject += ',"classification":"' + str( classification ) + '\"'
 
@@ -339,7 +397,10 @@ class Git():
             # Add commit object to json_list
             json_list.append(json.loads('{' + commitObject + '}'))
         # End commit loop
-
+        # print(all_commits)
+        all_commits_list = [item for sublist in all_commits for item in sublist]
+        all_commit_df = pd.DataFrame(all_commits_list,columns=['commit_hash','file_name','la','ld','lt','age','ndev','nuc','ns','exp','sexp','rexp','nd'])
+        all_commit_df.to_csv('/Users/suvodeepmajumder/Documents/AI4SE/Data_Miner/github/data/commit_guru_exp/' + str(repo['name']) + '_file.csv',index=False)
         logging.info('Done getting/parsing git commits.')
         return json_list
 

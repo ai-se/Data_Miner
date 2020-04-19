@@ -4,7 +4,7 @@ author: Ben Grawi <bjg1568@rit.edu>
 date: October 2013
 description: Holds the repository abstraction class
 """
-from commit_guru.ingester.git import *
+from commit_guru.ingester.git_new import *
 #from orm.commit import *
 from datetime import datetime
 import os
