@@ -61,7 +61,7 @@ def mine(projects,code_path):
       repo_lang = projects.loc[i,'lang']
       understand_source.append([1,repo_name,git_url,last_analyzed])
       understand_source_df = pd.DataFrame(understand_source,columns = ['id','name','url','last_analyzed'])
-      file_path = up(code_path) + '/data/commit_guru_exp/' + repo_name + '.csv'
+      file_path = up(code_path) + '/data/commit_guru_new/' + repo_name + '.csv'
       cas_manager = CAS_Manager(understand_source_df)
       if os.path.isfile(file_path):
         print('file exist')
@@ -79,13 +79,13 @@ def mine(projects,code_path):
 
 if __name__ == "__main__":
   if platform.system() == 'Darwin' or platform.system() == 'Linux':
-    data_path = os.getcwd() + '/python_project_list.csv'
+    data_path = os.getcwd() + '/projects.csv'
   else:
     data_path = os.getcwd() + '\\Test_projects.csv'
     code_path = os.getcwd()
   project_list = pd.read_csv(data_path)
   #project_list = project_list[project_list['lang'] == 'Java']
-  project_list = project_list[2:3]
+  #project_list = project_list[2:3]
   # miner = data_mine(project_list)
   # miner.start()
   code_path = os.getcwd()
