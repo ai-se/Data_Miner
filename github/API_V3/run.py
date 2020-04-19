@@ -89,14 +89,14 @@ if __name__ == "__main__":
     code_path = os.getcwd()
   project_list = pd.read_csv(data_path)
   #project_list = project_list[project_list['lang'] == 'Python']
-  #project_list = project_list[0:1]
+  project_list = project_list[0:1]
   # miner = data_mine(project_list)
   # miner.start()
   code_path = os.getcwd()
   cores = cpu_count()
   threads = []
   print(cores)
-  projects = np.array_split(project_list.index.tolist(), 100)
+  projects = np.array_split(project_list.index.tolist(), 1)
   for i in range(len(projects)):
     _sub_group = project_list.loc[list(projects[i])]
     _sub_group.reset_index(inplace = True, drop = True)
