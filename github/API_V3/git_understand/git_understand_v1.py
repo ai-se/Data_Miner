@@ -475,7 +475,7 @@ class MetricsGetter(object):
                     "git reset --hard {}".format(clean_hash), verbose=False)
 
                 self._create_und_files_v1("clean",buggy_hash)
-            except ValueError as e:
+            except Exception as e:
                 print("issue with",buggy_hash)
                 print("Error:",e)
                 continue
