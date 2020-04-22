@@ -43,7 +43,6 @@ class git2data(object):
         for lang in langs:
             self.projects = self.git_client.get_projects(lang,0,50)
             projects = pd.DataFrame(self.projects, columns = ['name','owner','project_url','description','size','watchers_count','forks_count','open_issues'])
-            projects.to_csv(self.data_path + '/project_list/projects_' + lang + '.csv')
         # self.git_issue_events = self.git_client.get_events(url_type = 'issues',url_details = 'events')
         # self.git_issue_comments = self.git_client.get_comments(url_type = 'issues',url_details = 'comments')
         # self.user_map = self.git_client.get_users()

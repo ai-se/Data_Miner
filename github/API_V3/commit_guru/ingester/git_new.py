@@ -3,7 +3,7 @@ import subprocess
 import json
 import logging
 import math                               # Required for the math.log function
-from commit_guru.ingester.commitFile import *         # Represents a file
+from commit_guru.ingester.commitFile_new import *         # Represents a file
 from commit_guru.classifier.classifier import *       # Used for classifying each commit
 import time
 import pandas as pd
@@ -87,19 +87,24 @@ class Git():
         totalLOCModified = 0                        # Total modified LOC across all files
         nuc = 0                                     # number of unique changes to the files - done
         filesSeen = ""                              # files seen in change/commit 
-
+        # print("++++++++++++++++++++++++++")
         for stat in stats:
             x = []
             file_auth = []
             file_subsystemsSeen = []
             file_directoriesSeen = []
+            minor = 0
+            co_commited_files = {}
+            nadev = 0
+            ncomm = 0
+            num_files = 0
 
             if( stat == ' ' or stat == '' ):
                 continue
 
             fileStat = stat.split("\\t")
 
-             # Check that we are only looking at file stat (i.e., remove extra newlines)
+            # Check that we are only looking at file stat (i.e., remove extra newlines)
             if( len(fileStat) < 2):
                 continue
 
@@ -114,6 +119,7 @@ class Git():
             # Remove oddities in filename so we can process it
             fileName = (fileStat[2].replace("'",'').replace('"','').replace("\\",""))
 
+
             totalModified = fileLa + fileLd
 
             x.append(_commit_hash)
@@ -124,9 +130,10 @@ class Git():
                 prevAuthors = getattr(prevFileChanged, 'authors')
                 prevChanged = getattr(prevFileChanged, 'lastchanged')
                 file_nuc = getattr(prevFileChanged, 'nuc')
+                owner = getattr(prevFileChanged, 'owner')
+                co_commited_files = getattr(prevFileChanged, 'co_commited_files')
                 nuc += file_nuc
                 lt += prevLOC
-
 
                 for prevAuthor in prevAuthors:
                     if prevAuthor not in authors:
@@ -138,6 +145,43 @@ class Git():
                 age += ( (int(unixTimeStamp) - int(prevChanged)) / 86400 )
                 fileAges.append(prevChanged)
 
+                # update owner
+                if author not in owner:
+                    owner.update({author:fileLa})
+                else:
+                    owner[author] += fileLa
+                # update committed files and calculating ndev
+                for stat in stats:
+                    if( stat == ' ' or stat == '' ):
+                        continue
+                    fileStat = stat.split("\\t")
+                    committed_fileName = (fileStat[2].replace("'",'').replace('"','').replace("\\",""))
+                    if committed_fileName != fileName:
+                        if committed_fileName not in co_commited_files.keys():
+                            co_commited_files.update({committed_fileName:1})
+                            num_files += 1
+                            if committed_fileName not in commitFiles.keys():
+                                nadev += 1*1
+                                ncomm += 1*1
+                            else:
+                                nadev += len(getattr(commitFiles[committed_fileName], 'authors'))*1
+                                ncomm += getattr(commitFiles[committed_fileName], 'nuc')*1
+                        else:
+                            co_commited_files[committed_fileName] += 1
+                            num_files += 1
+                            if committed_fileName not in commitFiles.keys():
+                                nadev += 1*co_commited_files[committed_fileName]
+                                ncomm += 1*co_commited_files[committed_fileName]
+                            else:
+                                nadev += len(getattr(commitFiles[committed_fileName], 'authors'))*co_commited_files[committed_fileName]
+                                ncomm += getattr(commitFiles[committed_fileName], 'nuc')*co_commited_files[committed_fileName]
+
+                # if num_files == 0:
+                #     nadev = 0
+                # else:
+                #     nadev = nadev/num_files
+
+
                 # Update the file info
 
                 file_nuc += 1 # file was modified in this commit
@@ -145,6 +189,23 @@ class Git():
                 setattr(prevFileChanged, 'authors', authors)
                 setattr(prevFileChanged, 'lastchanged', unixTimeStamp)
                 setattr(prevFileChanged, 'nuc', file_nuc)
+                setattr(prevFileChanged, 'owner', owner)
+                setattr(prevFileChanged, 'co_commited_files', co_commited_files)
+
+
+                # calculate OWN
+                if sum(owner.values()) != 0:
+                    own = max(owner.values())/sum(owner.values())
+                else:
+                    own = 0
+
+                # calculate MINOR
+                for key in owner:
+                    if owner[key] <= 0.05*sum(owner.values()):
+                        minor += 1
+
+                
+
 
                 x.append(fileName) # file name
                 x.append(fileLa) # lines added
@@ -153,6 +214,10 @@ class Git():
                 x.append(((int(unixTimeStamp) - int(prevChanged)) / 86400 )) # the average time interval between the last and current change
                 x.append(len(file_auth)) # the number of developers that modifed the files in a commit
                 x.append(file_nuc) # number of unique changes to the files
+                x.append(own) # measures the percentage of the lines authored by the highest contributor of a file
+                x.append(minor) # measures the number of contributors who authored less than 5%
+                x.append(nadev) # numder of developer committed weighied by number of time they were committed
+                x.append(ncomm) # numder of neighbouring commits weighied by number of time they were committed
 
 
             else:
@@ -166,9 +231,30 @@ class Git():
 
                 if(unixTimeStamp not in fileAges):
                     fileAges.append(unixTimeStamp)
+                
+                # update committed files and calculating ndev
+                for stat in stats:
+                    if( stat == ' ' or stat == '' ):
+                        continue
+                    fileStat = stat.split("\\t")
+                    committed_fileName = (fileStat[2].replace("'",'').replace('"','').replace("\\",""))
+                    if committed_fileName != fileName:
+                        if committed_fileName not in co_commited_files.keys():
+                            co_commited_files[committed_fileName] = 1
+                            num_files += 1
+                            nadev += 1*1
+                            ncomm += 1*1
 
-                fileObject = CommitFile(fileName, fileLa - fileLd, authors, unixTimeStamp)
+                # if num_files == 0:
+                #     nadev = 0
+                # else:
+                #     nadev = nadev/num_files
+                # print(co_commited_files)
+
+                fileObject = CommitFile(fileName, fileLa - fileLd, authors, unixTimeStamp, {author:fileLa},co_commited_files)
                 commitFiles[fileName] = fileObject
+
+
 
                 x.append(fileName) # file name
                 x.append(fileLa) # lines added
@@ -177,8 +263,13 @@ class Git():
                 x.append(0) # the average time interval between the last and current change
                 x.append(len(file_auth)) # the number of developers that modifed the files in a commit
                 x.append(0) # number of unique changes to the files
+                x.append(1) # measures the percentage of the lines authored by the highest contributor of a file
+                x.append(0) # measures the number of contributors who authored less than 5%
+                x.append(nadev) # numder of developer committed weighied by number of time they were committed
+                x.append(ncomm) # numder of neighbouring commits weighied by number of time they were committed
 
             # end of stats loop
+
 
             locModifiedPerFile.append(totalModified) # Required for entrophy
             totalLOCModified += totalModified
@@ -251,11 +342,15 @@ class Git():
         exp = exp / nf
         rexp = rexp / nf
 
+
         # Update entrophy
-        for fileLocMod in locModifiedPerFile:
+        for file_num in range(len(locModifiedPerFile)):
+            fileLocMod = locModifiedPerFile[file_num]
             if (fileLocMod != 0 ):
                 avg = fileLocMod/totalLOCModified
-                entrophy -= ( avg * math.log( avg,2 ) )
+                ind_entropy = ( avg * math.log( avg,2 ) )
+                all_files[file_num].append(ind_entropy)
+                entrophy -= ind_entropy
 
         # Add stat properties to the commit object
         statProperties += ',"la":"' + str( la ) + '\"'
@@ -396,11 +491,13 @@ class Git():
 
             # Add commit object to json_list
             json_list.append(json.loads('{' + commitObject + '}'))
+        # print(commitFiles)
         # End commit loop
         # print(all_commits)
         all_commits_list = [item for sublist in all_commits for item in sublist]
-        all_commit_df = pd.DataFrame(all_commits_list,columns=['commit_hash','file_name','la','ld','lt','age','ndev','nuc','ns','exp','sexp','rexp','nd'])
-        all_commit_df.to_csv('/home/smajumd3/Data_Miner/github/data/commit_guru_new/' + str(repo['name']) + '_file.csv',index=False)
+        all_commit_df = pd.DataFrame(all_commits_list,columns=['commit_hash','file_name','la','ld','lt','age','ndev','nuc','own','minor','ndev','ncomm','ns','exp','sexp','rexp','nd','sctr'])
+        all_commit_df.to_csv('//Users/suvodeepmajumder/Documents/AI4SE/Data_Miner/github/data/commit_guru_exp/' + str(repo['name']) + '_file.csv',index=False)
+        # all_commit_df.to_csv('/home/smajumd3/Data_Miner/github/data/commit_guru_new/' + str(repo['name']) + '_file.csv',index=False)
         logging.info('Done getting/parsing git commits.')
         return json_list
 
