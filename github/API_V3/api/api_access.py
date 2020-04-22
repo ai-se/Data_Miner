@@ -209,7 +209,7 @@ class git_api_access(object):
         y = [0]*100
         page_number = 1
         projects = []
-        while(forks <= 5000):
+        while(forks <= 10000):
             url = self.create_search_query(language,forks,stars)
             page_number = 1
             print('url creation',url)
