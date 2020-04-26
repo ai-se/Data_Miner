@@ -27,7 +27,7 @@ import re
 import shlex
 from multiprocessing import Pool, cpu_count
 from os.path import dirname as up
-from commit_guru.cas_manager_v1 import *
+from commit_guru.cas_manager_v1_file import *
 import subprocess as sp
 
 class ThreadWithReturnValue(Thread):
@@ -61,7 +61,7 @@ def mine(projects,code_path):
       repo_lang = projects.loc[i,'lang']
       understand_source.append([1,repo_name,git_url,last_analyzed])
       understand_source_df = pd.DataFrame(understand_source,columns = ['id','name','url','last_analyzed'])
-      file_path = up(code_path) + '/data/commit_guru/' + repo_name + '.csv'
+      file_path = up(code_path) + '/data/commit_guru_file/' + repo_name + '.csv'
       cas_manager = CAS_Manager(understand_source_df)
       if os.path.isfile(file_path):
         print('file exist')
@@ -85,14 +85,14 @@ if __name__ == "__main__":
     code_path = os.getcwd()
   project_list = pd.read_csv(data_path)
   #project_list = project_list[project_list['lang'] == 'Java']
-  project_list = project_list[743:744]
+  #project_list = project_list[743:744]
   # miner = data_mine(project_list)
   # miner.start()
   code_path = os.getcwd()
   cores = cpu_count()
   threads = []
   print(cores)
-  projects = np.array_split(project_list.index.tolist(), cores)
+  projects = np.array_split(project_list.index.tolist(), 50)
   for i in range(len(projects)):
     _sub_group = project_list.loc[list(projects[i])]
     _sub_group.reset_index(inplace = True, drop = True)
