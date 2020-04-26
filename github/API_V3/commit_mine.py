@@ -79,7 +79,7 @@ def mine(projects,code_path):
 
 if __name__ == "__main__":
   if platform.system() == 'Darwin' or platform.system() == 'Linux':
-    data_path = os.getcwd() + '/projects.csv'
+    data_path = os.getcwd() + '/projects_new.csv'
   else:
     data_path = os.getcwd() + '\\Test_projects.csv'
     code_path = os.getcwd()
@@ -92,7 +92,7 @@ if __name__ == "__main__":
   cores = cpu_count()
   threads = []
   print(cores)
-  projects = np.array_split(project_list.index.tolist(), cores)
+  projects = np.array_split(project_list.index.tolist(), 50)
   for i in range(len(projects)):
     _sub_group = project_list.loc[list(projects[i])]
     _sub_group.reset_index(inplace = True, drop = True)

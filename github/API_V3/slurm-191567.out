@@ -1,0 +1,4 @@
+  File "commit_mine.py", line 95
+    projects = np.array_split(project_list.index.tolist(), 50s)
+                                                             ^
+SyntaxError: invalid syntax
