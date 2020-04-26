@@ -1,0 +1,2033 @@
+2020-04-26 12:03:06 INFO: Adding repo Hello-World to work queue for ingesting
+2020-04-26 12:03:06 INFO: A worker is starting scan repository: Hello-World
+2020-04-26 12:03:06 INFO: Adding repo openshift-quickstarts to work queue for ingesting
+2020-04-26 12:03:06 INFO: A worker is starting scan repository: openshift-quickstarts
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:06 INFO: Pulling latest changes from repo: Hello-World
+2020-04-26 12:03:06 INFO: Adding repo Swipeable-Cards to work queue for ingesting
+2020-04-26 12:03:06 INFO: A worker is starting scan repository: Swipeable-Cards
+32
+            repo_name     repo_owner  ... defective done
+0         Hello-World  agarwalrounak  ...         2    0
+1  API-NG-sample-code        betfair  ...         2    0
+
+[2 rows x 10 columns]
+               repo_name       repo_owner  ... defective done
+0  openshift-quickstarts  jboss-openshift  ...         2    0
+1           http-request     kevinsawicki  ...         2    0
+
+[2 rows x 10 columns]
+           repo_name repo_owner  ... defective done
+0  NumberProgressBar   daimajia  ...         2    0
+1     eclipse.jdt.ls    eclipse  ...         2    0
+
+[2 rows x 10 columns]
+            repo_name repo_owner  ... defective done
+0           portfolio     buchen  ...         2    0
+1  mapstruct-examples  mapstruct  ...         2    0
+
+[2 rows x 10 columns]
+                   repo_name repo_owner  ... defective done
+0  amazon-kinesis-connectors    awslabs  ...         2    0
+1         Android-ExpandIcon      zagum  ...         2    0
+
+[2 rows x 10 columns]
+              repo_name repo_owner  ... defective done
+0        MyLittleCanvas  florent37  ...         2    0
+1  Dachshund-Tab-Layout    Andy671  ...         2    0
+
+[2 rows x 10 columns]
+      repo_name repo_owner  ... defective done
+0  Pix-EzViewer  Notsfsssf  ...         2    0
+
+[1 rows x 10 columns]
+                  repo_name repo_owner  ... defective done
+0  Algorithms-Hacktoberfest     fnplus  ...         4    0
+
+[1 rows x 10 columns]
+                     repo_name   repo_owner  ... defective done
+0  sonar-custom-rules-examples  SonarSource  ...         4    0
+
+[1 rows x 10 columns]
+         repo_name repo_owner  ... defective done
+0  Intro-To-RxJava  Froussios  ...         4    0
+
+[1 rows x 10 columns]
+         repo_name repo_owner  ... defective done
+0  Swipeable-Cards     kikoso  ...         4    0
+
+[1 rows x 10 columns]
+   repo_name repo_owner  ... defective done
+0  RootTools  Stericson  ...         4    0
+
+[1 rows x 10 columns]
+  repo_name repo_owner  ... defective done
+0   dbeaver    dbeaver  ...        14    0
+
+[1 rows x 10 columns]
+                  repo_name          repo_owner  ... defective done
+0  android-mvp-architecture  MindorksOpenSource  ...        14    0
+
+[1 rows x 10 columns]
+  repo_name repo_owner  ... defective done
+0     otter    alibaba  ...        14    0
+
+[1 rows x 10 columns]
+                                repo_name repo_owner  ... defective done
+0  AlphabetIndex-Fast-Scroll-RecyclerView    myinnos  ...        14    0
+
+[1 rows x 10 columns]
+    repo_name                     repo_owner  ... defective done
+0  CalendarFX  dlsc-software-consulting-gmbh  ...        14    0
+
+[1 rows x 10 columns]
+  repo_name repo_owner  ... defective done
+0     knife    bit4woo  ...        14    0
+
+[1 rows x 10 columns]
+               repo_name repo_owner  ... defective done
+0  Space-Navigation-View     armcha  ...        15    0
+
+[1 rows x 10 columns]
+                 repo_name repo_owner  ... defective done
+0  pinned-section-listview   beworker  ...        22    0
+
+[1 rows x 10 columns]
+          repo_name      repo_owner  ... defective done
+0  dynamic-load-apk  singwhatiwanna  ...        22    0
+
+[1 rows x 10 columns]
+                   repo_name repo_owner  ... defective done
+0  elasticsearch-analysis-ik      medcl  ...        22    0
+
+[1 rows x 10 columns]
+  repo_name repo_owner  ... defective done
+0       hbc    twitter  ...        24    0
+
+[1 rows x 10 columns]
+                     repo_name repo_owner  ... defective done
+0  sticky-headers-recyclerview    timehop  ...        24    0
+
+[1 rows x 10 columns]
+                   repo_name repo_owner  ... defective done
+0  AndroidPerformanceMonitor   markzhai  ...        24    0
+
+[1 rows x 10 columns]
+  repo_name repo_owner  ... defective done
+0     hmily    Dromara  ...        24    0
+
+[1 rows x 10 columns]
+     repo_name repo_owner  ... defective done
+0  colorpicker  QuadFlask  ...        24    0
+
+[1 rows x 10 columns]
+                repo_name      repo_owner  ... defective done
+0  material-calendar-view  BlackBoxVision  ...        24    0
+
+[1 rows x 10 columns]
+  repo_name repo_owner  ... defective done
+0        eo   yegor256  ...        25    0
+
+[1 rows x 10 columns]
+  repo_name     repo_owner  ... defective done
+0     ncalc  tranleduy2000  ...        26    0
+
+[1 rows x 10 columns]
+                    repo_name repo_owner  ... defective done
+0  react-native-google-places    tolu360  ...        26    0
+
+[1 rows x 10 columns]
+                  repo_name repo_owner  ... defective done
+0  Android-Rich-text-Editor   chinalwb  ...        26    0
+
+[1 rows x 10 columns]
+           repo_name  repo_owner  ... defective done
+0  opencv-processing  atduskgreg  ...        27    0
+
+[1 rows x 10 columns]
+          repo_name repo_owner  ... defective done
+0  QRCodeReaderView  dlazaro66  ...        27    0
+
+[1 rows x 10 columns]
+                   repo_name               repo_owner  ... defective done
+0  FizzBuzzEnterpriseEdition  EnterpriseQualityCoding  ...        27    0
+
+[1 rows x 10 columns]
+  repo_name  repo_owner  ... defective done
+0    gpmall  2227324689  ...        27    0
+
+[1 rows x 10 columns]
+  repo_name repo_owner  ... defective done
+0     Paper      pilgr  ...        28    0
+
+[1 rows x 10 columns]
+         repo_name repo_owner  ... defective done
+0  OpenNoteScanner   ctodobom  ...        28    0
+
+[1 rows x 10 columns]
+         repo_name repo_owner  ... defective done
+0  plantuml-server   plantuml  ...        28    0
+
+[1 rows x 10 columns]
+  repo_name  repo_owner  ... defective done
+0   openiot  OpenIotOrg  ...        28    0
+
+[1 rows x 10 columns]
+    repo_name  repo_owner  ... defective done
+0  cw-omnibus  commonsguy  ...        83    0
+
+[1 rows x 10 columns]
+                     repo_name     repo_owner  ... defective done
+0  spring-cloud-zuul-ratelimit  marcosbarbero  ...        83    0
+
+[1 rows x 10 columns]
+                  repo_name repo_owner  ... defective done
+0  react-native-ble-manager   innoveit  ...        83    0
+
+[1 rows x 10 columns]
+         repo_name repo_owner  ... defective done
+0  bytecode-viewer    Konloch  ...        86    0
+
+[1 rows x 10 columns]
+  repo_name  repo_owner  ... defective done
+0   disconf  knightliao  ...        86    0
+
+[1 rows x 10 columns]
+                repo_name repo_owner  ... defective done
+0  Much-Assembly-Required   simon987  ...        87    0
+
+[1 rows x 10 columns]
+                       repo_name repo_owner  ... defective done
+0  vulnerability-assessment-tool        SAP  ...        87    0
+
+[1 rows x 10 columns]
+            repo_name repo_owner  ... defective done
+0  ffmpeg-cli-wrapper      bramp  ...        87    0
+
+[1 rows x 10 columns]
+      repo_name repo_owner  ... defective done
+0  slack-plugin  jenkinsci  ...        87    0
+
+[1 rows x 10 columns]
+              repo_name repo_owner  ... defective done
+0  WaniKani-for-Android     xiprox  ...        87    0
+
+[1 rows x 10 columns]
+I am here
+I am here
+I am here
+   id         name                                           url last_analyzed
+0   1  Hello-World  https://github.com/agarwalrounak/Hello-World          None
+I am here
+I am here
+I am here
+I am here
+The repo is: Hello-World
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Hello-World
+I am here
+I am here
+working on pulling
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+I am here
+I am here
+The repo is: openshift-quickstarts
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/openshift-quickstarts
+working on pulling
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+I am here
+   id             name                                        url last_analyzed
+0   1  Swipeable-Cards  https://github.com/kikoso/Swipeable-Cards          None
+The repo is: Swipeable-Cards
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Swipeable-Cardsfatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:06 INFO: Adding repo Algorithms-Hacktoberfest to work queue for ingesting
+2020-04-26 12:03:06 INFO: Adding repo amazon-kinesis-connectors to work queue for ingesting
+2020-04-26 12:03:06 INFO: Adding repo Intro-To-RxJava to work queue for ingesting
+2020-04-26 12:03:06 INFO: A worker is starting scan repository: Algorithms-Hacktoberfest
+2020-04-26 12:03:06 INFO: Adding repo NumberProgressBar to work queue for ingesting
+2020-04-26 12:03:06 INFO: Adding repo knife to work queue for ingesting
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:06 INFO: A worker is starting scan repository: amazon-kinesis-connectors
+2020-04-26 12:03:06 INFO: Pulling latest changes from repo: Swipeable-Cards
+2020-04-26 12:03:07 INFO: Adding repo dbeaver to work queue for ingesting
+2020-04-26 12:03:07 INFO: Adding repo sticky-headers-recyclerview to work queue for ingesting
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: A worker is starting scan repository: Intro-To-RxJava
+2020-04-26 12:03:07 INFO: Adding repo elasticsearch-analysis-ik to work queue for ingesting
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: A worker is starting scan repository: NumberProgressBar
+2020-04-26 12:03:07 INFO: Adding repo dynamic-load-apk to work queue for ingesting
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: A worker is starting scan repository: knife
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: Adding repo AndroidPerformanceMonitor to work queue for ingesting
+2020-04-26 12:03:07 INFO: Adding repo AlphabetIndex-Fast-Scroll-RecyclerView to work queue for ingesting
+2020-04-26 12:03:07 INFO: Adding repo hmily to work queue for ingesting
+2020-04-26 12:03:07 INFO: Pulling latest changes from repo: openshift-quickstarts
+2020-04-26 12:03:07 INFO: A worker is starting scan repository: dbeaver
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: Adding repo colorpicker to work queue for ingesting
+2020-04-26 12:03:07 INFO: A worker is starting scan repository: sticky-headers-recyclerview
+2020-04-26 12:03:07 INFO: Adding repo Android-Rich-text-Editor to work queue for ingesting
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: Adding repo gpmall to work queue for ingesting
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: Pulling latest changes from repo: Algorithms-Hacktoberfest
+2020-04-26 12:03:07 INFO: Adding repo eo to work queue for ingesting
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: A worker is starting scan repository: elasticsearch-analysis-ik
+2020-04-26 12:03:07 INFO: Adding repo spring-cloud-zuul-ratelimit to work queue for ingesting
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: Adding repo react-native-ble-manager to work queue for ingesting
+2020-04-26 12:03:07 INFO: Adding repo OpenNoteScanner to work queue for ingesting
+2020-04-26 12:03:07 INFO: Pulling latest changes from repo: amazon-kinesis-connectors
+2020-04-26 12:03:07 INFO: Adding repo cw-omnibus to work queue for ingesting
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: A worker is starting scan repository: dynamic-load-apk
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: Adding repo QRCodeReaderView to work queue for ingesting
+2020-04-26 12:03:07 INFO: Adding repo Paper to work queue for ingesting
+2020-04-26 12:03:07 INFO: Pulling latest changes from repo: Intro-To-RxJava
+2020-04-26 12:03:07 INFO: A worker is starting scan repository: AndroidPerformanceMonitor
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: Adding repo disconf to work queue for ingesting
+2020-04-26 12:03:07 INFO: A worker is starting scan repository: AlphabetIndex-Fast-Scroll-RecyclerView
+2020-04-26 12:03:07 INFO: Adding repo bytecode-viewer to work queue for ingesting
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: Adding repo Pix-EzViewer to work queue for ingesting
+2020-04-26 12:03:07 INFO: A worker is starting scan repository: hmily
+2020-04-26 12:03:07 INFO: Pulling latest changes from repo: knife
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: Pulling latest changes from repo: NumberProgressBar
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: Adding repo vulnerability-assessment-tool to work queue for ingesting
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: Adding repo WaniKani-for-Android to work queue for ingesting
+2020-04-26 12:03:07 INFO: A worker is starting scan repository: colorpicker
+2020-04-26 12:03:07 INFO: A worker is starting scan repository: Android-Rich-text-Editor
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: A worker is starting scan repository: gpmall
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: Done fetching.
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: Done fetching.
+2020-04-26 12:03:07 INFO: A worker is starting scan repository: eo
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: Adding repo hbc to work queue for ingesting
+2020-04-26 12:03:07 INFO: Adding repo Space-Navigation-View to work queue for ingesting
+2020-04-26 12:03:07 INFO: Adding repo sonar-custom-rules-examples to work queue for ingesting
+2020-04-26 12:03:07 INFO: A worker is starting scan repository: spring-cloud-zuul-ratelimit
+2020-04-26 12:03:07 INFO: Adding repo CalendarFX to work queue for ingesting
+2020-04-26 12:03:07 INFO: Adding repo pinned-section-listview to work queue for ingesting
+2020-04-26 12:03:07 INFO: Adding repo material-calendar-view to work queue for ingesting
+2020-04-26 12:03:07 INFO: Adding repo openiot to work queue for ingesting
+2020-04-26 12:03:07 INFO: Adding repo RootTools to work queue for ingesting
+2020-04-26 12:03:07 INFO: A worker is starting scan repository: react-native-ble-manager
+2020-04-26 12:03:07 INFO: A worker is starting scan repository: OpenNoteScanner
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: Adding repo react-native-google-places to work queue for ingesting
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: Adding repo opencv-processing to work queue for ingesting
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: A worker is starting scan repository: cw-omnibus
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: Pulling latest changes from repo: sticky-headers-recyclerview
+2020-04-26 12:03:07 INFO: Pulling latest changes from repo: elasticsearch-analysis-ik
+2020-04-26 12:03:07 INFO: Adding repo ncalc to work queue for ingesting
+2020-04-26 12:03:07 INFO: Adding repo Much-Assembly-Required to work queue for ingesting
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: RootTools
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: Adding repo ffmpeg-cli-wrapper to work queue for ingesting
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: Adding repo android-mvp-architecture to work queue for ingesting
+2020-04-26 12:03:07 INFO: A worker is starting scan repository: QRCodeReaderView
+2020-04-26 12:03:08 INFO: Adding repo slack-plugin to work queue for ingesting
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: Paper
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+working on pulling
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id   name                               url last_analyzed
+0   1  knife  https://github.com/bit4woo/knife          None
+   id     name                                 url last_analyzed
+0   1  dbeaver  https://github.com/dbeaver/dbeaver          None
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+The repo is: Algorithms-Hacktoberfest
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Algorithms-Hacktoberfest
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+working on pulling
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id   name                               url last_analyzed
+0   1  hmily  https://github.com/Dromara/hmily          None
+The repo is: amazon-kinesis-connectors
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/amazon-kinesis-connectors
+working on pulling
+   id         name                                       url last_analyzed
+0   1  colorpicker  https://github.com/QuadFlask/colorpicker          None
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+The repo is: Intro-To-RxJava
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Intro-To-RxJava
+   id    name                                   url last_analyzed
+0   1  gpmall  https://github.com/2227324689/gpmall          None
+working on pulling
+   id name                             url last_analyzed
+0   1   eo  https://github.com/yegor256/eo          None
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id        name                                           url last_analyzed
+0   1  cw-omnibus  https://github.com/commonsguy/cw-omnibus.git          None
+The repo is: NumberProgressBar
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/NumberProgressBar
+working on pulling
+   id   name                             url last_analyzed
+0   1  Paper  https://github.com/pilgr/Paper          None
+The repo is: knife
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/knife
+working on pulling
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id     name                                    url last_analyzed
+0   1  disconf  https://github.com/knightliao/disconf          None
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id          name                                        url last_analyzed
+0   1  Pix-EzViewer  https://github.com/Notsfsssf/Pix-EzViewer          None
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+The repo is: dbeaver
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/dbeaver
+working on pulling
+The repo is: sticky-headers-recyclerview
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/sticky-headers-recyclerview
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+working on pulling
+   id name                             url last_analyzed
+0   1  hbc  https://github.com/twitter/hbc          None
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+The repo is: elasticsearch-analysis-ik
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/elasticsearch-analysis-ik
+working on pulling
+   id       name                                     url last_analyzed
+0   1  RootTools  https://github.com/Stericson/RootTools          None
+   id   name                                     url last_analyzed
+0   1  ncalc  https://github.com/tranleduy2000/ncalc          None
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id     name                                    url last_analyzed
+0   1  openiot  https://github.com/OpenIotOrg/openiot          None
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+The repo is: dynamic-load-apk
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/dynamic-load-apk
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+working on pulling
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+   id       name                                  url last_analyzed
+0   1  portfolio  https://github.com/buchen/portfolio          None
+   id          name                                        url last_analyzed
+0   1  slack-plugin  https://github.com/jenkinsci/slack-plugin          None
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+The repo is: AndroidPerformanceMonitor
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/AndroidPerformanceMonitor
+working on pulling
+   id   name                               url last_analyzed
+0   1  otter  https://github.com/alibaba/otter          None
+   id  ... last_analyzed
+0   1  ...          None
+
+[1 rows x 4 columns]
+The repo is: AlphabetIndex-Fast-Scroll-RecyclerView
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/AlphabetIndex-Fast-Scroll-RecyclerView
+working on pulling
+The repo is: hmily
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/hmily
+working on pulling
+The repo is: colorpicker
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/colorpicker
+working on pulling
+The repo is: Android-Rich-text-Editor
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Android-Rich-text-Editor
+working on pulling
+The repo is: gpmall
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/gpmall
+working on pulling
+The repo is: eo
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/eo
+working on pulling
+The repo is: spring-cloud-zuul-ratelimit
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/spring-cloud-zuul-ratelimit
+working on pulling
+The repo is: react-native-ble-manager
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/react-native-ble-manager
+working on pulling
+The repo is: OpenNoteScanner
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/OpenNoteScanner
+working on pulling
+The repo is: cw-omnibus
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/cw-omnibus
+working on pulling
+The repo is: RootTools
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/RootTools
+working on pulling
+The repo is: QRCodeReaderView
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/QRCodeReaderView
+working on pulling
+The repo is: Paper
+This is the current path: /home/smajumd3/Data_Miner/github/API_V3/commit_guru/ingester/CASRepos/git/Paper2020-04-26 12:03:08 INFO: Adding repo portfolio to work queue for ingesting
+2020-04-26 12:03:08 INFO: Adding repo FizzBuzzEnterpriseEdition to work queue for ingesting
+2020-04-26 12:03:08 INFO: Done fetching.
+2020-04-26 12:03:08 INFO: Done fetching.
+2020-04-26 12:03:08 INFO: Adding repo otter to work queue for ingesting
+2020-04-26 12:03:08 INFO: Adding repo plantuml-server to work queue for ingesting
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: disconf
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: dynamic-load-apk
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: bytecode-viewer
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: Pix-EzViewer
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: vulnerability-assessment-tool
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: WaniKani-for-Android
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: AndroidPerformanceMonitor
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: AlphabetIndex-Fast-Scroll-RecyclerView
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Getting/parsing git commits: Hello-World
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Done fetching.
+2020-04-26 12:03:08 INFO: Getting/parsing git commits: Swipeable-Cards
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: hbc
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: Space-Navigation-View
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: sonar-custom-rules-examples
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: CalendarFX
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: pinned-section-listview
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: material-calendar-view
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: openiot
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:07 INFO: Adding repo MyLittleCanvas to work queue for ingesting
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: colorpicker
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: react-native-google-places
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: opencv-processing
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: Android-Rich-text-Editor
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: ncalc
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: Much-Assembly-Required
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: ffmpeg-cli-wrapper
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: react-native-ble-manager
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: eo
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: android-mvp-architecture
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: slack-plugin
+2020-04-26 12:03:08 INFO: Done fetching.
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: OpenNoteScanner
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: portfolio
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: FizzBuzzEnterpriseEdition
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Getting/parsing git commits: openshift-quickstarts
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: otter
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: plantuml-server
+2020-04-26 12:03:08 INFO: Getting/parsing git commits: Algorithms-Hacktoberfest
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: RootTools
+2020-04-26 12:03:08 INFO: Done fetching.
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: spring-cloud-zuul-ratelimit
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: hmily
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: Paper
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Done fetching.
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: QRCodeReaderView
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Getting/parsing git commits: amazon-kinesis-connectors
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: bytecode-viewer
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: A worker is starting scan repository: MyLittleCanvas
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: Pix-EzViewer
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: WaniKani-for-Android
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: gpmall
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: hbc
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: pinned-section-listview
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: Space-Navigation-View
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Done fetching.
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: material-calendar-view
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Done fetching.
+2020-04-26 12:03:08 INFO: Done fetching.
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: react-native-google-places
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:08 INFO: Pulling latest changes from repo: opencv-processing
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:09 INFO: Getting/parsing git commits: Intro-To-RxJava
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:09 INFO: Pulling latest changes from repo: ffmpeg-cli-wrapper
+2020-04-26 12:03:09 INFO: Pulling latest changes from repo: CalendarFX
+2020-04-26 12:03:09 INFO: Done fetching.
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:09 INFO: Pulling latest changes from repo: disconf
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:09 INFO: Pulling latest changes from repo: sonar-custom-rules-examples
+2020-04-26 12:03:09 INFO: Done fetching.
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:09 INFO: Pulling latest changes from repo: Much-Assembly-Required
+2020-04-26 12:03:09 INFO: Pulling latest changes from repo: ncalc
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:09 INFO: Pulling latest changes from repo: android-mvp-architecture
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:09 INFO: Pulling latest changes from repo: slack-plugin
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:09 INFO: Done fetching.
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:09 INFO: Pulling latest changes from repo: FizzBuzzEnterpriseEdition
+2020-04-26 12:03:09 INFO: Pulling latest changes from repo: dbeaver
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:09 INFO: Pulling latest changes from repo: plantuml-server
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:09 INFO: Done fetching.
+2020-04-26 12:03:09 INFO: Getting/parsing git commits: knife
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:09 INFO: Done fetching.
+2020-04-26 12:03:09 INFO: Done fetching.
+2020-04-26 12:03:09 INFO: Pulling latest changes from repo: portfolio
+2020-04-26 12:03:09 INFO: Getting/parsing git commits: NumberProgressBar
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:09 INFO: Done fetching.
+2020-04-26 12:03:09 INFO: Pulling latest changes from repo: openiot
+2020-04-26 12:03:09 INFO: Pulling latest changes from repo: vulnerability-assessment-tool
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:09 INFO: Pulling latest changes from repo: MyLittleCanvas
+2020-04-26 12:03:09 INFO: Getting/parsing git commits: sticky-headers-recyclerview
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:09 INFO: Getting/parsing git commits: dynamic-load-apk
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:09 INFO: Getting/parsing git commits: elasticsearch-analysis-ik
+2020-04-26 12:03:09 INFO: Pulling latest changes from repo: otter
+2020-04-26 12:03:09 INFO: Getting/parsing git commits: AlphabetIndex-Fast-Scroll-RecyclerView
+2020-04-26 12:03:09 INFO: Done fetching.
+2020-04-26 12:03:09 INFO: Done fetching.
+2020-04-26 12:03:09 INFO: Done fetching.
+2020-04-26 12:03:09 INFO: Done fetching.
+2020-04-26 12:03:09 INFO: Getting/parsing git commits: AndroidPerformanceMonitor
+2020-04-26 12:03:09 INFO: Done fetching.
+2020-04-26 12:03:09 INFO: Done fetching.
+2020-04-26 12:03:09 INFO: Done fetching.
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:09 INFO: Getting/parsing git commits: colorpicker
+2020-04-26 12:03:10 INFO: Done fetching.
+2020-04-26 12:03:10 INFO: Done fetching.
+2020-04-26 12:03:10 INFO: Done fetching.
+2020-04-26 12:03:10 INFO: Done fetching.
+2020-04-26 12:03:10 INFO: Done fetching.
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: Android-Rich-text-Editor
+2020-04-26 12:03:10 INFO: Done fetching.
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: eo
+2020-04-26 12:03:10 INFO: Done fetching.
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: react-native-ble-manager
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: OpenNoteScanner
+2020-04-26 12:03:10 INFO: Done fetching.
+2020-04-26 12:03:10 INFO: Done fetching.
+2020-04-26 12:03:10 INFO: Done fetching.
+2020-04-26 12:03:10 INFO: Done fetching.
+2020-04-26 12:03:10 INFO: Done fetching.
+2020-04-26 12:03:10 INFO: Done fetching.
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: spring-cloud-zuul-ratelimit
+2020-04-26 12:03:10 INFO: Done fetching.
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: hmily
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: Paper
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: QRCodeReaderView
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: bytecode-viewer
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: Pix-EzViewer
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: WaniKani-for-Android
+2020-04-26 12:03:10 INFO: Done fetching.
+2020-04-26 12:03:10 INFO: Done fetching.
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: hbc
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: Space-Navigation-View
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: pinned-section-listview
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: gpmall
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: material-calendar-view
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: opencv-processing
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: react-native-google-places
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: ffmpeg-cli-wrapper
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: CalendarFX
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: disconf
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: sonar-custom-rules-examples
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: Much-Assembly-Required
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: ncalc
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: android-mvp-architecture
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: slack-plugin
+2020-04-26 12:03:10 INFO: Getting/parsing git commits: FizzBuzzEnterpriseEdition
+2020-04-26 12:03:11 INFO: Done fetching.
+2020-04-26 12:03:11 INFO: Getting/parsing git commits: plantuml-server
+2020-04-26 12:03:11 INFO: Done fetching.
+2020-04-26 12:03:12 INFO: Getting/parsing git commits: openiot
+2020-04-26 12:03:12 INFO: Done fetching.
+2020-04-26 12:03:12 INFO: Done fetching.
+2020-04-26 12:03:12 INFO: Done fetching.
+2020-04-26 12:03:12 INFO: Getting/parsing git commits: MyLittleCanvas
+2020-04-26 12:03:12 INFO: Done fetching.
+2020-04-26 12:03:13 INFO: Getting/parsing git commits: dbeaver
+2020-04-26 12:03:13 INFO: Getting/parsing git commits: portfolio
+2020-04-26 12:03:13 INFO: Done fetching.
+2020-04-26 12:03:13 INFO: Getting/parsing git commits: vulnerability-assessment-tool
+2020-04-26 12:03:16 INFO: Getting/parsing git commits: otter
+2020-04-26 12:03:18 INFO: Done fetching.
+2020-04-26 12:03:18 INFO: Getting/parsing git commits: RootTools
+2020-04-26 12:03:24 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:25 INFO: Pulling latest changes from repo: cw-omnibus
+fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:03:25 INFO: Done fetching.
+2020-04-26 12:03:25 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:25 INFO: Getting/parsing git commits: cw-omnibus
+2020-04-26 12:03:26 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:27 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:28 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:29 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:29 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:34 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:36 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:37 INFO: Saving commits to the csv...
+2020-04-26 12:03:37 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:37 INFO: Done saving commits to the csv.
+2020-04-26 12:03:37 INFO: A worker finished ingesting repo hmily
+2020-04-26 12:03:37 INFO: Adding repo hmily to work queue for analyzing.
+2020-04-26 12:03:37 INFO: Worker analyzing repository  hmily
+2020-04-26 12:03:39 INFO: Saving commits to the csv...
+2020-04-26 12:03:40 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:40 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:41 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:42 INFO: Done saving commits to the csv.
+2020-04-26 12:03:42 INFO: A worker finished ingesting repo Hello-World
+2020-04-26 12:03:42 INFO: Adding repo Hello-World to work queue for analyzing.
+2020-04-26 12:03:42 INFO: Worker analyzing repository  Hello-World
+2020-04-26 12:03:42 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:44 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:45 INFO: Saving commits to the csv...
+2020-04-26 12:03:45 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:45 INFO: Done saving commits to the csv.
+2020-04-26 12:03:45 INFO: A worker finished ingesting repo RootTools
+2020-04-26 12:03:45 INFO: Adding repo RootTools to work queue for analyzing.
+2020-04-26 12:03:45 INFO: Worker analyzing repository  RootTools
+2020-04-26 12:03:46 INFO: Saving commits to the csv...
+2020-04-26 12:03:47 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:47 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:48 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:49 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:49 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:50 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:50 INFO: Saving commits to the csv...
+2020-04-26 12:03:50 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:51 INFO: Done saving commits to the csv.
+2020-04-26 12:03:51 INFO: A worker finished ingesting repo react-native-ble-manager
+2020-04-26 12:03:51 INFO: Adding repo react-native-ble-manager to work queue for analyzing.
+2020-04-26 12:03:51 INFO: Worker analyzing repository  react-native-ble-manager
+2020-04-26 12:03:52 INFO: Done saving commits to the csv.
+2020-04-26 12:03:52 INFO: A worker finished ingesting repo Swipeable-Cards
+2020-04-26 12:03:52 INFO: Adding repo Swipeable-Cards to work queue for analyzing.
+2020-04-26 12:03:52 INFO: Worker analyzing repository  Swipeable-Cards
+2020-04-26 12:03:52 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:53 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:54 INFO: Saving commits to the csv...
+2020-04-26 12:03:54 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:54 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:55 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:55 INFO: Saving commits to the csv...
+2020-04-26 12:03:55 INFO: Done saving commits to the csv.
+2020-04-26 12:03:55 INFO: A worker finished ingesting repo bytecode-viewer
+2020-04-26 12:03:55 INFO: Adding repo bytecode-viewer to work queue for analyzing.
+2020-04-26 12:03:55 INFO: Worker analyzing repository  bytecode-viewer
+2020-04-26 12:03:55 INFO: Done saving commits to the csv.
+2020-04-26 12:03:55 INFO: A worker finished ingesting repo QRCodeReaderView
+2020-04-26 12:03:55 INFO: Adding repo QRCodeReaderView to work queue for analyzing.
+2020-04-26 12:03:55 INFO: Worker analyzing repository  QRCodeReaderView
+2020-04-26 12:03:55 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:57 INFO: Saving commits to the csv...
+2020-04-26 12:03:57 INFO: Saving commits to the csv...
+2020-04-26 12:03:57 INFO: Done saving commits to the csv.
+2020-04-26 12:03:57 INFO: A worker finished ingesting repo ffmpeg-cli-wrapper
+2020-04-26 12:03:57 INFO: Adding repo ffmpeg-cli-wrapper to work queue for analyzing.
+2020-04-26 12:03:57 INFO: Worker analyzing repository  ffmpeg-cli-wrapper
+2020-04-26 12:03:57 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:57 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:57 INFO: Done saving commits to the csv.
+2020-04-26 12:03:57 INFO: A worker finished ingesting repo hbc
+2020-04-26 12:03:57 INFO: Adding repo hbc to work queue for analyzing.
+2020-04-26 12:03:57 INFO: Worker analyzing repository  hbc
+2020-04-26 12:03:58 INFO: Done getting/parsing git commits.
+2020-04-26 12:03:58 INFO: Done getting/parsing git commits.
+2020-04-26 12:04:00 INFO: Done getting/parsing git commits.
+2020-04-26 12:04:00 INFO: Saving commits to the csv...
+2020-04-26 12:04:01 INFO: Saving commits to the csv...
+2020-04-26 12:04:01 INFO: Saving commits to the csv...
+2020-04-26 12:04:01 INFO: Done saving commits to the csv.
+2020-04-26 12:04:01 INFO: A worker finished ingesting repo elasticsearch-analysis-ik
+2020-04-26 12:04:01 INFO: Adding repo elasticsearch-analysis-ik to work queue for analyzing.
+2020-04-26 12:04:01 INFO: Worker analyzing repository  elasticsearch-analysis-ik
+2020-04-26 12:04:01 INFO: Done saving commits to the csv.
+2020-04-26 12:04:01 INFO: A worker finished ingesting repo Space-Navigation-View
+2020-04-26 12:04:01 INFO: Adding repo Space-Navigation-View to work queue for analyzing.
+2020-04-26 12:04:01 INFO: Worker analyzing repository  Space-Navigation-View
+2020-04-26 12:04:01 INFO: Saving commits to the csv...
+2020-04-26 12:04:01 INFO: Done saving commits to the csv.
+2020-04-26 12:04:01 INFO: A worker finished ingesting repo disconf
+2020-04-26 12:04:01 INFO: Adding repo disconf to work queue for analyzing.
+2020-04-26 12:04:01 INFO: Worker analyzing repository  disconf
+2020-04-26 12:04:01 INFO: Saving commits to the csv...
+2020-04-26 12:04:02 INFO: Saving commits to the csv...
+2020-04-26 12:04:02 INFO: Saving commits to the csv...
+2020-04-26 12:04:02 INFO: Done saving commits to the csv.
+2020-04-26 12:04:02 INFO: A worker finished ingesting repo material-calendar-view
+2020-04-26 12:04:02 INFO: Adding repo material-calendar-view to work queue for analyzing.
+2020-04-26 12:04:02 INFO: Worker analyzing repository  material-calendar-view
+2020-04-26 12:04:03 INFO: Done saving commits to the csv.
+2020-04-26 12:04:03 INFO: A worker finished ingesting repo opencv-processing
+2020-04-26 12:04:03 INFO: Adding repo opencv-processing to work queue for analyzing.
+2020-04-26 12:04:03 INFO: Worker analyzing repository  opencv-processing
+2020-04-26 12:04:03 INFO: Done saving commits to the csv.
+2020-04-26 12:04:03 INFO: A worker finished ingesting repo AndroidPerformanceMonitor
+2020-04-26 12:04:03 INFO: Adding repo AndroidPerformanceMonitor to work queue for analyzing.
+2020-04-26 12:04:03 INFO: Worker analyzing repository  AndroidPerformanceMonitor
+2020-04-26 12:04:03 INFO: Done saving commits to the csv.
+2020-04-26 12:04:03 INFO: A worker finished ingesting repo plantuml-server
+2020-04-26 12:04:03 INFO: Adding repo plantuml-server to work queue for analyzing.
+2020-04-26 12:04:03 INFO: Worker analyzing repository  plantuml-server
+2020-04-26 12:04:04 INFO: Saving commits to the csv...
+2020-04-26 12:04:04 INFO: Saving commits to the csv...
+2020-04-26 12:04:04 INFO: Linking 5 new corrective commits for repo Swipeable-Cards
+2020-04-26 12:04:04 INFO: Done saving commits to the csv.
+2020-04-26 12:04:04 INFO: A worker finished ingesting repo Intro-To-RxJava
+2020-04-26 12:04:04 INFO: Adding repo Intro-To-RxJava to work queue for analyzing.
+2020-04-26 12:04:04 INFO: Worker analyzing repository  Intro-To-RxJava
+fatal: ambiguous argument '9794b3fc5a2107df867b092cf4ab5712626501ef^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '9794b3fc5a2107df867b092cf4ab5712626501ef^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:04 INFO: Linking 19 new corrective commits for repo material-calendar-view
+2020-04-26 12:04:04 INFO: Linkage for commit 9794b3fc5a2107df867b092cf4ab5712626501ef
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+/home/smajumd3/Data_Miner/github/API_V3/commit_guru/analyzer/git_commit_linker.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  corrective_commit['linked'] = True # mark that we have linked this corrective commit.
+2020-04-26 12:04:05 INFO: Done saving commits to the csv.
+2020-04-26 12:04:05 INFO: A worker finished ingesting repo android-mvp-architecture
+2020-04-26 12:04:05 INFO: Adding repo android-mvp-architecture to work queue for analyzing.
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:05 INFO: Worker analyzing repository  android-mvp-architecture
+2020-04-26 12:04:06 INFO: Linkage for commit 443536655c7fc758f1afd7558cc1546554e9f4c7
+2020-04-26 12:04:06 INFO: Done getting/parsing git commits.
+2020-04-26 12:04:07 INFO: Saving commits to the csv...
+2020-04-26 12:04:07 INFO: Done getting/parsing git commits.
+2020-04-26 12:04:08 INFO: Done saving commits to the csv.
+2020-04-26 12:04:08 INFO: A worker finished ingesting repo FizzBuzzEnterpriseEdition
+2020-04-26 12:04:08 INFO: Adding repo FizzBuzzEnterpriseEdition to work queue for analyzing.
+2020-04-26 12:04:08 INFO: Worker analyzing repository  FizzBuzzEnterpriseEdition
+2020-04-26 12:04:08 INFO: Saving commits to the csv...
+2020-04-26 12:04:08 INFO: Saving commits to the csv...
+2020-04-26 12:04:09 INFO: Done getting/parsing git commits.
+2020-04-26 12:04:09 INFO: Done saving commits to the csv.
+2020-04-26 12:04:09 INFO: Saving commits to the csv...
+2020-04-26 12:04:09 INFO: Saving commits to the csv...
+2020-04-26 12:04:09 INFO: Saving commits to the csv...
+2020-04-26 12:04:09 INFO: Saving commits to the csv...
+2020-04-26 12:04:09 INFO: Linking 19 new corrective commits for repo ffmpeg-cli-wrapper
+2020-04-26 12:04:09 INFO: Done saving commits to the csv.
+2020-04-26 12:04:09 INFO: A worker finished ingesting repo pinned-section-listview
+2020-04-26 12:04:09 INFO: Saving commits to the csv...
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:09 INFO: Linking 19 new corrective commits for repo hbc
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:09 INFO: Linking 19 new corrective commits for repo FizzBuzzEnterpriseEdition
+2020-04-26 12:04:10 INFO: Adding repo pinned-section-listview to work queue for analyzing.
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:10 INFO: A worker finished ingesting repo ncalc
+2020-04-26 12:04:10 INFO: Worker analyzing repository  pinned-section-listview
+2020-04-26 12:04:10 INFO: Saving commits to the csv...
+2020-04-26 12:04:10 INFO: Linkage for commit 443536655c7fc758f1afd7558cc1546554e9f4c7
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:10 INFO: Adding repo ncalc to work queue for analyzing.
+2020-04-26 12:04:10 INFO: Done saving commits to the csv.
+2020-04-26 12:04:11 INFO: Worker analyzing repository  ncalc
+2020-04-26 12:04:11 INFO: Linkage for commit 443536655c7fc758f1afd7558cc1546554e9f4c7
+2020-04-26 12:04:11 INFO: Linkage for commit 443536655c7fc758f1afd7558cc1546554e9f4c7
+2020-04-26 12:04:11 INFO: A worker finished ingesting repo OpenNoteScanner
+2020-04-26 12:04:12 INFO: Adding repo OpenNoteScanner to work queue for analyzing.
+2020-04-26 12:04:12 INFO: Worker analyzing repository  OpenNoteScanner
+2020-04-26 12:04:12 INFO: Done saving commits to the csv.
+2020-04-26 12:04:12 INFO: A worker finished ingesting repo AlphabetIndex-Fast-Scroll-RecyclerView
+2020-04-26 12:04:12 INFO: Adding repo AlphabetIndex-Fast-Scroll-RecyclerView to work queue for analyzing.
+2020-04-26 12:04:12 INFO: Worker analyzing repository  AlphabetIndex-Fast-Scroll-RecyclerView
+2020-04-26 12:04:12 INFO: Done saving commits to the csv.
+2020-04-26 12:04:12 INFO: A worker finished ingesting repo Android-Rich-text-Editor
+2020-04-26 12:04:12 INFO: Adding repo Android-Rich-text-Editor to work queue for analyzing.
+2020-04-26 12:04:12 INFO: Worker analyzing repository  Android-Rich-text-Editor
+2020-04-26 12:04:13 INFO: Done saving commits to the csv.
+2020-04-26 12:04:13 INFO: A worker finished ingesting repo sonar-custom-rules-examples
+2020-04-26 12:04:13 INFO: Adding repo sonar-custom-rules-examples to work queue for analyzing.
+2020-04-26 12:04:13 INFO: Worker analyzing repository  sonar-custom-rules-examples
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+/home/smajumd3/anaconda3/lib/python3.7/site-packages/pandas/core/series.py:1015: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.loc[key] = value
+2020-04-26 12:04:13 INFO: Saving commits to the csv...
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:14 INFO: Done getting/parsing git commits.
+2020-04-26 12:04:14 INFO: Linkage for commit 30baae9b7f7269aab9b5fb127ad491e15499f023
+2020-04-26 12:04:14 INFO: Saving commits to the csv...
+2020-04-26 12:04:14 INFO: Linking 19 new corrective commits for repo Space-Navigation-View
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:14 INFO: Done saving commits to the csv.
+2020-04-26 12:04:14 INFO: A worker finished ingesting repo NumberProgressBar
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:15 INFO: Done saving commits to the csv.
+2020-04-26 12:04:15 INFO: Linking 19 new corrective commits for repo disconf
+2020-04-26 12:04:15 INFO: Linkage for commit 443536655c7fc758f1afd7558cc1546554e9f4c7
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:15 INFO: Adding repo NumberProgressBar to work queue for analyzing.
+2020-04-26 12:04:15 INFO: A worker finished ingesting repo eo
+2020-04-26 12:04:15 INFO: Done getting/parsing git commits.
+2020-04-26 12:04:15 INFO: Worker analyzing repository  NumberProgressBar
+2020-04-26 12:04:15 INFO: Done saving commits to the csv.
+2020-04-26 12:04:15 INFO: Adding repo eo to work queue for analyzing.
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:16 INFO: A worker finished ingesting repo dynamic-load-apk
+2020-04-26 12:04:16 INFO: Worker analyzing repository  eo
+2020-04-26 12:04:16 INFO: Linkage for commit 443536655c7fc758f1afd7558cc1546554e9f4c7
+2020-04-26 12:04:16 INFO: Adding repo dynamic-load-apk to work queue for analyzing.
+2020-04-26 12:04:16 INFO: Worker analyzing repository  dynamic-load-apk
+2020-04-26 12:04:17 INFO: Done saving commits to the csv.
+2020-04-26 12:04:17 INFO: A worker finished ingesting repo react-native-google-places
+fatal: ambiguous argument '844e07648ab3152785802bf7431483dfbb591e84^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:17 INFO: Adding repo react-native-google-places to work queue for analyzing.
+2020-04-26 12:04:17 INFO: Worker analyzing repository  react-native-google-places
+fatal: ambiguous argument '844e07648ab3152785802bf7431483dfbb591e84^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:17 INFO: Linkage for commit 844e07648ab3152785802bf7431483dfbb591e84
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:18 INFO: Linkage for commit 30baae9b7f7269aab9b5fb127ad491e15499f023
+2020-04-26 12:04:18 INFO: Saving commits to the csv...
+2020-04-26 12:04:18 INFO: Linking 19 new corrective commits for repo react-native-google-places
+2020-04-26 12:04:18 INFO: Linking 60 new corrective commits for repo dynamic-load-apk
+2020-04-26 12:04:18 INFO: Done saving commits to the csv.
+2020-04-26 12:04:18 INFO: A worker finished ingesting repo otter
+2020-04-26 12:04:18 INFO: Adding repo otter to work queue for analyzing.
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:18 INFO: Worker analyzing repository  otter
+fatal: ambiguous argument '76d0a1d39fcf997cf1cf2a42bb70937d33238a56^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '76d0a1d39fcf997cf1cf2a42bb70937d33238a56^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:19 INFO: Linkage for commit 443536655c7fc758f1afd7558cc1546554e9f4c7
+2020-04-26 12:04:19 INFO: Linkage for commit 76d0a1d39fcf997cf1cf2a42bb70937d33238a56
+2020-04-26 12:04:19 INFO: Done getting/parsing git commits.
+2020-04-26 12:04:20 INFO: Done getting/parsing git commits.
+2020-04-26 12:04:20 INFO: Saving commits to the csv...
+2020-04-26 12:04:21 INFO: Done getting/parsing git commits.
+2020-04-26 12:04:21 INFO: Done saving commits to the csv.
+2020-04-26 12:04:21 INFO: A worker finished ingesting repo openshift-quickstarts
+2020-04-26 12:04:21 INFO: Adding repo openshift-quickstarts to work queue for analyzing.
+2020-04-26 12:04:21 INFO: Worker analyzing repository  openshift-quickstarts
+2020-04-26 12:04:21 INFO: Saving commits to the csv...
+2020-04-26 12:04:21 INFO: Saving commits to the csv...
+2020-04-26 12:04:21 INFO: Linking 8 new corrective commits for repo RootTools
+2020-04-26 12:04:21 INFO: Linking 19 new corrective commits for repo ncalc
+2020-04-26 12:04:21 INFO: Done saving commits to the csv.
+2020-04-26 12:04:21 INFO: A worker finished ingesting repo gpmall
+2020-04-26 12:04:21 INFO: Done getting/parsing git commits.
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:21 INFO: Adding repo gpmall to work queue for analyzing.
+2020-04-26 12:04:21 INFO: Done saving commits to the csv.
+2020-04-26 12:04:21 INFO: Saving commits to the csv...
+2020-04-26 12:04:21 INFO: Worker analyzing repository  gpmall
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:21 INFO: A worker finished ingesting repo Algorithms-Hacktoberfest
+2020-04-26 12:04:22 INFO: Linking 26 new corrective commits for repo OpenNoteScanner
+2020-04-26 12:04:22 INFO: Linking 26 new corrective commits for repo react-native-ble-manager
+fatal: ambiguous argument '8ce1ffce6e58ddad898a2e7c98f0a1ecda415195^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:22 INFO: Adding repo Algorithms-Hacktoberfest to work queue for analyzing.
+2020-04-26 12:04:22 INFO: Linkage for commit 443536655c7fc758f1afd7558cc1546554e9f4c7
+fatal: ambiguous argument '8ce1ffce6e58ddad898a2e7c98f0a1ecda415195^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '8ce1ffce6e58ddad898a2e7c98f0a1ecda415195^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:22 INFO: Worker analyzing repository  Algorithms-Hacktoberfest
+2020-04-26 12:04:22 INFO: Linking 68 new corrective commits for repo AlphabetIndex-Fast-Scroll-RecyclerView
+fatal: ambiguous argument '8ce1ffce6e58ddad898a2e7c98f0a1ecda415195^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:22 INFO: Linkage for commit e91ded296a395e303c621c669466dfc407b85dee
+fatal: ambiguous argument '641a387f08bb7a4268cdf617a200c21b5b9a5ace^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:22 INFO: Linkage for commit 8ce1ffce6e58ddad898a2e7c98f0a1ecda415195
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '641a387f08bb7a4268cdf617a200c21b5b9a5ace^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'a0d2269d7cc32ea4dce8c3c5084891fd122096ab^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:22 INFO: Linkage for commit 8ce1ffce6e58ddad898a2e7c98f0a1ecda415195
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:23 INFO: Done saving commits to the csv.
+2020-04-26 12:04:24 INFO: A worker finished ingesting repo amazon-kinesis-connectors
+2020-04-26 12:04:24 INFO: Adding repo amazon-kinesis-connectors to work queue for analyzing.
+fatal: ambiguous argument 'a0d2269d7cc32ea4dce8c3c5084891fd122096ab^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:24 INFO: Linkage for commit 641a387f08bb7a4268cdf617a200c21b5b9a5ace
+2020-04-26 12:04:24 INFO: Linking 19 new corrective commits for repo gpmall
+2020-04-26 12:04:24 INFO: Worker analyzing repository  amazon-kinesis-connectors
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:24 INFO: Linkage for commit a0d2269d7cc32ea4dce8c3c5084891fd122096ab
+2020-04-26 12:04:24 INFO: Linkage for commit f111694a06df87cab3900349366b6c3a4e23635b
+2020-04-26 12:04:25 INFO: Linkage for commit 443536655c7fc758f1afd7558cc1546554e9f4c7
+2020-04-26 12:04:26 INFO: Done getting/parsing git commits.
+2020-04-26 12:04:26 INFO: Linking 19 new corrective commits for repo opencv-processing
+2020-04-26 12:04:26 INFO: Linking 19 new corrective commits for repo sonar-custom-rules-examples
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:27 INFO: Linking 36 new corrective commits for repo plantuml-server
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:27 INFO: Linkage for commit 30baae9b7f7269aab9b5fb127ad491e15499f023
+2020-04-26 12:04:27 INFO: Linking 19 new corrective commits for repo android-mvp-architecture
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:27 INFO: Linkage for commit 443536655c7fc758f1afd7558cc1546554e9f4c7
+2020-04-26 12:04:27 INFO: Linking 8 new corrective commits for repo QRCodeReaderView
+fatal: ambiguous argument '4359c799fda5652d5d5a8f2c4db867d10de931eb^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'f27f7a5229775735561db6567b848ef5d8e9e3e3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:29 INFO: Linking 105 new corrective commits for repo NumberProgressBar
+fatal: ambiguous argument '4359c799fda5652d5d5a8f2c4db867d10de931eb^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:29 INFO: Linking 8 new corrective commits for repo hmily
+fatal: ambiguous argument 'b6038ab168379226de9ade74144d6e103801c0c2^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'f27f7a5229775735561db6567b848ef5d8e9e3e3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:29 INFO: Linkage for commit 443536655c7fc758f1afd7558cc1546554e9f4c7
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:29 INFO: Linkage for commit 443536655c7fc758f1afd7558cc1546554e9f4c7
+fatal: ambiguous argument 'f27f7a5229775735561db6567b848ef5d8e9e3e3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:29 INFO: Linking 19 new corrective commits for repo eo
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'd047422928ddef925213a2f4008e228dfa226613^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'b6038ab168379226de9ade74144d6e103801c0c2^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:30 INFO: Saving commits to the csv...
+fatal: ambiguous argument '3786255fb014066eab9ef065799cd34c183b5b9a^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:30 INFO: Linkage for commit 4359c799fda5652d5d5a8f2c4db867d10de931eb
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'f27f7a5229775735561db6567b848ef5d8e9e3e3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:30 INFO: Linkage for commit f27f7a5229775735561db6567b848ef5d8e9e3e3
+fatal: ambiguous argument '3786255fb014066eab9ef065799cd34c183b5b9a^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:30 INFO: Linkage for commit dac7c9f9451e7923320a84b47e8520e222d9b932
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:31 INFO: Linkage for commit b6038ab168379226de9ade74144d6e103801c0c2
+fatal: ambiguous argument 'd047422928ddef925213a2f4008e228dfa226613^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:31 INFO: Linkage for commit 30baae9b7f7269aab9b5fb127ad491e15499f023
+2020-04-26 12:04:31 INFO: Linkage for commit f27f7a5229775735561db6567b848ef5d8e9e3e3
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:32 INFO: Linkage for commit f111694a06df87cab3900349366b6c3a4e23635b
+2020-04-26 12:04:32 INFO: Linkage for commit 3786255fb014066eab9ef065799cd34c183b5b9a
+2020-04-26 12:04:32 INFO: Linkage for commit 30baae9b7f7269aab9b5fb127ad491e15499f023
+2020-04-26 12:04:32 INFO: Linkage for commit d047422928ddef925213a2f4008e228dfa226613
+2020-04-26 12:04:33 INFO: Linkage for commit 30baae9b7f7269aab9b5fb127ad491e15499f023
+2020-04-26 12:04:33 INFO: Linkage for commit f111694a06df87cab3900349366b6c3a4e23635b
+2020-04-26 12:04:34 INFO: Linking 19 new corrective commits for repo pinned-section-listview
+2020-04-26 12:04:34 INFO: Done saving commits to the csv.
+2020-04-26 12:04:34 INFO: A worker finished ingesting repo vulnerability-assessment-tool
+2020-04-26 12:04:34 INFO: Adding repo vulnerability-assessment-tool to work queue for analyzing.
+2020-04-26 12:04:34 INFO: Worker analyzing repository  vulnerability-assessment-tool
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:34 INFO: Linkage for commit 443536655c7fc758f1afd7558cc1546554e9f4c7
+2020-04-26 12:04:36 INFO: Saving commits to the csv...
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:37 INFO: Done saving commits to the csv.
+2020-04-26 12:04:37 INFO: A worker finished ingesting repo CalendarFX
+2020-04-26 12:04:37 INFO: Adding repo CalendarFX to work queue for analyzing.
+2020-04-26 12:04:37 INFO: Worker analyzing repository  CalendarFX
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:37 INFO: Linkage for commit 30baae9b7f7269aab9b5fb127ad491e15499f023
+fatal: ambiguous argument 'a0d2269d7cc32ea4dce8c3c5084891fd122096ab^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '7556cf751605e3455d01288b46bce74f28c8bb9a^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'a0d2269d7cc32ea4dce8c3c5084891fd122096ab^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:38 INFO: Linkage for commit a0d2269d7cc32ea4dce8c3c5084891fd122096ab
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '7556cf751605e3455d01288b46bce74f28c8bb9a^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:38 INFO: Linkage for commit f111694a06df87cab3900349366b6c3a4e23635b
+fatal: ambiguous argument 'a4c80c376c1ad0427682655a683a011d772a8b8d^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'a4c80c376c1ad0427682655a683a011d772a8b8d^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:39 INFO: Linkage for commit 30baae9b7f7269aab9b5fb127ad491e15499f023
+2020-04-26 12:04:40 INFO: Linkage for commit f111694a06df87cab3900349366b6c3a4e23635b
+fatal: ambiguous argument 'a4c80c376c1ad0427682655a683a011d772a8b8d^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:40 INFO: Linkage for commit a4c80c376c1ad0427682655a683a011d772a8b8d
+2020-04-26 12:04:40 INFO: Linkage for commit 7556cf751605e3455d01288b46bce74f28c8bb9a
+fatal: ambiguous argument 'a4c80c376c1ad0427682655a683a011d772a8b8d^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:41 INFO: Saving commits to the csv...
+2020-04-26 12:04:41 INFO: Linkage for commit a4c80c376c1ad0427682655a683a011d772a8b8d
+2020-04-26 12:04:41 INFO: Linking 19 new corrective commits for repo CalendarFX
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '443536655c7fc758f1afd7558cc1546554e9f4c7^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:41 INFO: Linking 34 new corrective commits for repo otter
+2020-04-26 12:04:42 INFO: Saving commits to the csv...
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:42 INFO: Linkage for commit 443536655c7fc758f1afd7558cc1546554e9f4c7
+2020-04-26 12:04:42 INFO: Saving commits to the csv...
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:43 INFO: Done saving commits to the csv.
+fatal: ambiguous argument 'bc66b4395d3ca480190c77c868131daa63771658^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '2c20b117c0189316646404fea3be6d804354fb9e^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '8d08e6bee66e60aa61ac0bdeedb66c8a21c2e49b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '269ba2ac76ad5a5a8de17806de4f8f0e967d4c05^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'bc66b4395d3ca480190c77c868131daa63771658^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '9216cc61846750f583cc65bc6f7696e00daf34d3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'bc66b4395d3ca480190c77c868131daa63771658^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:45 INFO: Linking 8 new corrective commits for repo bytecode-viewer
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '2c20b117c0189316646404fea3be6d804354fb9e^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '9216cc61846750f583cc65bc6f7696e00daf34d3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '8d08e6bee66e60aa61ac0bdeedb66c8a21c2e49b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '269ba2ac76ad5a5a8de17806de4f8f0e967d4c05^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '47c63f7a2e76fd36e2e87c30ec98bdcb2702d40f^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'bc66b4395d3ca480190c77c868131daa63771658^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:45 INFO: Linkage for commit bc66b4395d3ca480190c77c868131daa63771658
+fatal: ambiguous argument 'f27f7a5229775735561db6567b848ef5d8e9e3e3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:45 INFO: Linkage for commit 30baae9b7f7269aab9b5fb127ad491e15499f023
+fatal: ambiguous argument 'f27f7a5229775735561db6567b848ef5d8e9e3e3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:45 INFO: A worker finished ingesting repo colorpicker
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '47c63f7a2e76fd36e2e87c30ec98bdcb2702d40f^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '9216cc61846750f583cc65bc6f7696e00daf34d3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:46 INFO: Done saving commits to the csv.
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '717c1c2a050430fd1492f7f9984f0a41fad27df1^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:46 INFO: Done saving commits to the csv.
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:46 INFO: Linkage for commit 30baae9b7f7269aab9b5fb127ad491e15499f023
+fatal: ambiguous argument '9216cc61846750f583cc65bc6f7696e00daf34d3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '30baae9b7f7269aab9b5fb127ad491e15499f023^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:46 INFO: Linkage for commit f111694a06df87cab3900349366b6c3a4e23635b
+fatal: ambiguous argument '9216cc61846750f583cc65bc6f7696e00daf34d3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '717c1c2a050430fd1492f7f9984f0a41fad27df1^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:46 INFO: Linkage for commit c4e493d857377dda14830cb79038208c53a0957b
+fatal: ambiguous argument '9216cc61846750f583cc65bc6f7696e00daf34d3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '9216cc61846750f583cc65bc6f7696e00daf34d3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '9216cc61846750f583cc65bc6f7696e00daf34d3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '37a193873a6a08005bec5a8dd72687ce072add98^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '9216cc61846750f583cc65bc6f7696e00daf34d3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:46 INFO: Linking 19 new corrective commits for repo Android-Rich-text-Editor
+fatal: ambiguous argument '37a193873a6a08005bec5a8dd72687ce072add98^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '9216cc61846750f583cc65bc6f7696e00daf34d3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:46 INFO: Linkage for commit 2c20b117c0189316646404fea3be6d804354fb9e
+fatal: ambiguous argument '3786255fb014066eab9ef065799cd34c183b5b9a^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '37a193873a6a08005bec5a8dd72687ce072add98^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:46 INFO: Linkage for commit 8d08e6bee66e60aa61ac0bdeedb66c8a21c2e49b
+2020-04-26 12:04:46 INFO: Linkage for commit 9216cc61846750f583cc65bc6f7696e00daf34d3
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '3786255fb014066eab9ef065799cd34c183b5b9a^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'ffec255eb4616d964c6354ae6f3bc33024c3fb92^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:47 INFO: Linkage for commit c07e4ffe07e86e2bb3c0e0d8159da3815eaa3a36
+fatal: ambiguous argument '37a193873a6a08005bec5a8dd72687ce072add98^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'd86974e6d757020ba86a7c5087b4036f01c28d6e^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '9216cc61846750f583cc65bc6f7696e00daf34d3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'ffec255eb4616d964c6354ae6f3bc33024c3fb92^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '7cce5001b7d59ce94fd3b3ff352434e706168e66^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'dd08b07f4004ba7c7094d13700c73588d51cd57b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '9216cc61846750f583cc65bc6f7696e00daf34d3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:47 INFO: Linkage for commit 269ba2ac76ad5a5a8de17806de4f8f0e967d4c05
+2020-04-26 12:04:48 INFO: Adding repo colorpicker to work queue for analyzing.
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'd86974e6d757020ba86a7c5087b4036f01c28d6e^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'cf2f910e817ecc6b3410e16526c42d43d1c1c686^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '7cce5001b7d59ce94fd3b3ff352434e706168e66^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:48 INFO: Linkage for commit bc66b4395d3ca480190c77c868131daa63771658
+2020-04-26 12:04:48 INFO: Linkage for commit 30baae9b7f7269aab9b5fb127ad491e15499f023
+2020-04-26 12:04:48 INFO: Linkage for commit f27f7a5229775735561db6567b848ef5d8e9e3e3
+2020-04-26 12:04:48 INFO: Linkage for commit f111694a06df87cab3900349366b6c3a4e23635b
+fatal: ambiguous argument 'dd08b07f4004ba7c7094d13700c73588d51cd57b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:48 INFO: Linkage for commit 30baae9b7f7269aab9b5fb127ad491e15499f023
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '717c1c2a050430fd1492f7f9984f0a41fad27df1^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:48 INFO: Linkage for commit 47c63f7a2e76fd36e2e87c30ec98bdcb2702d40f
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '9216cc61846750f583cc65bc6f7696e00daf34d3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'bc66b4395d3ca480190c77c868131daa63771658^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '3a658cca673a11681279e19021a0cc9e7f97bad1^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '9216cc61846750f583cc65bc6f7696e00daf34d3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:48 INFO: A worker finished ingesting repo Pix-EzViewer
+2020-04-26 12:04:49 INFO: Linking 34 new corrective commits for repo vulnerability-assessment-tool
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'c4e493d857377dda14830cb79038208c53a0957b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '3a658cca673a11681279e19021a0cc9e7f97bad1^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '717c1c2a050430fd1492f7f9984f0a41fad27df1^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:49 INFO: A worker finished ingesting repo Much-Assembly-Required
+fatal: ambiguous argument 'c4e493d857377dda14830cb79038208c53a0957b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:49 INFO: Linking 30 new corrective commits for repo Algorithms-Hacktoberfest
+fatal: ambiguous argument 'cf2f910e817ecc6b3410e16526c42d43d1c1c686^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:50 INFO: Saving commits to the csv...
+2020-04-26 12:04:50 INFO: Linking 60 new corrective commits for repo elasticsearch-analysis-ik
+fatal: ambiguous argument 'bc66b4395d3ca480190c77c868131daa63771658^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:50 INFO: Linkage for commit 717c1c2a050430fd1492f7f9984f0a41fad27df1
+fatal: ambiguous argument '43a90edbd9bb51e2529d0674eb31dba990698a24^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:50 INFO: Linkage for commit f111694a06df87cab3900349366b6c3a4e23635b
+fatal: ambiguous argument '76d0a1d39fcf997cf1cf2a42bb70937d33238a56^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '9216cc61846750f583cc65bc6f7696e00daf34d3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'e462576a5a99f883bad5952d19d2e1832fe39b56^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '43a90edbd9bb51e2529d0674eb31dba990698a24^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:50 INFO: Linkage for commit 9216cc61846750f583cc65bc6f7696e00daf34d3
+fatal: ambiguous argument '9216cc61846750f583cc65bc6f7696e00daf34d3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:50 INFO: Linking 7 new corrective commits for repo amazon-kinesis-connectors
+2020-04-26 12:04:50 INFO: Linkage for commit 30baae9b7f7269aab9b5fb127ad491e15499f023
+fatal: ambiguous argument 'd86974e6d757020ba86a7c5087b4036f01c28d6e^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '4f4441b132120f028df11e61e2f5940cdf1fe7a1^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'f111694a06df87cab3900349366b6c3a4e23635b^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:51 INFO: Saving commits to the csv...
+fatal: ambiguous argument 'e462576a5a99f883bad5952d19d2e1832fe39b56^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '76d0a1d39fcf997cf1cf2a42bb70937d33238a56^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '4f4441b132120f028df11e61e2f5940cdf1fe7a1^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'd86974e6d757020ba86a7c5087b4036f01c28d6e^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:51 INFO: Linkage for commit 9216cc61846750f583cc65bc6f7696e00daf34d3
+2020-04-26 12:04:51 INFO: Linkage for commit 30baae9b7f7269aab9b5fb127ad491e15499f023
+2020-04-26 12:04:51 INFO: Linkage for commit 9216cc61846750f583cc65bc6f7696e00daf34d3
+fatal: ambiguous argument 'd86974e6d757020ba86a7c5087b4036f01c28d6e^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:52 INFO: Linkage for commit 37a193873a6a08005bec5a8dd72687ce072add98
+2020-04-26 12:04:52 INFO: Linkage for commit f111694a06df87cab3900349366b6c3a4e23635b
+fatal: ambiguous argument 'd86974e6d757020ba86a7c5087b4036f01c28d6e^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'c55224d2227277758aab2b278e2c4d4a5b155a39^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'd86974e6d757020ba86a7c5087b4036f01c28d6e^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:52 INFO: Linking 30 new corrective commits for repo openshift-quickstarts
+fatal: ambiguous argument '9216cc61846750f583cc65bc6f7696e00daf34d3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:53 INFO: Linkage for commit 3786255fb014066eab9ef065799cd34c183b5b9a
+fatal: ambiguous argument '43a90edbd9bb51e2529d0674eb31dba990698a24^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'c55224d2227277758aab2b278e2c4d4a5b155a39^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:53 INFO: Linking 13 new corrective commits for repo AndroidPerformanceMonitor
+fatal: ambiguous argument 'a7cc50a7543e5116eacf3fec9e576a29c694fc73^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '269ba2ac76ad5a5a8de17806de4f8f0e967d4c05^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '9216cc61846750f583cc65bc6f7696e00daf34d3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'd86974e6d757020ba86a7c5087b4036f01c28d6e^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:53 INFO: Saving commits to the csv...
+fatal: ambiguous argument '43a90edbd9bb51e2529d0674eb31dba990698a24^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '269ba2ac76ad5a5a8de17806de4f8f0e967d4c05^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'a7cc50a7543e5116eacf3fec9e576a29c694fc73^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:53 INFO: Linkage for commit 37a193873a6a08005bec5a8dd72687ce072add98
+2020-04-26 12:04:54 INFO: Saving commits to the csv...
+2020-04-26 12:04:54 INFO: Linkage for commit 9216cc61846750f583cc65bc6f7696e00daf34d3
+fatal: ambiguous argument 'c55224d2227277758aab2b278e2c4d4a5b155a39^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'd86974e6d757020ba86a7c5087b4036f01c28d6e^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:54 INFO: Linkage for commit ffec255eb4616d964c6354ae6f3bc33024c3fb92
+fatal: ambiguous argument 'd86974e6d757020ba86a7c5087b4036f01c28d6e^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:54 INFO: Worker analyzing repository  colorpicker
+2020-04-26 12:04:55 INFO: Linkage for commit f111694a06df87cab3900349366b6c3a4e23635b
+fatal: ambiguous argument 'c55224d2227277758aab2b278e2c4d4a5b155a39^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:55 INFO: Linkage for commit 9216cc61846750f583cc65bc6f7696e00daf34d3
+2020-04-26 12:04:55 INFO: Linking 13 new corrective commits for repo Intro-To-RxJava
+fatal: ambiguous argument '9f19174987c619c4e9ad5057a5e486a766698d10^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'd86974e6d757020ba86a7c5087b4036f01c28d6e^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '2f6f8fd9c0c6355721582f100a27c34e41dc503f^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:55 INFO: Linking 8 new corrective commits for repo Hello-World
+fatal: ambiguous argument '9f19174987c619c4e9ad5057a5e486a766698d10^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'f2cb0a99d0750542569ae13524f312f8b49f155e^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:56 INFO: Saving commits to the csv...
+fatal: ambiguous argument 'd86974e6d757020ba86a7c5087b4036f01c28d6e^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument 'f2cb0a99d0750542569ae13524f312f8b49f155e^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '9216cc61846750f583cc65bc6f7696e00daf34d3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:56 INFO: Linkage for commit 7cce5001b7d59ce94fd3b3ff352434e706168e66
+fatal: ambiguous argument '2f6f8fd9c0c6355721582f100a27c34e41dc503f^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: ambiguous argument '9216cc61846750f583cc65bc6f7696e00daf34d3^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2020-04-26 12:04:57 INFO: Linkage for commit d86974e6d757020ba86a7c5087b4036f01c28d6e
+2020-04-26 12:04:57 INFO: Linkage for commit dd08b07f4004ba7c7094d13700c73588d51cd57b
+2020-04-26 12:04:58 INFO: Adding repo Pix-EzViewer to work queue for analyzing.
+fatal: ambiguous argument '157c139a1f9e2d6cf038a4e8336bca7641855a6f^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'

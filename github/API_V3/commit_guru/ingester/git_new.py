@@ -496,8 +496,8 @@ class Git():
         # print(all_commits)
         all_commits_list = [item for sublist in all_commits for item in sublist]
         all_commit_df = pd.DataFrame(all_commits_list,columns=['commit_hash','file_name','la','ld','lt','age','ndev','nuc','own','minor','ndev','ncomm','ns','exp','sexp','rexp','nd','sctr'])
-        all_commit_df.to_csv('//Users/suvodeepmajumder/Documents/AI4SE/Data_Miner/github/data/commit_guru_exp/' + str(repo['name']) + '_file.csv',index=False)
-        # all_commit_df.to_csv('/home/smajumd3/Data_Miner/github/data/commit_guru_new/' + str(repo['name']) + '_file.csv',index=False)
+        #all_commit_df.to_csv('//Users/suvodeepmajumder/Documents/AI4SE/Data_Miner/github/data/commit_guru_exp/' + str(repo['name']) + '_file.csv',index=False)
+        all_commit_df.to_csv('/home/smajumd3/Data_Miner/github/data/commit_guru_new/' + str(repo['name']) + '_file.csv',index=False)
         logging.info('Done getting/parsing git commits.')
         return json_list
 
