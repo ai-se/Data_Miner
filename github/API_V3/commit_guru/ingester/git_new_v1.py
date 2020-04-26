@@ -163,29 +163,33 @@ class Git():
                         continue
                     fileStat = stat.split("\\t")
                     committed_fileName = (fileStat[2].replace("'",'').replace('"','').replace("\\",""))
+                    co_committed = 0
                     if committed_fileName != fileName:
                         if committed_fileName not in co_commited_files.keys():
-                            co_commited_files.update({committed_fileName:1})
+                            co_commited_files.update({committed_fileName:[unixTimeStamp]})
                             num_files += 1
                             if committed_fileName not in commitFiles.keys():
-                                nddev += 1*1
-                                ncomm += 1*1
-                                nadev += 1*1
+                                nddev += 1*0
+                                ncomm += 1*0
+                                nadev += 1*0
                             else:
-                                nddev += len(getattr(commitFiles[committed_fileName], 'authors'))*1
-                                ncomm += getattr(commitFiles[committed_fileName], 'nuc')*1
-                                nadev += sum(getattr(commitFiles[committed_fileName], 'adev').values())*1
+                                nddev += len(getattr(commitFiles[committed_fileName], 'authors'))*0
+                                ncomm += getattr(commitFiles[committed_fileName], 'nuc')*0
+                                nadev += sum(getattr(commitFiles[committed_fileName], 'adev').values())*0
                         else:
-                            co_commited_files[committed_fileName] += 1
+                            for back in range(len(co_commited_files[committed_fileName])-1,-1,-1):
+                                if (int(unixTimeStamp) - int(co_commited_files[committed_fileName][back]))/86400 < 180:
+                                    co_committed += 1
+                            co_commited_files[committed_fileName].append(unixTimeStamp)
                             num_files += 1
                             if committed_fileName not in commitFiles.keys():
-                                nddev += 1*co_commited_files[committed_fileName]
-                                ncomm += 1*co_commited_files[committed_fileName]
-                                nadev += 1*co_commited_files[committed_fileName]
+                                nddev += 1*co_committed
+                                ncomm += 1*co_committed
+                                nadev += 1*co_committed
                             else:
-                                nddev += len(getattr(commitFiles[committed_fileName], 'authors'))*co_commited_files[committed_fileName]
-                                ncomm += getattr(commitFiles[committed_fileName], 'nuc')*co_commited_files[committed_fileName]
-                                nadev += sum(getattr(commitFiles[committed_fileName], 'adev').values())*co_commited_files[committed_fileName]
+                                nddev += len(getattr(commitFiles[committed_fileName], 'authors'))*co_committed
+                                ncomm += getattr(commitFiles[committed_fileName], 'nuc')*co_committed
+                                nadev += sum(getattr(commitFiles[committed_fileName], 'adev').values())*co_committed
                 if num_files == 0:
                     avg_nddev = 0
                     avg_nadev = 0
@@ -259,11 +263,11 @@ class Git():
                     committed_fileName = (fileStat[2].replace("'",'').replace('"','').replace("\\",""))
                     if committed_fileName != fileName:
                         if committed_fileName not in co_commited_files.keys():
-                            co_commited_files[committed_fileName] = 1
+                            co_commited_files[committed_fileName] = [unixTimeStamp]
                             num_files += 1
-                            nddev += 1*1
-                            ncomm += 1*1
-                            nadev += 1*1
+                            nddev += 1*0
+                            ncomm += 1*0
+                            nadev += 1*0
 
                 if num_files == 0:
                     avg_nddev = 0
@@ -528,8 +532,8 @@ class Git():
         all_commit_df = pd.DataFrame(all_commits_list,columns=['commit_hash','file_name','file_la','file_ld',
         'file_lt','file_age','file_ddev','file_nuc','own','minor','file_ndev','file_ncomm','file_adev','file_nadev',
         'file_avg_nddev','file_avg_nadev','file_avg_ncomm','file_ns','file_exp','file_sexp','file_rexp','file_nd','file_sctr'])
-        #all_commit_df.to_csv('/Users/suvodeepmajumder/Documents/AI4SE/Data_Miner/github/data/commit_guru_exp/' + str(repo['name']) + '_file.csv',index=False)
-        all_commit_df.to_csv('/home/smajumd3/Data_Miner/github/data/commit_guru_file/' + str(repo['name']) + '_file.csv',index=False)
+        # all_commit_df.to_csv('/Users/suvodeepmajumder/Documents/AI4SE/Data_Miner/github/data/commit_guru_exp/' + str(repo['name']) + '_file.csv',index=False)
+        all_commit_df.to_csv('/home/smajumd3/Data_Miner/github/data/commit_guru_file/' + str(repo['name']) + '.csv',index=False)
         logging.info('Done getting/parsing git commits.')
         return json_list
 
